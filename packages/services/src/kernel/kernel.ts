@@ -586,6 +586,17 @@ export namespace Kernel {
   }
 
   /**
+   * Shut down all kernels for Current User.
+   *
+   * @returns A promise that resolves when all of the kernels for current user are shut down.
+   */
+  export function shutdownKernelsCurrentUser(
+    settings?: ServerConnection.ISettings
+  ): Promise<void> {
+    return DefaultKernel.shutdownKernelsCurrentUser(settings);
+  }
+
+  /**
    * The options object used to initialize a kernel.
    */
   export interface IOptions {

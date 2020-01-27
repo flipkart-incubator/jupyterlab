@@ -257,7 +257,10 @@ export class SessionManager implements Session.IManager {
           });
         })
       ).then(() => {
+        Kernel.shutdownKernelsCurrentUser(this.serverSettings);
         return undefined;
+      }).catch(() => {
+        Kernel.shutdownKernelsCurrentUser(this.serverSettings);
       });
     });
   }

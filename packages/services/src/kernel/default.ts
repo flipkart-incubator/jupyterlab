@@ -31,6 +31,11 @@ import * as validate from './validate';
 const KERNEL_SERVICE_URL = 'api/kernels';
 
 /**
+ * The url for the kernel shutdown service.
+ */
+const KERNEL_SERVICE_SHUTDOWN_URL = 'api/kernels/shutdown';
+
+/**
  * The url for the kernelspec service.
  */
 const KERNELSPEC_SERVICE_URL = 'api/kernelspecs';
@@ -1331,6 +1336,19 @@ export namespace DefaultKernel {
   ): Promise<void> {
     return Private.shutdownAll(settings);
   }
+
+  /**
+   * Shut down all kernels for current User.
+   *
+   * @param settings - The server settings to use.
+   *
+   * @returns A promise that resolves when all the kernels for current user are shut down.
+   */
+  export function shutdownKernelsCurrentUser(
+    settings?: ServerConnection.ISettings
+  ): Promise<void> {
+    return Private.shutdownKernelsCurrentUser(settings);
+  }
 }
 
 /**
@@ -1594,6 +1612,24 @@ namespace Private {
       throw new ServerConnection.ResponseError(response);
     }
     killKernels(id);
+  }
+
+  /**
+   * Shuts Down all Kernels for Current User.
+   */
+  export async function shutdownKernelsCurrentUser(
+    settings?: ServerConnection.ISettings
+  ): Promise<void> {
+    settings = settings || ServerConnection.makeSettings();
+    let url = URLExt.join(
+      settings.baseUrl,
+      KERNEL_SERVICE_SHUTDOWN_URL
+    );
+    let init = { method: 'DELETE' };
+    let response = await ServerConnection.makeRequest(url, init, settings);
+    if (response.status !== 204) {
+      throw new ServerConnection.ResponseError(response);
+    }
   }
 
   /**
