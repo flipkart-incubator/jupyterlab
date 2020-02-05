@@ -1,17 +1,17 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ClientSession, IClientSession } from '@jupyterlab/apputils';
+import { ClientSession, IClientSession } from '@fk-jupyterlab/apputils';
 
-import { IEditorMimeTypeService } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService } from '@fk-jupyterlab/codeeditor';
 
-import { PathExt, Time } from '@jupyterlab/coreutils';
+import { PathExt, Time } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -260,7 +260,7 @@ export namespace ConsolePanel {
    * The console renderer token.
    */
   export const IContentFactory = new Token<IContentFactory>(
-    '@jupyterlab/console:IContentFactory'
+    '@fk-jupyterlab/console:IContentFactory'
   );
   /* tslint:enable */
 }

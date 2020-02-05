@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { Cell, CodeCell } from '@jupyterlab/cells';
+import { Cell, CodeCell } from '@fk-jupyterlab/cells';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { IDisposable } from '@phosphor/disposable';
 

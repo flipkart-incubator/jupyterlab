@@ -31,7 +31,7 @@ panel or logout of the hub.
 
 To install the ``jupyterlab-hub`` extension, run::
 
-    jupyter labextension install @jupyterlab/hub-extension
+    jupyter labextension install @fk-jupyterlab/hub-extension
 
 Further directions are provided on the `jupyterlab-hub GitHub repository
 <https://github.com/jupyterhub/jupyterlab-hub>`__.

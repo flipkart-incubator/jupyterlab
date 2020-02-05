@@ -17,13 +17,13 @@ import {
   RawCellModel,
   RawCell,
   Cell
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { INotebookModel, NotebookModel } from '@jupyterlab/notebook';
+import { INotebookModel, NotebookModel } from '@fk-jupyterlab/notebook';
 
-import { Notebook, StaticNotebook } from '@jupyterlab/notebook';
+import { Notebook, StaticNotebook } from '@fk-jupyterlab/notebook';
 
-import { sleep, NBTestUtils } from '@jupyterlab/testutils';
+import { sleep, NBTestUtils } from '@fk-jupyterlab/testutils';
 
 const contentFactory = NBTestUtils.createNotebookFactory();
 const editorConfig = NBTestUtils.defaultEditorConfig;

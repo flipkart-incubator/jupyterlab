@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Toolbar, ToolbarButton } from '@jupyterlab/apputils';
+import { Toolbar, ToolbarButton } from '@fk-jupyterlab/apputils';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -46,7 +46,7 @@ const FORWARD_CLASS = 'jp-InspectorItem-forward';
  * The inspector panel token.
  */
 export const IInspector = new Token<IInspector>(
-  '@jupyterlab/inspector:IInspector'
+  '@fk-jupyterlab/inspector:IInspector'
 );
 /* tslint:enable */
 

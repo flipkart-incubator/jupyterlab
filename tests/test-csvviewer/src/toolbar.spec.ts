@@ -7,7 +7,7 @@ import { Widget } from '@phosphor/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { CSVDelimiter } from '@jupyterlab/csvviewer';
+import { CSVDelimiter } from '@fk-jupyterlab/csvviewer';
 
 const DELIMITERS = [',', ';', '\t'];
 

@@ -20,13 +20,13 @@ import { ISignal, Signal } from '@phosphor/signaling';
 
 import { Widget } from '@phosphor/widgets';
 
-import { Time } from '@jupyterlab/coreutils';
+import { Time } from '@fk-jupyterlab/coreutils';
 
-import { showDialog, Dialog } from '@jupyterlab/apputils';
+import { showDialog, Dialog } from '@fk-jupyterlab/apputils';
 
-import { DocumentRegistry, IDocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentRegistry, IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 /**
  * The class name added to document widgets.

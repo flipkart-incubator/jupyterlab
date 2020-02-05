@@ -7,9 +7,9 @@ import { toArray } from '@phosphor/algorithm';
 
 import { JSONExt } from '@phosphor/coreutils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { CompleterModel, Completer } from '@jupyterlab/completer';
+import { CompleterModel, Completer } from '@fk-jupyterlab/completer';
 
 function makeState(text: string): Completer.ITextState {
   return {

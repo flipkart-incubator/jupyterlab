@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 import { Token } from '@phosphor/coreutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import '../style/index.css';
 
@@ -20,7 +20,7 @@ export * from './widget';
  * The tooltip manager token.
  */
 export const ITooltipManager = new Token<ITooltipManager>(
-  '@jupyterlab/tooltip:ITooltipManager'
+  '@fk-jupyterlab/tooltip:ITooltipManager'
 );
 /* tslint:enable */
 

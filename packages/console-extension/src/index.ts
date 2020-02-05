@@ -5,7 +5,7 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -13,17 +13,17 @@ import {
   ICommandPalette,
   InstanceTracker,
   showDialog
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { ConsolePanel, IConsoleTracker } from '@jupyterlab/console';
+import { ConsolePanel, IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { ISettingRegistry, PageConfig } from '@jupyterlab/coreutils';
+import { ISettingRegistry, PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
 import {
   IEditMenu,
@@ -32,9 +32,9 @@ import {
   IKernelMenu,
   IMainMenu,
   IRunMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { find } from '@phosphor/algorithm';
 
@@ -80,7 +80,7 @@ namespace CommandIDs {
  * The console widget tracker provider.
  */
 const tracker: JupyterLabPlugin<IConsoleTracker> = {
-  id: '@jupyterlab/console-extension:tracker',
+  id: '@fk-jupyterlab/console-extension:tracker',
   provides: IConsoleTracker,
   requires: [
     IMainMenu,
@@ -101,7 +101,7 @@ const tracker: JupyterLabPlugin<IConsoleTracker> = {
  * The console widget content factory.
  */
 const factory: JupyterLabPlugin<ConsolePanel.IContentFactory> = {
-  id: '@jupyterlab/console-extension:factory',
+  id: '@fk-jupyterlab/console-extension:factory',
   provides: ConsolePanel.IContentFactory,
   requires: [IEditorServices],
   autoStart: true,
@@ -455,7 +455,7 @@ function activateConsole(
   });
 
   // Constants for setting the shortcuts for executing console cells.
-  const shortcutPlugin = '@jupyterlab/shortcuts-extension:plugin';
+  const shortcutPlugin = '@fk-jupyterlab/shortcuts-extension:plugin';
   const selector = '.jp-CodeConsole-promptCell';
 
   // Keep updated keybindings for the console commands related to execution.

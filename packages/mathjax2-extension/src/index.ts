@@ -3,13 +3,13 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLabPlugin } from '@fk-jupyterlab/application';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { ILatexTypesetter } from '@jupyterlab/rendermime';
+import { ILatexTypesetter } from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { PromiseDelegate } from '@phosphor/coreutils';
 
@@ -20,7 +20,7 @@ declare var MathJax: any;
  * The MathJax latexTypesetter plugin.
  */
 const plugin: JupyterLabPlugin<ILatexTypesetter> = {
-  id: '@jupyterlab/mathjax2-extension:plugin',
+  id: '@fk-jupyterlab/mathjax2-extension:plugin',
   autoStart: true,
   provides: ILatexTypesetter,
   activate: () => new MathJaxTypesetter()

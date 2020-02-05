@@ -3,17 +3,17 @@
 
 import { expect } from 'chai';
 
-import { ClientSession } from '@jupyterlab/apputils';
+import { ClientSession } from '@fk-jupyterlab/apputils';
 
 import { each } from '@phosphor/algorithm';
 
-import { CodeCell, MarkdownCell, RawCell } from '@jupyterlab/cells';
+import { CodeCell, MarkdownCell, RawCell } from '@fk-jupyterlab/cells';
 
-import { NotebookModel } from '@jupyterlab/notebook';
+import { NotebookModel } from '@fk-jupyterlab/notebook';
 
-import { NotebookActions } from '@jupyterlab/notebook';
+import { NotebookActions } from '@fk-jupyterlab/notebook';
 
-import { Notebook } from '@jupyterlab/notebook';
+import { Notebook } from '@fk-jupyterlab/notebook';
 
 import {
   acceptDialog,
@@ -21,13 +21,13 @@ import {
   dismissDialog,
   sleep,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 const ERROR_INPUT = 'a = foo';
 
 const JUPYTER_CELL_MIME = 'application/vnd.jupyter.cells';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   const rendermime = NBTestUtils.defaultRenderMime();
 
   describe('NotebookActions', () => {

@@ -7,7 +7,7 @@ require('es6-promise/auto');  // polyfill Promise on IE
 
 import {
   PageConfig
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
 __webpack_public_path__ = PageConfig.getOption('publicUrl');
 
@@ -18,7 +18,7 @@ require('font-awesome/css/font-awesome.min.css');
  * The main entry point for the application.
  */
 function main() {
-  var JupyterLab = require('@jupyterlab/application').JupyterLab;
+  var JupyterLab = require('@fk-jupyterlab/application').JupyterLab;
 
   // Get the disabled extensions.
   var disabled = { patterns: [], matches: [] };

@@ -3,11 +3,11 @@
 
 import { expect } from 'chai';
 
-import { ApplicationShell, LayoutRestorer } from '@jupyterlab/application';
+import { ApplicationShell, LayoutRestorer } from '@fk-jupyterlab/application';
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { StateDB } from '@jupyterlab/coreutils';
+import { StateDB } from '@fk-jupyterlab/coreutils';
 
 import { CommandRegistry } from '@phosphor/commands';
 

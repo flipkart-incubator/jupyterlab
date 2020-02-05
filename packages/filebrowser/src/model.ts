@@ -6,11 +6,11 @@ import {
   IStateDB,
   PathExt,
   PageConfig
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
-import { IDocumentManager, shouldOverwrite } from '@jupyterlab/docmanager';
+import { IDocumentManager, shouldOverwrite } from '@fk-jupyterlab/docmanager';
 
-import { Contents, Kernel, Session } from '@jupyterlab/services';
+import { Contents, Kernel, Session } from '@fk-jupyterlab/services';
 
 import {
   ArrayIterator,
@@ -26,7 +26,7 @@ import { IDisposable } from '@phosphor/disposable';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { showDialog, Dialog } from '@jupyterlab/apputils';
+import { showDialog, Dialog } from '@fk-jupyterlab/apputils';
 
 /**
  * The duration of auto-refresh in ms.

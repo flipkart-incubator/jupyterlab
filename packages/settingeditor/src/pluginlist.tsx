@@ -7,7 +7,7 @@ import {
   ICON_CLASS_KEY,
   ICON_LABEL_KEY,
   ISettingRegistry
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
 import { Message } from '@phosphor/messaging';
 

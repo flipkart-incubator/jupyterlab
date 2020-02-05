@@ -186,12 +186,12 @@ class KarmaTestApp(ProcessTestApp):
         # Find and validate the coverage folder
         with open(pjoin(cwd, 'package.json')) as fid:
             data = json.load(fid)
-        name = data['name'].replace('@jupyterlab/test-', '')
+        name = data['name'].replace('@fk-jupyterlab/test-', '')
         folder = osp.realpath(pjoin(HERE, '..', '..', 'packages', name))
         if not osp.exists(folder):
             raise ValueError(
                 'No source package directory found for "%s", use the pattern '
-                '"@jupyterlab/test-<package_dir_name>"' % name
+                '"@fk-jupyterlab/test-<package_dir_name>"' % name
             )
 
         if PY2:

@@ -8,7 +8,7 @@ import {
   IRouter,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -18,7 +18,7 @@ import {
   IWindowResolver,
   ThemeManager,
   WindowResolver
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 import {
   DataConnector,
@@ -28,11 +28,11 @@ import {
   SettingRegistry,
   StateDB,
   URLExt
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { CommandRegistry } from '@phosphor/commands';
 
@@ -130,7 +130,7 @@ class SettingsConnector extends DataConnector<
  */
 const palette: JupyterLabPlugin<ICommandPalette> = {
   activate: activatePalette,
-  id: '@jupyterlab/apputils-extension:palette',
+  id: '@fk-jupyterlab/apputils-extension:palette',
   provides: ICommandPalette,
   autoStart: true
 };
@@ -146,7 +146,7 @@ const palette: JupyterLabPlugin<ICommandPalette> = {
  */
 const paletteRestorer: JupyterLabPlugin<void> = {
   activate: restorePalette,
-  id: '@jupyterlab/apputils-extension:palette-restorer',
+  id: '@fk-jupyterlab/apputils-extension:palette-restorer',
   requires: [ILayoutRestorer],
   autoStart: true
 };
@@ -155,7 +155,7 @@ const paletteRestorer: JupyterLabPlugin<void> = {
  * The default setting registry provider.
  */
 const settings: JupyterLabPlugin<ISettingRegistry> = {
-  id: '@jupyterlab/apputils-extension:settings',
+  id: '@fk-jupyterlab/apputils-extension:settings',
   activate: (app: JupyterLab): ISettingRegistry => {
     const connector = new SettingsConnector(app.serviceManager);
 
@@ -169,7 +169,7 @@ const settings: JupyterLabPlugin<ISettingRegistry> = {
  * The default theme manager provider.
  */
 const themes: JupyterLabPlugin<IThemeManager> = {
-  id: '@jupyterlab/apputils-extension:themes',
+  id: '@fk-jupyterlab/apputils-extension:themes',
   requires: [ISettingRegistry, ISplashScreen],
   optional: [ICommandPalette, IMainMenu],
   activate: (
@@ -254,7 +254,7 @@ const themes: JupyterLabPlugin<IThemeManager> = {
  * The default window name resolver provider.
  */
 const resolver: JupyterLabPlugin<IWindowResolver> = {
-  id: '@jupyterlab/apputils-extension:resolver',
+  id: '@fk-jupyterlab/apputils-extension:resolver',
   autoStart: true,
   provides: IWindowResolver,
   requires: [IRouter],
@@ -281,7 +281,7 @@ const resolver: JupyterLabPlugin<IWindowResolver> = {
  * The default splash screen provider.
  */
 const splash: JupyterLabPlugin<ISplashScreen> = {
-  id: '@jupyterlab/apputils-extension:splash',
+  id: '@fk-jupyterlab/apputils-extension:splash',
   autoStart: true,
   provides: ISplashScreen,
   activate: app => {
@@ -299,7 +299,7 @@ const splash: JupyterLabPlugin<ISplashScreen> = {
  * The default state database for storing application state.
  */
 const state: JupyterLabPlugin<IStateDB> = {
-  id: '@jupyterlab/apputils-extension:state',
+  id: '@fk-jupyterlab/apputils-extension:state',
   autoStart: true,
   provides: IStateDB,
   requires: [IRouter, IWindowResolver, ISplashScreen],

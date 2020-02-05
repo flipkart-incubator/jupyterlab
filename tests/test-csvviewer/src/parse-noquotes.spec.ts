@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { parseDSVNoQuotes as parser } from '@jupyterlab/csvviewer';
+import { parseDSVNoQuotes as parser } from '@fk-jupyterlab/csvviewer';
 
 describe('csvviewer/parsenoquotes', () => {
   describe('parseDSVNoQuotes', () => {

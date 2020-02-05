@@ -10,9 +10,9 @@ import {
   SettingRegistry,
   Settings,
   StateDB
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
-import { signalToPromise } from '@jupyterlab/testutils';
+import { signalToPromise } from '@fk-jupyterlab/testutils';
 
 import { JSONObject } from '@phosphor/coreutils';
 
@@ -38,7 +38,7 @@ export class TestConnector extends StateDB
   }
 }
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('DefaultSchemaValidator', () => {
     describe('#constructor()', () => {
       it('should create a new schema validator', () => {

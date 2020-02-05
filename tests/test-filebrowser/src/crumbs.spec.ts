@@ -3,11 +3,11 @@
 
 import { expect } from 'chai';
 
-import { DocumentManager, IDocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager, IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry, TextModelFactory } from '@jupyterlab/docregistry';
+import { DocumentRegistry, TextModelFactory } from '@fk-jupyterlab/docregistry';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Message, MessageLoop } from '@phosphor/messaging';
 
@@ -15,9 +15,9 @@ import { Widget } from '@phosphor/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { BreadCrumbs, FileBrowserModel } from '@jupyterlab/filebrowser';
+import { BreadCrumbs, FileBrowserModel } from '@fk-jupyterlab/filebrowser';
 
-import { framePromise, signalToPromise } from '@jupyterlab/testutils';
+import { framePromise, signalToPromise } from '@fk-jupyterlab/testutils';
 
 const ITEM_CLASS = 'jp-BreadCrumbs-item';
 

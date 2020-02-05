@@ -5,23 +5,23 @@ import { expect } from 'chai';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { KernelMessage, Session } from '@jupyterlab/services';
+import { KernelMessage, Session } from '@fk-jupyterlab/services';
 
 import { Signal } from '@phosphor/signaling';
 
 import { Panel } from '@phosphor/widgets';
 
-import { ClientSession, IClientSession } from '@jupyterlab/apputils';
+import { ClientSession, IClientSession } from '@fk-jupyterlab/apputils';
 
-import { ForeignHandler } from '@jupyterlab/console';
+import { ForeignHandler } from '@fk-jupyterlab/console';
 
-import { CodeCellModel, CodeCell } from '@jupyterlab/cells';
+import { CodeCellModel, CodeCell } from '@fk-jupyterlab/cells';
 
 import {
   createClientSession,
   defaultRenderMime,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 class TestParent extends Panel implements ForeignHandler.IReceiver {
   addCell(cell: CodeCell): void {
@@ -82,7 +82,7 @@ const relevantTypes = [
   return acc;
 }, new Set<string>());
 
-describe('@jupyterlab/console', () => {
+describe('@fk-jupyterlab/console', () => {
   describe('ForeignHandler', () => {
     let local: Session.ISession;
     let foreign: Session.ISession;

@@ -7,13 +7,13 @@ import { default as AnsiUp } from 'ansi_up';
 
 import marked from 'marked';
 
-import { ISanitizer } from '@jupyterlab/apputils';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
 
-import { Mode, CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { Mode, CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { toArray } from '@phosphor/algorithm';
 

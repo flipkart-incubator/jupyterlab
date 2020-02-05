@@ -11,27 +11,27 @@ import { simulate } from 'simulate-event';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import {
   CodeMirrorEditorFactory,
   CodeMirrorMimeTypeService
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
 import {
   Context,
   DocumentRegistry,
   TextModelFactory,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import {
   FileEditor,
   FileEditorCodeWrapper,
   FileEditorFactory
-} from '@jupyterlab/fileeditor';
+} from '@fk-jupyterlab/fileeditor';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 class LogFileEditor extends FileEditor {
   events: string[] = [];

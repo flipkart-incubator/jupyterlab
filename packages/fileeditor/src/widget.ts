@@ -8,14 +8,14 @@ import {
   DocumentRegistry,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import {
   CodeEditor,
   IEditorServices,
   IEditorMimeTypeService,
   CodeEditorWrapper
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
 import { PromiseDelegate } from '@phosphor/coreutils';
 

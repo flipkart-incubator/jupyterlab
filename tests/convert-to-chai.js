@@ -1,7 +1,7 @@
 const path = require('path');
 const glob = require('glob');
 const fs = require('fs-extra');
-const utils = require('@jupyterlab/buildutils/lib/utils');
+const utils = require('@fk-jupyterlab/buildutils/lib/utils');
 
 // yarn add chai && yarn add --dev @types/chai
 // Remove expect.js from package.json

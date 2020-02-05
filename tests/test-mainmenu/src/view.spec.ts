@@ -7,9 +7,9 @@ import { CommandRegistry } from '@phosphor/commands';
 
 import { Widget } from '@phosphor/widgets';
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { ViewMenu, IViewMenu } from '@jupyterlab/mainmenu';
+import { ViewMenu, IViewMenu } from '@fk-jupyterlab/mainmenu';
 
 import { delegateExecute, delegateToggled } from './util';
 
@@ -19,7 +19,7 @@ class Wodget extends Widget {
   numbered: boolean = false;
 }
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('ViewMenu', () => {
     let commands: CommandRegistry;
     let menu: ViewMenu;

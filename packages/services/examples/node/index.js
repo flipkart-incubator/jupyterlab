@@ -5,7 +5,7 @@
 |----------------------------------------------------------------------------*/
 'use strict';
 
-var services = require('@jupyterlab/services');
+var services = require('@fk-jupyterlab/services');
 
 // Start a new session.
 var options = {

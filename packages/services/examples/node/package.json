@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "clean": "rimraf node_modules",
-    "update": "rimraf node_modules/@jupyterlab/services && npm install"
+    "update": "rimraf node_modules/@fk-jupyterlab/services && npm install"
   },
   "dependencies": {
-    "@jupyterlab/services": "^3.0.3",
+    "@fk-jupyterlab/services": "^3.0.3",
     "node-fetch": "~1.7.3",
     "ws": "~1.1.4"
   },

@@ -3,15 +3,15 @@
 
 import { expect } from 'chai';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import {
   Context,
   DocumentRegistry,
   TextModelFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { SaveHandler } from '@jupyterlab/docmanager';
+import { SaveHandler } from '@fk-jupyterlab/docmanager';
 
 import { PromiseDelegate, UUID } from '@phosphor/coreutils';
 
@@ -20,7 +20,7 @@ import {
   signalToPromise,
   testEmission,
   waitForDialog
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 describe('docregistry/savehandler', () => {
   let manager: ServiceManager.IManager;

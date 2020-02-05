@@ -5,7 +5,12 @@ import { expect } from 'chai';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { Contents, Drive, ServiceManager, Session } from '@jupyterlab/services';
+import {
+  Contents,
+  Drive,
+  ServiceManager,
+  Session
+} from '@fk-jupyterlab/services';
 
 import { toArray } from '@phosphor/algorithm';
 
@@ -13,16 +18,16 @@ import { JSONObject } from '@phosphor/coreutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { MathJaxTypesetter } from '@jupyterlab/mathjax2-extension';
+import { MathJaxTypesetter } from '@fk-jupyterlab/mathjax2-extension';
 
 import {
   MimeModel,
   IRenderMime,
   RenderedText,
   RenderMimeRegistry
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { defaultRenderMime, createFileContext } from '@jupyterlab/testutils';
+import { defaultRenderMime, createFileContext } from '@fk-jupyterlab/testutils';
 
 const RESOLVER: IRenderMime.IResolver = createFileContext().urlResolver;
 

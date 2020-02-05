@@ -7,11 +7,14 @@ import { JSONExt, JSONValue } from '@phosphor/coreutils';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { IAttachmentsModel, AttachmentsModel } from '@jupyterlab/attachments';
+import {
+  IAttachmentsModel,
+  AttachmentsModel
+} from '@fk-jupyterlab/attachments';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IChangedArgs, nbformat } from '@jupyterlab/coreutils';
+import { IChangedArgs, nbformat } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -20,9 +23,9 @@ import {
   IModelDB,
   IObservableValue,
   ObservableValue
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
-import { IOutputAreaModel, OutputAreaModel } from '@jupyterlab/outputarea';
+import { IOutputAreaModel, OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
 /**
  * The definition of a model object for a cell.

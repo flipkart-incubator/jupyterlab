@@ -12,7 +12,7 @@ import {
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { ICellModel } from '@jupyterlab/cells';
+import { ICellModel } from '@fk-jupyterlab/cells';
 
 import {
   IObservableMap,
@@ -20,7 +20,7 @@ import {
   IObservableList,
   IObservableUndoableList,
   IModelDB
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 import { NotebookModel } from './model';
 

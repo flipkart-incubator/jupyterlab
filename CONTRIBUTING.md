@@ -167,10 +167,10 @@ of your choice after it says `No captured browser`. You can put a `debugger`
 statement on a line and open the browser debugger to debug specific tests.
 `jlpm watch` also accepts the `--pattern` argument.
 
-Note that there are some helper functions in `testutils` (which is a public npm package called `@jupyterlab/testutils`) that are used by many of the tests.
+Note that there are some helper functions in `testutils` (which is a public npm package called `@fk-jupyterlab/testutils`) that are used by many of the tests.
 
 We use `karma` to run our tests in a browser, `mocha` as the test framework, and `chai` for test assertions. We use [async/await](https://mochajs.org/#using-async--await) for asynchronous tests. We have
-a helper function in `@jupyterlab/testutils` called `testEmission` to help with
+a helper function in `@fk-jupyterlab/testutils` called `testEmission` to help with
 writing tests that use `Phosphor` signals, as well as a `framePromise` function
 to get a `Promise` for a `requestAnimationFrame`. We sometimes have to set
 a sentinel value inside a `Promise` and then check that the sentinel was set if

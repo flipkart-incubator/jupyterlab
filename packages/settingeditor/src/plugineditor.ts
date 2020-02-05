@@ -3,13 +3,13 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { ISettingRegistry } from '@jupyterlab/coreutils';
+import { ISettingRegistry } from '@fk-jupyterlab/coreutils';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { CommandRegistry } from '@phosphor/commands';
 

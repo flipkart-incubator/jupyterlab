@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('PageConfig', () => {
     describe('#getOption()', () => {
       it('should get a known option', () => {

@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { TerminalSession } from '@jupyterlab/services';
+import { TerminalSession } from '@fk-jupyterlab/services';
 
 import { Message, MessageLoop } from '@phosphor/messaging';
 

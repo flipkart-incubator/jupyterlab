@@ -11,13 +11,13 @@ import { Widget } from '@phosphor/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
-import { Completer, CompleterModel } from '@jupyterlab/completer';
+import { Completer, CompleterModel } from '@fk-jupyterlab/completer';
 
-import { framePromise, sleep } from '@jupyterlab/testutils';
+import { framePromise, sleep } from '@fk-jupyterlab/testutils';
 const TEST_ITEM_CLASS = 'jp-TestItem';
 
 const ITEM_CLASS = 'jp-Completer-item';

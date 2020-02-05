@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IDataConnector, Text } from '@jupyterlab/coreutils';
+import { IDataConnector, Text } from '@fk-jupyterlab/coreutils';
 
 import { ReadonlyJSONObject } from '@phosphor/coreutils';
 
@@ -11,7 +11,7 @@ import { IDisposable } from '@phosphor/disposable';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { MimeModel, RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { MimeModel, RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { IInspector } from './inspector';
 

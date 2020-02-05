@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/test-outputarea",
+  "name": "@fk-jupyterlab/test-outputarea",
   "version": "0.3.2",
   "private": true,
   "scripts": {
@@ -16,11 +16,11 @@
     "watch:src": "tsc -w --listEmittedFiles"
   },
   "dependencies": {
-    "@jupyterlab/apputils": "^0.17.2",
-    "@jupyterlab/outputarea": "^0.17.3",
-    "@jupyterlab/rendermime": "^0.17.3",
-    "@jupyterlab/services": "^3.0.3",
-    "@jupyterlab/testutils": "^0.1.0",
+    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/outputarea": "^0.17.3",
+    "@fk-jupyterlab/rendermime": "^0.17.3",
+    "@fk-jupyterlab/services": "^3.0.3",
+    "@fk-jupyterlab/testutils": "^0.1.0",
     "@phosphor/messaging": "^1.2.2",
     "@phosphor/widgets": "^1.6.0",
     "chai": "~4.1.2"

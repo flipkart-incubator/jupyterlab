@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeCellModel } from '@jupyterlab/cells';
+import { CodeCellModel } from '@fk-jupyterlab/cells';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { IModelDB } from '@jupyterlab/observables';
+import { IModelDB } from '@fk-jupyterlab/observables';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import { INotebookModel, NotebookModel } from './model';
 

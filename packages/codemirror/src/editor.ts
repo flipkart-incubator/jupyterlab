@@ -11,9 +11,9 @@ import { IDisposable, DisposableDelegate } from '@phosphor/disposable';
 
 import { Signal } from '@phosphor/signaling';
 
-import { showDialog } from '@jupyterlab/apputils';
+import { showDialog } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -21,7 +21,7 @@ import {
   IObservableMap,
   IObservableString,
   ICollaborator
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 import { Mode } from './mode';
 

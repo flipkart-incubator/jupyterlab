@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IEditorMimeTypeService } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService } from '@fk-jupyterlab/codeeditor';
 
-import { ABCWidgetFactory, DocumentRegistry } from '@jupyterlab/docregistry';
+import { ABCWidgetFactory, DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { ToolbarItems } from './default-toolbar';
 

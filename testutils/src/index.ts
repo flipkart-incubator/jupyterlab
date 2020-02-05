@@ -3,9 +3,9 @@
 
 import { simulate } from 'simulate-event';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { ClientSession } from '@jupyterlab/apputils';
+import { ClientSession } from '@fk-jupyterlab/apputils';
 
 import { PromiseDelegate, UUID } from '@phosphor/coreutils';
 
@@ -14,9 +14,9 @@ import {
   TextModelFactory,
   DocumentRegistry,
   Context
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { INotebookModel, NotebookModelFactory } from '@jupyterlab/notebook';
+import { INotebookModel, NotebookModelFactory } from '@fk-jupyterlab/notebook';
 
 export { NBTestUtils } from './notebook-utils';
 

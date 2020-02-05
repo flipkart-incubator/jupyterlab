@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 import * as React from 'react';
 

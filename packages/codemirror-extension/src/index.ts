@@ -5,19 +5,23 @@ import CodeMirror from 'codemirror';
 
 import { Menu } from '@phosphor/widgets';
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
-import { IMainMenu, IEditMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu, IEditMenu } from '@fk-jupyterlab/mainmenu';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { editorServices, CodeMirrorEditor, Mode } from '@jupyterlab/codemirror';
+import {
+  editorServices,
+  CodeMirrorEditor,
+  Mode
+} from '@fk-jupyterlab/codemirror';
 
-import { ISettingRegistry, IStateDB } from '@jupyterlab/coreutils';
+import { ISettingRegistry, IStateDB } from '@fk-jupyterlab/coreutils';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { IEditorTracker, FileEditor } from '@jupyterlab/fileeditor';
+import { IEditorTracker, FileEditor } from '@fk-jupyterlab/fileeditor';
 
 /**
  * The command IDs used by the codemirror plugin.
@@ -38,7 +42,7 @@ namespace CommandIDs {
  * The editor services.
  */
 const services: JupyterLabPlugin<IEditorServices> = {
-  id: '@jupyterlab/codemirror-extension:services',
+  id: '@fk-jupyterlab/codemirror-extension:services',
   provides: IEditorServices,
   activate: activateEditorServices
 };
@@ -47,7 +51,7 @@ const services: JupyterLabPlugin<IEditorServices> = {
  * The editor commands.
  */
 const commands: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/codemirror-extension:commands',
+  id: '@fk-jupyterlab/codemirror-extension:commands',
   requires: [IEditorTracker, IMainMenu, IStateDB, ISettingRegistry],
   activate: activateEditorCommands,
   autoStart: true

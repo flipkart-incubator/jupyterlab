@@ -7,7 +7,7 @@
 // Polyfill for ES6 Promises
 import 'es6-promise';
 
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
 function log(text: string): void {
   let el = document.getElementById('output');

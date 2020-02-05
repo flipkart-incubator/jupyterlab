@@ -1,9 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { VDomModel } from '@jupyterlab/apputils';
+import { VDomModel } from '@fk-jupyterlab/apputils';
 
-import { ServerConnection, ServiceManager, Kernel } from '@jupyterlab/services';
+import {
+  ServerConnection,
+  ServiceManager,
+  Kernel
+} from '@fk-jupyterlab/services';
 
 import * as semver from 'semver';
 

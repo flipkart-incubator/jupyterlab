@@ -1,3 +1,3 @@
-# @jupyterlab/apputils-extension
+# @fk-jupyterlab/apputils-extension
 
-A JupyterLab extension which provides an entry point for several of the UI elements and utilities in [@jupyterlab/apputils](../apputils).
+A JupyterLab extension which provides an entry point for several of the UI elements and utilities in [@fk-jupyterlab/apputils](../apputils).

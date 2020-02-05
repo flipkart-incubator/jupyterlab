@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { MimeModel } from '@jupyterlab/rendermime';
+import { MimeModel } from '@fk-jupyterlab/rendermime';
 
 describe('rendermime/mimemodel', () => {
   describe('MimeModel', () => {

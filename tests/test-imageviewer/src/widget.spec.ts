@@ -5,7 +5,7 @@ import { expect } from 'chai';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { Contents, ServiceManager } from '@jupyterlab/services';
+import { Contents, ServiceManager } from '@fk-jupyterlab/services';
 
 import { Message, MessageLoop } from '@phosphor/messaging';
 
@@ -16,11 +16,11 @@ import {
   Context,
   DocumentRegistry,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { ImageViewer, ImageViewerFactory } from '@jupyterlab/imageviewer';
+import { ImageViewer, ImageViewerFactory } from '@fk-jupyterlab/imageviewer';
 
-import { createFileContext } from '@jupyterlab/testutils';
+import { createFileContext } from '@fk-jupyterlab/testutils';
 
 class LogImage extends ImageViewer {
   methods: string[] = [];

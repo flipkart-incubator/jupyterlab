@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { VDomModel, VDomRenderer } from '@jupyterlab/apputils';
+import { VDomModel, VDomRenderer } from '@fk-jupyterlab/apputils';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 import { Widget } from '@phosphor/widgets';
 
@@ -36,7 +36,7 @@ class TestWidgetNoModel extends VDomRenderer<null> {
   }
 }
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('VDomModel', () => {
     describe('#constructor()', () => {
       it('should create a VDomModel', () => {

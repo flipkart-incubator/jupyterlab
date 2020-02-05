@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { DocumentWidgetManager } from '@jupyterlab/docmanager';
+import { DocumentWidgetManager } from '@fk-jupyterlab/docmanager';
 
 import {
   DocumentRegistry,
@@ -14,7 +14,7 @@ import {
   Context,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import { PromiseDelegate, UUID } from '@phosphor/coreutils';
 
@@ -22,7 +22,7 @@ import { IMessageHandler, Message, MessageLoop } from '@phosphor/messaging';
 
 import { Widget } from '@phosphor/widgets';
 
-import { acceptDialog, dismissDialog } from '@jupyterlab/testutils';
+import { acceptDialog, dismissDialog } from '@fk-jupyterlab/testutils';
 
 class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   protected createNewWidget(
@@ -54,7 +54,7 @@ class LoggingManager extends DocumentWidgetManager {
   }
 }
 
-describe('@jupyterlab/docmanager', () => {
+describe('@fk-jupyterlab/docmanager', () => {
   let manager: LoggingManager;
   let services: ServiceManager.IManager;
   const textModelFactory = new TextModelFactory();

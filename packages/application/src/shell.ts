@@ -23,7 +23,7 @@ import {
   Widget
 } from '@phosphor/widgets';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 /**
  * The class name added to AppShell instances.

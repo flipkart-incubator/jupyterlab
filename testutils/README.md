@@ -1,4 +1,4 @@
-# @jupyterlab/testutils
+# @fk-jupyterlab/testutils
 
 Utilities for writing tests that use JupyterLab packages.
 

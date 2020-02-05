@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IInstanceTracker, MainAreaWidget } from '@jupyterlab/apputils';
+import { IInstanceTracker, MainAreaWidget } from '@fk-jupyterlab/apputils';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -16,7 +16,7 @@ export * from './settingeditor';
  * The setting editor tracker token.
  */
 export const ISettingEditorTracker = new Token<ISettingEditorTracker>(
-  '@jupyterlab/settingeditor:ISettingEditorTracker'
+  '@fk-jupyterlab/settingeditor:ISettingEditorTracker'
 );
 /* tslint:enable */
 

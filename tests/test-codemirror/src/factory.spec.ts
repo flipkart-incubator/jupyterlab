@@ -3,12 +3,12 @@
 
 import { expect } from 'chai';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   CodeMirrorEditorFactory,
   CodeMirrorEditor
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
 class ExposeCodeMirrorEditorFactory extends CodeMirrorEditorFactory {
   public inlineCodeMirrorConfig: CodeMirrorEditor.IConfig;

@@ -13,9 +13,9 @@ import {
   Styling,
   Toolbar,
   ToolbarButton
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
 import { NotebookPanel } from './panel';
 

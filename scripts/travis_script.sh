@@ -122,14 +122,14 @@ if [[ $GROUP == cli ]]; then
     jupyter labextension link extension --no-build
     jupyter labextension unlink extension --no-build
     jupyter labextension link extension --no-build
-    jupyter labextension unlink  @jupyterlab/mock-extension --no-build
+    jupyter labextension unlink  @fk-jupyterlab/mock-extension --no-build
     jupyter labextension install extension  --no-build
     jupyter labextension list
-    jupyter labextension disable @jupyterlab/mock-extension
-    jupyter labextension enable @jupyterlab/mock-extension
-    jupyter labextension disable @jupyterlab/notebook-extension
-    jupyter labextension uninstall @jupyterlab/mock-extension --no-build
-    jupyter labextension uninstall @jupyterlab/notebook-extension --no-build
+    jupyter labextension disable @fk-jupyterlab/mock-extension
+    jupyter labextension enable @fk-jupyterlab/mock-extension
+    jupyter labextension disable @fk-jupyterlab/notebook-extension
+    jupyter labextension uninstall @fk-jupyterlab/mock-extension --no-build
+    jupyter labextension uninstall @fk-jupyterlab/notebook-extension --no-build
     popd
 
     # Make sure we can call help on all the cli apps.
@@ -156,7 +156,7 @@ if [[ $GROUP == cli ]]; then
     jlpm run get:dependency mocha
     jlpm run update:dependency mocha
     jlpm run remove:dependency mocha
-    jlpm run get:dependency @jupyterlab/buildutils
+    jlpm run get:dependency @fk-jupyterlab/buildutils
     jlpm run get:dependency typescript
     jlpm run get:dependency react-native
 

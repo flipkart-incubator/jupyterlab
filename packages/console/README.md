@@ -1,4 +1,4 @@
-# @jupyterlab/console
+# @fk-jupyterlab/console
 
 A JupyterLab package which implements an interactive console for Jupyter kernels.
 It is designed to be similar to the [Jupyter QtConsole](https://github.com/jupyter/qtconsole),

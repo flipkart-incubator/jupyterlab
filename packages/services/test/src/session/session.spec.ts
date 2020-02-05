@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 

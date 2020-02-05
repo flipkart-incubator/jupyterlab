@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -10,7 +10,7 @@ import {
   KernelMessage,
   ServerConnection,
   Session
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import { IterableOrArrayLike, each, find } from '@phosphor/algorithm';
 
@@ -719,7 +719,8 @@ export class ClientSession implements IClientSession {
         try {
           message = JSON.parse(text)['traceback'];
           if (message.search('HTTPClientError: HTTP 555: Unknown') !== -1) {
-            message = 'Cannot launch kernel while another kernel launch in progress.';
+            message =
+              'Cannot launch kernel while another kernel launch in progress.';
             this._nginxBlocked = true;
             this._statusChanged.emit('dead'); // This dead has no effect. Writing anything in it will work
             this._nginxBlocked = false;

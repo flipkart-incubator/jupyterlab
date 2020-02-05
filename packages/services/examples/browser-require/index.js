@@ -1,4 +1,4 @@
-require(['jquery', '@jupyterlab/services'], function($, services) {
+require(['jquery', '@fk-jupyterlab/services'], function($, services) {
   'use strict';
   var startNewKernel = services.Kernel.startNew;
 

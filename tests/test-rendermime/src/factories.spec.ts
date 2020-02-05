@@ -7,7 +7,7 @@ import { JSONObject, JSONValue } from '@phosphor/coreutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { defaultSanitizer } from '@jupyterlab/apputils';
+import { defaultSanitizer } from '@fk-jupyterlab/apputils';
 
 import {
   latexRendererFactory,
@@ -16,9 +16,9 @@ import {
   textRendererFactory,
   htmlRendererFactory,
   imageRendererFactory
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { MimeModel, IRenderMime } from '@jupyterlab/rendermime';
+import { MimeModel, IRenderMime } from '@fk-jupyterlab/rendermime';
 
 function createModel(
   mimeType: string,

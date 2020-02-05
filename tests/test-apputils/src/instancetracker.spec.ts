@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { signalToPromise, testEmission } from '@jupyterlab/testutils';
+import { signalToPromise, testEmission } from '@fk-jupyterlab/testutils';
 
 import { each } from '@phosphor/algorithm';
 
@@ -32,7 +32,7 @@ function createWidget(): Widget {
   return widget;
 }
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('InstanceTracker', () => {
     describe('#constructor()', () => {
       it('should create an InstanceTracker', () => {

@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/template-for-tests",
+  "name": "@fk-jupyterlab/template-for-tests",
   "version": "0.3.2",
   "private": true,
   "scripts": {

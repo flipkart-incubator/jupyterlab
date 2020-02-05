@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { defaultSanitizer } from '@jupyterlab/apputils';
+import { defaultSanitizer } from '@fk-jupyterlab/apputils';
 
 describe('defaultSanitizer', () => {
   describe('#sanitize()', () => {

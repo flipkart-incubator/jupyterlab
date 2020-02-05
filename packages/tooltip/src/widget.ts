@@ -9,15 +9,15 @@ import { PanelLayout } from '@phosphor/widgets';
 
 import { Widget } from '@phosphor/widgets';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { HoverBox } from '@jupyterlab/apputils';
+import { HoverBox } from '@fk-jupyterlab/apputils';
 
 import {
   IRenderMime,
   RenderMimeRegistry,
   MimeModel
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 /**
  * The class name added to each tooltip.

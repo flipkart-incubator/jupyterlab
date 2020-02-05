@@ -7,7 +7,7 @@ import { IDisposable } from '@phosphor/disposable';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
 import {
   IModelDB,
@@ -16,7 +16,7 @@ import {
   ObservableValue,
   IObservableMap,
   IObservableString
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 /**
  * A namespace for code editors.

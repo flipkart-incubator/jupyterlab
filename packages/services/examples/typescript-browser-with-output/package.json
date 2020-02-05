@@ -8,9 +8,9 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@jupyterlab/outputarea": "^0.17.3",
-    "@jupyterlab/rendermime": "^0.17.3",
-    "@jupyterlab/services": "^3.0.3",
+    "@fk-jupyterlab/outputarea": "^0.17.3",
+    "@fk-jupyterlab/rendermime": "^0.17.3",
+    "@fk-jupyterlab/services": "^3.0.3",
     "es6-promise": "~4.1.1"
   },
   "devDependencies": {

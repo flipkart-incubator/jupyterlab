@@ -27,8 +27,8 @@ packages.forEach(function(packagePath) {
     return;
   }
 
-  // Only include packages in the @jupyterlab namespace.
-  if (data.name.indexOf('@jupyterlab') === -1) {
+  // Only include packages in the @fk-jupyterlab namespace.
+  if (data.name.indexOf('@fk-jupyterlab') === -1) {
     return;
   }
 
@@ -41,14 +41,14 @@ packages.forEach(function(packagePath) {
   // Construct a URL to the package on GitHub.
   var Url = url.resolve(baseUrl, 'packages/' + path.basename(packagePath));
 
-  // Remove the '@jupyterlab' part of the name.
+  // Remove the '@fk-jupyterlab' part of the name.
   var name = '"' + data.name.split('/')[1] + '"';
   text += name + '[URL="' + Url + '"];\n';
 
   var deps = data.dependencies || [];
   for (var dep in deps) {
     // Don't include non-jupyterlab dependencies.
-    if (dep.indexOf('@jupyterlab') === -1) {
+    if (dep.indexOf('@fk-jupyterlab') === -1) {
       continue;
     }
     dep = '"' + dep.split('/')[1] + '"';

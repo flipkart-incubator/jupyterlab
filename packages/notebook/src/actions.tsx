@@ -1,16 +1,16 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import {
   IClientSession,
   Clipboard,
   Dialog,
   showDialog
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
 import {
   ICellModel,
@@ -18,7 +18,7 @@ import {
   CodeCell,
   Cell,
   MarkdownCell
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
 import { ArrayExt, each, toArray } from '@phosphor/algorithm';
 

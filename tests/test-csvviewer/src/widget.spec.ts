@@ -5,15 +5,15 @@ import { expect } from 'chai';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { CSVViewer } from '@jupyterlab/csvviewer';
+import { CSVViewer } from '@fk-jupyterlab/csvviewer';
 
 import {
   Context,
   DocumentRegistry,
   TextModelFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 function createContext(): Context<DocumentRegistry.IModel> {
   const factory = new TextModelFactory();

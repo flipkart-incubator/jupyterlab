@@ -202,7 +202,7 @@ path on the user's machine or a provided tarball. Any valid
 ``jupyter labextension install`` (e.g. ``foo@latest``, ``bar@3.0.0.0``,
 ``path/to/folder``, and ``path/to/tar.gz``).
 
-There are a number of helper functions in `testutils` in this repo (which is a public npm package called `@jupyterlab/testutils`) that can be used when writing
+There are a number of helper functions in `testutils` in this repo (which is a public npm package called `@fk-jupyterlab/testutils`) that can be used when writing
 tests for an extension.  See `tests/test-application` for an example of the infrastructure needed to run tests.  There is a `karma` config file that points
 to the parent directory's `karma` config, and a test runner, `run-test.py` that
 starts a Jupyter server.
@@ -293,79 +293,79 @@ The core packages of JupyterLab provide a set of tokens,
 which are listed here, along with short descriptions of when you
 might want to use them in your extensions.
 
-- ``@jupyterlab/application:ILayoutRestorer``: An interface to the application layout
+- ``@fk-jupyterlab/application:ILayoutRestorer``: An interface to the application layout
   restoration functionality. Use this to have your activities restored across
   page loads.
-- ``@jupyterlab/application:IMimeDocumentTracker``: An instance tracker for documents
+- ``@fk-jupyterlab/application:IMimeDocumentTracker``: An instance tracker for documents
   rendered using a mime renderer extension. Use this if you want to list and interact
   with documents rendered by such extensions.
-- ``@jupyterlab/application:IRouter``: The URL router used by the application.
+- ``@fk-jupyterlab/application:IRouter``: The URL router used by the application.
   Use this to add custom URL-routing for your extension (e.g., to invoke
   a command if the user navigates to a sub-path).
-- ``@jupyterlab/apputils:ICommandPalette``: An interface to the application command palette
+- ``@fk-jupyterlab/apputils:ICommandPalette``: An interface to the application command palette
   in the left panel. Use this to add commands to the palette.
-- ``@jupyterlab/apputils:ISplashScreen``: An interface to the splash screen for the application.
+- ``@fk-jupyterlab/apputils:ISplashScreen``: An interface to the splash screen for the application.
   Use this if you want to show the splash screen for your own purposes.
-- ``@jupyterlab/apputils:IThemeManager``: An interface to the theme manager for the application.
+- ``@fk-jupyterlab/apputils:IThemeManager``: An interface to the theme manager for the application.
   Most extensions will not need to use this, as they can register a
   `theme extension <#themes>`__.
-- ``@jupyterlab/apputils:IWindowResolver``: An interface to a window resolver for the
+- ``@fk-jupyterlab/apputils:IWindowResolver``: An interface to a window resolver for the
   application. JupyterLab workspaces are given a name, which are determined using
   the window resolver. Require this if you want to use the name of the current workspace.
-- ``@jupyterlab/codeeditor:IEditorServices``: An interface to the text editor provider
+- ``@fk-jupyterlab/codeeditor:IEditorServices``: An interface to the text editor provider
   for the application. Use this to create new text editors and host them in your
   UI elements.
-- ``@jupyterlab/completer:ICompletionManager``: An interface to the completion manager
+- ``@fk-jupyterlab/completer:ICompletionManager``: An interface to the completion manager
   for the application. Use this to allow your extension to invoke a completer.
-- ``@jupyterlab/console:IConsoleTracker``: An instance tracker for code consoles.
+- ``@fk-jupyterlab/console:IConsoleTracker``: An instance tracker for code consoles.
   Use this if you want to be able to iterate over and interact with code consoles
   created by the application.
-- ``@jupyterlab/console:IContentFactory``: A factory object that creates new code
+- ``@fk-jupyterlab/console:IContentFactory``: A factory object that creates new code
   consoles. Use this if you want to create and host code consoles in your own UI elements.
-- ``@jupyterlab/coreutils:ISettingRegistry``: An interface to the JupyterLab settings system.
+- ``@fk-jupyterlab/coreutils:ISettingRegistry``: An interface to the JupyterLab settings system.
   Use this if you want to store settings for your application.
   See `extension settings <#extension-settings>`__ for more information.
-- ``@jupyterlab/coreutils:IStateDB``: An interface to the JupyterLab state database.
+- ``@fk-jupyterlab/coreutils:IStateDB``: An interface to the JupyterLab state database.
   Use this if you want to store data that will persist across page loads.
   See `state database <#state-database>`__ for more information.
-- ``@jupyterlab/docmanager:IDocumentManager``: An interface to the manager for all
+- ``@fk-jupyterlab/docmanager:IDocumentManager``: An interface to the manager for all
   documents used by the application. Use this if you want to open and close documents,
   create and delete files, and otherwise interact with the file system.
-- ``@jupyterlab/filebrowser:IFileBrowserFactory``: A factory object that creates file browsers.
+- ``@fk-jupyterlab/filebrowser:IFileBrowserFactory``: A factory object that creates file browsers.
   Use this if you want to create your own file browser (e.g., for a custom storage backend),
   or to interact with other file browsers that have been created by extensions.
-- ``@jupyterlab/fileeditor:IEditorTracker``: An instance tracker for file editors.
+- ``@fk-jupyterlab/fileeditor:IEditorTracker``: An instance tracker for file editors.
   Use this if you want to be able to iterate over and interact with file editors
   created by the application.
-- ``@jupyterlab/imageviewer:IImageTracker``: An instance tracker for images.
+- ``@fk-jupyterlab/imageviewer:IImageTracker``: An instance tracker for images.
   Use this if you want to be able to iterate over and interact with images
   viewed by the application.
-- ``@jupyterlab/inspector:IInspector``: An interface for adding variable inspectors to widgets.
+- ``@fk-jupyterlab/inspector:IInspector``: An interface for adding variable inspectors to widgets.
   Use this to add the ability to hook into the variable inspector to your extension.
-- ``@jupyterlab/launcher:ILauncher``: An interface to the application activity launcher.
+- ``@fk-jupyterlab/launcher:ILauncher``: An interface to the application activity launcher.
   Use this to add your extension activities to the launcher panel.
-- ``@jupyterlab/mainmenu:IMainMenu``: An interface to the main menu bar for the application.
+- ``@fk-jupyterlab/mainmenu:IMainMenu``: An interface to the main menu bar for the application.
   Use this if you want to add your own menu items.
-- ``@jupyterlab/notebook:ICellTools``: An interface to the ``Cell Tools`` panel in the
+- ``@fk-jupyterlab/notebook:ICellTools``: An interface to the ``Cell Tools`` panel in the
   application left area. Use this to add your own functionality to the panel.
-- ``@jupyterlab/notebook:IContentFactory``: A factory object that creates new notebooks.
+- ``@fk-jupyterlab/notebook:IContentFactory``: A factory object that creates new notebooks.
   Use this if you want to create and host notebooks in your own UI elements.
-- ``@jupyterlab/notebook:INotebookTracker``: An instance tracker for code consoles.
+- ``@fk-jupyterlab/notebook:INotebookTracker``: An instance tracker for code consoles.
   Use this if you want to be able to iterate over and interact with notebooks
   created by the application.
-- ``@jupyterlab/rendermime:IRenderMimeRegistry``: An interface to the rendermime registry
+- ``@fk-jupyterlab/rendermime:IRenderMimeRegistry``: An interface to the rendermime registry
   for the application. Use this to create renderers for various mime-types in your extension.
   Most extensions will not need to use this, as they can register a
   `mime renderer extension <#mime-renderer-extensions>`__.
-- ``@jupyterlab/rendermime:ILatexTypesetter``: An interface to the LaTeX typesetter for the
+- ``@fk-jupyterlab/rendermime:ILatexTypesetter``: An interface to the LaTeX typesetter for the
   application. Use this if you want to typeset math in your extension.
-- ``@jupyterlab/settingeditor:ISettingEditorTracker``: An instance tracker for setting editors.
+- ``@fk-jupyterlab/settingeditor:ISettingEditorTracker``: An instance tracker for setting editors.
   Use this if you want to be able to iterate over and interact with setting editors
   created by the application.
-- ``@jupyterlab/terminal:ITerminalTracker``: An instance tracker for terminals.
+- ``@fk-jupyterlab/terminal:ITerminalTracker``: An instance tracker for terminals.
   Use this if you want to be able to iterate over and interact with terminals
   created by the application.
-- ``@jupyterlab/tooltip:ITooltipManager``: An interface to the tooltip manager for the application.
+- ``@fk-jupyterlab/tooltip:ITooltipManager``: An interface to the tooltip manager for the application.
   Use this to allow your extension to invoke a tooltip.
 
 Standard Extension Example
@@ -382,7 +382,7 @@ Storing Extension Data
 ^^^^^^^^^^^^^^^^^^^^^^
 
 In addition to the file system that is accessed by using the
-``@jupyterlab/services`` package, JupyterLab offers two ways for
+``@fk-jupyterlab/services`` package, JupyterLab offers two ways for
 extensions to store data: a client-side state database that is built on
 top of ``localStorage`` and a plugin settings system that provides for
 default setting values and user overrides.
@@ -398,12 +398,12 @@ extension. The actual file name should use is the part that follows the
 package name of extension. So for example, the JupyterLab
 ``apputils-extension`` package hosts several plugins:
 
--  ``'@jupyterlab/apputils-extension:menu'``
--  ``'@jupyterlab/apputils-extension:palette'``
--  ``'@jupyterlab/apputils-extension:settings'``
--  ``'@jupyterlab/apputils-extension:themes'``
+-  ``'@fk-jupyterlab/apputils-extension:menu'``
+-  ``'@fk-jupyterlab/apputils-extension:palette'``
+-  ``'@fk-jupyterlab/apputils-extension:settings'``
+-  ``'@fk-jupyterlab/apputils-extension:themes'``
 
-And in the ``package.json`` for ``@jupyterlab/apputils-extension``, the
+And in the ``package.json`` for ``@fk-jupyterlab/apputils-extension``, the
 ``schemaDir`` field is a directory called ``schema``. Since the
 ``themes`` plugin requires a JSON schema, its schema file location is:
 ``schema/themes.json``. The plugin's name is used to automatically
@@ -419,7 +419,7 @@ State Database
 ``````````````
 
 The state database can be accessed by importing ``IStateDB`` from
-``@jupyterlab/coreutils`` and adding it to the list of ``requires`` for
+``@fk-jupyterlab/coreutils`` and adding it to the list of ``requires`` for
 a plugin:
 
 .. code:: typescript

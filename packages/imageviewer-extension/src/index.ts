@@ -5,17 +5,17 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette, InstanceTracker } from '@jupyterlab/apputils';
+import { ICommandPalette, InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
 import {
   ImageViewer,
   ImageViewerFactory,
   IImageTracker
-} from '@jupyterlab/imageviewer';
+} from '@fk-jupyterlab/imageviewer';
 
 /**
  * The command IDs used by the image widget plugin.
@@ -53,7 +53,7 @@ const FACTORY = 'Image';
  */
 const plugin: JupyterLabPlugin<IImageTracker> = {
   activate,
-  id: '@jupyterlab/imageviewer-extension:plugin',
+  id: '@fk-jupyterlab/imageviewer-extension:plugin',
   provides: IImageTracker,
   requires: [ICommandPalette, ILayoutRestorer],
   autoStart: true

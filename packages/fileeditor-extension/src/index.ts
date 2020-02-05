@@ -5,31 +5,31 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette, InstanceTracker } from '@jupyterlab/apputils';
+import { ICommandPalette, InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor, IEditorServices } from '@jupyterlab/codeeditor';
+import { CodeEditor, IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
 import {
   ISettingRegistry,
   MarkdownCodeBlocks,
   PathExt
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
 import {
   FileEditor,
   FileEditorFactory,
   IEditorTracker
-} from '@jupyterlab/fileeditor';
+} from '@fk-jupyterlab/fileeditor';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
 import {
   IEditMenu,
@@ -37,7 +37,7 @@ import {
   IMainMenu,
   IRunMenu,
   IViewMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
 import { JSONObject } from '@phosphor/coreutils';
 
@@ -83,7 +83,7 @@ namespace CommandIDs {
  */
 const plugin: JupyterLabPlugin<IEditorTracker> = {
   activate,
-  id: '@jupyterlab/fileeditor-extension:plugin',
+  id: '@fk-jupyterlab/fileeditor-extension:plugin',
   requires: [
     IConsoleTracker,
     IEditorServices,

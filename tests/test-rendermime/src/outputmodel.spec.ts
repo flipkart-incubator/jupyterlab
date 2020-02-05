@@ -3,11 +3,11 @@
 
 import { expect } from 'chai';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
-import { OutputModel } from '@jupyterlab/rendermime';
+import { OutputModel } from '@fk-jupyterlab/rendermime';
 
-import { NBTestUtils } from '@jupyterlab/testutils';
+import { NBTestUtils } from '@fk-jupyterlab/testutils';
 
 const DEFAULT_EXECUTE: nbformat.IOutput = {
   output_type: 'execute_result',

@@ -8,7 +8,7 @@ import {
   IRouter,
   LayoutRestorer,
   Router
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -16,9 +16,9 @@ import {
   IWindowResolver,
   showDialog,
   showErrorMessage
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IStateDB, PageConfig } from '@jupyterlab/coreutils';
+import { IStateDB, PageConfig } from '@fk-jupyterlab/coreutils';
 
 import * as React from 'react';
 
@@ -58,7 +58,7 @@ namespace Patterns {
  * The main extension.
  */
 const main: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/application-extension:main',
+  id: '@fk-jupyterlab/application-extension:main',
   requires: [ICommandPalette, IRouter, IWindowResolver],
   activate: (
     app: JupyterLab,
@@ -166,7 +166,7 @@ const main: JupyterLabPlugin<void> = {
  * The default layout restorer provider.
  */
 const layout: JupyterLabPlugin<ILayoutRestorer> = {
-  id: '@jupyterlab/application-extension:layout',
+  id: '@fk-jupyterlab/application-extension:layout',
   requires: [IStateDB],
   activate: (app: JupyterLab, state: IStateDB) => {
     const first = app.started;
@@ -190,7 +190,7 @@ const layout: JupyterLabPlugin<ILayoutRestorer> = {
  * The default URL router provider.
  */
 const router: JupyterLabPlugin<IRouter> = {
-  id: '@jupyterlab/application-extension:router',
+  id: '@fk-jupyterlab/application-extension:router',
   activate: (app: JupyterLab) => {
     const { commands } = app;
     const base = PageConfig.getOption('pageUrl');
@@ -216,7 +216,7 @@ const router: JupyterLabPlugin<IRouter> = {
  * The tree route handler provider.
  */
 const tree: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/application-extension:tree',
+  id: '@fk-jupyterlab/application-extension:tree',
   autoStart: true,
   requires: [IRouter],
   activate: (app: JupyterLab, router: IRouter) => {
@@ -249,7 +249,7 @@ const tree: JupyterLabPlugin<void> = {
  * The default URL not found extension.
  */
 const notfound: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/application-extension:notfound',
+  id: '@fk-jupyterlab/application-extension:notfound',
   activate: (app: JupyterLab, router: IRouter) => {
     const bad = PageConfig.getOption('notFoundUrl');
     const base = router.base;
@@ -275,7 +275,7 @@ const notfound: JupyterLabPlugin<void> = {
  * Change the favicon changing based on the busy status;
  */
 const busy: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/application-extension:faviconbusy',
+  id: '@fk-jupyterlab/application-extension:faviconbusy',
   activate: async (app: JupyterLab) => {
     app.busySignal.connect((_, isBusy) => {
       const favicon = document.querySelector(

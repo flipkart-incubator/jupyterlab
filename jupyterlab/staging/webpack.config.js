@@ -10,7 +10,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 var DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 
-var Build = require('@jupyterlab/buildutils').Build;
+var Build = require('@fk-jupyterlab/buildutils').Build;
 var package_data = require('./package.json');
 
 // Handle the extensions.

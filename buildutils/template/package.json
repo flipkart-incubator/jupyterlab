@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/template",
+  "name": "@fk-jupyterlab/template",
   "version": "0.5.2",
   "description": "JupyterLab - Package Template",
   "homepage": "https://github.com/jupyterlab/jupyterlab",

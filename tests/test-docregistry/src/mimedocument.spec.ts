@@ -13,11 +13,11 @@ import {
   MimeContent,
   MimeDocument,
   MimeDocumentFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { RenderedText, IRenderMime } from '@jupyterlab/rendermime';
+import { RenderedText, IRenderMime } from '@fk-jupyterlab/rendermime';
 
-import { createFileContext, defaultRenderMime } from '@jupyterlab/testutils';
+import { createFileContext, defaultRenderMime } from '@fk-jupyterlab/testutils';
 
 const RENDERMIME = defaultRenderMime();
 

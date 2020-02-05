@@ -9,9 +9,9 @@ import { h, VirtualNode, VirtualDOM } from '@phosphor/virtualdom';
 
 import { simulate } from 'simulate-event';
 
-import { CommandLinker } from '@jupyterlab/apputils';
+import { CommandLinker } from '@fk-jupyterlab/apputils';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('CommandLinker', () => {
     describe('#constructor()', () => {
       it('should create a command linker', () => {

@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { Widget } from '@phosphor/widgets';
 
@@ -67,7 +67,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 
 const extensions: IRenderMime.IExtension | IRenderMime.IExtension[] = [
   {
-    id: '@jupyterlab/json-extension:factory',
+    id: '@fk-jupyterlab/json-extension:factory',
     rendererFactory,
     rank: 0,
     dataType: 'json',

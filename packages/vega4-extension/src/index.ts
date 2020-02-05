@@ -9,7 +9,7 @@ import { JSONObject } from '@phosphor/coreutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import * as VegaModuleType from 'vega-embed';
 
@@ -132,7 +132,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 };
 
 const extension: IRenderMime.IExtension = {
-  id: '@jupyterlab/vega-extension:factory',
+  id: '@fk-jupyterlab/vega-extension:factory',
   rendererFactory,
   rank: 50, // prefer over vega 2 extension
   dataType: 'json',

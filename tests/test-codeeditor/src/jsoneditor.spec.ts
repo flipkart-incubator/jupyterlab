@@ -3,13 +3,13 @@
 
 import expect = require('expect.js');
 
-import { CodeMirrorEditorFactory } from '@jupyterlab/codemirror';
+import { CodeMirrorEditorFactory } from '@fk-jupyterlab/codemirror';
 
-import { ObservableJSON } from '@jupyterlab/observables';
+import { ObservableJSON } from '@fk-jupyterlab/observables';
 
-import { JSONEditor } from '@jupyterlab/codeeditor';
+import { JSONEditor } from '@fk-jupyterlab/codeeditor';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 import { Message } from '@phosphor/messaging';
 

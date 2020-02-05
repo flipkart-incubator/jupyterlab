@@ -7,9 +7,9 @@ import { DisposableDelegate, IDisposable } from '@phosphor/disposable';
 
 import { CommandPalette } from '@phosphor/widgets';
 
-import { ILayoutRestorer, JupyterLab } from '@jupyterlab/application';
+import { ILayoutRestorer, JupyterLab } from '@fk-jupyterlab/application';
 
-import { ICommandPalette, IPaletteItem } from '@jupyterlab/apputils';
+import { ICommandPalette, IPaletteItem } from '@fk-jupyterlab/apputils';
 
 /**
  * The command IDs used by the apputils extension.

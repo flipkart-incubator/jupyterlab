@@ -3,15 +3,15 @@
 
 import { expect } from 'chai';
 
-import { TerminalSession } from '@jupyterlab/services';
+import { TerminalSession } from '@fk-jupyterlab/services';
 
 import { Message, MessageLoop } from '@phosphor/messaging';
 
 import { Widget } from '@phosphor/widgets';
 
-import { Terminal } from '@jupyterlab/terminal';
+import { Terminal } from '@fk-jupyterlab/terminal';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 class LogTerminal extends Terminal {
   methods: string[] = [];

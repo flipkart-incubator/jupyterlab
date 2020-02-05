@@ -3,20 +3,20 @@
 
 import { expect } from 'chai';
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
 import {
   Completer,
   CompletionHandler,
   CompleterModel,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
-import { createClientSession } from '@jupyterlab/testutils';
+import { createClientSession } from '@fk-jupyterlab/testutils';
 
 function createEditorWidget(): CodeEditorWrapper {
   const model = new CodeEditor.Model();
@@ -54,7 +54,7 @@ class TestCompletionHandler extends CompletionHandler {
   }
 }
 
-describe('@jupyterlab/completer', () => {
+describe('@fk-jupyterlab/completer', () => {
   let connector: KernelConnector;
   let session: IClientSession;
 

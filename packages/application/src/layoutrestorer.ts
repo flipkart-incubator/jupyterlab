@@ -3,9 +3,9 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { IStateDB } from '@jupyterlab/coreutils';
+import { IStateDB } from '@fk-jupyterlab/coreutils';
 
 import { CommandRegistry } from '@phosphor/commands';
 
@@ -27,7 +27,7 @@ import { ApplicationShell } from './shell';
  * The layout restorer token.
  */
 export const ILayoutRestorer = new Token<ILayoutRestorer>(
-  '@jupyterlab/application:ILayoutRestorer'
+  '@fk-jupyterlab/application:ILayoutRestorer'
 );
 /* tslint:enable */
 

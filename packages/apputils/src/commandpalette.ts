@@ -14,7 +14,7 @@ import { CommandPalette } from '@phosphor/widgets';
  * The command palette token.
  */
 export const ICommandPalette = new Token<ICommandPalette>(
-  '@jupyterlab/apputils:ICommandPalette'
+  '@fk-jupyterlab/apputils:ICommandPalette'
 );
 /* tslint:enable */
 

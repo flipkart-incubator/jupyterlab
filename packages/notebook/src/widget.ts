@@ -28,15 +28,15 @@ import {
   ICodeCellModel,
   RawCell,
   IRawCellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { IEditorMimeTypeService, CodeEditor } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService, CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IChangedArgs, nbformat } from '@jupyterlab/coreutils';
+import { IChangedArgs, nbformat } from '@fk-jupyterlab/coreutils';
 
-import { IObservableMap, IObservableList } from '@jupyterlab/observables';
+import { IObservableMap, IObservableList } from '@fk-jupyterlab/observables';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { INotebookModel } from './model';
 

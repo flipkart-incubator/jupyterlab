@@ -3,17 +3,17 @@
 
 import { expect } from 'chai';
 
-import { Cell } from '@jupyterlab/cells';
+import { Cell } from '@fk-jupyterlab/cells';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
 import {
   INotebookModel,
   NotebookPanel,
   NotebookTracker
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
-import { createNotebookContext, NBTestUtils } from '@jupyterlab/testutils';
+import { createNotebookContext, NBTestUtils } from '@fk-jupyterlab/testutils';
 
 const namespace = 'notebook-tracker-test';
 
@@ -26,7 +26,7 @@ class TestTracker extends NotebookTracker {
   }
 }
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookTracker', () => {
     let context: Context<INotebookModel>;
 

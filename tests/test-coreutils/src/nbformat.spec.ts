@@ -3,11 +3,11 @@
 
 import { expect } from 'chai';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
 const VALIDATE = nbformat.validateMimeValue;
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('nbformat', () => {
     describe('validateMimeValue', () => {
       it('should return true for a valid json object', () => {

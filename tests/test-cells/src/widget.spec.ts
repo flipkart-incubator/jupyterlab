@@ -7,9 +7,9 @@ import { Message, MessageLoop } from '@phosphor/messaging';
 
 import { Widget } from '@phosphor/widgets';
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
 import {
   Cell,
@@ -24,15 +24,15 @@ import {
   CellFooter,
   CellHeader,
   InputArea
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { OutputArea, OutputPrompt } from '@jupyterlab/outputarea';
+import { OutputArea, OutputPrompt } from '@fk-jupyterlab/outputarea';
 
 import {
   createClientSession,
   framePromise,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 const RENDERED_CLASS = 'jp-mod-rendered';
 const rendermime = NBTestUtils.defaultRenderMime();

@@ -11,19 +11,19 @@ import { h, VirtualDOM, VirtualNode } from '@phosphor/virtualdom';
 
 import { PanelLayout, Widget } from '@phosphor/widgets';
 
-import { Styling } from '@jupyterlab/apputils';
+import { Styling } from '@fk-jupyterlab/apputils';
 
-import { Cell, ICellModel } from '@jupyterlab/cells';
+import { Cell, ICellModel } from '@fk-jupyterlab/cells';
 
 import {
   CodeEditor,
   CodeEditorWrapper,
   JSONEditor
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
-import { IObservableMap, ObservableJSON } from '@jupyterlab/observables';
+import { IObservableMap, ObservableJSON } from '@fk-jupyterlab/observables';
 
 import { INotebookTracker } from './';
 
@@ -57,7 +57,7 @@ const KEYSELECTOR_CLASS = 'jp-KeySelector';
  * The main menu token.
  */
 export const ICellTools = new Token<ICellTools>(
-  '@jupyterlab/notebook:ICellTools'
+  '@fk-jupyterlab/notebook:ICellTools'
 );
 /* tslint:enable */
 

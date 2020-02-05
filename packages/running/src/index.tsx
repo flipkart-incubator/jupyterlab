@@ -11,11 +11,15 @@ import { ISignal, Signal } from '@phosphor/signaling';
 
 import { Widget } from '@phosphor/widgets';
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
-import { ServiceManager, Session, TerminalSession } from '@jupyterlab/services';
+import {
+  ServiceManager,
+  Session,
+  TerminalSession
+} from '@fk-jupyterlab/services';
 
 import '../style/index.css';
 

@@ -3,7 +3,7 @@
 
 import { Widget } from '@phosphor/widgets';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import * as React from 'react';
 
@@ -68,7 +68,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 
 const extensions: IRenderMime.IExtension | IRenderMime.IExtension[] = [
   {
-    id: '@jupyterlab/vdom-extension:factory',
+    id: '@fk-jupyterlab/vdom-extension:factory',
     rendererFactory,
     rank: 0,
     dataType: 'json',

@@ -98,7 +98,7 @@ We added new workspace support, which enables you to have multiple saved layouts
 * The `Launcher` now uses commands from the application `CommandRegistry` to launch new activities. Extension authors that add items to the launcher will need to update them to use commands. ([#4757](https://github.com/jupyterlab/jupyterlab/pull/4757))
 * There is now a top-level `addToBottomArea` function in the application, allowing extension authors to add bottom panel items like status bars. ([#4752](https://github.com/jupyterlab/jupyterlab/pull/4752))
 * Rendermime extensions can now indicate that they are the default rendered widget factory for a file-type. For instance, the default widget for a markdown file is a text editor, but the default rendered widget is the markdown viewer. ([#4692](https://github.com/jupyterlab/jupyterlab/pull/4692))
-* Add new workspace REST endpoints to `jupyterlab_launcher` and make them available in `@jupyterlab/services`. ([#4841](https://github.com/jupyterlab/jupyterlab/pull/4841))
+* Add new workspace REST endpoints to `jupyterlab_launcher` and make them available in `@fk-jupyterlab/services`. ([#4841](https://github.com/jupyterlab/jupyterlab/pull/4841))
 * Documents created with a mimerenderer extension can now be accessed using an `IInstanceTracker` which tracks them. Include the token `IMimeDocumentTracker` in your plugin to access this. The `IInstanceTracker` interface has also gained convenience functions `find` and `filter` to simplify iterating over instances. ([#4762](https://github.com/jupyterlab/jupyterlab/pull/4762))
 * RenderMime render errors are now displayed to the user. ([#4465](https://github.com/jupyterlab/jupyterlab/pull/4465))
 * `getNotebookVersion` is added to the `PageConfig` object. ([#4224](https://github.com/jupyterlab/jupyterlab/pull/4224))
@@ -110,7 +110,7 @@ We added new workspace support, which enables you to have multiple saved layouts
 * The `KernelFutureHandler` class `expectShell` constructor argument is renamed to `expectReply`. ([#4697](https://github.com/jupyterlab/jupyterlab/pull/4697))
 * The kernel future `done` returned promise now resolves to undefined if there is no reply message. ([#4697](https://github.com/jupyterlab/jupyterlab/pull/4697))
 * The `IDisplayDataMsg` is updated to have the optional `transient` key, and a new `IUpdateDisplayDataMsg` type was added for update display messages. ([#4697](https://github.com/jupyterlab/jupyterlab/pull/4697))
-* The `uuid` function from `@jupyterlab/coreutils` is removed. Instead import `UUID` from `@phosphor/coreutils` and use `UUID.uuid4()` . ([#4604](https://github.com/jupyterlab/jupyterlab/pull/4604))
+* The `uuid` function from `@fk-jupyterlab/coreutils` is removed. Instead import `UUID` from `@phosphor/coreutils` and use `UUID.uuid4()` . ([#4604](https://github.com/jupyterlab/jupyterlab/pull/4604))
 * Main area widgets like the launcher and console inherit from a common `MainAreaWidget` class which provides a content area (`.content`) and a toolbar (`.toolbar`), consistent focus handling and activation behavior, and a spinner displayed until the given `reveal` promise is resolved. Document widgets, like the notebook and text editor and other documents opened from the document manager, implement the `IDocumentWidget` interface (instead of `DocumentRegistry.IReadyWidget`), which builds on `MainAreaWidget` and adds a `.context` attribute for the document context and makes dirty handling consistent. Extension authors may consider inheriting from the `MainAreaWidget` or `DocumentWidget` class for consistency. Several effects from these changes are noted below. ([#3499](https://github.com/jupyterlab/jupyterlab/pull/3499), [#4453](https://github.com/jupyterlab/jupyterlab/pull/4453))
   * The notebook panel `.notebook` attribute is renamed to `.content`.
   * The text editor is now the `.content` of a `DocumentWidget`, so the top-level editor widget has a toolbar and the editor itself is `widget.content.editor` rather than just `widget.editor`.
@@ -163,7 +163,7 @@ This is the second in the JupyterLab Beta series of releases. It contains many e
 * Ability to rotate, flip, and invert images in the image viewer. ([#4000](https://github.com/jupyterlab/jupyterlab/issues/4000))
 * Major performance improvements for large CSV viewing. ([#3997](https://github.com/jupyterlab/jupyterlab/issues/3997)).
 * Always show the context menu in the file browser, even for an empty directory. ([#4264](https://github.com/jupyterlab/jupyterlab/issues/4264)).
-* Handle asynchronous comm messages in the services library more correctly (Note: this means `@jupyterlab/services` is now at version 2.0!) ([[#4115](https://github.com/jupyterlab/jupyterlab/issues/4115)](https://github.com/jupyterlab/jupyterlab/pull/4115)).
+* Handle asynchronous comm messages in the services library more correctly (Note: this means `@fk-jupyterlab/services` is now at version 2.0!) ([[#4115](https://github.com/jupyterlab/jupyterlab/issues/4115)](https://github.com/jupyterlab/jupyterlab/pull/4115)).
 * Display the kernel banner in the console when a kernel is restarted to mark the restart ([[#3663](https://github.com/jupyterlab/jupyterlab/issues/3663)](https://github.com/jupyterlab/jupyterlab/pull/3663)).
 * Many tweaks to the UI, as well as better error handling.
 
@@ -293,7 +293,7 @@ This release generally focuses on developer and extension author enhancements an
 * Upgrade to Phosphor 1.2 with Command Palette fuzzy matching improvements. [#1182](https://github.com/jupyterlab/jupyterlab/issues/1182)
 * Rename of widgets that had `Widget` in the name and associated package names. https://github.com/jupyterlab/jupyterlab/pull/2177
 * New `jupyter labhub` command to launch JupyterLab on JupyterHub: https://github.com/jupyterlab/jupyterlab/pull/2222
-* Removed the `utils` from `@jupyterlab/services` in favor of `PageConfig` and `ServerConnection`. https://github.com/jupyterlab/jupyterlab/pull/2173 https://github.com/jupyterlab/jupyterlab/pull/2185
+* Removed the `utils` from `@fk-jupyterlab/services` in favor of `PageConfig` and `ServerConnection`. https://github.com/jupyterlab/jupyterlab/pull/2173 https://github.com/jupyterlab/jupyterlab/pull/2185
 * Cleanup, bug fixes, and style updates.
 
 ## [0.20.0 (v0.20.0)](https://github.com/jupyterlab/jupyterlab/releases/tag/v0.20.0)

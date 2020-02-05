@@ -7,7 +7,7 @@ import { IDisposable } from '@phosphor/disposable';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
 import {
   IObservableList,
@@ -15,9 +15,9 @@ import {
   IObservableValue,
   ObservableValue,
   IModelDB
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
-import { IOutputModel, OutputModel } from '@jupyterlab/rendermime';
+import { IOutputModel, OutputModel } from '@fk-jupyterlab/rendermime';
 
 /**
  * The model for an output area.

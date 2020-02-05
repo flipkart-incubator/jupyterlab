@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IInstanceTracker } from '@jupyterlab/apputils';
+import { IInstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -24,6 +24,6 @@ export interface IEditorTracker
  * The editor tracker token.
  */
 export const IEditorTracker = new Token<IEditorTracker>(
-  '@jupyterlab/fileeditor:IEditorTracker'
+  '@fk-jupyterlab/fileeditor:IEditorTracker'
 );
 /* tslint:enable */

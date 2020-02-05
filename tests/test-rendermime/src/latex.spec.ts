@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { removeMath, replaceMath } from '@jupyterlab/rendermime';
+import { removeMath, replaceMath } from '@fk-jupyterlab/rendermime';
 
 describe('jupyter-ui', () => {
   describe('removeMath()', () => {

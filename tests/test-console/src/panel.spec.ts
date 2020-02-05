@@ -3,15 +3,15 @@
 
 import { expect } from 'chai';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Message, MessageLoop } from '@phosphor/messaging';
 
 import { Widget } from '@phosphor/widgets';
 
-import { CodeConsole, ConsolePanel } from '@jupyterlab/console';
+import { CodeConsole, ConsolePanel } from '@fk-jupyterlab/console';
 
-import { dismissDialog } from '@jupyterlab/testutils';
+import { dismissDialog } from '@fk-jupyterlab/testutils';
 
 import {
   createConsolePanelFactory,

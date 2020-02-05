@@ -5,7 +5,7 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import { each } from '@phosphor/algorithm';
 
@@ -17,7 +17,7 @@ import '../style/index.css';
  * The default tab manager extension.
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/tabmanager-extension:plugin',
+  id: '@fk-jupyterlab/tabmanager-extension:plugin',
   activate: (app: JupyterLab, restorer: ILayoutRestorer): void => {
     const { shell } = app;
     const tabs = new TabBar<Widget>({ orientation: 'vertical' });

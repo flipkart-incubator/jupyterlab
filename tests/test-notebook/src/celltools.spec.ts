@@ -9,22 +9,22 @@ import { TabPanel, Widget } from '@phosphor/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { CodeMirrorEditorFactory } from '@jupyterlab/codemirror';
+import { CodeMirrorEditorFactory } from '@fk-jupyterlab/codemirror';
 
-import { ObservableJSON } from '@jupyterlab/observables';
+import { ObservableJSON } from '@fk-jupyterlab/observables';
 
 import {
   CellTools,
   NotebookPanel,
   NotebookTracker,
   NotebookActions
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
 import {
   createNotebookContext,
   sleep,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 class LogTool extends CellTools.Tool {
   methods: string[] = [];
@@ -80,7 +80,7 @@ class LogKeySelector extends CellTools.KeySelector {
   }
 }
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('celltools', () => {
     let celltools: CellTools;
     let tabpanel: TabPanel;

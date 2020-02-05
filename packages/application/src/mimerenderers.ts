@@ -1,17 +1,17 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IInstanceTracker, InstanceTracker } from '@jupyterlab/apputils';
+import { IInstanceTracker, InstanceTracker } from '@fk-jupyterlab/apputils';
 
 import {
   MimeDocumentFactory,
   DocumentRegistry,
   MimeDocument
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -31,7 +31,7 @@ export interface IMimeDocumentTracker extends IInstanceTracker<MimeDocument> {}
  * The mime document tracker token.
  */
 export const IMimeDocumentTracker = new Token<IMimeDocumentTracker>(
-  '@jupyterlab/application:IMimeDocumentTracker'
+  '@fk-jupyterlab/application:IMimeDocumentTracker'
 );
 /* tslint:enable */
 
@@ -64,7 +64,7 @@ export function createRendermimePlugins(
   // Also add a meta-plugin handling state restoration
   // and exposing the mime document instance tracker.
   plugins.push({
-    id: '@jupyterlab/application:mimedocument',
+    id: '@fk-jupyterlab/application:mimedocument',
     requires: [ILayoutRestorer],
     provides: IMimeDocumentTracker,
     autoStart: true,

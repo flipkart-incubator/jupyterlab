@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { URLExt, PathExt } from '@jupyterlab/coreutils';
+import { URLExt, PathExt } from '@fk-jupyterlab/coreutils';
 
-import { ModelDB } from '@jupyterlab/observables';
+import { ModelDB } from '@fk-jupyterlab/observables';
 
 import { JSONObject } from '@phosphor/coreutils';
 

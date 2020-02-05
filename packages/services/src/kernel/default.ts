@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -1041,19 +1041,19 @@ export class DefaultKernel implements Kernel.IKernel {
   private update_kernel_status_http(): void {
     let settings = ServerConnection.makeSettings();
     let url = URLExt.join(
-        settings.baseUrl,
-        KERNEL_SERVICE_URL + '/' + this._id
+      settings.baseUrl,
+      KERNEL_SERVICE_URL + '/' + this._id
     );
     ServerConnection.makeRequest(url, {}, settings)
-        .then(response => {
-          if (response.status !== 200) {
-            throw new ServerConnection.ResponseError(response);
-          }
-          return response.json();
-        })
-        .then(data => {
-          this._updateStatus(data['execution_state']);
-        });
+      .then(response => {
+        if (response.status !== 200) {
+          throw new ServerConnection.ResponseError(response);
+        }
+        return response.json();
+      })
+      .then(data => {
+        this._updateStatus(data['execution_state']);
+      });
   }
 
   /**
@@ -1640,10 +1640,7 @@ namespace Private {
     settings?: ServerConnection.ISettings
   ): Promise<void> {
     settings = settings || ServerConnection.makeSettings();
-    let url = URLExt.join(
-      settings.baseUrl,
-      KERNEL_SERVICE_SHUTDOWN_URL
-    );
+    let url = URLExt.join(settings.baseUrl, KERNEL_SERVICE_SHUTDOWN_URL);
     let init = { method: 'DELETE' };
     let response = await ServerConnection.makeRequest(url, init, settings);
     if (response.status !== 204) {

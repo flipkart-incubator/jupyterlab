@@ -1,3 +1,3 @@
-# @jupyterlab/mainmenu-extension
+# @fk-jupyterlab/mainmenu-extension
 
-An extension for JupyterLab which provides an entry point for the [@jupyterlab/mainmenu](../mainmenu) package.
+An extension for JupyterLab which provides an entry point for the [@fk-jupyterlab/mainmenu](../mainmenu) package.

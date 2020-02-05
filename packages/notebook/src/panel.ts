@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Kernel, KernelMessage, Session } from '@jupyterlab/services';
+import { Kernel, KernelMessage, Session } from '@fk-jupyterlab/services';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -9,11 +9,11 @@ import { Message } from '@phosphor/messaging';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { DocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { INotebookModel } from './model';
 
@@ -208,7 +208,7 @@ export namespace NotebookPanel {
    * The notebook renderer token.
    */
   export const IContentFactory = new Token<IContentFactory>(
-    '@jupyterlab/notebook:IContentFactory'
+    '@fk-jupyterlab/notebook:IContentFactory'
   );
   /* tslint:enable */
 }

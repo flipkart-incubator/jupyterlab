@@ -9,28 +9,28 @@ import { PromiseDelegate } from '@phosphor/coreutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
-import { CodeCell, MarkdownCell } from '@jupyterlab/cells';
+import { CodeCell, MarkdownCell } from '@fk-jupyterlab/cells';
 
-import { NotebookActions } from '@jupyterlab/notebook';
+import { NotebookActions } from '@fk-jupyterlab/notebook';
 
-import { ToolbarItems } from '@jupyterlab/notebook';
+import { ToolbarItems } from '@fk-jupyterlab/notebook';
 
-import { INotebookModel } from '@jupyterlab/notebook';
+import { INotebookModel } from '@fk-jupyterlab/notebook';
 
-import { NotebookPanel } from '@jupyterlab/notebook';
+import { NotebookPanel } from '@fk-jupyterlab/notebook';
 
 import {
   createNotebookContext,
   signalToPromise,
   sleep,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 const JUPYTER_CELL_MIME = 'application/vnd.jupyter.cells';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('ToolbarItems', () => {
     let context: Context<INotebookModel>;
     let panel: NotebookPanel;

@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IInspector, InspectorPanel } from '@jupyterlab/inspector';
+import { IInspector, InspectorPanel } from '@fk-jupyterlab/inspector';
 
 import { IDisposable } from '@phosphor/disposable';
 

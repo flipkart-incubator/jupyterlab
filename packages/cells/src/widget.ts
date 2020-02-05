@@ -3,15 +3,15 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { AttachmentsResolver } from '@jupyterlab/attachments';
+import { AttachmentsResolver } from '@fk-jupyterlab/attachments';
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs, ActivityMonitor } from '@jupyterlab/coreutils';
+import { IChangedArgs, ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { IObservableMap } from '@jupyterlab/observables';
+import { IObservableMap } from '@fk-jupyterlab/observables';
 
 import {
   OutputArea,
@@ -20,15 +20,15 @@ import {
   OutputPrompt,
   IStdin,
   Stdin
-} from '@jupyterlab/outputarea';
+} from '@fk-jupyterlab/outputarea';
 
 import {
   IRenderMime,
   MimeModel,
   RenderMimeRegistry
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { JSONValue, PromiseDelegate } from '@phosphor/coreutils';
 

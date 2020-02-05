@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IInstanceTracker, InstanceTracker } from '@jupyterlab/apputils';
+import { IInstanceTracker, InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { Cell } from '@jupyterlab/cells';
+import { Cell } from '@fk-jupyterlab/cells';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -42,7 +42,7 @@ export interface INotebookTracker extends IInstanceTracker<NotebookPanel> {
  * The notebook tracker token.
  */
 export const INotebookTracker = new Token<INotebookTracker>(
-  '@jupyterlab/notebook:INotebookTracker'
+  '@fk-jupyterlab/notebook:INotebookTracker'
 );
 /* tslint:enable */
 

@@ -9,7 +9,7 @@ import { ISignal, Signal } from '@phosphor/signaling';
 
 import { Widget } from '@phosphor/widgets';
 
-import { Styling } from '@jupyterlab/apputils';
+import { Styling } from '@fk-jupyterlab/apputils';
 
 /**
  * The supported parsing delimiters.

@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { ObservableMap } from '@jupyterlab/observables';
+import { ObservableMap } from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableMap', () => {
     describe('#constructor()', () => {
       it('should accept no arguments', () => {

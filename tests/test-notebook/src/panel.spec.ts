@@ -3,20 +3,24 @@
 
 import { expect } from 'chai';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
-import { INotebookModel, NotebookPanel, Notebook } from '@jupyterlab/notebook';
+import {
+  INotebookModel,
+  NotebookPanel,
+  Notebook
+} from '@fk-jupyterlab/notebook';
 
-import { Toolbar } from '@jupyterlab/apputils';
+import { Toolbar } from '@fk-jupyterlab/apputils';
 
-import { createNotebookContext, NBTestUtils } from '@jupyterlab/testutils';
+import { createNotebookContext, NBTestUtils } from '@fk-jupyterlab/testutils';
 
 /**
  * Default data.
  */
 const contentFactory = NBTestUtils.createNotebookPanelFactory();
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookPanel', () => {
     let context: Context<INotebookModel>;
 

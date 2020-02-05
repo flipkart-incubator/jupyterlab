@@ -3,14 +3,14 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { DataConnector, ISchemaValidator } from '@jupyterlab/coreutils';
+import { DataConnector, ISchemaValidator } from '@fk-jupyterlab/coreutils';
 
-import { InspectionHandler, InspectorPanel } from '@jupyterlab/inspector';
+import { InspectionHandler, InspectorPanel } from '@fk-jupyterlab/inspector';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import { ReadonlyJSONObject } from '@phosphor/coreutils';
 

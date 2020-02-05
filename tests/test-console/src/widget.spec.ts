@@ -7,22 +7,22 @@ import { Message } from '@phosphor/messaging';
 
 import { Widget } from '@phosphor/widgets';
 
-import { ClientSession } from '@jupyterlab/apputils';
+import { ClientSession } from '@fk-jupyterlab/apputils';
 
-import { CodeConsole } from '@jupyterlab/console';
+import { CodeConsole } from '@fk-jupyterlab/console';
 
 import {
   CodeCell,
   CodeCellModel,
   RawCellModel,
   RawCell
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
 import {
   createClientSession,
   framePromise,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import {
   createConsoleFactory,

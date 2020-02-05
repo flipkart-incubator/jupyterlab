@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
-import { ISettingRegistry } from '@jupyterlab/coreutils';
+import { ISettingRegistry } from '@fk-jupyterlab/coreutils';
 
 import { CommandRegistry } from '@phosphor/commands';
 
@@ -41,7 +41,7 @@ import { DisposableSet, IDisposable } from '@phosphor/disposable';
  * required, using the `'body'` selector is more appropriate.
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/shortcuts-extension:plugin',
+  id: '@fk-jupyterlab/shortcuts-extension:plugin',
   requires: [ISettingRegistry],
   activate: (app: JupyterLab, settingReqistry: ISettingRegistry): void => {
     const { commands } = app;

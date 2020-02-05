@@ -16,11 +16,11 @@ import {
   IDocumentWidget,
   TextModelFactory,
   Context
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { createFileContext, sleep } from '@jupyterlab/testutils';
+import { createFileContext, sleep } from '@fk-jupyterlab/testutils';
 
 class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   protected createNewWidget(

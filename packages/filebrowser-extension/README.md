@@ -1,3 +1,3 @@
-# @jupyterlab/filebrowser-extension
+# @fk-jupyterlab/filebrowser-extension
 
-An extension for JupyterLab which provides an entry point, commands, and keyboard shortcuts for the [@jupyterlab/filebrowser](../filebrowser) package.
+An extension for JupyterLab which provides an entry point, commands, and keyboard shortcuts for the [@fk-jupyterlab/filebrowser](../filebrowser) package.

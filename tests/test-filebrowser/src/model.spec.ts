@@ -3,27 +3,27 @@
 
 import { expect } from 'chai';
 
-import { StateDB, PageConfig } from '@jupyterlab/coreutils';
+import { StateDB, PageConfig } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { DocumentManager, IDocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager, IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry, TextModelFactory } from '@jupyterlab/docregistry';
+import { DocumentRegistry, TextModelFactory } from '@fk-jupyterlab/docregistry';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import {
   FileBrowserModel,
   LARGE_FILE_SIZE,
   CHUNK_SIZE
-} from '@jupyterlab/filebrowser';
+} from '@fk-jupyterlab/filebrowser';
 
 import {
   acceptDialog,
   dismissDialog,
   signalToPromises
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 import { toArray } from '@phosphor/algorithm';
 
 describe('filebrowser/model', () => {

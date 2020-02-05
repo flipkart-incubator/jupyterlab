@@ -5,7 +5,7 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -14,13 +14,13 @@ import {
   InstanceTracker,
   MainAreaWidget,
   showDialog
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { Menu } from '@phosphor/widgets';
 
@@ -89,7 +89,7 @@ RESOURCES.sort((a: any, b: any) => {
  */
 const plugin: JupyterLabPlugin<void> = {
   activate,
-  id: '@jupyterlab/help-extension:plugin',
+  id: '@fk-jupyterlab/help-extension:plugin',
   requires: [IMainMenu, ICommandPalette, ILayoutRestorer],
   autoStart: true
 };

@@ -3,13 +3,13 @@
 
 import { expect } from 'chai';
 
-import { Router } from '@jupyterlab/application';
+import { Router } from '@fk-jupyterlab/application';
 
 import { CommandRegistry } from '@phosphor/commands';
 
 import { Token } from '@phosphor/coreutils';
 
-import { signalToPromise } from '@jupyterlab/testutils';
+import { signalToPromise } from '@fk-jupyterlab/testutils';
 
 const base = '/';
 

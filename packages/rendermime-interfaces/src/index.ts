@@ -156,7 +156,7 @@ export namespace IRenderMime {
      * #### Notes
      * The convention for extension IDs in JupyterLab is the full NPM package
      * name followed by a colon and a unique string token, e.g.
-     * `'@jupyterlab/apputils-extension:settings'` or `'foo-extension:bar'`.
+     * `'@fk-jupyterlab/apputils-extension:settings'` or `'foo-extension:bar'`.
      */
     readonly id: string;
 
