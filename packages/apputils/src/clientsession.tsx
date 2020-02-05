@@ -316,6 +316,9 @@ export class ClientSession implements IClientSession {
    * The current status of the session.
    */
   get status(): Kernel.Status {
+    if (this._nginxBlocked) {
+      return 'dead';
+    }
     if (!this.isReady) {
       return 'starting';
     }
@@ -715,6 +718,17 @@ export class ClientSession implements IClientSession {
         let message = err.message;
         try {
           message = JSON.parse(text)['traceback'];
+          if (message.search('HTTPClientError: HTTP 555: Unknown') !== -1) {
+            message = 'Cannot launch kernel while another kernel launch in progress.';
+            this._nginxBlocked = true;
+            this._statusChanged.emit('dead'); // This dead has no effect. Writing anything in it will work
+            this._nginxBlocked = false;
+          }
+          if (message.search('A max kernels per user limit') !== -1) {
+            this._nginxBlocked = true;
+            this._statusChanged.emit('dead');
+            this._nginxBlocked = false;
+          }
         } catch (err) {
           // no-op
         }
@@ -838,6 +852,7 @@ export class ClientSession implements IClientSession {
   private _dialog: Dialog<any> | null = null;
   private _setBusy: () => IDisposable | undefined;
   private _busyDisposable: IDisposable | null = null;
+  private _nginxBlocked = false;
 }
 
 /**
