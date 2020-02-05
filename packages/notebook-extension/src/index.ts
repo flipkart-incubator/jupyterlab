@@ -1316,6 +1316,8 @@ function addCommands(
 
       if (kernel) {
         return kernel.reconnect();
+      } else{
+        current.context.session.reconnect();
       }
     },
     isEnabled

@@ -164,6 +164,11 @@ export interface IClientSession extends IDisposable {
    * Change the session type.
    */
   setType(type: string): Promise<void>;
+
+  /**
+   * Reconnect to Kernel
+   */
+  reconnect(): void;
 }
 
 /**
@@ -438,6 +443,22 @@ export class ClientSession implements IClientSession {
       }
       return ClientSession.restartKernel(kernel);
     });
+  }
+
+  reconnect(): void {
+    let manager = this.manager;
+    let model = find(manager.running(), item => {
+      console.log(item.path, this._path);
+      return item.path === this._path;
+    });
+    if (model) {
+      try {
+        let session = manager.connectTo(model);
+        this._handleNewSession(session);
+      } catch (err) {
+        this._handleSessionError(err);
+      }
+    }
   }
 
   /**
