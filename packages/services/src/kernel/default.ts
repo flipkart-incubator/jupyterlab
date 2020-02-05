@@ -1025,6 +1025,7 @@ export class DefaultKernel implements Kernel.IKernel {
     this._isReady = true;
     // Update our status to connected.
     this._updateStatus('connected');
+    this.update_kernel_status_http();
     // Get the kernel info, signaling that the kernel is ready.
     // TODO: requestKernelInfo shouldn't make a request, but should return cached info?
     this.requestKernelInfo()
@@ -1036,6 +1037,24 @@ export class DefaultKernel implements Kernel.IKernel {
       });
     this._isReady = false;
   };
+
+  private update_kernel_status_http(): void {
+    let settings = ServerConnection.makeSettings();
+    let url = URLExt.join(
+        settings.baseUrl,
+        KERNEL_SERVICE_URL + '/' + this._id
+    );
+    ServerConnection.makeRequest(url, {}, settings)
+        .then(response => {
+          if (response.status !== 200) {
+            throw new ServerConnection.ResponseError(response);
+          }
+          return response.json();
+        })
+        .then(data => {
+          this._updateStatus(data['execution_state']);
+        });
+  }
 
   /**
    * Handle a websocket message, validating and routing appropriately.
