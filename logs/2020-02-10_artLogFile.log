@@ -1,0 +1,118 @@
+2020/02/10 12:44:14 ==============================================================
+CONFIG VALUES
+2020/02/10 12:44:14 Current User : vikas.garg
+2020/02/10 12:44:14 User Home: /Users/vikas.garg
+2020/02/10 12:44:14 Timeout For Http Request: 600
+2020/02/10 12:44:14 Latest Release URL: https://github.fkinternal.com/api/v3/repos/Flipkart/artifactory-service/releases/latest
+2020/02/10 12:44:14 ArtResource Directory :  /Users/vikas.garg/artcliResources
+2020/02/10 12:44:14 ArtDownloadLocation :  http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/
+2020/02/10 12:44:14 Github Access Token: b381cf95b45a5ab16576986176486761ec9e2810
+2020/02/10 12:44:14 Current Directory: /Users/vikas.garg/flipkart/flipkart-incubator/jupyterlab
+2020/02/10 12:44:14 CurrentVersion: v4.6
+2020/02/10 12:44:14 Getting latest release details from github
+2020/02/10 12:44:14 Status Code 200
+2020/02/10 12:44:14 Latest Release Version:  v4.6
+2020/02/10 12:44:14 Is Pre Release:  false
+2020/02/10 12:44:14 Total Assets:  2
+2020/02/10 12:44:14 Artcli asset URL:  http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/artcli
+2020/02/10 12:44:14 Dependency Resolver file name:  dependency-resolver-1.0.5.jar
+2020/02/10 12:44:14 Dependency Resolver URL:  http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/dependency-resolver-1.0.5.jar
+2020/02/10 12:44:14 Comparing the artcli version
+2020/02/10 12:44:14 Current artcli version is latest
+2020/02/10 12:44:14 Checking dependency-resolver Jar at file path : /Users/vikas.garg/artcliResources/dependency-resolver-1.0.5.jar
+2020/02/10 12:44:14 Check latest Jar Exists:  true
+2020/02/10 12:44:14 Dependency resolver version is latest
+2020/02/10 12:44:14 Create Artifact
+Store:  PYPI 
+Package Name:  jupyterlab 
+Version:  0.33.13.dev3 
+Classifier:  
+2020/02/10 12:44:14 external_download_url:   
+sources_url:   
+Transitive dependencies:   
+User:  vikas.garg 
+ PackagePath:  dist/jupyterlab-0.33.13.dev3.tar.gz
+2020/02/10 12:44:14 Create command input validation success 
+2020/02/10 12:44:14 createURL:http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/create
+2020/02/10 12:44:14 Payload For Create
+ [{"artifact": {"package_name": "jupyterlab","version": "0.33.13.dev3" },"store": "PYPI","requested_by": "vikas.garg","external_download_url": "","sources_url": "","isInternalLib": "true" }]
+2020/02/10 12:44:14 Http response code:  200
+2020/02/10 12:44:14 Http response header:  map[Content-Length:[145] Content-Type:[application/json] Date:[Mon, 10 Feb 2020 07:14:14 GMT] X-E-Id:[10.33.194.129] X-Elb-App-Server:[10.34.110.174] X-Elb-Id:[10.33.194.129]]
+2020/02/10 12:44:14 HTTP Response Validation: Status   0 	 Message  Success
+2020/02/10 12:44:14 [{"art_id":"5e4102c68878b5261cbd6b6e","artifact":{"package_name":"jupyterlab","version":"0.33.13.dev3"},"message":"Request created succesfully"}]
+2020/02/10 12:44:14 Payload For fetch metadata
+ [{"artifact": {"package_name": "jupyterlab","version": "0.33.13.dev3" },"store": "PYPI" }]
+2020/02/10 12:44:14 Http response code:  200
+2020/02/10 12:44:14 Http response header:  map[Content-Length:[109] Content-Type:[application/json] Date:[Mon, 10 Feb 2020 07:14:14 GMT] X-E-Id:[10.33.194.129] X-Elb-App-Server:[10.32.34.64] X-Elb-Id:[10.33.194.129]]
+2020/02/10 12:44:14 HTTP Response Validation: Status  0 	 Message  Success
+2020/02/10 12:44:14 Status For fetch metadata
+ 0
+2020/02/10 12:44:14 Response For fetch metadata
+ [{"meta_id":"5e4102c691ce091db328665d","message":"Request created successfully","status":"PENDING_DOWNLOAD"}]
+2020/02/10 12:44:14 ArtStore : PYPI
+2020/02/10 12:44:14 ArtId : 5e4102c68878b5261cbd6b6e
+2020/02/10 12:44:14 PackagePath : dist/jupyterlab-0.33.13.dev3.tar.gz
+2020/02/10 12:44:14 packageFilename : jupyterlab-0.33.13.dev3.tar.gz
+2020/02/10 12:44:14 uploadURL : http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/upload/pypi/5e4102c68878b5261cbd6b6e/jupyterlab-0.33.13.dev3.tar.gz
+2020/02/10 12:44:16 Http response code:  200
+2020/02/10 12:44:16 Http response header:  map[Content-Length:[0] Date:[Mon, 10 Feb 2020 07:14:14 GMT] X-E-Id:[10.33.194.129] X-Elb-App-Server:[10.32.55.57] X-Elb-Id:[10.33.194.129]]
+2020/02/10 12:44:16 HTTP Response Validation: Status   0 	 Message  Success
+2020/02/10 12:48:04 ==============================================================
+CONFIG VALUES
+2020/02/10 12:48:04 Current User : vikas.garg
+2020/02/10 12:48:04 User Home: /Users/vikas.garg
+2020/02/10 12:48:04 Timeout For Http Request: 600
+2020/02/10 12:48:04 Latest Release URL: https://github.fkinternal.com/api/v3/repos/Flipkart/artifactory-service/releases/latest
+2020/02/10 12:48:04 ArtResource Directory :  /Users/vikas.garg/artcliResources
+2020/02/10 12:48:04 ArtDownloadLocation :  http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/
+2020/02/10 12:48:05 Github Access Token: b381cf95b45a5ab16576986176486761ec9e2810
+2020/02/10 12:48:05 Current Directory: /Users/vikas.garg/flipkart/flipkart-incubator/jupyterlab
+2020/02/10 12:48:05 CurrentVersion: v4.6
+2020/02/10 12:48:05 Getting latest release details from github
+2020/02/10 12:48:05 Status Code 200
+2020/02/10 12:48:05 Latest Release Version:  v4.6
+2020/02/10 12:48:05 Is Pre Release:  false
+2020/02/10 12:48:05 Total Assets:  2
+2020/02/10 12:48:05 Artcli asset URL:  http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/artcli
+2020/02/10 12:48:05 Dependency Resolver file name:  dependency-resolver-1.0.5.jar
+2020/02/10 12:48:05 Dependency Resolver URL:  http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/dependency-resolver-1.0.5.jar
+2020/02/10 12:48:05 Comparing the artcli version
+2020/02/10 12:48:05 Current artcli version is latest
+2020/02/10 12:48:05 Checking dependency-resolver Jar at file path : /Users/vikas.garg/artcliResources/dependency-resolver-1.0.5.jar
+2020/02/10 12:48:05 Check latest Jar Exists:  true
+2020/02/10 12:48:05 Dependency resolver version is latest
+2020/02/10 12:48:05 Create Artifact
+Store:  PYPI 
+Package Name:  jupyterlab 
+Version:  0.33.13.dev4 
+Classifier:  
+2020/02/10 12:48:05 external_download_url:   
+sources_url:   
+Transitive dependencies:   
+User:  vikas.garg 
+ PackagePath:  dist/jupyterlab-0.33.13.dev4.tar.gz
+2020/02/10 12:48:05 Create command input validation success 
+2020/02/10 12:48:05 createURL:http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/create
+2020/02/10 12:48:05 Payload For Create
+ [{"artifact": {"package_name": "jupyterlab","version": "0.33.13.dev4" },"store": "PYPI","requested_by": "vikas.garg","external_download_url": "","sources_url": "","isInternalLib": "true" }]
+2020/02/10 12:48:05 Http response code:  200
+2020/02/10 12:48:05 Http response header:  map[Content-Length:[145] Content-Type:[application/json] Date:[Mon, 10 Feb 2020 07:18:05 GMT] X-E-Id:[10.33.194.129] X-Elb-App-Server:[10.34.98.226] X-Elb-Id:[10.33.194.129]]
+2020/02/10 12:48:05 HTTP Response Validation: Status   0 	 Message  Success
+2020/02/10 12:48:05 [{"art_id":"5e4103add7bee920602229ca","artifact":{"package_name":"jupyterlab","version":"0.33.13.dev4"},"message":"Request created succesfully"}]
+2020/02/10 12:48:05 Payload For fetch metadata
+ [{"artifact": {"package_name": "jupyterlab","version": "0.33.13.dev4" },"store": "PYPI" }]
+2020/02/10 12:48:05 Http response code:  200
+2020/02/10 12:48:05 Http response header:  map[Content-Length:[109] Content-Type:[application/json] Date:[Mon, 10 Feb 2020 07:18:05 GMT] X-E-Id:[10.33.194.129] X-Elb-App-Server:[10.34.110.174] X-Elb-Id:[10.33.194.129]]
+2020/02/10 12:48:05 HTTP Response Validation: Status  0 	 Message  Success
+2020/02/10 12:48:05 Status For fetch metadata
+ 0
+2020/02/10 12:48:05 Response For fetch metadata
+ [{"meta_id":"5e4103ad8878b5261cbd6b70","message":"Request created successfully","status":"PENDING_DOWNLOAD"}]
+2020/02/10 12:48:05 ArtStore : PYPI
+2020/02/10 12:48:05 ArtId : 5e4103add7bee920602229ca
+2020/02/10 12:48:05 PackagePath : dist/jupyterlab-0.33.13.dev4.tar.gz
+2020/02/10 12:48:05 packageFilename : jupyterlab-0.33.13.dev4.tar.gz
+2020/02/10 12:48:05 uploadURL : http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/upload/pypi/5e4103add7bee920602229ca/jupyterlab-0.33.13.dev4.tar.gz
+2020/02/10 12:48:06 Http response code:  200
+2020/02/10 12:48:06 Http response header:  map[Content-Length:[0] Date:[Mon, 10 Feb 2020 07:18:05 GMT] X-E-Id:[10.33.194.129] X-Elb-App-Server:[10.34.110.174] X-Elb-Id:[10.33.194.129]]
+2020/02/10 12:48:06 HTTP Response Validation: Status   0 	 Message  Success
