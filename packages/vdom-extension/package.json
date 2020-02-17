@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/vdom-extension",
+  "name": "@fk-jupyterlab/vdom-extension",
   "version": "0.16.2",
   "description": "JupyterLab - VDOM Renderer",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
@@ -29,7 +29,7 @@
     "watch": "tsc -w --listEmittedFiles"
   },
   "dependencies": {
-    "@jupyterlab/rendermime-interfaces": "^1.1.2",
+    "@fk-jupyterlab/rendermime-interfaces": "^1.1.2",
     "@nteract/transform-vdom": "^1.1.1",
     "@phosphor/widgets": "^1.6.0",
     "react": "~16.4.0",

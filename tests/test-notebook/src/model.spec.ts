@@ -5,17 +5,17 @@ import { expect } from 'chai';
 
 import { ArrayExt, toArray } from '@phosphor/algorithm';
 
-import { CodeCellModel } from '@jupyterlab/cells';
+import { CodeCellModel } from '@fk-jupyterlab/cells';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
-import { NotebookModel } from '@jupyterlab/notebook';
+import { NotebookModel } from '@fk-jupyterlab/notebook';
 
-import { ModelDB } from '@jupyterlab/observables';
+import { ModelDB } from '@fk-jupyterlab/observables';
 
-import { sleep, NBTestUtils } from '@jupyterlab/testutils';
+import { sleep, NBTestUtils } from '@fk-jupyterlab/testutils';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookModel', () => {
     describe('#constructor()', () => {
       it('should create a notebook model', () => {

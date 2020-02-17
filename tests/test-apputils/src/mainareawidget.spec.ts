@@ -3,13 +3,13 @@
 
 import { expect } from 'chai';
 
-import { MainAreaWidget, Toolbar } from '@jupyterlab/apputils';
+import { MainAreaWidget, Toolbar } from '@fk-jupyterlab/apputils';
 
 import { MessageLoop } from '@phosphor/messaging';
 
 import { Widget } from '@phosphor/widgets';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('MainAreaWidget', () => {
     describe('#constructor()', () => {
       it('should create a new main area widget', () => {

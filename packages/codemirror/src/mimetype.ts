@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IEditorMimeTypeService } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService } from '@fk-jupyterlab/codeeditor';
 
-import { nbformat, PathExt } from '@jupyterlab/coreutils';
+import { nbformat, PathExt } from '@fk-jupyterlab/coreutils';
 
 import { Mode } from './mode';
 

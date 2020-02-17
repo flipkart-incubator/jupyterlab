@@ -5,31 +5,31 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
   ICommandPalette,
   MainAreaWidget,
   showDialog
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { CodeCell } from '@jupyterlab/cells';
+import { CodeCell } from '@fk-jupyterlab/cells';
 
-import { CodeEditor, IEditorServices } from '@jupyterlab/codeeditor';
+import { CodeEditor, IEditorServices } from '@fk-jupyterlab/codeeditor';
 
 import {
   ISettingRegistry,
   IStateDB,
   PageConfig,
   URLExt
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
 import {
   IMainMenu,
@@ -39,7 +39,7 @@ import {
   IKernelMenu,
   IRunMenu,
   IViewMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
 import {
   CellTools,
@@ -51,11 +51,11 @@ import {
   NotebookTracker,
   NotebookWidgetFactory,
   StaticNotebook
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { ReadonlyJSONObject } from '@phosphor/coreutils';
 
@@ -223,7 +223,7 @@ const EXPORT_TO_FORMATS = [
  * The notebook widget tracker provider.
  */
 const trackerPlugin: JupyterLabPlugin<INotebookTracker> = {
-  id: '@jupyterlab/notebook-extension:tracker',
+  id: '@fk-jupyterlab/notebook-extension:tracker',
   provides: INotebookTracker,
   requires: [
     IMainMenu,
@@ -243,7 +243,7 @@ const trackerPlugin: JupyterLabPlugin<INotebookTracker> = {
  * The notebook cell factory provider.
  */
 const factory: JupyterLabPlugin<NotebookPanel.IContentFactory> = {
-  id: '@jupyterlab/notebook-extension:factory',
+  id: '@fk-jupyterlab/notebook-extension:factory',
   provides: NotebookPanel.IContentFactory,
   requires: [IEditorServices],
   autoStart: true,
@@ -259,7 +259,7 @@ const factory: JupyterLabPlugin<NotebookPanel.IContentFactory> = {
 const tools: JupyterLabPlugin<ICellTools> = {
   activate: activateCellTools,
   provides: ICellTools,
-  id: '@jupyterlab/notebook-extension:tools',
+  id: '@fk-jupyterlab/notebook-extension:tools',
   autoStart: true,
   requires: [INotebookTracker, IEditorServices, IStateDB]
 };
@@ -1316,6 +1316,8 @@ function addCommands(
 
       if (kernel) {
         return kernel.reconnect();
+      } else {
+        current.context.session.reconnect();
       }
     },
     isEnabled

@@ -5,21 +5,21 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   InstanceTracker,
   MainAreaWidget
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { ITerminalTracker, Terminal } from '@jupyterlab/terminal';
+import { ITerminalTracker, Terminal } from '@fk-jupyterlab/terminal';
 
 /**
  * The command IDs used by the terminal plugin.
@@ -48,7 +48,7 @@ const TERMINAL_ICON_CLASS = 'jp-TerminalIcon';
  */
 const plugin: JupyterLabPlugin<ITerminalTracker> = {
   activate,
-  id: '@jupyterlab/terminal-extension:plugin',
+  id: '@fk-jupyterlab/terminal-extension:plugin',
   provides: ITerminalTracker,
   requires: [IMainMenu, ICommandPalette, ILayoutRestorer],
   optional: [ILauncher],

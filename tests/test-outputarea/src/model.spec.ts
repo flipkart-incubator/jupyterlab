@@ -3,11 +3,11 @@
 
 import { expect } from 'chai';
 
-import { OutputModel } from '@jupyterlab/rendermime';
+import { OutputModel } from '@fk-jupyterlab/rendermime';
 
-import { OutputAreaModel } from '@jupyterlab/outputarea';
+import { OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
-import { NBTestUtils } from '@jupyterlab/testutils';
+import { NBTestUtils } from '@fk-jupyterlab/testutils';
 
 describe('outputarea/model', () => {
   let model: OutputAreaModel;

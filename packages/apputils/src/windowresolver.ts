@@ -8,7 +8,7 @@ import { PromiseDelegate, Token } from '@phosphor/coreutils';
  * The default window resolver token.
  */
 export const IWindowResolver = new Token<IWindowResolver>(
-  '@jupyterlab/apputils:IWindowResolver'
+  '@fk-jupyterlab/apputils:IWindowResolver'
 );
 /* tslint:enable */
 
@@ -61,7 +61,7 @@ namespace Private {
   /**
    * The internal prefix for private local storage keys.
    */
-  const PREFIX = '@jupyterlab/coreutils:StateDB';
+  const PREFIX = '@fk-jupyterlab/coreutils:StateDB';
 
   /**
    * The local storage beacon key.

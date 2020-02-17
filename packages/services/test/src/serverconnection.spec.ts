@@ -3,13 +3,13 @@
 
 import { expect } from 'chai';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 import { ServerConnection } from '../../lib';
 
 import { getRequestHandler } from './utils';
 
-describe('@jupyterlab/services', () => {
+describe('@fk-jupyterlab/services', () => {
   describe('ServerConnection', () => {
     describe('.makeRequest()', () => {
       it('should make a request to the server', async () => {

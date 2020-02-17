@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Dialog, showDialog, showErrorMessage } from '@jupyterlab/apputils';
+import { Dialog, showDialog, showErrorMessage } from '@fk-jupyterlab/apputils';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import { JSONObject } from '@phosphor/coreutils';
 

@@ -6,30 +6,35 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Clipboard,
   InstanceTracker,
   MainAreaWidget,
   ToolbarButton
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IStateDB, PageConfig, PathExt, URLExt } from '@jupyterlab/coreutils';
+import {
+  IStateDB,
+  PageConfig,
+  PathExt,
+  URLExt
+} from '@fk-jupyterlab/coreutils';
 
-import { IDocumentManager } from '@jupyterlab/docmanager';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   FileBrowserModel,
   FileBrowser,
   IFileBrowserFactory
-} from '@jupyterlab/filebrowser';
+} from '@fk-jupyterlab/filebrowser';
 
-import { Launcher } from '@jupyterlab/launcher';
+import { Launcher } from '@fk-jupyterlab/launcher';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import { map, toArray } from '@phosphor/algorithm';
 
@@ -86,7 +91,7 @@ namespace CommandIDs {
  */
 const browser: JupyterLabPlugin<void> = {
   activate: activateBrowser,
-  id: '@jupyterlab/filebrowser-extension:browser',
+  id: '@fk-jupyterlab/filebrowser-extension:browser',
   requires: [IFileBrowserFactory, ILayoutRestorer],
   autoStart: true
 };
@@ -96,7 +101,7 @@ const browser: JupyterLabPlugin<void> = {
  */
 const factory: JupyterLabPlugin<IFileBrowserFactory> = {
   activate: activateFactory,
-  id: '@jupyterlab/filebrowser-extension:factory',
+  id: '@fk-jupyterlab/filebrowser-extension:factory',
   provides: IFileBrowserFactory,
   requires: [IDocumentManager, IStateDB]
 };

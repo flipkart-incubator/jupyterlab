@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { ObservableString } from '@jupyterlab/observables';
+import { ObservableString } from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableString', () => {
     describe('#constructor()', () => {
       it('should accept no arguments', () => {

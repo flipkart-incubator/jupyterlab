@@ -15,9 +15,9 @@ import { ISignal, Signal } from '@phosphor/signaling';
 
 import { Widget } from '@phosphor/widgets';
 
-import { HoverBox, defaultSanitizer } from '@jupyterlab/apputils';
+import { HoverBox, defaultSanitizer } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 /**
  * The class name added to completer menu items.

@@ -98,7 +98,7 @@ export namespace ISchemaValidator {
  * The setting registry token.
  */
 export const ISettingRegistry = new Token<ISettingRegistry>(
-  '@jupyterlab/coreutils:ISettingRegistry'
+  '@fk-jupyterlab/coreutils:ISettingRegistry'
 );
 /* tslint:enable */
 

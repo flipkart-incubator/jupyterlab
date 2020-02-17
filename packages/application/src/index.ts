@@ -4,15 +4,18 @@
 // Local CSS must be loaded prior to loading other libs.
 import '../style/index.css';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { CommandLinker } from '@jupyterlab/apputils';
+import { CommandLinker } from '@fk-jupyterlab/apputils';
 
-import { Base64ModelFactory, DocumentRegistry } from '@jupyterlab/docregistry';
+import {
+  Base64ModelFactory,
+  DocumentRegistry
+} from '@fk-jupyterlab/docregistry';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Application, IPlugin } from '@phosphor/application';
 

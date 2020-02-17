@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISettingRegistry, URLExt } from '@jupyterlab/coreutils';
+import { ISettingRegistry, URLExt } from '@fk-jupyterlab/coreutils';
 
 import { each } from '@phosphor/algorithm';
 
@@ -20,7 +20,7 @@ import { ISplashScreen } from './splash';
  * The theme manager token.
  */
 export const IThemeManager = new Token<IThemeManager>(
-  '@jupyterlab/apputils:IThemeManager'
+  '@fk-jupyterlab/apputils:IThemeManager'
 );
 /* tslint:enable */
 

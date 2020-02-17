@@ -15,7 +15,9 @@ import { IDataConnector } from './interfaces';
 /**
  * The default state database token.
  */
-export const IStateDB = new Token<IStateDB>('@jupyterlab/coreutils:IStateDB');
+export const IStateDB = new Token<IStateDB>(
+  '@fk-jupyterlab/coreutils:IStateDB'
+);
 /* tslint:enable */
 
 /**

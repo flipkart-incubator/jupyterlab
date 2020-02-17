@@ -3,16 +3,16 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
-import { IDocumentManager } from '@jupyterlab/docmanager';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
 
 import {
   ILatexTypesetter,
   IRenderMimeRegistry,
   RenderMimeRegistry,
   standardRendererFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 namespace CommandIDs {
   export const handleLink = 'rendermime:handle-local-link';
@@ -22,7 +22,7 @@ namespace CommandIDs {
  * A plugin providing a rendermime registry.
  */
 const plugin: JupyterLabPlugin<RenderMimeRegistry> = {
-  id: '@jupyterlab/rendermime-extension:plugin',
+  id: '@fk-jupyterlab/rendermime-extension:plugin',
   requires: [IDocumentManager],
   optional: [ILatexTypesetter],
   provides: IRenderMimeRegistry,

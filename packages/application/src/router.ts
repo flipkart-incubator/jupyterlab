@@ -3,7 +3,7 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
 import { CommandRegistry } from '@phosphor/commands';
 
@@ -17,7 +17,7 @@ import { ISignal, Signal } from '@phosphor/signaling';
 /**
  * The URL Router token.
  */
-export const IRouter = new Token<IRouter>('@jupyterlab/application:IRouter');
+export const IRouter = new Token<IRouter>('@fk-jupyterlab/application:IRouter');
 /* tslint:enable */
 
 /**
@@ -202,7 +202,7 @@ export class Router implements IRouter {
    * If a matching rule's command resolves with the `stop` token during routing,
    * no further matches will execute.
    */
-  readonly stop = new Token<void>('@jupyterlab/application:Router#stop');
+  readonly stop = new Token<void>('@fk-jupyterlab/application:Router#stop');
 
   /**
    * Navigate to a new path within the application.

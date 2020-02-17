@@ -11,11 +11,11 @@ import { ElementExt } from '@phosphor/domutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { DOMUtils, showErrorMessage } from '@jupyterlab/apputils';
+import { DOMUtils, showErrorMessage } from '@fk-jupyterlab/apputils';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
-import { renameFile } from '@jupyterlab/docmanager';
+import { renameFile } from '@fk-jupyterlab/docmanager';
 
 import { FileBrowserModel } from './model';
 

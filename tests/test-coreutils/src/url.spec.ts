@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('URLExt', () => {
     describe('.parse()', () => {
       it('should parse a url into a URLExt object', () => {

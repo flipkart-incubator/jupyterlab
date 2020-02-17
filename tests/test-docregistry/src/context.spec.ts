@@ -5,7 +5,7 @@ import { expect } from 'chai';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { Contents, ServiceManager } from '@jupyterlab/services';
+import { Contents, ServiceManager } from '@fk-jupyterlab/services';
 
 import { Widget } from '@phosphor/widgets';
 
@@ -13,9 +13,9 @@ import {
   Context,
   DocumentRegistry,
   TextModelFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import {
   waitForDialog,
@@ -23,7 +23,7 @@ import {
   dismissDialog,
   createNotebookContext,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 describe('docregistry/context', () => {
   let manager: ServiceManager.IManager;

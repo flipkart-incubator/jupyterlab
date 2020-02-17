@@ -216,19 +216,19 @@ of checks are performed against the patterns in ``disabledExtensions``
 and ``deferredExtensions``.
 
 -  If an identical string match occurs between a config value and a
-   package name (e.g., ``"@jupyterlab/apputils-extension"``), then the
+   package name (e.g., ``"@fk-jupyterlab/apputils-extension"``), then the
    entire package is disabled (or deferred).
 -  If the string value is compiled as a regular expression and tests
    positive against a package name (e.g.,
-   ``"disabledExtensions": ["@jupyterlab/apputils*$"]``), then the
+   ``"disabledExtensions": ["@fk-jupyterlab/apputils*$"]``), then the
    entire package is disabled (or deferred).
 -  If an identical string match occurs between a config value and an
    individual plugin ID within a package (e.g.,
-   ``"disabledExtensions": ["@jupyterlab/apputils-extension:settings"]``),
+   ``"disabledExtensions": ["@fk-jupyterlab/apputils-extension:settings"]``),
    then that specific plugin is disabled (or deferred).
 -  If the string value is compiled as a regular expression and tests
    positive against an individual plugin ID within a package (e.g.,
-   ``"disabledExtensions": ["^@jupyterlab/apputils-extension:set.*$"]``),
+   ``"disabledExtensions": ["^@fk-jupyterlab/apputils-extension:set.*$"]``),
    then that specific plugin is disabled (or deferred).
 
 .. _build_configjson:
@@ -246,10 +246,10 @@ that have been explicitly uninstalled. An example of a
 
     {
         "uninstalled_core_extensions": [
-            "@jupyterlab/markdownwidget-extension"
+            "@fk-jupyterlab/markdownwidget-extension"
         ],
         "local_extensions": {
-            "@jupyterlab/python-tests": "/path/to/my/extension"
+            "@fk-jupyterlab/python-tests": "/path/to/my/extension"
         }
     }
 

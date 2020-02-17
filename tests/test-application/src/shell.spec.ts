@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 import { Message } from '@phosphor/messaging';
 
@@ -11,7 +11,7 @@ import { Widget } from '@phosphor/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { ApplicationShell } from '@jupyterlab/application';
+import { ApplicationShell } from '@fk-jupyterlab/application';
 
 class ContentWidget extends Widget {
   activated = false;

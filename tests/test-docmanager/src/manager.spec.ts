@@ -3,11 +3,11 @@
 
 import { expect } from 'chai';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Widget } from '@phosphor/widgets';
 
-import { DocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager } from '@fk-jupyterlab/docmanager';
 
 import {
   DocumentRegistry,
@@ -15,9 +15,9 @@ import {
   ABCWidgetFactory,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { dismissDialog } from '@jupyterlab/testutils';
+import { dismissDialog } from '@fk-jupyterlab/testutils';
 
 class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   protected createNewWidget(
@@ -30,7 +30,7 @@ class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   }
 }
 
-describe('@jupyterlab/docmanager', () => {
+describe('@fk-jupyterlab/docmanager', () => {
   let manager: DocumentManager;
   let services: ServiceManager.IManager;
   let context: DocumentRegistry.Context;

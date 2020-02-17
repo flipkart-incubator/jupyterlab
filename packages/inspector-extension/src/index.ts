@@ -5,24 +5,24 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   InstanceTracker,
   MainAreaWidget
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
 import {
   IInspector,
   InspectionHandler,
   InspectorPanel,
   KernelConnector
-} from '@jupyterlab/inspector';
+} from '@fk-jupyterlab/inspector';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
 import { InspectorManager } from './manager';
 
@@ -37,7 +37,7 @@ namespace CommandIDs {
  * A service providing code introspection.
  */
 const inspector: JupyterLabPlugin<IInspector> = {
-  id: '@jupyterlab/inspector-extension:inspector',
+  id: '@fk-jupyterlab/inspector-extension:inspector',
   requires: [ICommandPalette, ILayoutRestorer],
   provides: IInspector,
   autoStart: true,
@@ -112,7 +112,7 @@ const inspector: JupyterLabPlugin<IInspector> = {
  * An extension that registers consoles for inspection.
  */
 const consoles: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/inspector-extension:consoles',
+  id: '@fk-jupyterlab/inspector-extension:consoles',
   requires: [IInspector, IConsoleTracker],
   autoStart: true,
   activate: (
@@ -172,7 +172,7 @@ const consoles: JupyterLabPlugin<void> = {
  * An extension that registers notebooks for inspection.
  */
 const notebooks: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/inspector-extension:notebooks',
+  id: '@fk-jupyterlab/inspector-extension:notebooks',
   requires: [IInspector, INotebookTracker],
   autoStart: true,
   activate: (

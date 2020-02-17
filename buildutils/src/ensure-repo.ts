@@ -19,17 +19,17 @@ import { ensurePackage } from './ensure-package';
 
 // Data to ignore.
 let MISSING: { [key: string]: string[] } = {
-  '@jupyterlab/buildutils': ['path']
+  '@fk-jupyterlab/buildutils': ['path']
 };
 
 let UNUSED: { [key: string]: string[] } = {
-  '@jupyterlab/apputils': ['@types/react'],
-  '@jupyterlab/apputils-extension': ['es6-promise'],
-  '@jupyterlab/theme-dark-extension': ['font-awesome'],
-  '@jupyterlab/theme-light-extension': ['font-awesome'],
-  '@jupyterlab/services': ['node-fetch', 'ws'],
-  '@jupyterlab/test-csvviewer': ['csv-spectrum'],
-  '@jupyterlab/vega4-extension': ['vega', 'vega-lite']
+  '@fk-jupyterlab/apputils': ['@types/react'],
+  '@fk-jupyterlab/apputils-extension': ['es6-promise'],
+  '@fk-jupyterlab/theme-dark-extension': ['font-awesome'],
+  '@fk-jupyterlab/theme-light-extension': ['font-awesome'],
+  '@fk-jupyterlab/services': ['node-fetch', 'ws'],
+  '@fk-jupyterlab/test-csvviewer': ['csv-spectrum'],
+  '@fk-jupyterlab/vega4-extension': ['vega', 'vega-lite']
 };
 
 let pkgData: { [key: string]: any } = {};
@@ -135,7 +135,7 @@ function ensureJupyterlab(): string[] {
     } catch (e) {
       return;
     }
-    if (data.private === true || data.name === '@jupyterlab/metapackage') {
+    if (data.private === true || data.name === '@fk-jupyterlab/metapackage') {
       return;
     }
 
@@ -234,7 +234,7 @@ export function ensureIntegrity(): boolean {
   // Handle the metapackage metapackage.
   let pkgMessages = ensureMetaPackage();
   if (pkgMessages.length > 0) {
-    let pkgName = '@jupyterlab/metapackage';
+    let pkgName = '@fk-jupyterlab/metapackage';
     if (!messages[pkgName]) {
       messages[pkgName] = [];
     }
@@ -244,7 +244,7 @@ export function ensureIntegrity(): boolean {
   // Handle the JupyterLab application top package.
   pkgMessages = ensureJupyterlab();
   if (pkgMessages.length > 0) {
-    let pkgName = '@jupyterlab/application-top';
+    let pkgName = '@fk-jupyterlab/application-top';
     if (!messages[pkgName]) {
       messages[pkgName] = [];
     }

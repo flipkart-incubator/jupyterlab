@@ -3,7 +3,7 @@
 
 import { JSONValue } from '@phosphor/coreutils';
 
-import { IEditorMimeTypeService } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService } from '@fk-jupyterlab/codeeditor';
 
 import CodeMirror from 'codemirror';
 
@@ -23,7 +23,7 @@ import 'codemirror/mode/clike/clike';
 import 'codemirror/mode/shell/shell';
 import 'codemirror/mode/sql/sql';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
 // Stub for the require function.
 declare var require: any;

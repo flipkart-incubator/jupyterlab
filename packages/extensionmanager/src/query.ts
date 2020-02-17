@@ -39,7 +39,7 @@ export interface ISearchResult {
       name: string;
 
       /**
-       * The scope of the package (e.g. jupyterlab for @jupyterlab/services).
+       * The scope of the package (e.g. jupyterlab for @fk-jupyterlab/services).
        */
       scope: string;
 

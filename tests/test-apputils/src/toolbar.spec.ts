@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { ClientSession, Toolbar, ToolbarButton } from '@jupyterlab/apputils';
+import { ClientSession, Toolbar, ToolbarButton } from '@fk-jupyterlab/apputils';
 
 import { toArray } from '@phosphor/algorithm';
 
@@ -17,7 +17,7 @@ import { Widget } from '@phosphor/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { createClientSession, framePromise } from '@jupyterlab/testutils';
+import { createClientSession, framePromise } from '@fk-jupyterlab/testutils';
 
 class LogToolbarButton extends ToolbarButton {
   events: string[] = [];
@@ -40,7 +40,7 @@ class LogToolbarButton extends ToolbarButton {
   }
 }
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   let widget: Toolbar<Widget>;
   let session: ClientSession;
 

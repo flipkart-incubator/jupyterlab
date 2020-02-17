@@ -186,16 +186,16 @@ should look something like the following:
                             main.bundle.js  6.82 MB       1  [emitted]  [big]  main
                            0.bundle.js.map  1.08 MB       0  [emitted]
                         main.bundle.js.map  8.19 MB       1  [emitted]         main
-      [27] ./~/@jupyterlab/application/lib/index.js 5.66 kB {1} [built]
-     [427] ./~/@jupyterlab/application-extension/lib/index.js 6.14 kB {1} [optional] [built]
-     [443] ./~/@jupyterlab/pdf-extension/lib/index.js 4.98 kB {1} [optional] [built]
-     [445] ./~/@jupyterlab/settingeditor-extension/lib/index.js 2.67 kB {1} [optional] [built]
-     [446] ./~/@jupyterlab/shortcuts-extension/lib/index.js 3.75 kB {1} [optional] [built]
-     [447] ./~/@jupyterlab/tabmanager-extension/lib/index.js 1.8 kB {1} [optional] [built]
-     [448] ./~/@jupyterlab/terminal-extension/lib/index.js 7.33 kB {1} [optional] [built]
-     [449] ./~/@jupyterlab/theme-dark-extension/lib/index.js 800 bytes {1} [optional] [built]
-     [450] ./~/@jupyterlab/theme-light-extension/lib/index.js 804 bytes {1} [optional] [built]
-     [451] ./~/@jupyterlab/tooltip-extension/lib/index.js 5.61 kB {1} [optional] [built]
+      [27] ./~/@fk-jupyterlab/application/lib/index.js 5.66 kB {1} [built]
+     [427] ./~/@fk-jupyterlab/application-extension/lib/index.js 6.14 kB {1} [optional] [built]
+     [443] ./~/@fk-jupyterlab/pdf-extension/lib/index.js 4.98 kB {1} [optional] [built]
+     [445] ./~/@fk-jupyterlab/settingeditor-extension/lib/index.js 2.67 kB {1} [optional] [built]
+     [446] ./~/@fk-jupyterlab/shortcuts-extension/lib/index.js 3.75 kB {1} [optional] [built]
+     [447] ./~/@fk-jupyterlab/tabmanager-extension/lib/index.js 1.8 kB {1} [optional] [built]
+     [448] ./~/@fk-jupyterlab/terminal-extension/lib/index.js 7.33 kB {1} [optional] [built]
+     [449] ./~/@fk-jupyterlab/theme-dark-extension/lib/index.js 800 bytes {1} [optional] [built]
+     [450] ./~/@fk-jupyterlab/theme-light-extension/lib/index.js 804 bytes {1} [optional] [built]
+     [451] ./~/@fk-jupyterlab/tooltip-extension/lib/index.js 5.61 kB {1} [optional] [built]
      [453] ./~/es6-promise/auto.js 179 bytes {1} [built]
      [454] /Users/foo/workspace/xkcd/lib/index.js 353 bytes {1} [optional] [built]
      [455] ./~/font-awesome/css/font-awesome.min.css 892 bytes {1} [built]
@@ -257,7 +257,7 @@ to get a reference to the command palette interface.
 
     import {
       ICommandPalette
-    } from '@jupyterlab/apputils';
+    } from '@fk-jupyterlab/apputils';
 
 You will also need to install this dependency. Run the following command in the
 repository root folder install the dependency and save it to your
@@ -265,7 +265,7 @@ repository root folder install the dependency and save it to your
 
 .. code:: bash
 
-    npm install --save @jupyterlab/apputils
+    npm install --save @fk-jupyterlab/apputils
 
 Locate the ``extension`` object of type ``JupyterLabPlugin``. Change the
 definition so that it reads like so:
@@ -700,11 +700,11 @@ entire list of import statements looks like the following:
 
     import {
       JupyterLab, JupyterLabPlugin, ILayoutRestorer // new
-    } from '@jupyterlab/application';
+    } from '@fk-jupyterlab/application';
 
     import {
       ICommandPalette, InstanceTracker // new
-    } from '@jupyterlab/apputils';
+    } from '@fk-jupyterlab/apputils';
 
     import {
       JSONExt // new

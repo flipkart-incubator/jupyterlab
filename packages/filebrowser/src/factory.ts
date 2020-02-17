@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { IStateDB } from '@jupyterlab/coreutils';
+import { IStateDB } from '@fk-jupyterlab/coreutils';
 
 import { CommandRegistry } from '@phosphor/commands';
 
@@ -16,7 +16,7 @@ import { FileBrowser } from './browser';
  * The path tracker token.
  */
 export const IFileBrowserFactory = new Token<IFileBrowserFactory>(
-  '@jupyterlab/filebrowser:IFileBrowserFactory'
+  '@fk-jupyterlab/filebrowser:IFileBrowserFactory'
 );
 /* tslint:enable */
 

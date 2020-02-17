@@ -1,14 +1,14 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
 import {
   ABCWidgetFactory,
   DocumentRegistry,
   IDocumentWidget,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import { PromiseDelegate } from '@phosphor/coreutils';
 

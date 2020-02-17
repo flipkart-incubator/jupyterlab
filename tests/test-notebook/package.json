@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/test-notebook",
+  "name": "@fk-jupyterlab/test-notebook",
   "version": "0.3.2",
   "private": true,
   "scripts": {
@@ -16,14 +16,14 @@
     "watch:src": "tsc -w --listEmittedFiles"
   },
   "dependencies": {
-    "@jupyterlab/apputils": "^0.17.2",
-    "@jupyterlab/cells": "^0.17.2",
-    "@jupyterlab/codemirror": "^0.17.3",
-    "@jupyterlab/coreutils": "^2.0.3",
-    "@jupyterlab/docregistry": "^0.17.2",
-    "@jupyterlab/notebook": "^0.17.2",
-    "@jupyterlab/observables": "^2.0.2",
-    "@jupyterlab/testutils": "^0.1.0",
+    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/cells": "^0.17.2",
+    "@fk-jupyterlab/codemirror": "^0.17.3",
+    "@fk-jupyterlab/coreutils": "^2.0.3",
+    "@fk-jupyterlab/docregistry": "^0.17.2",
+    "@fk-jupyterlab/notebook": "^0.17.2",
+    "@fk-jupyterlab/observables": "^2.0.2",
+    "@fk-jupyterlab/testutils": "^0.1.0",
     "@phosphor/algorithm": "^1.1.2",
     "@phosphor/coreutils": "^1.3.0",
     "@phosphor/messaging": "^1.2.2",

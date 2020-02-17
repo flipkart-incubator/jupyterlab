@@ -2,28 +2,28 @@
 // Distributed under the terms of the Modified BSD License.
 
 import 'es6-promise/auto'; // polyfill Promise on IE
-import '@jupyterlab/theme-light-extension/static/embed.css';
+import '@fk-jupyterlab/theme-light-extension/static/embed.css';
 import '../index.css';
 
-import { ClientSession, Toolbar } from '@jupyterlab/apputils';
+import { ClientSession, Toolbar } from '@fk-jupyterlab/apputils';
 
-import { CodeCellModel, CodeCell } from '@jupyterlab/cells';
+import { CodeCellModel, CodeCell } from '@fk-jupyterlab/cells';
 
-import { CodeMirrorMimeTypeService } from '@jupyterlab/codemirror';
+import { CodeMirrorMimeTypeService } from '@fk-jupyterlab/codemirror';
 
 import {
   CompleterModel,
   Completer,
   CompletionHandler,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { SessionManager } from '@jupyterlab/services';
+import { SessionManager } from '@fk-jupyterlab/services';
 
 import { CommandRegistry } from '@phosphor/commands';
 

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { VDomRenderer } from '@jupyterlab/apputils';
+import { VDomRenderer } from '@fk-jupyterlab/apputils';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Message } from '@phosphor/messaging';
 

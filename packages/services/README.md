@@ -20,7 +20,7 @@ can be used to polyfill browsers that do not support the `fetch` API.
 * [python](https://www.anaconda.com/download)
 
 ```bash
-npm install --save @jupyterlab/services
+npm install --save @fk-jupyterlab/services
 conda install notebook  # notebook 4.3+ required
 ```
 
@@ -117,7 +117,7 @@ A translator such as Babel can be used to convert from ES6 -> ES5.
 **Kernel**
 
 ```typescript
-import { KernelMessage, Kernel } from '@jupyterlab/services';
+import { KernelMessage, Kernel } from '@fk-jupyterlab/services';
 
 // Get a list of available kernels and connect to one.
 Kernel.listRunning().then(kernelModels => {
@@ -179,7 +179,7 @@ Kernel.getSpecs().then(kernelSpecs => {
 **Session**
 
 ```typescript
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
 // Get a list of available sessions and connect to one.
 Session.listRunning().then(sessionModels => {
@@ -220,7 +220,7 @@ Session.startNew(options).then(session => {
 **Comm**
 
 ```typescript
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 // Create a comm from the server side.
 //
@@ -272,7 +272,7 @@ Kernel.getSpecs()
 **Contents**
 
 ```typescript
-import { ContentsManager } from '@jupyterlab/services';
+import { ContentsManager } from '@fk-jupyterlab/services';
 
 let contents = new ContentsManager();
 
@@ -320,7 +320,7 @@ contents.listCheckpoints('/foo/bar.txt').then(models => {
 **Configuration**
 
 ```typescript
-import { ConfigWithDefaults, ConfigSection } from '@jupyterlab/services';
+import { ConfigWithDefaults, ConfigSection } from '@fk-jupyterlab/services';
 
 // The base url of the Jupyter server.
 
@@ -340,7 +340,7 @@ ConfigSection.create({ name: 'notebook' }).then(section => {
 **Terminals**
 
 ```typescript
-import { TerminalSession } from '@jupyterlab/services';
+import { TerminalSession } from '@fk-jupyterlab/services';
 
 // Create a named terminal session and send some data.
 TerminalSession.startNew().then(session => {

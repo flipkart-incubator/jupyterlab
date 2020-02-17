@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
 import {
   IObservableMap,
@@ -9,15 +9,15 @@ import {
   IObservableValue,
   ObservableValue,
   IModelDB
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 import {
   IAttachmentModel,
   AttachmentModel,
   imageRendererFactory
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { IDisposable } from '@phosphor/disposable';
 

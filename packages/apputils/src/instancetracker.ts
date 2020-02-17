@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IStateDB } from '@jupyterlab/coreutils';
+import { IStateDB } from '@fk-jupyterlab/coreutils';
 
 import { ArrayExt, each, find } from '@phosphor/algorithm';
 

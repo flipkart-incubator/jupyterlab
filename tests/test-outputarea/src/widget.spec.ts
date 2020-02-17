@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { ClientSession } from '@jupyterlab/apputils';
+import { ClientSession } from '@fk-jupyterlab/apputils';
 
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 import { Message } from '@phosphor/messaging';
 
@@ -15,13 +15,13 @@ import {
   IOutputAreaModel,
   OutputAreaModel,
   OutputArea
-} from '@jupyterlab/outputarea';
+} from '@fk-jupyterlab/outputarea';
 
 import {
   createClientSession,
   defaultRenderMime,
   NBTestUtils
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 /**
  * The default rendermime instance to use for testing.

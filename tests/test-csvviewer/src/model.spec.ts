@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { DSVModel } from '@jupyterlab/csvviewer';
+import { DSVModel } from '@fk-jupyterlab/csvviewer';
 
 /* tslint:disable:no-var-requires */
 const CSV_TEST_FILES = [

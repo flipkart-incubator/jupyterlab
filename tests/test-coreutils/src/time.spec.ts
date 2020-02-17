@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { Time } from '@jupyterlab/coreutils';
+import { Time } from '@fk-jupyterlab/coreutils';
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('Time', () => {
     describe('.formatHuman()', () => {
       it('should convert a time to a human readable string', () => {

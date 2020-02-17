@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ToolbarButton, showErrorMessage } from '@jupyterlab/apputils';
+import { ToolbarButton, showErrorMessage } from '@fk-jupyterlab/apputils';
 
 import { FileBrowserModel } from './model';
 

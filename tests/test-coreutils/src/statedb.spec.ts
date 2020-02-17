@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { StateDB } from '@jupyterlab/coreutils';
+import { StateDB } from '@fk-jupyterlab/coreutils';
 
 import { PromiseDelegate, ReadonlyJSONObject } from '@phosphor/coreutils';
 

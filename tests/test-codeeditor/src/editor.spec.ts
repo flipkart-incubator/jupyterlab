@@ -3,7 +3,7 @@
 
 import expect = require('expect.js');
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 describe('CodeEditor.Model', () => {
   let model: CodeEditor.Model;

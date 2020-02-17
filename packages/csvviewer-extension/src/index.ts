@@ -5,17 +5,17 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
 import {
   CSVViewer,
   CSVViewerFactory,
   TSVViewerFactory
-} from '@jupyterlab/csvviewer';
+} from '@fk-jupyterlab/csvviewer';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
 /**
  * The name of the factories that creates widgets.
@@ -29,7 +29,7 @@ const FACTORY_TSV = 'TSVTable';
 
 const csv: JupyterLabPlugin<void> = {
   activate: activateCsv,
-  id: '@jupyterlab/csvviewer-extension:csv',
+  id: '@fk-jupyterlab/csvviewer-extension:csv',
   requires: [ILayoutRestorer],
   autoStart: true
 };
@@ -39,7 +39,7 @@ const csv: JupyterLabPlugin<void> = {
  */
 const tsv: JupyterLabPlugin<void> = {
   activate: activateTsv,
-  id: '@jupyterlab/csvviewer-extension:tsv',
+  id: '@fk-jupyterlab/csvviewer-extension:tsv',
   requires: [ILayoutRestorer],
   autoStart: true
 };

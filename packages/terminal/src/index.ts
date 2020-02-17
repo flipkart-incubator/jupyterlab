@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IInstanceTracker, MainAreaWidget } from '@jupyterlab/apputils';
+import { IInstanceTracker, MainAreaWidget } from '@fk-jupyterlab/apputils';
 
 import { Token } from '@phosphor/coreutils';
 
@@ -22,6 +22,6 @@ export interface ITerminalTracker
  * The editor tracker token.
  */
 export const ITerminalTracker = new Token<ITerminalTracker>(
-  '@jupyterlab/terminal:ITerminalTracker'
+  '@fk-jupyterlab/terminal:ITerminalTracker'
 );
 /* tslint:enable */

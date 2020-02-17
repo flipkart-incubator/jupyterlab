@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { showErrorMessage } from '@jupyterlab/apputils';
+import { showErrorMessage } from '@fk-jupyterlab/apputils';
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
 import {
   IRenderMime,
   RenderMimeRegistry,
   MimeModel
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import { JSONObject, PromiseDelegate } from '@phosphor/coreutils';
 

@@ -1,11 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { showErrorMessage, Toolbar, ToolbarButton } from '@jupyterlab/apputils';
+import {
+  showErrorMessage,
+  Toolbar,
+  ToolbarButton
+} from '@fk-jupyterlab/apputils';
 
-import { DocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { Contents, ServerConnection } from '@jupyterlab/services';
+import { Contents, ServerConnection } from '@fk-jupyterlab/services';
 
 import { IIterator } from '@phosphor/algorithm';
 

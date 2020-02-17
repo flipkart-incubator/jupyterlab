@@ -1,3 +1,3 @@
-# @jupyterlab/codemirror-extension
+# @fk-jupyterlab/codemirror-extension
 
-A JupyterLab package which provides an entry point, commands, and keyboard shortcuts for the [@jupyterlab/codemirror](../codemirror) package.
+A JupyterLab package which provides an entry point, commands, and keyboard shortcuts for the [@fk-jupyterlab/codemirror](../codemirror) package.

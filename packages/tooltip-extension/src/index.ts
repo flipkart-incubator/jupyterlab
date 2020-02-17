@@ -1,23 +1,23 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Kernel, KernelMessage } from '@jupyterlab/services';
+import { Kernel, KernelMessage } from '@fk-jupyterlab/services';
 
 import { JSONObject } from '@phosphor/coreutils';
 
 import { Widget } from '@phosphor/widgets';
 
-import { Text } from '@jupyterlab/coreutils';
+import { Text } from '@fk-jupyterlab/coreutils';
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
-import { ITooltipManager, Tooltip } from '@jupyterlab/tooltip';
+import { ITooltipManager, Tooltip } from '@fk-jupyterlab/tooltip';
 
 /**
  * The command IDs used by the tooltip plugin.
@@ -34,7 +34,7 @@ namespace CommandIDs {
  * The main tooltip manager plugin.
  */
 const manager: JupyterLabPlugin<ITooltipManager> = {
-  id: '@jupyterlab/tooltip-extension:manager',
+  id: '@fk-jupyterlab/tooltip-extension:manager',
   autoStart: true,
   provides: ITooltipManager,
   activate: (app: JupyterLab): ITooltipManager => {
@@ -77,7 +77,7 @@ const manager: JupyterLabPlugin<ITooltipManager> = {
  * The console tooltip plugin.
  */
 const consoles: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/tooltip-extension:consoles',
+  id: '@fk-jupyterlab/tooltip-extension:consoles',
   autoStart: true,
   requires: [ITooltipManager, IConsoleTracker],
   activate: (
@@ -112,7 +112,7 @@ const consoles: JupyterLabPlugin<void> = {
  * The notebook tooltip plugin.
  */
 const notebooks: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/tooltip-extension:notebooks',
+  id: '@fk-jupyterlab/tooltip-extension:notebooks',
   autoStart: true,
   requires: [ITooltipManager, INotebookTracker],
   activate: (

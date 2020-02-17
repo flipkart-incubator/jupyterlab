@@ -5,15 +5,15 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   InstanceTracker,
   MainAreaWidget
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { JSONExt } from '@phosphor/coreutils';
 
@@ -31,7 +31,7 @@ namespace CommandIDs {
  */
 const plugin: JupyterLabPlugin<void> = {
   activate,
-  id: '@jupyterlab/faq-extension:plugin',
+  id: '@fk-jupyterlab/faq-extension:plugin',
   requires: [ICommandPalette, ILayoutRestorer, IRenderMimeRegistry],
   autoStart: true
 };

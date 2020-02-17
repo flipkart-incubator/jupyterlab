@@ -7,14 +7,14 @@
 // Polyfill for ES6 Promises
 import 'es6-promise';
 
-import { OutputArea, OutputAreaModel } from '@jupyterlab/outputarea';
+import { OutputArea, OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 function main() {
   const code = [

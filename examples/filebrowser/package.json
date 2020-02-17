@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/example-filebrowser",
+  "name": "@fk-jupyterlab/example-filebrowser",
   "version": "0.17.2",
   "private": true,
   "scripts": {
@@ -8,14 +8,14 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@jupyterlab/apputils": "^0.17.2",
-    "@jupyterlab/codemirror": "^0.17.3",
-    "@jupyterlab/docmanager": "^0.17.2",
-    "@jupyterlab/docregistry": "^0.17.2",
-    "@jupyterlab/filebrowser": "^0.17.3",
-    "@jupyterlab/fileeditor": "^0.17.2",
-    "@jupyterlab/services": "^3.0.3",
-    "@jupyterlab/theme-light-extension": "^0.17.3",
+    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/codemirror": "^0.17.3",
+    "@fk-jupyterlab/docmanager": "^0.17.2",
+    "@fk-jupyterlab/docregistry": "^0.17.2",
+    "@fk-jupyterlab/filebrowser": "^0.17.3",
+    "@fk-jupyterlab/fileeditor": "^0.17.2",
+    "@fk-jupyterlab/services": "^3.0.3",
+    "@fk-jupyterlab/theme-light-extension": "^0.17.3",
     "@phosphor/algorithm": "^1.1.2",
     "@phosphor/commands": "^1.5.0",
     "@phosphor/widgets": "^1.6.0",

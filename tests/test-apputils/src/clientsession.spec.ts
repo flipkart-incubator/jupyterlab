@@ -3,15 +3,15 @@
 
 import { expect } from 'chai';
 
-import { SessionManager } from '@jupyterlab/services';
+import { SessionManager } from '@fk-jupyterlab/services';
 
-import { ClientSession, IClientSession } from '@jupyterlab/apputils';
+import { ClientSession, IClientSession } from '@fk-jupyterlab/apputils';
 
 import { UUID } from '@phosphor/coreutils';
 
-import { acceptDialog, dismissDialog } from '@jupyterlab/testutils';
+import { acceptDialog, dismissDialog } from '@fk-jupyterlab/testutils';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('ClientSession', () => {
     const manager = new SessionManager();
     let session: ClientSession;

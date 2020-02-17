@@ -6,19 +6,19 @@ import {
   DOMUtils,
   showDialog,
   showErrorMessage
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PathExt, Time } from '@jupyterlab/coreutils';
+import { PathExt, Time } from '@fk-jupyterlab/coreutils';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   IDocumentManager,
   isValidFileName,
   renameFile
-} from '@jupyterlab/docmanager';
+} from '@fk-jupyterlab/docmanager';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import {
   ArrayExt,

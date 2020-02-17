@@ -7,9 +7,9 @@ import { CommandRegistry } from '@phosphor/commands';
 
 import { Widget } from '@phosphor/widgets';
 
-import { InstanceTracker } from '@jupyterlab/apputils';
+import { InstanceTracker } from '@fk-jupyterlab/apputils';
 
-import { RunMenu, IRunMenu } from '@jupyterlab/mainmenu';
+import { RunMenu, IRunMenu } from '@fk-jupyterlab/mainmenu';
 
 class Wodget extends Widget {
   state: string;
@@ -17,7 +17,7 @@ class Wodget extends Widget {
 
 import { delegateExecute } from './util';
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('RunMenu', () => {
     let commands: CommandRegistry;
     let menu: RunMenu;

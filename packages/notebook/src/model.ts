@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { DocumentModel, DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentModel, DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   ICellModel,
@@ -12,9 +12,9 @@ import {
   RawCellModel,
   MarkdownCellModel,
   CellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -23,7 +23,7 @@ import {
   IObservableUndoableList,
   IObservableList,
   IModelDB
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 import { CellList } from './celllist';
 

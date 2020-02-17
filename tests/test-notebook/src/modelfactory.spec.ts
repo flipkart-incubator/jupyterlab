@@ -3,13 +3,13 @@
 
 import { expect } from 'chai';
 
-import { CodeCellModel } from '@jupyterlab/cells';
+import { CodeCellModel } from '@fk-jupyterlab/cells';
 
-import { NotebookModel } from '@jupyterlab/notebook';
+import { NotebookModel } from '@fk-jupyterlab/notebook';
 
-import { NotebookModelFactory } from '@jupyterlab/notebook';
+import { NotebookModelFactory } from '@fk-jupyterlab/notebook';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookModelFactory', () => {
     describe('#constructor', () => {
       it('should create a new notebook model factory', () => {

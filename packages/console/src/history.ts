@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { IDisposable } from '@phosphor/disposable';
 
 import { Signal } from '@phosphor/signaling';
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 /**
  * The definition of a console history manager object.

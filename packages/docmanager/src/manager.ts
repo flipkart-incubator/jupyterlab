@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -9,9 +9,9 @@ import {
   DocumentRegistry,
   Context,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { Contents, Kernel, ServiceManager } from '@jupyterlab/services';
+import { Contents, Kernel, ServiceManager } from '@fk-jupyterlab/services';
 
 import { ArrayExt, find } from '@phosphor/algorithm';
 
@@ -34,7 +34,7 @@ import { DocumentWidgetManager } from './widgetmanager';
  * The document registry token.
  */
 export const IDocumentManager = new Token<IDocumentManager>(
-  '@jupyterlab/docmanager:IDocumentManager'
+  '@fk-jupyterlab/docmanager:IDocumentManager'
 );
 /* tslint:enable */
 

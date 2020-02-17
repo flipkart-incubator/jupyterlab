@@ -3,9 +3,9 @@
 
 import { expect } from 'chai';
 
-import { IFrame } from '@jupyterlab/apputils';
+import { IFrame } from '@fk-jupyterlab/apputils';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('IFrame', () => {
     describe('#constructor()', () => {
       it('should create a new iframe widget', () => {

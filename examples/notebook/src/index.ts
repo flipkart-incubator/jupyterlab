@@ -2,39 +2,39 @@
 // Distributed under the terms of the Modified BSD License.
 
 import 'es6-promise/auto'; // polyfill Promise on IE
-import '@jupyterlab/theme-light-extension/static/embed.css';
+import '@fk-jupyterlab/theme-light-extension/static/embed.css';
 import '../index.css';
 
 import { CommandRegistry } from '@phosphor/commands';
 
 import { CommandPalette, SplitPanel, Widget } from '@phosphor/widgets';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import {
   NotebookPanel,
   NotebookWidgetFactory,
   NotebookModelFactory,
   NotebookActions
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
 import {
   CompleterModel,
   Completer,
   CompletionHandler,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { DocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 let NOTEBOOK = 'test.ipynb';
 

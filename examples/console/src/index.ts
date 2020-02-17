@@ -2,23 +2,23 @@
 // Distributed under the terms of the Modified BSD License.
 
 import 'es6-promise/auto'; // polyfill Promise on IE
-import '@jupyterlab/theme-light-extension/static/embed.css';
+import '@fk-jupyterlab/theme-light-extension/static/embed.css';
 import '../index.css';
 
 import { CommandRegistry } from '@phosphor/commands';
 
 import { CommandPalette, SplitPanel, Widget } from '@phosphor/widgets';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { ConsolePanel } from '@jupyterlab/console';
+import { ConsolePanel } from '@fk-jupyterlab/console';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 let TITLE = 'Console';
 

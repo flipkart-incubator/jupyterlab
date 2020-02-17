@@ -28,8 +28,8 @@ if (require.main === module) {
   fs.copySync(path.resolve(path.join(__dirname, '..', 'test-template')), dest);
   let jsonPath = path.join(dest, 'package.json');
   let data = utils.readJSONFile(jsonPath);
-  if (name.indexOf('@jupyterlab/') === -1) {
-    name = '@jupyterlab/test-' + name;
+  if (name.indexOf('@fk-jupyterlab/') === -1) {
+    name = '@fk-jupyterlab/test-' + name;
   }
   data.name = name;
   utils.writePackageData(jsonPath, data);

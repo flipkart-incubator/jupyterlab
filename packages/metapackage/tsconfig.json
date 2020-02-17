@@ -6,8 +6,8 @@
     "jsx": "react",
     "outDir": "./lib",
     "paths": {
-      "@jupyterlab/*": ["../*/src"],
-      "@jupyterlab/mainmenu-extension": ["../mainmenu-extension/src"]
+      "@fk-jupyterlab/*": ["../*/src"],
+      "@fk-jupyterlab/mainmenu-extension": ["../mainmenu-extension/src"]
     },
     "sourceMap": true,
     "types": ["node"]

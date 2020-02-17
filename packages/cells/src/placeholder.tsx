@@ -5,7 +5,7 @@
 
 import * as React from 'react';
 
-import { VDomRenderer } from '@jupyterlab/apputils';
+import { VDomRenderer } from '@fk-jupyterlab/apputils';
 
 /**
  * The CSS class added to placeholders.

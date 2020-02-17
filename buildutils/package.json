@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/buildutils",
+  "name": "@fk-jupyterlab/buildutils",
   "version": "0.8.2",
   "description": "JupyterLab - Build Utilities",
   "homepage": "https://github.com/jupyterlab/jupyterlab",

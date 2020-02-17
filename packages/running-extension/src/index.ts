@@ -5,16 +5,16 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { RunningSessions } from '@jupyterlab/running';
+import { RunningSessions } from '@fk-jupyterlab/running';
 
 /**
  * The default running sessions extension.
  */
 const plugin: JupyterLabPlugin<void> = {
   activate,
-  id: '@jupyterlab/running-extension:plugin',
+  id: '@fk-jupyterlab/running-extension:plugin',
   requires: [ILayoutRestorer],
   autoStart: true
 };

@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
-import { ICommandPalette, MainAreaWidget } from '@jupyterlab/apputils';
+import { ICommandPalette, MainAreaWidget } from '@fk-jupyterlab/apputils';
 
-import { ILauncher, LauncherModel, Launcher } from '@jupyterlab/launcher';
+import { ILauncher, LauncherModel, Launcher } from '@fk-jupyterlab/launcher';
 
 import { toArray } from '@phosphor/algorithm';
 
@@ -27,7 +27,7 @@ namespace CommandIDs {
  */
 const plugin: JupyterLabPlugin<ILauncher> = {
   activate,
-  id: '@jupyterlab/launcher-extension:plugin',
+  id: '@fk-jupyterlab/launcher-extension:plugin',
   requires: [ICommandPalette],
   provides: ILauncher,
   autoStart: true

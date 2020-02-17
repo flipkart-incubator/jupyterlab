@@ -2,17 +2,17 @@
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
-import { Contents, Session } from '@jupyterlab/services';
+import { Contents, Session } from '@fk-jupyterlab/services';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { PathExt, URLExt } from '@jupyterlab/coreutils';
+import { PathExt, URLExt } from '@fk-jupyterlab/coreutils';
 
 import {
   IClientSession,
   ISanitizer,
   defaultSanitizer
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 import { ReadonlyJSONObject, Token } from '@phosphor/coreutils';
 
@@ -23,7 +23,7 @@ import { MimeModel } from './mimemodel';
  * The rendermime token.
  */
 export const IRenderMimeRegistry = new Token<IRenderMimeRegistry>(
-  '@jupyterlab/rendermime:IRenderMimeRegistry'
+  '@fk-jupyterlab/rendermime:IRenderMimeRegistry'
 );
 
 export interface IRenderMimeRegistry extends RenderMimeRegistry {}
@@ -34,7 +34,7 @@ export interface IRenderMimeRegistry extends RenderMimeRegistry {}
  * The latex typesetter token.
  */
 export const ILatexTypesetter = new Token<IRenderMime.ILatexTypesetter>(
-  '@jupyterlab/rendermime:ILatexTypesetter'
+  '@fk-jupyterlab/rendermime:ILatexTypesetter'
 );
 
 export interface ILatexTypesetter extends IRenderMime.ILatexTypesetter {}

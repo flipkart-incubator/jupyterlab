@@ -5,18 +5,18 @@ import { expect } from 'chai';
 
 import { toArray } from '@phosphor/algorithm';
 
-import { IChangedArgs, nbformat } from '@jupyterlab/coreutils';
+import { IChangedArgs, nbformat } from '@fk-jupyterlab/coreutils';
 
 import {
   CellModel,
   RawCellModel,
   MarkdownCellModel,
   CodeCellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { OutputAreaModel } from '@jupyterlab/outputarea';
+import { OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
-import { NBTestUtils } from '@jupyterlab/testutils';
+import { NBTestUtils } from '@fk-jupyterlab/testutils';
 
 class TestModel extends CellModel {
   get type(): 'raw' {

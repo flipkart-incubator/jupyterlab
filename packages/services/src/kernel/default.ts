@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@phosphor/coreutils';
 
@@ -1025,6 +1025,7 @@ export class DefaultKernel implements Kernel.IKernel {
     this._isReady = true;
     // Update our status to connected.
     this._updateStatus('connected');
+    this.update_kernel_status_http();
     // Get the kernel info, signaling that the kernel is ready.
     // TODO: requestKernelInfo shouldn't make a request, but should return cached info?
     this.requestKernelInfo()
@@ -1036,6 +1037,24 @@ export class DefaultKernel implements Kernel.IKernel {
       });
     this._isReady = false;
   };
+
+  private update_kernel_status_http(): void {
+    let settings = ServerConnection.makeSettings();
+    let url = URLExt.join(
+      settings.baseUrl,
+      KERNEL_SERVICE_URL + '/' + this._id
+    );
+    ServerConnection.makeRequest(url, {}, settings)
+      .then(response => {
+        if (response.status !== 200) {
+          throw new ServerConnection.ResponseError(response);
+        }
+        return response.json();
+      })
+      .then(data => {
+        this._updateStatus(data['execution_state']);
+      });
+  }
 
   /**
    * Handle a websocket message, validating and routing appropriately.
@@ -1621,10 +1640,7 @@ namespace Private {
     settings?: ServerConnection.ISettings
   ): Promise<void> {
     settings = settings || ServerConnection.makeSettings();
-    let url = URLExt.join(
-      settings.baseUrl,
-      KERNEL_SERVICE_SHUTDOWN_URL
-    );
+    let url = URLExt.join(settings.baseUrl, KERNEL_SERVICE_SHUTDOWN_URL);
     let init = { method: 'DELETE' };
     let response = await ServerConnection.makeRequest(url, init, settings);
     if (response.status !== 204) {

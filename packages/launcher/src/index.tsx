@@ -5,7 +5,7 @@ import {
   showErrorMessage,
   VDomModel,
   VDomRenderer
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 import {
   ArrayExt,
@@ -50,7 +50,9 @@ const KERNEL_CATEGORIES = ['Notebook', 'Console'];
 /**
  * The launcher token.
  */
-export const ILauncher = new Token<ILauncher>('@jupyterlab/launcher:ILauncher');
+export const ILauncher = new Token<ILauncher>(
+  '@fk-jupyterlab/launcher:ILauncher'
+);
 /* tslint:enable */
 
 /**

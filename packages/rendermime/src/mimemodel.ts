@@ -4,7 +4,7 @@
 |----------------------------------------------------------------------------*/
 import { ReadonlyJSONObject } from '@phosphor/coreutils';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 /**
  * The default mime model implementation.

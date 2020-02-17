@@ -6,13 +6,13 @@ import {
   IRouter,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
-import { ISettingRegistry } from '@jupyterlab/coreutils';
+import { ISettingRegistry } from '@fk-jupyterlab/coreutils';
 
-import { ExtensionView } from '@jupyterlab/extensionmanager';
+import { ExtensionView } from '@fk-jupyterlab/extensionmanager';
 
 /**
  * IDs of the commands added by this extension.
@@ -31,7 +31,7 @@ namespace CommandIDs {
  * The extension manager plugin.
  */
 const plugin: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/extensionmanager-extension:plugin',
+  id: '@fk-jupyterlab/extensionmanager-extension:plugin',
   autoStart: true,
   requires: [ISettingRegistry, ILayoutRestorer, IRouter],
   activate: async (

@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { CodeConsole, ConsolePanel } from '@jupyterlab/console';
+import { CodeConsole, ConsolePanel } from '@fk-jupyterlab/console';
 
-import { defaultRenderMime } from '@jupyterlab/testutils';
+import { defaultRenderMime } from '@fk-jupyterlab/testutils';
 
 export const editorFactory = editorServices.factoryService.newInlineEditor.bind(
   editorServices.factoryService

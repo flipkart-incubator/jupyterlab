@@ -163,7 +163,7 @@ released npm packages, not the development versions.
 
 ::
 
-    npm install --save @jupyterlab/notebook @jupyterlab/application @jupyterlab/apputils @jupyterlab/docregistry @phosphor/disposable
+    npm install --save @fk-jupyterlab/notebook @fk-jupyterlab/application @fk-jupyterlab/apputils @fk-jupyterlab/docregistry @phosphor/disposable
 
 Copy the following to ``src/index.ts``:
 
@@ -175,19 +175,19 @@ Copy the following to ``src/index.ts``:
 
     import {
       JupyterLab, JupyterLabPlugin
-    } from '@jupyterlab/application';
+    } from '@fk-jupyterlab/application';
 
     import {
       ToolbarButton
-    } from '@jupyterlab/apputils';
+    } from '@fk-jupyterlab/apputils';
 
     import {
       DocumentRegistry
-    } from '@jupyterlab/docregistry';
+    } from '@fk-jupyterlab/docregistry';
 
     import {
       NotebookActions, NotebookPanel, INotebookModel
-    } from '@jupyterlab/notebook';
+    } from '@fk-jupyterlab/notebook';
 
 
     /**

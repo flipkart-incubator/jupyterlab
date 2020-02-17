@@ -3,7 +3,7 @@
 
 import { Widget } from '@phosphor/widgets';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import '../style/index.css';
 
@@ -77,7 +77,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 
 const extensions: IRenderMime.IExtension | IRenderMime.IExtension[] = [
   {
-    id: '@jupyterlab/pdf-extension:factory',
+    id: '@fk-jupyterlab/pdf-extension:factory',
     rendererFactory,
     dataType: 'string',
     fileTypes: [

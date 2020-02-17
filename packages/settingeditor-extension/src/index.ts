@@ -7,24 +7,24 @@ import {
   ILayoutRestorer,
   JupyterLab,
   JupyterLabPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   InstanceTracker,
   MainAreaWidget
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { ISettingRegistry, IStateDB } from '@jupyterlab/coreutils';
+import { ISettingRegistry, IStateDB } from '@fk-jupyterlab/coreutils';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import {
   ISettingEditorTracker,
   SettingEditor
-} from '@jupyterlab/settingeditor';
+} from '@fk-jupyterlab/settingeditor';
 
 /**
  * The command IDs used by the setting editor.
@@ -43,7 +43,7 @@ namespace CommandIDs {
  * The default setting editor extension.
  */
 const plugin: JupyterLabPlugin<ISettingEditorTracker> = {
-  id: '@jupyterlab/settingeditor-extension:plugin',
+  id: '@fk-jupyterlab/settingeditor-extension:plugin',
   requires: [
     ILayoutRestorer,
     ISettingRegistry,

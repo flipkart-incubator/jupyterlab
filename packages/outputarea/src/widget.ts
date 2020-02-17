@@ -15,15 +15,15 @@ import { Panel, PanelLayout } from '@phosphor/widgets';
 
 import { Widget } from '@phosphor/widgets';
 
-import { IClientSession } from '@jupyterlab/apputils';
+import { IClientSession } from '@fk-jupyterlab/apputils';
 
-import { nbformat } from '@jupyterlab/coreutils';
+import { nbformat } from '@fk-jupyterlab/coreutils';
 
-import { IOutputModel, RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IOutputModel, RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { Kernel, KernelMessage } from '@jupyterlab/services';
+import { Kernel, KernelMessage } from '@fk-jupyterlab/services';
 
 import { IOutputAreaModel } from './model';
 

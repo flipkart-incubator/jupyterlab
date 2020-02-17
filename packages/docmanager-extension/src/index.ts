@@ -5,29 +5,29 @@ import { toArray, iter } from '@phosphor/algorithm';
 
 import { Widget, DockLayout } from '@phosphor/widgets';
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
 import {
   showDialog,
   showErrorMessage,
   Dialog,
   ICommandPalette
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs, ISettingRegistry, Time } from '@jupyterlab/coreutils';
+import { IChangedArgs, ISettingRegistry, Time } from '@fk-jupyterlab/coreutils';
 
 import {
   renameDialog,
   getOpenPath,
   DocumentManager,
   IDocumentManager
-} from '@jupyterlab/docmanager';
+} from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { Contents, Kernel } from '@jupyterlab/services';
+import { Contents, Kernel } from '@fk-jupyterlab/services';
 
 import { IDisposable } from '@phosphor/disposable';
 
@@ -79,7 +79,7 @@ namespace CommandIDs {
   export const markdownPreview = 'markdownviewer:open';
 }
 
-const pluginId = '@jupyterlab/docmanager-extension:plugin';
+const pluginId = '@fk-jupyterlab/docmanager-extension:plugin';
 
 /**
  * The default document manager provider.

@@ -3,7 +3,7 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { VDomRenderer } from '@jupyterlab/apputils';
+import { VDomRenderer } from '@fk-jupyterlab/apputils';
 
 import * as React from 'react';
 

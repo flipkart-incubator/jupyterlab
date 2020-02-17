@@ -3,7 +3,7 @@
 
 import { expect } from 'chai';
 
-import { parseDSV as parser } from '@jupyterlab/csvviewer';
+import { parseDSV as parser } from '@fk-jupyterlab/csvviewer';
 
 describe('csvviewer/parse', () => {
   describe('parseDSV', () => {

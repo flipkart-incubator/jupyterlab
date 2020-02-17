@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterLab, JupyterLabPlugin } from '@jupyterlab/application';
+import { JupyterLab, JupyterLabPlugin } from '@fk-jupyterlab/application';
 
 import {
   CompleterModel,
@@ -9,11 +9,11 @@ import {
   CompletionHandler,
   ICompletionManager,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
 import { Widget } from '@phosphor/widgets';
 
@@ -38,7 +38,7 @@ namespace CommandIDs {
  * A plugin providing code completion for editors.
  */
 const manager: JupyterLabPlugin<ICompletionManager> = {
-  id: '@jupyterlab/completer-extension:manager',
+  id: '@fk-jupyterlab/completer-extension:manager',
   autoStart: true,
   provides: ICompletionManager,
   activate: (app: JupyterLab): ICompletionManager => {
@@ -112,7 +112,7 @@ const manager: JupyterLabPlugin<ICompletionManager> = {
  * An extension that registers consoles for code completion.
  */
 const consoles: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/completer-extension:consoles',
+  id: '@fk-jupyterlab/completer-extension:consoles',
   requires: [ICompletionManager, IConsoleTracker],
   autoStart: true,
   activate: (
@@ -171,7 +171,7 @@ const consoles: JupyterLabPlugin<void> = {
  * An extension that registers notebooks for code completion.
  */
 const notebooks: JupyterLabPlugin<void> = {
-  id: '@jupyterlab/completer-extension:notebooks',
+  id: '@fk-jupyterlab/completer-extension:notebooks',
   requires: [ICompletionManager, INotebookTracker],
   autoStart: true,
   activate: (

@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Contents, Kernel } from '@jupyterlab/services';
+import { Contents, Kernel } from '@fk-jupyterlab/services';
 
 import {
   ArrayExt,
@@ -21,18 +21,18 @@ import { ISignal, Signal } from '@phosphor/signaling';
 
 import { DockLayout, Widget } from '@phosphor/widgets';
 
-import { IClientSession, Toolbar } from '@jupyterlab/apputils';
+import { IClientSession, Toolbar } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   IChangedArgs as IChangedArgsGeneric,
   PathExt
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
-import { IModelDB } from '@jupyterlab/observables';
+import { IModelDB } from '@fk-jupyterlab/observables';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { TextModelFactory } from './default';
 

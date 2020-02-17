@@ -5,15 +5,15 @@ import { expect } from 'chai';
 
 import { toArray } from '@phosphor/algorithm';
 
-import { INotebookModel } from '@jupyterlab/notebook';
+import { INotebookModel } from '@fk-jupyterlab/notebook';
 
-import { NotebookPanel } from '@jupyterlab/notebook';
+import { NotebookPanel } from '@fk-jupyterlab/notebook';
 
-import { NotebookWidgetFactory } from '@jupyterlab/notebook';
+import { NotebookWidgetFactory } from '@fk-jupyterlab/notebook';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
-import { createNotebookContext, NBTestUtils } from '@jupyterlab/testutils';
+import { createNotebookContext, NBTestUtils } from '@fk-jupyterlab/testutils';
 
 const contentFactory = NBTestUtils.createNotebookPanelFactory();
 const rendermime = NBTestUtils.defaultRenderMime();
@@ -29,7 +29,7 @@ function createFactory(): NotebookWidgetFactory {
   });
 }
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookWidgetFactory', () => {
     let context: Context<INotebookModel>;
 
