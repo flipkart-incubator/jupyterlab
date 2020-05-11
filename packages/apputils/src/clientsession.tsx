@@ -594,7 +594,10 @@ export class ClientSession implements IClientSession {
     }
     let session = this._session;
     if (session) {
-      return session.changeKernel(options);
+      return session.changeKernel(options).catch(err => {
+        this._handleSessionError(err);
+        return Promise.reject(err);
+      });
     } else {
       return this._startSession(options);
     }
