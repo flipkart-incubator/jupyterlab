@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@fk-jupyterlab/application": "^0.17.2",
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/csvviewer": "^0.17.2",
     "@fk-jupyterlab/docregistry": "^0.17.2"
   },

@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@fk-jupyterlab/application": "^0.17.2",
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/coreutils": "^2.0.3",
     "@fk-jupyterlab/mainmenu": "^0.6.2",
     "@fk-jupyterlab/services": "^3.0.3",

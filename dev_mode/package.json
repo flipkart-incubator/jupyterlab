@@ -14,7 +14,7 @@
   "dependencies": {
     "@fk-jupyterlab/application": "^0.17.2",
     "@fk-jupyterlab/application-extension": "^0.17.4",
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/apputils-extension": "^0.17.2",
     "@fk-jupyterlab/attachments": "^0.17.2",
     "@fk-jupyterlab/cells": "^0.17.2",
@@ -215,7 +215,7 @@
       "url-parse",
       "xterm"
     ],
-    "version": "0.33.12",
+    "version": "0.33.13.dev5",
     "linkedPackages": {
       "@fk-jupyterlab/application": "../packages/application",
       "@fk-jupyterlab/application-extension": "../packages/application-extension",

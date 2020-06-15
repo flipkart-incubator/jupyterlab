@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@fk-jupyterlab/application": "^0.17.2",
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/console": "^0.17.2",
     "@fk-jupyterlab/inspector": "^0.17.2",
     "@fk-jupyterlab/notebook": "^0.17.2",

@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@fk-jupyterlab/application": "^0.17.2",
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/launcher": "^0.17.2",
     "@phosphor/algorithm": "^1.1.2",
     "@phosphor/coreutils": "^1.3.0",

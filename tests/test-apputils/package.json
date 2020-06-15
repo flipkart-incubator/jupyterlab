@@ -16,7 +16,7 @@
     "watch:src": "tsc -w --listEmittedFiles"
   },
   "dependencies": {
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/services": "^3.0.3",
     "@fk-jupyterlab/testutils": "^0.1.0",
     "@phosphor/algorithm": "^1.1.2",
