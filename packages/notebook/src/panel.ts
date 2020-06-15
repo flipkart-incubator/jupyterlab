@@ -9,7 +9,7 @@ import { Message } from '@phosphor/messaging';
 
 import { ISignal, Signal } from '@phosphor/signaling';
 
-import { IClientSession } from '@fk-jupyterlab/apputils';
+import { IClientSession, showDialog, Dialog } from '@fk-jupyterlab/apputils';
 
 import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 
@@ -50,6 +50,10 @@ export class NotebookPanel extends DocumentWidget<Notebook, INotebookModel> {
     // Set up things related to the context
     this.content.model = this.context.model;
     this.context.session.kernelChanged.connect(this._onKernelChanged, this);
+    this.context.session.statusChanged.connect(
+      this._onSessionStatusChanged,
+      this
+    );
 
     this.revealed.then(() => {
       // Set the document edit mode on initial open if it looks like a new document.
@@ -145,6 +149,33 @@ export class NotebookPanel extends DocumentWidget<Notebook, INotebookModel> {
     this._updateSpec(newValue);
   }
 
+  private _onSessionStatusChanged(
+    sender: IClientSession,
+    status: Kernel.Status
+  ) {
+    // If the status is autorestarting, and we aren't already in a series of
+    // autorestarts, show the dialog.
+    if (status === 'autorestarting' && !this._autorestarting) {
+      // The kernel died and the server is restarting it. We notify the user so
+      // they know why their kernel state is gone.
+      void showDialog({
+        title: 'Kernel Restarting',
+        body: `The kernel for ${
+          this.session.path
+        } appears to have died. It will restart automatically.`,
+        buttons: [Dialog.okButton()]
+      });
+      this._autorestarting = true;
+    } else if (status === 'restarting') {
+      // Another autorestart attempt will first change the status to
+      // restarting, then to autorestarting again, so we don't reset the
+      // autorestarting status if the status is 'restarting'.
+      /* no-op */
+    } else {
+      this._autorestarting = false;
+    }
+  }
+
   /**
    * Update the kernel language.
    */
@@ -169,6 +200,12 @@ export class NotebookPanel extends DocumentWidget<Notebook, INotebookModel> {
   }
 
   private _activated = new Signal<this, void>(this);
+
+  /**
+   * Whether we are currently in a series of autorestarts we have already
+   * notified the user about.
+   */
+  private _autorestarting = false;
 }
 
 /**
