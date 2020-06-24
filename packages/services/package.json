@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/services",
-  "version": "3.0.3",
+  "version": "3.0.7",
   "description": "Client APIs for the Jupyter services REST APIs",
   "keywords": [
     "jupyter",

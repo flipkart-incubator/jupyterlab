@@ -33,7 +33,7 @@
   "dependencies": {
     "@fk-jupyterlab/application": "^0.17.2",
     "@fk-jupyterlab/application-extension": "^0.17.4",
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/apputils-extension": "^0.17.2",
     "@fk-jupyterlab/attachments": "^0.17.2",
     "@fk-jupyterlab/cells": "^0.17.2",

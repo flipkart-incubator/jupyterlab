@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/console",
-  "version": "0.17.2",
+  "version": "0.17.5",
   "description": "JupyterLab - Code Console",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
   "bugs": {
@@ -30,7 +30,7 @@
     "watch": "tsc -w --listEmittedFiles"
   },
   "dependencies": {
-    "@fk-jupyterlab/apputils": "^0.17.2",
+    "@fk-jupyterlab/apputils": "^0.17.7",
     "@fk-jupyterlab/cells": "^0.17.2",
     "@fk-jupyterlab/codeeditor": "^0.17.2",
     "@fk-jupyterlab/coreutils": "^2.0.3",
