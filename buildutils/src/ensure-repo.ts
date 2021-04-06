@@ -252,7 +252,7 @@ function ensureMetaPackage(): string[] {
     // Ensure it is a dependency.
     if (!mpData.dependencies[name]) {
       valid = false;
-      mpData.dependencies[name] = '^' + data.version;
+      mpData.dependencies[name] = data.version;
     }
 
     if (!valid) {
@@ -327,7 +327,7 @@ function ensureJupyterlab(): string[] {
   // resolutions.
   coreData.forEach((data, name) => {
     // Insist on a restricted version in the yarn resolution.
-    corePackage.resolutions[name] = `~${data.version}`;
+    corePackage.resolutions[name] = `${data.version}`;
   });
 
   // Then fill in any missing packages that should be singletons from the direct
@@ -370,7 +370,7 @@ function ensureJupyterlab(): string[] {
     }
 
     // Make sure it is included as a dependency.
-    corePackage.dependencies[data.name] = `~${data.version}`;
+    corePackage.dependencies[data.name] = `${data.version}`;
 
     // Handle extensions.
     ['extension', 'mimeExtension'].forEach(item => {
@@ -568,7 +568,9 @@ export async function ensureIntegrity(): Promise<boolean> {
   }
 
   // ensure the icon svg imports
-  pkgMessages = await ensureUiComponents(pkgPaths['@fk-jupyterlab/ui-components']);
+  pkgMessages = await ensureUiComponents(
+    pkgPaths['@fk-jupyterlab/ui-components']
+  );
   if (pkgMessages.length > 0) {
     const pkgName = '@fk-jupyterlab/ui-components';
     if (!messages[pkgName]) {
