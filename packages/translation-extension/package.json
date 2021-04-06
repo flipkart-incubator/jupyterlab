@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/translation-extension",
-  "version": "3.0.7",
+  "version": "3.0.8-dev.0",
   "description": "JupyterLab - Translation services",
   "keywords": [
     "jupyter",
@@ -40,11 +40,11 @@
     "watch": "tsc -w"
   },
   "dependencies": {
-    "@fk-jupyterlab/application": "^3.0.7",
-    "@fk-jupyterlab/apputils": "^3.0.5",
-    "@fk-jupyterlab/mainmenu": "^3.0.5",
-    "@fk-jupyterlab/settingregistry": "^3.0.3",
-    "@fk-jupyterlab/translation": "^3.0.5",
+    "@fk-jupyterlab/application": "^3.0.8-dev.0",
+    "@fk-jupyterlab/apputils": "^3.0.6-dev.0",
+    "@fk-jupyterlab/mainmenu": "^3.0.6-dev.0",
+    "@fk-jupyterlab/settingregistry": "^3.0.4-dev.0",
+    "@fk-jupyterlab/translation": "^3.0.6-dev.0",
     "@lumino/widgets": "^1.16.1"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/example-federated",
-  "version": "2.1.2",
+  "version": "2.1.3-dev.0",
   "private": true,
   "scripts": {
     "build": "npm run build:core && npm run build:middle && npm run build:md && npm run build:phosphor",

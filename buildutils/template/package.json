@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/template",
-  "version": "3.0.3",
+  "version": "3.0.4-dev.0",
   "description": "JupyterLab - Package Template",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
   "bugs": {
@@ -37,7 +37,7 @@
     "watch": "tsc -b --watch"
   },
   "devDependencies": {
-    "@fk-jupyterlab/testutils": "^3.0.7",
+    "@fk-jupyterlab/testutils": "^3.0.8-dev.0",
     "@types/jest": "^26.0.10",
     "jest": "^26.4.2",
     "rimraf": "~3.0.0",

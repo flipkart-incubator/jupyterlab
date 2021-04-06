@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/settingeditor-extension",
-  "version": "3.0.7",
+  "version": "3.0.8-dev.0",
   "description": "JupyterLab - Setting Editor Extension",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
   "bugs": {
@@ -38,15 +38,15 @@
     "watch": "tsc -b --watch"
   },
   "dependencies": {
-    "@fk-jupyterlab/application": "^3.0.7",
-    "@fk-jupyterlab/apputils": "^3.0.5",
-    "@fk-jupyterlab/codeeditor": "^3.0.5",
-    "@fk-jupyterlab/rendermime": "^3.0.6",
-    "@fk-jupyterlab/settingeditor": "^3.0.6",
-    "@fk-jupyterlab/settingregistry": "^3.0.3",
-    "@fk-jupyterlab/statedb": "^3.0.3",
-    "@fk-jupyterlab/translation": "^3.0.5",
-    "@fk-jupyterlab/ui-components": "^3.0.4",
+    "@fk-jupyterlab/application": "^3.0.8-dev.0",
+    "@fk-jupyterlab/apputils": "^3.0.6-dev.0",
+    "@fk-jupyterlab/codeeditor": "^3.0.6-dev.0",
+    "@fk-jupyterlab/rendermime": "^3.0.7-dev.0",
+    "@fk-jupyterlab/settingeditor": "^3.0.7-dev.0",
+    "@fk-jupyterlab/settingregistry": "^3.0.4-dev.0",
+    "@fk-jupyterlab/statedb": "^3.0.4-dev.0",
+    "@fk-jupyterlab/translation": "^3.0.6-dev.0",
+    "@fk-jupyterlab/ui-components": "^3.0.5-dev.0",
     "@lumino/disposable": "^1.4.3"
   },
   "devDependencies": {

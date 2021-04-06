@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/example-notebook",
-  "version": "3.0.7",
+  "version": "3.0.8-dev.0",
   "private": true,
   "scripts": {
     "build": "tsc -p src && webpack",
@@ -8,16 +8,16 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@fk-jupyterlab/codemirror": "^3.0.5",
-    "@fk-jupyterlab/completer": "^3.0.5",
-    "@fk-jupyterlab/docmanager": "^3.0.7",
-    "@fk-jupyterlab/docregistry": "^3.0.7",
-    "@fk-jupyterlab/documentsearch": "^3.0.7",
-    "@fk-jupyterlab/mathjax2": "^3.0.5",
-    "@fk-jupyterlab/notebook": "^3.0.7",
-    "@fk-jupyterlab/rendermime": "^3.0.6",
-    "@fk-jupyterlab/services": "^6.0.5",
-    "@fk-jupyterlab/theme-light-extension": "^3.0.7",
+    "@fk-jupyterlab/codemirror": "^3.0.6-dev.0",
+    "@fk-jupyterlab/completer": "^3.0.6-dev.0",
+    "@fk-jupyterlab/docmanager": "^3.0.8-dev.0",
+    "@fk-jupyterlab/docregistry": "^3.0.8-dev.0",
+    "@fk-jupyterlab/documentsearch": "^3.0.8-dev.0",
+    "@fk-jupyterlab/mathjax2": "^3.0.6-dev.0",
+    "@fk-jupyterlab/notebook": "^3.0.8-dev.0",
+    "@fk-jupyterlab/rendermime": "^3.0.7-dev.0",
+    "@fk-jupyterlab/services": "^6.0.6-dev.0",
+    "@fk-jupyterlab/theme-light-extension": "^3.0.8-dev.0",
     "@lumino/commands": "^1.12.0",
     "@lumino/widgets": "^1.16.1",
     "es6-promise": "~4.2.8"

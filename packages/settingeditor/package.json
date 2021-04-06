@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/settingeditor",
-  "version": "3.0.6",
+  "version": "3.0.7-dev.0",
   "description": "The JupyterLab default setting editor interface",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
   "bugs": {
@@ -37,14 +37,14 @@
     "watch": "tsc -b --watch"
   },
   "dependencies": {
-    "@fk-jupyterlab/apputils": "^3.0.5",
-    "@fk-jupyterlab/codeeditor": "^3.0.5",
-    "@fk-jupyterlab/inspector": "^3.0.6",
-    "@fk-jupyterlab/rendermime": "^3.0.6",
-    "@fk-jupyterlab/settingregistry": "^3.0.3",
-    "@fk-jupyterlab/statedb": "^3.0.3",
-    "@fk-jupyterlab/translation": "^3.0.5",
-    "@fk-jupyterlab/ui-components": "^3.0.4",
+    "@fk-jupyterlab/apputils": "^3.0.6-dev.0",
+    "@fk-jupyterlab/codeeditor": "^3.0.6-dev.0",
+    "@fk-jupyterlab/inspector": "^3.0.7-dev.0",
+    "@fk-jupyterlab/rendermime": "^3.0.7-dev.0",
+    "@fk-jupyterlab/settingregistry": "^3.0.4-dev.0",
+    "@fk-jupyterlab/statedb": "^3.0.4-dev.0",
+    "@fk-jupyterlab/translation": "^3.0.6-dev.0",
+    "@fk-jupyterlab/ui-components": "^3.0.5-dev.0",
     "@lumino/commands": "^1.12.0",
     "@lumino/coreutils": "^1.5.3",
     "@lumino/messaging": "^1.4.3",

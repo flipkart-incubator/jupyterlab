@@ -1,6 +1,6 @@
 {
   "name": "@fk-jupyterlab/example-services-browser",
-  "version": "3.0.5",
+  "version": "3.0.6-dev.0",
   "private": true,
   "scripts": {
     "build": "tsc && webpack",
@@ -8,8 +8,8 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@fk-jupyterlab/coreutils": "^5.0.3",
-    "@fk-jupyterlab/services": "^6.0.5",
+    "@fk-jupyterlab/coreutils": "^5.0.4-dev.0",
+    "@fk-jupyterlab/services": "^6.0.6-dev.0",
     "@lumino/coreutils": "^1.5.3"
   },
   "devDependencies": {
