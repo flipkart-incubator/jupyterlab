@@ -89,7 +89,7 @@ commander
     utils.run(
       `git commit -am "Publish ${curr}" -m "SHA256 hashes:" -m "${hashString}"`
     );
-    utils.run(`git tag v${curr}`);
+    // utils.run(`git tag v${curr}`);
 
     // Prompt the user to finalize.
     console.debug('*'.repeat(40));
