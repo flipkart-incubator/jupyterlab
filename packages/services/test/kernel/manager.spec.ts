@@ -10,7 +10,7 @@ import {
   sleep,
   JupyterServer,
   flakyIt as it
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import { makeSettings } from '../utils';
 

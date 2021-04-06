@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { isMarkdownCellModel } from '@jupyterlab/cells';
+import { isMarkdownCellModel } from '@fk-jupyterlab/cells';
 
-import { Kernel, KernelMessage, Session } from '@jupyterlab/services';
+import { Kernel, KernelMessage, Session } from '@fk-jupyterlab/services';
 
 import { each } from '@lumino/algorithm';
 
@@ -14,19 +14,19 @@ import {
   Printing,
   showDialog,
   Dialog
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { DocumentWidget, DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentWidget, DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import { INotebookModel } from './model';
 
 import { Notebook, StaticNotebook } from './widget';
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to notebook panels.
@@ -305,7 +305,7 @@ export namespace NotebookPanel {
    * The notebook renderer token.
    */
   export const IContentFactory = new Token<IContentFactory>(
-    '@jupyterlab/notebook:IContentFactory'
+    '@fk-jupyterlab/notebook:IContentFactory'
   );
   /* tslint:enable */
 }

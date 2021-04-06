@@ -5,15 +5,15 @@
 
 import marked from 'marked';
 
-import { ISanitizer } from '@jupyterlab/apputils';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
 
-import { Mode, CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { Mode, CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { toArray } from '@lumino/algorithm';
 

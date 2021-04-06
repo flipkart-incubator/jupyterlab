@@ -3,11 +3,11 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IObservableJSON, ObservableJSON } from '@jupyterlab/observables';
+import { IObservableJSON, ObservableJSON } from '@fk-jupyterlab/observables';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import {
   JSONExt,

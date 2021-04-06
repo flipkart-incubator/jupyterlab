@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { HoverBox, defaultSanitizer } from '@jupyterlab/apputils';
+import { HoverBox, defaultSanitizer } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { LabIcon } from '@jupyterlab/ui-components';
+import { LabIcon } from '@fk-jupyterlab/ui-components';
 
 import { IIterator, IterableOrArrayLike, toArray } from '@lumino/algorithm';
 

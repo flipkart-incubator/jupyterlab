@@ -4,10 +4,10 @@ module.exports = {
   entry: './lib',
   output: {
     filename: './dist/index.js',
-    library: '@jupyterlab/services',
+    library: '@fk-jupyterlab/services',
     libraryTarget: 'umd',
     umdNamedDefine: true,
-    publicPath: 'https://unpkg.com/@jupyterlab/services@' + version + '/dist/'
+    publicPath: 'https://unpkg.com/@fk-jupyterlab/services@' + version + '/dist/'
   },
   bail: true,
   mode: 'production',

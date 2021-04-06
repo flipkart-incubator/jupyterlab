@@ -7,19 +7,19 @@
  * @module mathjax2-extension
  */
 
-import { JupyterFrontEndPlugin } from '@jupyterlab/application';
+import { JupyterFrontEndPlugin } from '@fk-jupyterlab/application';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { ILatexTypesetter } from '@jupyterlab/rendermime';
+import { ILatexTypesetter } from '@fk-jupyterlab/rendermime';
 
-import { MathJaxTypesetter } from '@jupyterlab/mathjax2';
+import { MathJaxTypesetter } from '@fk-jupyterlab/mathjax2';
 
 /**
  * The MathJax latexTypesetter plugin.
  */
 const plugin: JupyterFrontEndPlugin<ILatexTypesetter> = {
-  id: '@jupyterlab/mathjax2-extension:plugin',
+  id: '@fk-jupyterlab/mathjax2-extension:plugin',
   autoStart: true,
   provides: ILatexTypesetter,
   activate: () => {

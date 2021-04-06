@@ -2,14 +2,14 @@
 // Distributed under the terms of the Modified BSD License.
 
 import * as React from 'react';
-import { INotebookTracker } from '@jupyterlab/notebook';
-import { TranslationBundle } from '@jupyterlab/translation';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
+import { TranslationBundle } from '@fk-jupyterlab/translation';
 import {
   codeIcon,
   markdownIcon,
   numberingIcon,
   tagIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { JSONValue } from '@lumino/coreutils';
 import { OptionsManager } from './options_manager';

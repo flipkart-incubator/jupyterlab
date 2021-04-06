@@ -1,3 +1,3 @@
-# @jupyterlab/logconsole-extension
+# @fk-jupyterlab/logconsole-extension
 
 JupyterLab - Log Console Extension

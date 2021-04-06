@@ -1,14 +1,14 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISanitizer } from '@jupyterlab/apputils';
-import { IDocumentWidget } from '@jupyterlab/docregistry';
-import { FileEditor, IEditorTracker } from '@jupyterlab/fileeditor';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
+import { FileEditor, IEditorTracker } from '@fk-jupyterlab/fileeditor';
 import {
   IMarkdownViewerTracker,
   MarkdownDocument
-} from '@jupyterlab/markdownviewer';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+} from '@fk-jupyterlab/markdownviewer';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 import { TableOfContentsRegistry as Registry } from '../../registry';
 import { TableOfContents } from '../../toc';
 import { INumberedHeading } from '../../utils/headings';

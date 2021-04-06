@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Cell, CodeCell } from '@jupyterlab/cells';
+import { Cell, CodeCell } from '@fk-jupyterlab/cells';
 
-import { IObservableMap, ObservableMap } from '@jupyterlab/observables';
+import { IObservableMap, ObservableMap } from '@fk-jupyterlab/observables';
 
-import { Notebook, NotebookPanel } from '@jupyterlab/notebook';
+import { Notebook, NotebookPanel } from '@fk-jupyterlab/notebook';
 
 import { IDisposable } from '@lumino/disposable';
 

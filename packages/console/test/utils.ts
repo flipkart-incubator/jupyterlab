@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { defaultRenderMime } from '@jupyterlab/testutils';
+import { defaultRenderMime } from '@fk-jupyterlab/testutils';
 
 import { CodeConsole, ConsolePanel } from '../src';
 

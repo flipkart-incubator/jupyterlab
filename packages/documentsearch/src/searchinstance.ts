@@ -4,8 +4,8 @@
 import { IDisplayState, ISearchProvider, IFiltersType } from './interfaces';
 import { createSearchOverlay } from './searchoverlay';
 
-import { MainAreaWidget } from '@jupyterlab/apputils';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { MainAreaWidget } from '@fk-jupyterlab/apputils';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 import { IDisposable } from '@lumino/disposable';
 import { ISignal, Signal } from '@lumino/signaling';
 import { Widget } from '@lumino/widgets';

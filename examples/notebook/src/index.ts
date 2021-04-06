@@ -1,50 +1,50 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 (window as any).__webpack_public_path__ = URLExt.join(
   PageConfig.getBaseUrl(),
   'example/'
 );
 
-import '@jupyterlab/application/style/index.css';
-import '@jupyterlab/codemirror/style/index.css';
-import '@jupyterlab/completer/style/index.css';
-import '@jupyterlab/documentsearch/style/index.css';
-import '@jupyterlab/notebook/style/index.css';
-import '@jupyterlab/theme-light-extension/style/index.css';
+import '@fk-jupyterlab/application/style/index.css';
+import '@fk-jupyterlab/codemirror/style/index.css';
+import '@fk-jupyterlab/completer/style/index.css';
+import '@fk-jupyterlab/documentsearch/style/index.css';
+import '@fk-jupyterlab/notebook/style/index.css';
+import '@fk-jupyterlab/theme-light-extension/style/index.css';
 import '../index.css';
 
 import { CommandRegistry } from '@lumino/commands';
 
 import { CommandPalette, SplitPanel, Widget } from '@lumino/widgets';
 
-import { ServiceManager } from '@jupyterlab/services';
-import { MathJaxTypesetter } from '@jupyterlab/mathjax2';
+import { ServiceManager } from '@fk-jupyterlab/services';
+import { MathJaxTypesetter } from '@fk-jupyterlab/mathjax2';
 
 import {
   NotebookPanel,
   NotebookWidgetFactory,
   NotebookModelFactory
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
 import {
   CompleterModel,
   Completer,
   CompletionHandler,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { DocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 import { SetupCommands } from './commands';
 
 function main(): void {

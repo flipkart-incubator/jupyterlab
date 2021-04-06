@@ -4,20 +4,20 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette } from '@jupyterlab/apputils';
+import { ICommandPalette } from '@fk-jupyterlab/apputils';
 
 import {
   CodeConsole,
   ConsolePanel,
   IConsoleTracker,
   ForeignHandler
-} from '@jupyterlab/console';
+} from '@fk-jupyterlab/console';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 import { AttachedProperty } from '@lumino/properties';
 
@@ -27,7 +27,7 @@ import { ReadonlyPartialJSONObject } from '@lumino/coreutils';
  * The console widget tracker provider.
  */
 export const foreign: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/console-extension:foreign',
+  id: '@fk-jupyterlab/console-extension:foreign',
   requires: [IConsoleTracker, ISettingRegistry, ITranslator],
   optional: [ICommandPalette],
   activate: activateForeign,
@@ -56,7 +56,7 @@ function activateForeign(
 
     // Property showAllKernelActivity configures foreign handler enabled on start.
     void settingRegistry
-      .get('@jupyterlab/console-extension:tracker', 'showAllKernelActivity')
+      .get('@fk-jupyterlab/console-extension:tracker', 'showAllKernelActivity')
       .then(({ composite }) => {
         const showAllKernelActivity = composite as boolean;
         handler.enabled = showAllKernelActivity;

@@ -9,7 +9,7 @@ import { Message, MessageLoop } from '@lumino/messaging';
 
 import { PanelLayout, Panel, Widget } from '@lumino/widgets';
 
-import { closeIcon, Button, LabIcon } from '@jupyterlab/ui-components';
+import { closeIcon, Button, LabIcon } from '@fk-jupyterlab/ui-components';
 
 import * as React from 'react';
 
@@ -827,7 +827,7 @@ export namespace Dialog {
    * The dialog widget tracker.
    */
   export const tracker = new WidgetTracker<Dialog<any>>({
-    namespace: '@jupyterlab/apputils:Dialog'
+    namespace: '@fk-jupyterlab/apputils:Dialog'
   });
 }
 

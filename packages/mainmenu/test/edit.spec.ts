@@ -5,9 +5,9 @@ import { CommandRegistry } from '@lumino/commands';
 
 import { Widget } from '@lumino/widgets';
 
-import { WidgetTracker } from '@jupyterlab/apputils';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { EditMenu, IEditMenu } from '@jupyterlab/mainmenu';
+import { EditMenu, IEditMenu } from '@fk-jupyterlab/mainmenu';
 
 import { delegateExecute } from './util';
 
@@ -15,7 +15,7 @@ class Wodget extends Widget {
   state: string;
 }
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('EditMenu', () => {
     let commands: CommandRegistry;
     let menu: EditMenu;

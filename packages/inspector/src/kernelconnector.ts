@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISessionContext } from '@jupyterlab/apputils';
+import { ISessionContext } from '@fk-jupyterlab/apputils';
 
-import { DataConnector } from '@jupyterlab/statedb';
+import { DataConnector } from '@fk-jupyterlab/statedb';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { InspectionHandler } from './handler';
 

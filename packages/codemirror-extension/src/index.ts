@@ -13,11 +13,11 @@ import {
   ILabShell,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { IEditMenu, IMainMenu } from '@jupyterlab/mainmenu';
+import { IEditMenu, IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
 import {
   editorServices,
@@ -25,17 +25,17 @@ import {
   CodeMirrorEditor,
   Mode,
   ICodeMirror
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { IEditorTracker, FileEditor } from '@jupyterlab/fileeditor';
+import { IEditorTracker, FileEditor } from '@fk-jupyterlab/fileeditor';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStatusBar } from '@jupyterlab/statusbar';
+import { IStatusBar } from '@fk-jupyterlab/statusbar';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The command IDs used by the codemirror plugin.
@@ -54,7 +54,7 @@ namespace CommandIDs {
 
 /** The CodeMirror singleton. */
 const codemirrorSingleton: JupyterFrontEndPlugin<ICodeMirror> = {
-  id: '@jupyterlab/codemirror-extension:codemirror',
+  id: '@fk-jupyterlab/codemirror-extension:codemirror',
   provides: ICodeMirror,
   activate: activateCodeMirror
 };
@@ -63,7 +63,7 @@ const codemirrorSingleton: JupyterFrontEndPlugin<ICodeMirror> = {
  * The editor services.
  */
 const services: JupyterFrontEndPlugin<IEditorServices> = {
-  id: '@jupyterlab/codemirror-extension:services',
+  id: '@fk-jupyterlab/codemirror-extension:services',
   provides: IEditorServices,
   activate: activateEditorServices
 };
@@ -72,7 +72,7 @@ const services: JupyterFrontEndPlugin<IEditorServices> = {
  * The editor commands.
  */
 const commands: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/codemirror-extension:commands',
+  id: '@fk-jupyterlab/codemirror-extension:commands',
   requires: [IEditorTracker, ISettingRegistry, ITranslator, ICodeMirror],
   optional: [IMainMenu],
   activate: activateEditorCommands,
@@ -83,7 +83,7 @@ const commands: JupyterFrontEndPlugin<void> = {
  * The JupyterLab plugin for the EditorSyntax status item.
  */
 export const editorSyntaxStatus: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/codemirror-extension:editor-syntax-status',
+  id: '@fk-jupyterlab/codemirror-extension:editor-syntax-status',
   autoStart: true,
   requires: [IEditorTracker, ILabShell, ITranslator],
   optional: [IStatusBar],
@@ -108,7 +108,7 @@ export const editorSyntaxStatus: JupyterFrontEndPlugin<void> = {
       }
     });
     statusBar.registerStatusItem(
-      '@jupyterlab/codemirror-extension:editor-syntax-status',
+      '@fk-jupyterlab/codemirror-extension:editor-syntax-status',
       {
         item,
         align: 'left',

@@ -4,7 +4,7 @@
 import { WorkspaceManager, ServerConnection } from '../../src';
 
 import { init } from '../utils';
-import { JupyterServer } from '@jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils';
 
 // Initialize the fetch overrides.
 init();

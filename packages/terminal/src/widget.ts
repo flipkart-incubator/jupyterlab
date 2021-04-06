@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Terminal as TerminalNS } from '@jupyterlab/services';
+import { Terminal as TerminalNS } from '@fk-jupyterlab/services';
 
 import { Platform } from '@lumino/domutils';
 
@@ -19,7 +19,7 @@ import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to a terminal widget.

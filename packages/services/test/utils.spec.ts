@@ -9,7 +9,7 @@ import {
   expectFailure,
   isFulfilled,
   testEmission
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 describe('test/utils', () => {
   describe('testEmission', () => {

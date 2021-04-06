@@ -20,15 +20,15 @@ import { Panel, PanelLayout } from '@lumino/widgets';
 
 import { Widget } from '@lumino/widgets';
 
-import { ISessionContext } from '@jupyterlab/apputils';
+import { ISessionContext } from '@fk-jupyterlab/apputils';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IOutputModel, IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IOutputModel, IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { Kernel, KernelMessage } from '@jupyterlab/services';
+import { Kernel, KernelMessage } from '@fk-jupyterlab/services';
 
 import { IOutputAreaModel } from './model';
 

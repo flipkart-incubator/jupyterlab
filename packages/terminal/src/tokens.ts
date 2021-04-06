@@ -5,9 +5,9 @@ import { Widget } from '@lumino/widgets';
 
 import { Token } from '@lumino/coreutils';
 
-import { IWidgetTracker, MainAreaWidget } from '@jupyterlab/apputils';
+import { IWidgetTracker, MainAreaWidget } from '@fk-jupyterlab/apputils';
 
-import { Terminal } from '@jupyterlab/services';
+import { Terminal } from '@fk-jupyterlab/services';
 
 /**
  * A class that tracks editor widgets.
@@ -20,7 +20,7 @@ export interface ITerminalTracker
  * The editor tracker token.
  */
 export const ITerminalTracker = new Token<ITerminalTracker>(
-  '@jupyterlab/terminal:ITerminalTracker'
+  '@fk-jupyterlab/terminal:ITerminalTracker'
 );
 /* tslint:enable */
 

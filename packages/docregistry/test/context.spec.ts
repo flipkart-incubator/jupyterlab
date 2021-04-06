@@ -3,7 +3,7 @@
 
 import { UUID } from '@lumino/coreutils';
 
-import { Contents, ServiceManager } from '@jupyterlab/services';
+import { Contents, ServiceManager } from '@fk-jupyterlab/services';
 
 import { Widget } from '@lumino/widgets';
 
@@ -11,9 +11,9 @@ import {
   Context,
   DocumentRegistry,
   TextModelFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import {
   waitForDialog,
@@ -21,10 +21,10 @@ import {
   dismissDialog,
   initNotebookContext,
   NBTestUtils
-} from '@jupyterlab/testutils';
-import { SessionContext } from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/testutils';
+import { SessionContext } from '@fk-jupyterlab/apputils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 describe('docregistry/context', () => {
   let manager: ServiceManager.IManager;

@@ -13,15 +13,15 @@ import { Widget } from '@lumino/widgets';
 
 import { CommandPalette } from '@lumino/widgets';
 
-import { CommandPaletteSvg, paletteIcon } from '@jupyterlab/ui-components';
+import { CommandPaletteSvg, paletteIcon } from '@fk-jupyterlab/ui-components';
 
-import { ModalCommandPalette } from '@jupyterlab/apputils';
+import { ModalCommandPalette } from '@fk-jupyterlab/apputils';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { simulate } from 'simulate-event';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('ModalCommandPalette', () => {
     let commands: CommandRegistry;
     let translator: ITranslator;

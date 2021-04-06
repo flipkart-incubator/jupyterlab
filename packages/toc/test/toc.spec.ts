@@ -6,30 +6,30 @@ import {
   NotebookTracker,
   NotebookWidgetFactory,
   NotebookModelFactory
-} from '@jupyterlab/notebook';
-import { DocumentManager } from '@jupyterlab/docmanager';
-import * as ToC from '@jupyterlab/toc';
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
-import { ServiceManager } from '@jupyterlab/services';
+} from '@fk-jupyterlab/notebook';
+import { DocumentManager } from '@fk-jupyterlab/docmanager';
+import * as ToC from '@fk-jupyterlab/toc';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
+import { ServiceManager } from '@fk-jupyterlab/services';
 import {
   DocumentRegistry,
   TextModelFactory,
   IDocumentWidget,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 import { UUID } from '@lumino/coreutils';
 import {
   CodeMirrorEditorFactory,
   CodeMirrorMimeTypeService
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
-import { NBTestUtils, Mock, defaultRenderMime } from '@jupyterlab/testutils';
-import { WidgetTracker } from '@jupyterlab/apputils';
-import { FileEditor, FileEditorFactory } from '@jupyterlab/fileeditor';
+import { NBTestUtils, Mock, defaultRenderMime } from '@fk-jupyterlab/testutils';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
+import { FileEditor, FileEditorFactory } from '@fk-jupyterlab/fileeditor';
 import {
   MarkdownViewerFactory,
   MarkdownDocument
-} from '@jupyterlab/markdownviewer';
+} from '@fk-jupyterlab/markdownviewer';
 
 let manager: DocumentManager;
 let tocWidget: ToC.TableOfContents;
@@ -91,7 +91,7 @@ beforeAll(async () => {
   });
 });
 
-describe('@jupyterlab/toc', () => {
+describe('@fk-jupyterlab/toc', () => {
   describe('TableOfContents', () => {
     describe('#constructor', () => {
       it('should construct a new ToC widget', () => {

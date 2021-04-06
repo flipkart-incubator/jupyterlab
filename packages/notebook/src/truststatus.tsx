@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { VDomRenderer, VDomModel } from '@jupyterlab/apputils';
+import { VDomRenderer, VDomModel } from '@fk-jupyterlab/apputils';
 
 import { INotebookModel, Notebook } from '.';
 
-import { Cell } from '@jupyterlab/cells';
+import { Cell } from '@fk-jupyterlab/cells';
 
-import { notTrustedIcon, trustedIcon } from '@jupyterlab/ui-components';
+import { notTrustedIcon, trustedIcon } from '@fk-jupyterlab/ui-components';
 
 import { toArray } from '@lumino/algorithm';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * Determine the notebook trust status message.

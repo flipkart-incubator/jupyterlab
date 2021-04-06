@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { MainAreaWidget, Toolbar } from '@jupyterlab/apputils';
+import { MainAreaWidget, Toolbar } from '@fk-jupyterlab/apputils';
 
 import { MessageLoop } from '@lumino/messaging';
 
 import { Widget } from '@lumino/widgets';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('MainAreaWidget', () => {
     describe('#constructor()', () => {
       it('should create a new main area widget', () => {

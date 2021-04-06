@@ -1,8 +1,8 @@
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { DataConnector, IDataConnector } from '@jupyterlab/statedb';
+import { DataConnector, IDataConnector } from '@fk-jupyterlab/statedb';
 
 import { Throttler } from '@lumino/polling';
 

@@ -5,9 +5,9 @@ import { Message, MessageLoop } from '@lumino/messaging';
 
 import { Widget } from '@lumino/widgets';
 
-import { SessionContext, ISessionContext } from '@jupyterlab/apputils';
+import { SessionContext, ISessionContext } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
 import {
   Cell,
@@ -22,16 +22,16 @@ import {
   CellFooter,
   CellHeader,
   InputArea
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { OutputArea, OutputPrompt } from '@jupyterlab/outputarea';
+import { OutputArea, OutputPrompt } from '@fk-jupyterlab/outputarea';
 
 import {
   createSessionContext,
   framePromise,
   NBTestUtils,
   JupyterServer
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 const RENDERED_CLASS = 'jp-mod-rendered';
 const rendermime = NBTestUtils.defaultRenderMime();

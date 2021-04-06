@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { showDialog, Dialog } from '@jupyterlab/apputils';
+import { showDialog, Dialog } from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs, PathExt, PageConfig } from '@jupyterlab/coreutils';
+import { IChangedArgs, PathExt, PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { IDocumentManager, shouldOverwrite } from '@jupyterlab/docmanager';
+import { IDocumentManager, shouldOverwrite } from '@fk-jupyterlab/docmanager';
 
-import { Contents, KernelSpec, Session } from '@jupyterlab/services';
+import { Contents, KernelSpec, Session } from '@fk-jupyterlab/services';
 
-import { IStateDB } from '@jupyterlab/statedb';
+import { IStateDB } from '@fk-jupyterlab/statedb';
 
 import {
   ArrayIterator,
@@ -32,7 +32,7 @@ import {
   nullTranslator,
   TranslationBundle,
   ITranslator
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The default duration of the auto-refresh in ms
@@ -106,7 +106,7 @@ export class FileBrowserModel implements IDisposable {
     window.addEventListener('beforeunload', this._unloadEventListener);
     this._poll = new Poll({
       auto: options.auto ?? true,
-      name: '@jupyterlab/filebrowser:Model',
+      name: '@fk-jupyterlab/filebrowser:Model',
       factory: () => this.cd('.'),
       frequency: {
         interval: refreshInterval,

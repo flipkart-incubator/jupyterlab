@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/attachments",
+  "name": "@fk-jupyterlab/attachments",
   "version": "3.0.6",
   "description": "JupyterLab - Notebook Cell Attachments",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
@@ -37,10 +37,10 @@
     "watch": "tsc -b --watch"
   },
   "dependencies": {
-    "@jupyterlab/nbformat": "^3.0.3",
-    "@jupyterlab/observables": "^4.0.3",
-    "@jupyterlab/rendermime": "^3.0.6",
-    "@jupyterlab/rendermime-interfaces": "^3.0.5",
+    "@fk-jupyterlab/nbformat": "^3.0.3",
+    "@fk-jupyterlab/observables": "^4.0.3",
+    "@fk-jupyterlab/rendermime": "^3.0.6",
+    "@fk-jupyterlab/rendermime-interfaces": "^3.0.5",
     "@lumino/disposable": "^1.4.3",
     "@lumino/signaling": "^1.4.3"
   },

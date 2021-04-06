@@ -9,11 +9,11 @@ import {
   ILabShell,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
-import { ICommandPalette, MainAreaWidget } from '@jupyterlab/apputils';
-import { ILauncher, LauncherModel, Launcher } from '@jupyterlab/launcher';
-import { ITranslator } from '@jupyterlab/translation';
-import { launcherIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/application';
+import { ICommandPalette, MainAreaWidget } from '@fk-jupyterlab/apputils';
+import { ILauncher, LauncherModel, Launcher } from '@fk-jupyterlab/launcher';
+import { ITranslator } from '@fk-jupyterlab/translation';
+import { launcherIcon } from '@fk-jupyterlab/ui-components';
 
 import { toArray } from '@lumino/algorithm';
 import { JSONObject } from '@lumino/coreutils';
@@ -31,7 +31,7 @@ namespace CommandIDs {
  */
 const plugin: JupyterFrontEndPlugin<ILauncher> = {
   activate,
-  id: '@jupyterlab/launcher-extension:plugin',
+  id: '@fk-jupyterlab/launcher-extension:plugin',
   requires: [ITranslator],
   optional: [ILabShell, ICommandPalette],
   provides: ILauncher,

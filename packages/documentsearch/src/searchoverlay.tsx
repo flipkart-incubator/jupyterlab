@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ReactWidget, UseSignal } from '@jupyterlab/apputils';
+import { ReactWidget, UseSignal } from '@fk-jupyterlab/apputils';
 import {
   caretDownIcon,
   caretDownEmptyThinIcon,
@@ -12,7 +12,7 @@ import {
   closeIcon,
   ellipsesIcon,
   regexIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { Debouncer } from '@lumino/polling';
 import { Signal } from '@lumino/signaling';
@@ -25,7 +25,7 @@ import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 const OVERLAY_CLASS = 'jp-DocumentSearch-overlay';
 const OVERLAY_ROW_CLASS = 'jp-DocumentSearch-overlay-row';

@@ -1,23 +1,23 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 
-import { MainAreaWidget, WidgetTracker, DOMUtils } from '@jupyterlab/apputils';
+import { MainAreaWidget, WidgetTracker, DOMUtils } from '@fk-jupyterlab/apputils';
 
 import {
   CodeEditor,
   CodeEditorWrapper,
   IEditorServices
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { IEditorTracker } from '@jupyterlab/fileeditor';
+import { IEditorTracker } from '@fk-jupyterlab/fileeditor';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
-import { textEditorIcon } from '@jupyterlab/ui-components';
+import { textEditorIcon } from '@fk-jupyterlab/ui-components';
 
 import { each } from '@lumino/algorithm';
 
@@ -40,7 +40,7 @@ export class DebuggerSources implements IDebugger.ISources {
     this._editorTracker = options.editorTracker ?? null;
     this._readOnlyEditorTracker = new WidgetTracker<
       MainAreaWidget<CodeEditorWrapper>
-    >({ namespace: '@jupyterlab/debugger' });
+    >({ namespace: '@fk-jupyterlab/debugger' });
   }
 
   /**

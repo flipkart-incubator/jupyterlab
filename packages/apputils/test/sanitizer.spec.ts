@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { defaultSanitizer } from '@jupyterlab/apputils';
+import { defaultSanitizer } from '@fk-jupyterlab/apputils';
 
 describe('defaultSanitizer', () => {
   describe('#sanitize()', () => {

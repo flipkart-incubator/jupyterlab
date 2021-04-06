@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ReactWidget, Toolbar, UseSignal } from '@jupyterlab/apputils';
+import { ReactWidget, Toolbar, UseSignal } from '@fk-jupyterlab/apputils';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { PanelLayout, Widget } from '@lumino/widgets';
 

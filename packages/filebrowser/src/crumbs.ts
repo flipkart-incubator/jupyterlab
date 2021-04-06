@@ -11,19 +11,19 @@ import { IDragEvent } from '@lumino/dragdrop';
 
 import { Widget } from '@lumino/widgets';
 
-import { DOMUtils, showErrorMessage } from '@jupyterlab/apputils';
+import { DOMUtils, showErrorMessage } from '@fk-jupyterlab/apputils';
 
-import { PageConfig, PathExt } from '@jupyterlab/coreutils';
+import { PageConfig, PathExt } from '@fk-jupyterlab/coreutils';
 
-import { renameFile } from '@jupyterlab/docmanager';
+import { renameFile } from '@fk-jupyterlab/docmanager';
 
 import {
   nullTranslator,
   TranslationBundle,
   ITranslator
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
-import { ellipsesIcon, folderIcon } from '@jupyterlab/ui-components';
+import { ellipsesIcon, folderIcon } from '@fk-jupyterlab/ui-components';
 
 import { FileBrowserModel } from './model';
 

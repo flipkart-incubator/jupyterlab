@@ -1,22 +1,22 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISessionContext, SessionContext } from '@jupyterlab/apputils';
+import { ISessionContext, SessionContext } from '@fk-jupyterlab/apputils';
 
-import { CodeCell, MarkdownCell, RawCell } from '@jupyterlab/cells';
+import { CodeCell, MarkdownCell, RawCell } from '@fk-jupyterlab/cells';
 
-import { IMimeBundle, CellType } from '@jupyterlab/nbformat';
+import { IMimeBundle, CellType } from '@fk-jupyterlab/nbformat';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import {
   acceptDialog,
   createSessionContext,
   dismissDialog,
   sleep
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
-import { JupyterServer } from '@jupyterlab/testutils/lib/start_jupyter_server';
+import { JupyterServer } from '@fk-jupyterlab/testutils/lib/start_jupyter_server';
 
 import { each } from '@lumino/algorithm';
 
@@ -45,7 +45,7 @@ afterAll(async () => {
   await server.shutdown();
 });
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   let rendermime: IRenderMimeRegistry;
 
   describe('NotebookActions', () => {

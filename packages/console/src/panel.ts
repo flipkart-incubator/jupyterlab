@@ -6,15 +6,15 @@ import {
   SessionContext,
   sessionContextDialogs,
   MainAreaWidget
-} from '@jupyterlab/apputils';
-import { IEditorMimeTypeService } from '@jupyterlab/codeeditor';
-import { PathExt, Time } from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/apputils';
+import { IEditorMimeTypeService } from '@fk-jupyterlab/codeeditor';
+import { PathExt, Time } from '@fk-jupyterlab/coreutils';
 import {
   IRenderMimeRegistry,
   RenderMimeRegistry
-} from '@jupyterlab/rendermime';
-import { ServiceManager } from '@jupyterlab/services';
-import { consoleIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/rendermime';
+import { ServiceManager } from '@fk-jupyterlab/services';
+import { consoleIcon } from '@fk-jupyterlab/ui-components';
 
 import { Token, UUID } from '@lumino/coreutils';
 import { IDisposable } from '@lumino/disposable';
@@ -22,7 +22,7 @@ import { Message } from '@lumino/messaging';
 import { Panel } from '@lumino/widgets';
 
 import { CodeConsole } from './widget';
-import { ITranslator, nullTranslator } from '@jupyterlab/translation';
+import { ITranslator, nullTranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to console panels.
@@ -283,7 +283,7 @@ export namespace ConsolePanel {
    * The console renderer token.
    */
   export const IContentFactory = new Token<IContentFactory>(
-    '@jupyterlab/console:IContentFactory'
+    '@fk-jupyterlab/console:IContentFactory'
   );
   /* tslint:enable */
 }

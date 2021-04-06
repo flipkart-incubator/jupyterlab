@@ -2,12 +2,12 @@
 // Distributed under the terms of the Modified BSD License.
 
 import * as React from 'react';
-import { INotebookTracker } from '@jupyterlab/notebook';
-import { Cell } from '@jupyterlab/cells';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
+import { Cell } from '@fk-jupyterlab/cells';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 import { OptionsManager } from '../options_manager';
 import { TagListComponent } from './tag_list';
-import { TranslationBundle } from '@jupyterlab/translation';
+import { TranslationBundle } from '@fk-jupyterlab/translation';
 
 /**
  * Interface describing component properties.

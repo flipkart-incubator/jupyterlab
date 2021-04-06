@@ -6,4 +6,4 @@ import { Token } from '@lumino/coreutils';
 /**
  * The path tracker token.
  */
-export const IMiddleToken = new Token('@jupyterlab/example-federated-middle');
+export const IMiddleToken = new Token('@fk-jupyterlab/example-federated-middle');

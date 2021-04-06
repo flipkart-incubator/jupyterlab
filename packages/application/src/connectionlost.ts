@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { showErrorMessage } from '@jupyterlab/apputils';
+import { showErrorMessage } from '@fk-jupyterlab/apputils';
 
-import { ServerConnection, ServiceManager } from '@jupyterlab/services';
+import { ServerConnection, ServiceManager } from '@fk-jupyterlab/services';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { IConnectionLost } from './tokens';
 

@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { DocumentModel, DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentModel, DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   ICellModel,
@@ -12,9 +12,9 @@ import {
   RawCellModel,
   MarkdownCellModel,
   CellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
 import { UUID } from '@lumino/coreutils';
 
@@ -23,15 +23,15 @@ import {
   IObservableUndoableList,
   IObservableList,
   IModelDB
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 import { CellList } from './celllist';
-import { showDialog, Dialog } from '@jupyterlab/apputils';
+import { showDialog, Dialog } from '@fk-jupyterlab/apputils';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The definition of a model object for a notebook widget.

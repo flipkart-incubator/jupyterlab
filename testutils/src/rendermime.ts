@@ -8,7 +8,7 @@ import {
   RenderMimeRegistry,
   RenderedHTML,
   standardRendererFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 /**
  * Get a copy of the default rendermime instance.

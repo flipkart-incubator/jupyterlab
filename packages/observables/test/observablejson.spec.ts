@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IObservableJSON, ObservableJSON } from '@jupyterlab/observables';
+import { IObservableJSON, ObservableJSON } from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableJSON', () => {
     describe('#constructor()', () => {
       it('should create an observable JSON object', () => {

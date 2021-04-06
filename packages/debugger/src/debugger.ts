@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { runIcon, stopIcon } from '@jupyterlab/ui-components';
+import { runIcon, stopIcon } from '@fk-jupyterlab/ui-components';
 
 import { EditorHandler as DebuggerEditorHandler } from './handlers/editor';
 

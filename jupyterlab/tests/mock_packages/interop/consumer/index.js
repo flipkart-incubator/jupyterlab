@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-const IMockToken = require('@jupyterlab/mock-token').IMockToken;
+const IMockToken = require('@fk-jupyterlab/mock-token').IMockToken;
 
 module.exports = [
   {

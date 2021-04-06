@@ -14,7 +14,7 @@ import { JupyterFrontEnd } from './frontend';
  * The application status token.
  */
 export const ILabStatus = new Token<ILabStatus>(
-  '@jupyterlab/application:ILabStatus'
+  '@fk-jupyterlab/application:ILabStatus'
 );
 /* tslint:enable */
 

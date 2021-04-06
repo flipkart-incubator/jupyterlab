@@ -3,7 +3,7 @@
 
 import { JSONObject } from '@lumino/coreutils';
 
-import { ObservableUndoableList, ISerializer } from '@jupyterlab/observables';
+import { ObservableUndoableList, ISerializer } from '@fk-jupyterlab/observables';
 
 class Test {
   constructor(value: JSONObject) {
@@ -33,7 +33,7 @@ class Serializer implements ISerializer<Test> {
 const serializer = new Serializer();
 const value: JSONObject = { name: 'foo' };
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableUndoableList', () => {
     describe('#constructor', () => {
       it('should create a new ObservableUndoableList', () => {

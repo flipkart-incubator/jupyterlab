@@ -9,24 +9,24 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 import {
   IThemeManager,
   InputDialog,
   WidgetTracker
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 import {
   CSVViewer,
   TextRenderConfig,
   CSVViewerFactory,
   TSVViewerFactory
-} from '@jupyterlab/csvviewer';
-import { IDocumentWidget } from '@jupyterlab/docregistry';
-import { ISearchProviderRegistry } from '@jupyterlab/documentsearch';
-import { IEditMenu, IMainMenu } from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/csvviewer';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
+import { ISearchProviderRegistry } from '@fk-jupyterlab/documentsearch';
+import { IEditMenu, IMainMenu } from '@fk-jupyterlab/mainmenu';
 import { DataGrid } from '@lumino/datagrid';
 import { CSVSearchProvider } from './searchprovider';
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The name of the factories that creates widgets.
@@ -39,7 +39,7 @@ const FACTORY_TSV = 'TSVTable';
  */
 const csv: JupyterFrontEndPlugin<void> = {
   activate: activateCsv,
-  id: '@jupyterlab/csvviewer-extension:csv',
+  id: '@fk-jupyterlab/csvviewer-extension:csv',
   requires: [ITranslator],
   optional: [
     ILayoutRestorer,
@@ -55,7 +55,7 @@ const csv: JupyterFrontEndPlugin<void> = {
  */
 const tsv: JupyterFrontEndPlugin<void> = {
   activate: activateTsv,
-  id: '@jupyterlab/csvviewer-extension:tsv',
+  id: '@fk-jupyterlab/csvviewer-extension:tsv',
   requires: [ITranslator],
   optional: [
     ILayoutRestorer,

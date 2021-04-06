@@ -8,7 +8,7 @@ import { merge } from 'webpack-merge';
 import * as fs from 'fs-extra';
 import * as glob from 'glob';
 import Ajv from 'ajv';
-import { readJSONFile, writeJSONFile } from '@jupyterlab/buildutils';
+import { readJSONFile, writeJSONFile } from '@fk-jupyterlab/buildutils';
 
 const baseConfig = require('./webpack.config.base');
 const { ModuleFederationPlugin } = webpack.container;

@@ -4,7 +4,7 @@
 
 // import { expect } from 'chai';
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
 import { each } from '@lumino/algorithm';
 
@@ -20,7 +20,7 @@ import {
   acceptDialog,
   dismissDialog,
   waitForDialog
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 class TestDialog extends Dialog<any> {
   methods: string[] = [];
@@ -53,7 +53,7 @@ class ValueWidget extends Widget {
   }
 }
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('Dialog', () => {
     let dialog: TestDialog;
 

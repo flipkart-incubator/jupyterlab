@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IWidgetTracker } from '@jupyterlab/apputils';
+import { IWidgetTracker } from '@fk-jupyterlab/apputils';
 
 import { ArrayExt } from '@lumino/algorithm';
 

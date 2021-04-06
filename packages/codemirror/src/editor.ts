@@ -5,21 +5,21 @@
 
 import CodeMirror from 'codemirror';
 
-import { showDialog } from '@jupyterlab/apputils';
+import { showDialog } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   IObservableMap,
   IObservableString,
   ICollaborator
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { ArrayExt } from '@lumino/algorithm';
 

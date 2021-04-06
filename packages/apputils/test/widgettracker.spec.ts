@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { WidgetTracker } from '@jupyterlab/apputils';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { signalToPromise, testEmission } from '@jupyterlab/testutils';
+import { signalToPromise, testEmission } from '@fk-jupyterlab/testutils';
 
 import { Panel, Widget } from '@lumino/widgets';
 
@@ -34,7 +34,7 @@ function focus(widget: Widget): void {
   simulate(widget.node, 'focus');
 }
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('WidgetTracker', () => {
     let tracker: WidgetTracker;
 

@@ -1,40 +1,40 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 (window as any).__webpack_public_path__ = URLExt.join(
   PageConfig.getBaseUrl(),
   'example/'
 );
 
-import '@jupyterlab/application/style/index.css';
-import '@jupyterlab/cells/style/index.css';
-import '@jupyterlab/theme-light-extension/style/index.css';
+import '@fk-jupyterlab/application/style/index.css';
+import '@fk-jupyterlab/cells/style/index.css';
+import '@fk-jupyterlab/theme-light-extension/style/index.css';
 import '../index.css';
 
-import { SessionContext, Toolbar } from '@jupyterlab/apputils';
+import { SessionContext, Toolbar } from '@fk-jupyterlab/apputils';
 
-import { CodeCellModel, CodeCell } from '@jupyterlab/cells';
+import { CodeCellModel, CodeCell } from '@fk-jupyterlab/cells';
 
-import { CodeMirrorMimeTypeService } from '@jupyterlab/codemirror';
+import { CodeMirrorMimeTypeService } from '@fk-jupyterlab/codemirror';
 
 import {
   CompleterModel,
   Completer,
   CompletionHandler,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import {
   SessionManager,
   KernelManager,
   KernelSpecManager
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import { CommandRegistry } from '@lumino/commands';
 

@@ -16,7 +16,7 @@ import { CommandPalette, Widget, Panel } from '@lumino/widgets';
  * The command palette token.
  */
 export const ICommandPalette = new Token<ICommandPalette>(
-  '@jupyterlab/apputils:ICommandPalette'
+  '@fk-jupyterlab/apputils:ICommandPalette'
 );
 /* tslint:enable */
 

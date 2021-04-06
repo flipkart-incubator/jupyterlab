@@ -45,7 +45,7 @@ export class TerminalManager extends BaseManager implements Terminal.IManager {
         backoff: true,
         max: 300 * 1000
       },
-      name: `@jupyterlab/services:TerminalManager#models`,
+      name: `@fk-jupyterlab/services:TerminalManager#models`,
       standby: options.standby ?? 'when-hidden'
     });
 

@@ -3,7 +3,7 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 // Promise.allSettled polyfill, until our supported browsers implement it
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled
@@ -71,7 +71,7 @@ export async function main() {
      };
   }
 
-  var JupyterLab = require('@jupyterlab/application').JupyterLab;
+  var JupyterLab = require('@fk-jupyterlab/application').JupyterLab;
   var disabled = [];
   var deferred = [];
   var ignorePlugins = [];

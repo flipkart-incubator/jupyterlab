@@ -1,22 +1,22 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 (window as any).__webpack_public_path__ = URLExt.join(
   PageConfig.getBaseUrl(),
   'example/'
 );
 
-import '@jupyterlab/application/style/index.css';
-import '@jupyterlab/terminal/style/index.css';
-import '@jupyterlab/theme-light-extension/style/index.css';
+import '@fk-jupyterlab/application/style/index.css';
+import '@fk-jupyterlab/terminal/style/index.css';
+import '@fk-jupyterlab/theme-light-extension/style/index.css';
 import '../index.css';
 
 import { DockPanel, Widget } from '@lumino/widgets';
 
-import { TerminalManager } from '@jupyterlab/services';
+import { TerminalManager } from '@fk-jupyterlab/services';
 
-import { Terminal } from '@jupyterlab/terminal';
+import { Terminal } from '@fk-jupyterlab/terminal';
 
 async function main(): Promise<void> {
   const dock = new DockPanel();

@@ -1,37 +1,37 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 (window as any).__webpack_public_path__ = URLExt.join(
   PageConfig.getBaseUrl(),
   'example/'
 );
 
-import '@jupyterlab/application/style/index.css';
-import '@jupyterlab/console/style/index.css';
-import '@jupyterlab/theme-light-extension/style/index.css';
+import '@fk-jupyterlab/application/style/index.css';
+import '@fk-jupyterlab/console/style/index.css';
+import '@fk-jupyterlab/theme-light-extension/style/index.css';
 import '../index.css';
 
 import { CommandRegistry } from '@lumino/commands';
 
 import { CommandPalette, SplitPanel, Widget } from '@lumino/widgets';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { ConsolePanel } from '@jupyterlab/console';
+import { ConsolePanel } from '@fk-jupyterlab/console';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import {
   ITranslator,
   nullTranslator,
   TranslationManager
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 async function main(): Promise<any> {
   const translator = new TranslationManager();

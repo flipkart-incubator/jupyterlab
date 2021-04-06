@@ -11,7 +11,7 @@ import {
   handleRequest,
   makeSettings
 } from '../utils';
-import { JupyterServer } from '@jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils';
 
 class TestManager extends KernelSpecManager {
   intercept: KernelSpec.ISpecModels | null = null;

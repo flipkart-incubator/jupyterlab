@@ -241,27 +241,27 @@ Examples
 
       update-dependency --minimal --regex '.*' ^latest
 
-  Update all packages, that does not start with '@jupyterlab',
+  Update all packages, that does not start with '@fk-jupyterlab',
   to the latest version and use the same version specifier currently
   being used
 
-      update:dependency --regex '^(?!@jupyterlab).*' latest --dry-run
+      update:dependency --regex '^(?!@fk-jupyterlab).*' latest --dry-run
 
   Print the log of the above without actually making any changes.
 
   update-dependency --dry-run --minimal --regex '.*' ^latest
 
-  Update all packages starting with '@jupyterlab/' to the version
+  Update all packages starting with '@fk-jupyterlab/' to the version
   the 'latest' tag currently points to, with a caret range:
 
-      update-dependency --regex '^@jupyterlab/' ^latest
+      update-dependency --regex '^@fk-jupyterlab/' ^latest
 
-  Update all packages starting with '@jupyterlab/' in all lerna
+  Update all packages starting with '@fk-jupyterlab/' in all lerna
   workspaces and the root package.json to whatever version the 'next'
   tag for each package currently points to (with a caret tag).
   Update the version range only if the change is substantial.
 
-      update-dependency --lerna --regex --minimal '^@jupyterlab/' ^next
+      update-dependency --lerna --regex --minimal '^@fk-jupyterlab/' ^next
 `);
 });
 

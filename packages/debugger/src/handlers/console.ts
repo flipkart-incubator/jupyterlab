@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeConsole, ConsolePanel } from '@jupyterlab/console';
+import { CodeConsole, ConsolePanel } from '@fk-jupyterlab/console';
 
-import { Cell, CodeCell } from '@jupyterlab/cells';
+import { Cell, CodeCell } from '@fk-jupyterlab/cells';
 
-import { IObservableMap, ObservableMap } from '@jupyterlab/observables';
+import { IObservableMap, ObservableMap } from '@fk-jupyterlab/observables';
 
 import { each } from '@lumino/algorithm';
 

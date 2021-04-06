@@ -3,7 +3,7 @@
 
 import { KernelSpecAPI } from '../../src';
 
-import { expectFailure, JupyterServer } from '@jupyterlab/testutils';
+import { expectFailure, JupyterServer } from '@fk-jupyterlab/testutils';
 
 import { makeSettings, PYTHON_SPEC, getRequestHandler } from '../utils';
 

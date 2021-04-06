@@ -6,28 +6,28 @@ import {
   DOMUtils,
   showDialog,
   showErrorMessage
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PathExt, Time } from '@jupyterlab/coreutils';
+import { PathExt, Time } from '@fk-jupyterlab/coreutils';
 
-import {} from '@jupyterlab/apputils';
+import {} from '@fk-jupyterlab/apputils';
 
 import {
   IDocumentManager,
   isValidFileName,
   renameFile
-} from '@jupyterlab/docmanager';
+} from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import {
   caretDownIcon,
   caretUpIcon,
   classes,
   LabIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import {
   ArrayExt,
@@ -60,7 +60,7 @@ import {
   nullTranslator,
   TranslationBundle,
   ITranslator
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to DirListing widget.

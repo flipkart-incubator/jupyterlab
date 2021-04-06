@@ -162,7 +162,7 @@ An example ``<jupyter_config_path>/labconfig/pageconfig.json`` could look as fol
 
    {
       "disabledExtensions": {
-            "@jupyterlab/notebook-extension": true
+            "@fk-jupyterlab/notebook-extension": true
       }
    }
 
@@ -446,9 +446,9 @@ This is an example of a blocklist file.
    {
    "blocklist": [
       {
-         "name": "@jupyterlab-examples/launcher",
+         "name": "@fk-jupyterlab-examples/launcher",
          "type": "jupyterlab",
-         "reason": "@jupyterlab-examples/launcher is blocklisted for test purpose - Do NOT take this for granted!!!",
+         "reason": "@fk-jupyterlab-examples/launcher is blocklisted for test purpose - Do NOT take this for granted!!!",
          "creation_date": "2020-03-11T03:28:56.782Z",
          "last_update_date":  "2020-03-11T03:28:56.782Z"
       }
@@ -456,7 +456,7 @@ This is an example of a blocklist file.
    }
 
 
-In the following allowlist example a ``@jupyterlab/*`` will allowlist 
+In the following allowlist example a ``@fk-jupyterlab/*`` will allowlist
 all jupyterlab organization extensions.
 
 .. code:: json
@@ -464,9 +464,9 @@ all jupyterlab organization extensions.
    {
    "allowlist": [
       {
-         "name": "@jupyterlab/*",
+         "name": "@fk-jupyterlab/*",
          "type": "jupyterlab",
-         "reason": "All @jupyterlab org extensions are allowlisted, of course...",
+         "reason": "All @fk-jupyterlab org extensions are allowlisted, of course...",
          "creation_date": "2020-03-11T03:28:56.782Z",
          "last_update_date":  "2020-03-11T03:28:56.782Z"
       }

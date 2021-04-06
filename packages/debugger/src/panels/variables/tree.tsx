@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ReactWidget } from '@jupyterlab/apputils';
+import { ReactWidget } from '@fk-jupyterlab/apputils';
 
-import { caretDownEmptyIcon } from '@jupyterlab/ui-components';
+import { caretDownEmptyIcon } from '@fk-jupyterlab/ui-components';
 
 import { ArrayExt } from '@lumino/algorithm';
 

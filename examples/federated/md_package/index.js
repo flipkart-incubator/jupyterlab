@@ -1,19 +1,19 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
-import { ILayoutRestorer } from '@jupyterlab/application';
-import { WidgetTracker } from '@jupyterlab/apputils';
+import { ILayoutRestorer } from '@fk-jupyterlab/application';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
 import {
   MarkdownViewer,
   MarkdownViewerFactory,
   IMarkdownViewerTracker
-} from '@jupyterlab/markdownviewer';
+} from '@fk-jupyterlab/markdownviewer';
 import {
   IRenderMimeRegistry,
   markdownRendererFactory
-} from '@jupyterlab/rendermime';
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import { PathExt } from '@jupyterlab/coreutils';
-import { IMiddleToken } from '@jupyterlab/example-federated-middle';
+} from '@fk-jupyterlab/rendermime';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
+import { PathExt } from '@fk-jupyterlab/coreutils';
+import { IMiddleToken } from '@fk-jupyterlab/example-federated-middle';
 
 /**
  * The command IDs used by the markdownviewer plugin.
@@ -32,7 +32,7 @@ const FACTORY = 'Markdown Preview (Federated)';
  */
 const plugin = {
   activate,
-  id: '@jupyterlab/example-federated-md:plugin',
+  id: '@fk-jupyterlab/example-federated-md:plugin',
   provides: IMarkdownViewerTracker,
   requires: [
     ILayoutRestorer,

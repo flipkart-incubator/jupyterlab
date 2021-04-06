@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IWidgetTracker } from '@jupyterlab/apputils';
+import { IWidgetTracker } from '@fk-jupyterlab/apputils';
 import { Token } from '@lumino/coreutils';
 import { Signal, ISignal } from '@lumino/signaling';
 import { Widget } from '@lumino/widgets';
@@ -19,7 +19,7 @@ export interface ITableOfContentsRegistry extends TableOfContentsRegistry {}
  * Table of contents registry token.
  */
 export const ITableOfContentsRegistry = new Token<TableOfContentsRegistry>(
-  '@jupyterlab/toc:ITableOfContentsRegistry'
+  '@fk-jupyterlab/toc:ITableOfContentsRegistry'
 );
 /* tslint:enable */
 

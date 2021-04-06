@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-import { VDomRenderer, VDomModel } from '@jupyterlab/apputils';
+import { VDomRenderer, VDomModel } from '@fk-jupyterlab/apputils';
 
 import {
   ServiceManager,
@@ -11,15 +11,15 @@ import {
   TerminalManager,
   SessionManager,
   Session
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
-import { kernelIcon, terminalIcon } from '@jupyterlab/ui-components';
+import { kernelIcon, terminalIcon } from '@fk-jupyterlab/ui-components';
 
 import { GroupItem, interactiveItem, TextItem } from '..';
 

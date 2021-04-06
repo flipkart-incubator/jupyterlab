@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-import { DataConnector } from '@jupyterlab/statedb';
+import { DataConnector } from '@fk-jupyterlab/statedb';
 
 import { ReadonlyPartialJSONObject } from '@lumino/coreutils';
 

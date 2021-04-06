@@ -5,7 +5,7 @@ import {
   CodeEditor,
   CodeEditorWrapper,
   IEditorServices
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
 import { IDebugger } from '.';
 

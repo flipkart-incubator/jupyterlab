@@ -11,7 +11,7 @@ import { JSONObject } from '@lumino/coreutils';
 import { Widget } from '@lumino/widgets';
 import * as VegaModuleType from 'vega-embed';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 /**
  * The CSS class to add to the Vega and Vega-Lite widget.
@@ -155,7 +155,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 };
 
 const extension: IRenderMime.IExtension = {
-  id: '@jupyterlab/vega5-extension:factory',
+  id: '@fk-jupyterlab/vega5-extension:factory',
   rendererFactory,
   rank: 57,
   dataType: 'json',

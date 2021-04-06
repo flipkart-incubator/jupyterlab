@@ -3,11 +3,11 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { ToolbarButton } from '@jupyterlab/apputils';
+import { ToolbarButton } from '@fk-jupyterlab/apputils';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { Panel } from '@lumino/widgets';
 

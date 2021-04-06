@@ -9,8 +9,8 @@ import { ISignal, Signal } from '@lumino/signaling';
 
 import { Widget } from '@lumino/widgets';
 
-import { Styling } from '@jupyterlab/apputils';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { Styling } from '@fk-jupyterlab/apputils';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to a csv toolbar widget.

@@ -1,3 +1,3 @@
-# @jupyterlab/logconsole
+# @fk-jupyterlab/logconsole
 
 JupyterLab - Log Console

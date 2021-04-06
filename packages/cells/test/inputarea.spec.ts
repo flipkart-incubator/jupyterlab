@@ -3,13 +3,13 @@
 
 import { Widget } from '@lumino/widgets';
 
-import { CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { InputArea, InputPrompt, CodeCellModel } from '@jupyterlab/cells';
+import { InputArea, InputPrompt, CodeCellModel } from '@fk-jupyterlab/cells';
 
 const PROMPT_CLASS = 'jp-InputArea-prompt';
 
-describe('@jupyterlab/cells', () => {
+describe('@fk-jupyterlab/cells', () => {
   const model = new CodeCellModel({});
 
   describe('InputArea', () => {

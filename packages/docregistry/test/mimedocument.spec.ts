@@ -11,13 +11,13 @@ import {
   MimeContent,
   MimeDocument,
   MimeDocumentFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { RenderedText, IRenderMime } from '@jupyterlab/rendermime';
+import { RenderedText, IRenderMime } from '@fk-jupyterlab/rendermime';
 
-import { defaultRenderMime, testEmission } from '@jupyterlab/testutils';
+import { defaultRenderMime, testEmission } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 const RENDERMIME = defaultRenderMime();
 

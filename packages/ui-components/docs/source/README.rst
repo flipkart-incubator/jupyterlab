@@ -1,4 +1,4 @@
-@jupyterlab/ui-components
+@fk-jupyterlab/ui-components
 =========================
 
 .. include:: intro.rst

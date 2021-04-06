@@ -9,15 +9,15 @@ import {
   showErrorMessage,
   VDomModel,
   VDomRenderer
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 import {
   nullTranslator,
   TranslationBundle,
   ITranslator
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
-import { classes, LabIcon } from '@jupyterlab/ui-components';
+import { classes, LabIcon } from '@fk-jupyterlab/ui-components';
 
 import {
   ArrayExt,
@@ -49,7 +49,7 @@ const LAUNCHER_CLASS = 'jp-Launcher';
 /**
  * The launcher token.
  */
-export const ILauncher = new Token<ILauncher>('@jupyterlab/launcher:ILauncher');
+export const ILauncher = new Token<ILauncher>('@fk-jupyterlab/launcher:ILauncher');
 /* tslint:enable */
 
 /**

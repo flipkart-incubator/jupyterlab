@@ -7,13 +7,13 @@ import { JSONExt, JSONObject, JSONValue } from '@lumino/coreutils';
 
 import { ISignal, Signal } from '@lumino/signaling';
 
-import { IAttachmentsModel, AttachmentsModel } from '@jupyterlab/attachments';
+import { IAttachmentsModel, AttachmentsModel } from '@fk-jupyterlab/attachments';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
 import { UUID } from '@lumino/coreutils';
 
@@ -23,9 +23,9 @@ import {
   IObservableValue,
   ObservableValue,
   IObservableMap
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
-import { IOutputAreaModel, OutputAreaModel } from '@jupyterlab/outputarea';
+import { IOutputAreaModel, OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
 /**
  * The definition of a model object for a cell.

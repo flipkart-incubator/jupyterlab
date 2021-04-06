@@ -9,8 +9,8 @@ import JSONTree from 'react-json-tree';
 
 import { JSONArray, JSONObject, JSONValue, JSONExt } from '@lumino/coreutils';
 
-import { InputGroup } from '@jupyterlab/ui-components';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { InputGroup } from '@fk-jupyterlab/ui-components';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The properties for the JSON tree component.

@@ -25,7 +25,7 @@ import { ITabsMenu } from './tabs';
 /**
  * The main menu token.
  */
-export const IMainMenu = new Token<IMainMenu>('@jupyterlab/mainmenu:IMainMenu');
+export const IMainMenu = new Token<IMainMenu>('@fk-jupyterlab/mainmenu:IMainMenu');
 /* tslint:enable */
 
 /**

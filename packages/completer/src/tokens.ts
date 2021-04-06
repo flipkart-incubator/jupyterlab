@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IDataConnector } from '@jupyterlab/statedb';
+import { IDataConnector } from '@fk-jupyterlab/statedb';
 
 import { Token } from '@lumino/coreutils';
 
@@ -17,7 +17,7 @@ import { Completer } from './widget';
  * The completion manager token.
  */
 export const ICompletionManager = new Token<ICompletionManager>(
-  '@jupyterlab/completer:ICompletionManager'
+  '@fk-jupyterlab/completer:ICompletionManager'
 );
 /* tslint:enable */
 

@@ -3,17 +3,17 @@
 
 import React from 'react';
 
-import { VDomRenderer, VDomModel, ReactWidget } from '@jupyterlab/apputils';
+import { VDomRenderer, VDomModel, ReactWidget } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
-import { lineFormIcon } from '@jupyterlab/ui-components';
+import { lineFormIcon } from '@fk-jupyterlab/ui-components';
 
 import { classes } from 'typestyle/lib';
 

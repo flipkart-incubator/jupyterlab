@@ -1,20 +1,20 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { SessionContext, ISessionContext } from '@jupyterlab/apputils';
+import { SessionContext, ISessionContext } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
 import {
   Completer,
   CompletionHandler,
   CompleterModel,
   KernelConnector
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
-import { createSessionContext } from '@jupyterlab/testutils';
+import { createSessionContext } from '@fk-jupyterlab/testutils';
 
 function createEditorWidget(): CodeEditorWrapper {
   const model = new CodeEditor.Model();
@@ -52,7 +52,7 @@ class TestCompletionHandler extends CompletionHandler {
   }
 }
 
-describe('@jupyterlab/completer', () => {
+describe('@fk-jupyterlab/completer', () => {
   let connector: KernelConnector;
   let sessionContext: ISessionContext;
 

@@ -7,7 +7,7 @@ import { IDisposable } from '@lumino/disposable';
 
 import { ISignal, Signal } from '@lumino/signaling';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
 import {
   IModelDB,
@@ -16,8 +16,8 @@ import {
   ObservableValue,
   IObservableMap,
   IObservableString
-} from '@jupyterlab/observables';
-import { ITranslator } from '@jupyterlab/translation';
+} from '@fk-jupyterlab/observables';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * A namespace for code editors.

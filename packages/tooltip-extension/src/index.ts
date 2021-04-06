@@ -5,7 +5,7 @@
  * @module tooltip-extension
  */
 
-import { Kernel, KernelMessage, Session } from '@jupyterlab/services';
+import { Kernel, KernelMessage, Session } from '@fk-jupyterlab/services';
 
 import { find, toArray } from '@lumino/algorithm';
 
@@ -13,24 +13,24 @@ import { JSONObject } from '@lumino/coreutils';
 
 import { Widget } from '@lumino/widgets';
 
-import { Text } from '@jupyterlab/coreutils';
+import { Text } from '@fk-jupyterlab/coreutils';
 
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { IEditorTracker } from '@jupyterlab/fileeditor';
+import { IEditorTracker } from '@fk-jupyterlab/fileeditor';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ITooltipManager, Tooltip } from '@jupyterlab/tooltip';
+import { ITooltipManager, Tooltip } from '@fk-jupyterlab/tooltip';
 
 /**
  * The command IDs used by the tooltip plugin.
@@ -49,7 +49,7 @@ namespace CommandIDs {
  * The main tooltip manager plugin.
  */
 const manager: JupyterFrontEndPlugin<ITooltipManager> = {
-  id: '@jupyterlab/tooltip-extension:manager',
+  id: '@fk-jupyterlab/tooltip-extension:manager',
   autoStart: true,
   provides: ITooltipManager,
   activate: (app: JupyterFrontEnd): ITooltipManager => {
@@ -92,7 +92,7 @@ const manager: JupyterFrontEndPlugin<ITooltipManager> = {
  * The console tooltip plugin.
  */
 const consoles: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/tooltip-extension:consoles',
+  id: '@fk-jupyterlab/tooltip-extension:consoles',
   autoStart: true,
   requires: [ITooltipManager, IConsoleTracker],
   activate: (
@@ -127,7 +127,7 @@ const consoles: JupyterFrontEndPlugin<void> = {
  * The notebook tooltip plugin.
  */
 const notebooks: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/tooltip-extension:notebooks',
+  id: '@fk-jupyterlab/tooltip-extension:notebooks',
   autoStart: true,
   requires: [ITooltipManager, INotebookTracker],
   activate: (
@@ -162,7 +162,7 @@ const notebooks: JupyterFrontEndPlugin<void> = {
  * The file editor tooltip plugin.
  */
 const files: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/tooltip-extension:files',
+  id: '@fk-jupyterlab/tooltip-extension:files',
   autoStart: true,
   requires: [ITooltipManager, IEditorTracker, IRenderMimeRegistry],
   activate: (

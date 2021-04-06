@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Text } from '@jupyterlab/coreutils';
+import { Text } from '@fk-jupyterlab/coreutils';
 
 /**
  * Inner works of class combining functions

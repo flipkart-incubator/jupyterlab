@@ -1,12 +1,12 @@
-import { ReactWidget, UseSignal } from '@jupyterlab/apputils';
+import { ReactWidget, UseSignal } from '@fk-jupyterlab/apputils';
 
 import {
   ITranslator,
   nullTranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
-import { HTMLSelect } from '@jupyterlab/ui-components';
+import { HTMLSelect } from '@fk-jupyterlab/ui-components';
 
 import React, { useState } from 'react';
 

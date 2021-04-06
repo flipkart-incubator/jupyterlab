@@ -7,20 +7,20 @@ init();
 
 import { act } from 'react-dom/test-utils';
 
-import { CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
 import {
   CodeMirrorEditorFactory,
   CodeMirrorMimeTypeService
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
-import { KernelSpecManager, Session } from '@jupyterlab/services';
+import { KernelSpecManager, Session } from '@fk-jupyterlab/services';
 
 import {
   createSession,
   signalToPromise,
   JupyterServer
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import { toArray } from '@lumino/algorithm';
 

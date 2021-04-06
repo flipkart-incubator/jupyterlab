@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Text } from '@jupyterlab/coreutils';
+import { Text } from '@fk-jupyterlab/coreutils';
 import {
   Button,
   circleEmptyIcon,
@@ -11,7 +11,7 @@ import {
   offlineBoltIcon,
   refreshIcon,
   stopIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { IIterator, find, map, some } from '@lumino/algorithm';
 import { CommandRegistry } from '@lumino/commands';
@@ -27,7 +27,7 @@ import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to toolbars.

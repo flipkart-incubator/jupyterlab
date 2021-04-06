@@ -6,7 +6,7 @@ import {
   Clipboard,
   Dialog,
   showDialog
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 import {
   ICellModel,
@@ -17,11 +17,11 @@ import {
   isMarkdownCellModel,
   isRawCellModel,
   isCodeCellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { ArrayExt, each, toArray } from '@lumino/algorithm';
 
@@ -36,7 +36,7 @@ import * as React from 'react';
 import { INotebookModel } from './model';
 
 import { Notebook } from './widget';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The mimetype used for Jupyter cell data.

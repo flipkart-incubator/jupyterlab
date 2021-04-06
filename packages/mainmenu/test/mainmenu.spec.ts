@@ -17,9 +17,9 @@ import {
   SettingsMenu,
   TabsMenu,
   ViewMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('MainMenu', () => {
     let commands: CommandRegistry;
     let mainMenu: MainMenu;

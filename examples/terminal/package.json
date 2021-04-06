@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/example-terminal",
+  "name": "@fk-jupyterlab/example-terminal",
   "version": "3.0.8",
   "private": true,
   "scripts": {
@@ -8,9 +8,9 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@jupyterlab/services": "^6.0.5",
-    "@jupyterlab/terminal": "^3.0.6",
-    "@jupyterlab/theme-light-extension": "^3.0.7",
+    "@fk-jupyterlab/services": "^6.0.5",
+    "@fk-jupyterlab/terminal": "^3.0.6",
+    "@fk-jupyterlab/theme-light-extension": "^3.0.7",
     "@lumino/widgets": "^1.16.1",
     "es6-promise": "~4.2.8"
   },

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISessionContext, sessionContextDialogs } from '@jupyterlab/apputils';
+import { ISessionContext, sessionContextDialogs } from '@fk-jupyterlab/apputils';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@lumino/coreutils';
 
@@ -11,11 +11,11 @@ import {
   DocumentRegistry,
   Context,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { Contents, Kernel, ServiceManager } from '@jupyterlab/services';
+import { Contents, Kernel, ServiceManager } from '@fk-jupyterlab/services';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { ArrayExt, find } from '@lumino/algorithm';
 

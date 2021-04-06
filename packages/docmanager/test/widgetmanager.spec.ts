@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { DocumentWidgetManager } from '../src';
 
@@ -12,7 +12,7 @@ import {
   Context,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import { PromiseDelegate, UUID } from '@lumino/coreutils';
 
@@ -20,9 +20,9 @@ import { IMessageHandler, Message, MessageLoop } from '@lumino/messaging';
 
 import { Widget } from '@lumino/widgets';
 
-import { dangerDialog, dismissDialog } from '@jupyterlab/testutils';
+import { dangerDialog, dismissDialog } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   protected createNewWidget(
@@ -54,7 +54,7 @@ class LoggingManager extends DocumentWidgetManager {
   }
 }
 
-describe('@jupyterlab/docmanager', () => {
+describe('@fk-jupyterlab/docmanager', () => {
   let manager: LoggingManager;
   let services: ServiceManager.IManager;
   const textModelFactory = new TextModelFactory();

@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { Base64ModelFactory } from '@jupyterlab/docregistry';
+import { Base64ModelFactory } from '@fk-jupyterlab/docregistry';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { Token } from '@lumino/coreutils';
 
@@ -184,7 +184,7 @@ export namespace JupyterLab {
   /**
    * The layout restorer token.
    */
-  export const IInfo = new Token<IInfo>('@jupyterlab/application:IInfo');
+  export const IInfo = new Token<IInfo>('@fk-jupyterlab/application:IInfo');
 
   /**
    * The information about a JupyterLab application.

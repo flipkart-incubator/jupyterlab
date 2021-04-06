@@ -2,19 +2,19 @@
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
-import { Contents, Session } from '@jupyterlab/services';
+import { Contents, Session } from '@fk-jupyterlab/services';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { PathExt, URLExt } from '@jupyterlab/coreutils';
+import { PathExt, URLExt } from '@fk-jupyterlab/coreutils';
 
 import {
   ISessionContext,
   ISanitizer,
   defaultSanitizer
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { ReadonlyPartialJSONObject } from '@lumino/coreutils';
 

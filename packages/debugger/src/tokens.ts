@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { KernelMessage, Session } from '@jupyterlab/services';
+import { KernelMessage, Session } from '@fk-jupyterlab/services';
 
 import { Token } from '@lumino/coreutils';
 
@@ -748,25 +748,25 @@ export namespace IDebugger {
 /**
  * The visual debugger token.
  */
-export const IDebugger = new Token<IDebugger>('@jupyterlab/debugger:IDebugger');
+export const IDebugger = new Token<IDebugger>('@fk-jupyterlab/debugger:IDebugger');
 
 /**
  * The debugger configuration token.
  */
 export const IDebuggerConfig = new Token<IDebugger.IConfig>(
-  '@jupyterlab/debugger:IDebuggerConfig'
+  '@fk-jupyterlab/debugger:IDebuggerConfig'
 );
 
 /**
  * The debugger sources utility token.
  */
 export const IDebuggerSources = new Token<IDebugger.ISources>(
-  '@jupyterlab/debugger:IDebuggerSources'
+  '@fk-jupyterlab/debugger:IDebuggerSources'
 );
 
 /**
  * The debugger configuration token.
  */
 export const IDebuggerSidebar = new Token<IDebugger.ISidebar>(
-  '@jupyterlab/debugger:IDebuggerSidebar'
+  '@fk-jupyterlab/debugger:IDebuggerSidebar'
 );

@@ -1,10 +1,10 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterLab } from '@jupyterlab/application';
+import { JupyterLab } from '@fk-jupyterlab/application';
 
 // The webpack public path needs to be set before loading the CSS assets.
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 // eslint-disable-next-line
 __webpack_public_path__ = PageConfig.getOption('fullStaticUrl') + '/';
 
@@ -16,39 +16,39 @@ const styles = import('./build/style.js');
 // extension assets to the build directory. These import statements assume
 // the JupyterLab plugins are the default export from each package.
 const extensions = [
-  import('@jupyterlab/application-extension'),
-  import('@jupyterlab/apputils-extension'),
-  import('@jupyterlab/codemirror-extension'),
-  import('@jupyterlab/completer-extension'),
-  import('@jupyterlab/console-extension'),
-  import('@jupyterlab/csvviewer-extension'),
-  import('@jupyterlab/docmanager-extension'),
-  import('@jupyterlab/filebrowser-extension'),
-  import('@jupyterlab/fileeditor-extension'),
-  import('@jupyterlab/help-extension'),
-  import('@jupyterlab/imageviewer-extension'),
-  import('@jupyterlab/inspector-extension'),
-  import('@jupyterlab/launcher-extension'),
-  import('@jupyterlab/mainmenu-extension'),
-  import('@jupyterlab/markdownviewer-extension'),
-  import('@jupyterlab/mathjax2-extension'),
-  import('@jupyterlab/notebook-extension'),
-  import('@jupyterlab/rendermime-extension'),
-  import('@jupyterlab/running-extension'),
-  import('@jupyterlab/settingeditor-extension'),
-  import('@jupyterlab/shortcuts-extension'),
-  import('@jupyterlab/statusbar-extension'),
-  import('@jupyterlab/terminal-extension'),
-  import('@jupyterlab/theme-dark-extension'),
-  import('@jupyterlab/theme-light-extension'),
-  import('@jupyterlab/tooltip-extension'),
-  import('@jupyterlab/translation-extension'),
-  import('@jupyterlab/ui-components-extension')
+  import('@fk-jupyterlab/application-extension'),
+  import('@fk-jupyterlab/apputils-extension'),
+  import('@fk-jupyterlab/codemirror-extension'),
+  import('@fk-jupyterlab/completer-extension'),
+  import('@fk-jupyterlab/console-extension'),
+  import('@fk-jupyterlab/csvviewer-extension'),
+  import('@fk-jupyterlab/docmanager-extension'),
+  import('@fk-jupyterlab/filebrowser-extension'),
+  import('@fk-jupyterlab/fileeditor-extension'),
+  import('@fk-jupyterlab/help-extension'),
+  import('@fk-jupyterlab/imageviewer-extension'),
+  import('@fk-jupyterlab/inspector-extension'),
+  import('@fk-jupyterlab/launcher-extension'),
+  import('@fk-jupyterlab/mainmenu-extension'),
+  import('@fk-jupyterlab/markdownviewer-extension'),
+  import('@fk-jupyterlab/mathjax2-extension'),
+  import('@fk-jupyterlab/notebook-extension'),
+  import('@fk-jupyterlab/rendermime-extension'),
+  import('@fk-jupyterlab/running-extension'),
+  import('@fk-jupyterlab/settingeditor-extension'),
+  import('@fk-jupyterlab/shortcuts-extension'),
+  import('@fk-jupyterlab/statusbar-extension'),
+  import('@fk-jupyterlab/terminal-extension'),
+  import('@fk-jupyterlab/theme-dark-extension'),
+  import('@fk-jupyterlab/theme-light-extension'),
+  import('@fk-jupyterlab/tooltip-extension'),
+  import('@fk-jupyterlab/translation-extension'),
+  import('@fk-jupyterlab/ui-components-extension')
 ];
 
 const mimeExtensions = [
-  import('@jupyterlab/json-extension'),
-  import('@jupyterlab/pdf-extension')
+  import('@fk-jupyterlab/json-extension'),
+  import('@fk-jupyterlab/pdf-extension')
 ];
 
 window.addEventListener('load', async function () {

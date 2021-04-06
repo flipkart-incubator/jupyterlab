@@ -3,14 +3,14 @@
 
 import { toArray } from '@lumino/algorithm';
 
-import { ToolbarButton } from '@jupyterlab/apputils';
+import { ToolbarButton } from '@fk-jupyterlab/apputils';
 
-import { DocumentRegistry, Context } from '@jupyterlab/docregistry';
+import { DocumentRegistry, Context } from '@fk-jupyterlab/docregistry';
 
 import { INotebookModel, NotebookPanel, NotebookWidgetFactory } from '../src';
 
-import { initNotebookContext } from '@jupyterlab/testutils';
-import { JupyterServer } from '@jupyterlab/testutils/lib/start_jupyter_server';
+import { initNotebookContext } from '@fk-jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils/lib/start_jupyter_server';
 import * as utils from './utils';
 
 const contentFactory = utils.createNotebookPanelFactory();
@@ -41,7 +41,7 @@ function createFactory(
   });
 }
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookWidgetFactory', () => {
     let context: Context<INotebookModel>;
 

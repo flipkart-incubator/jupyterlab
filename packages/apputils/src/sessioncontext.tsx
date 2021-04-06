@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PathExt, IChangedArgs } from '@jupyterlab/coreutils';
+import { PathExt, IChangedArgs } from '@fk-jupyterlab/coreutils';
 
 import { UUID } from '@lumino/coreutils';
 
@@ -11,7 +11,7 @@ import {
   KernelSpec,
   ServerConnection,
   Session
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import { IterableOrArrayLike, each, find } from '@lumino/algorithm';
 
@@ -30,7 +30,7 @@ import {
   ITranslator,
   nullTranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * A context object to manage a widget's kernel session connection.

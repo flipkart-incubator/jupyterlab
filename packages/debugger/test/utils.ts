@@ -5,7 +5,7 @@ import encoding from 'text-encoding';
 
 // Utils from: https://github.com/jupyterlab/jupyterlab/blob/b1e2b83047421bf7196bec5f2a94d0616dcb2329/packages/services/test/utils.ts
 
-import { ServerConnection } from '@jupyterlab/services';
+import { ServerConnection } from '@fk-jupyterlab/services';
 
 import { JSONObject } from '@lumino/coreutils';
 

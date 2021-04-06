@@ -6,9 +6,9 @@
 
 /// <reference types="jest" />
 
-import { ISessionContext, SessionContext } from '@jupyterlab/apputils';
+import { ISessionContext, SessionContext } from '@fk-jupyterlab/apputils';
 
-import { Context, TextModelFactory } from '@jupyterlab/docregistry';
+import { Context, TextModelFactory } from '@fk-jupyterlab/docregistry';
 
 import {
   Kernel,
@@ -19,7 +19,7 @@ import {
   Contents,
   ServerConnection,
   ContentsManager
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import { ArrayIterator } from '@lumino/algorithm';
 
@@ -29,7 +29,7 @@ import { UUID } from '@lumino/coreutils';
 
 import { Signal } from '@lumino/signaling';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
 // The default kernel name
 export const DEFAULT_NAME = 'python3';
@@ -167,7 +167,7 @@ export const KernelMock = jest.fn<
   let executionCount = 0;
   const spec = Private.kernelSpecForKernelName(model.name)!;
   const thisObject: Kernel.IKernelConnection = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     ...options,
     ...model,
     status: 'idle',
@@ -273,7 +273,7 @@ export const SessionConnectionMock = jest.fn<
     kernel: kernel!.model
   };
   const thisObject: Session.ISessionConnection = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     id: UUID.uuid4(),
     ...options,
     model,
@@ -369,7 +369,7 @@ export const SessionContextMock = jest.fn<
       null
     );
   const thisObject: ISessionContext = {
-    ...jest.requireActual('@jupyterlab/apputils'),
+    ...jest.requireActual('@fk-jupyterlab/apputils'),
     ...options,
     path: session.path,
     type: session.type,
@@ -443,7 +443,7 @@ export const ContentsManagerMock = jest.fn<Contents.IManager, []>(() => {
   files.set('', { ...baseModel, path: '', name: '' });
 
   const thisObject: Contents.IManager = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     newUntitled: jest.fn(options => {
       const model = Private.createFile(options || {});
       files.set(model.path, model);
@@ -608,7 +608,7 @@ export const ContentsManagerMock = jest.fn<Contents.IManager, []>(() => {
 export const SessionManagerMock = jest.fn<Session.IManager, []>(() => {
   let sessions: Session.IModel[] = [];
   const thisObject: Session.IManager = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     ready: Promise.resolve(void 0),
     isReady: true,
     startNew: jest.fn(options => {
@@ -644,7 +644,7 @@ export const SessionManagerMock = jest.fn<Session.IManager, []>(() => {
  */
 export const KernelSpecManagerMock = jest.fn<KernelSpec.IManager, []>(() => {
   const thisObject: KernelSpec.IManager = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     specs: { default: DEFAULT_NAME, kernelspecs: KERNELSPECS },
     isReady: true,
     ready: Promise.resolve(void 0),
@@ -658,7 +658,7 @@ export const KernelSpecManagerMock = jest.fn<KernelSpec.IManager, []>(() => {
  */
 export const ServiceManagerMock = jest.fn<ServiceManager.IManager, []>(() => {
   const thisObject: ServiceManager.IManager = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     ready: Promise.resolve(void 0),
     isReady: true,
     contents: new ContentsManagerMock(),
@@ -677,7 +677,7 @@ export const MockShellFuture = jest.fn<
   [KernelMessage.IShellMessage]
 >((result: KernelMessage.IShellMessage) => {
   const thisObject: Kernel.IShellFuture = {
-    ...jest.requireActual('@jupyterlab/services'),
+    ...jest.requireActual('@fk-jupyterlab/services'),
     dispose: jest.fn(),
     done: Promise.resolve(result)
   };

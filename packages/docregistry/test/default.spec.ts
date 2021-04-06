@@ -16,13 +16,13 @@ import {
   IDocumentWidget,
   TextModelFactory,
   Context
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { sleep } from '@jupyterlab/testutils';
+import { sleep } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   protected createNewWidget(

@@ -10,12 +10,12 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
-import { IDocumentManager } from '@jupyterlab/docmanager';
-import { IEditorTracker } from '@jupyterlab/fileeditor';
-import { IMarkdownViewerTracker } from '@jupyterlab/markdownviewer';
-import { INotebookTracker } from '@jupyterlab/notebook';
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/application';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
+import { IEditorTracker } from '@fk-jupyterlab/fileeditor';
+import { IMarkdownViewerTracker } from '@fk-jupyterlab/markdownviewer';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 import {
   TableOfContents,
   ITableOfContentsRegistry,
@@ -25,9 +25,9 @@ import {
   createMarkdownGenerator,
   createPythonGenerator,
   createRenderedMarkdownGenerator
-} from '@jupyterlab/toc';
-import { ITranslator } from '@jupyterlab/translation';
-import { tocIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/toc';
+import { ITranslator } from '@fk-jupyterlab/translation';
+import { tocIcon } from '@fk-jupyterlab/ui-components';
 
 /**
  * Activates the ToC extension.
@@ -69,7 +69,7 @@ async function activateTOC(
   labShell.add(toc, 'left', { rank: 400 });
 
   // Add the ToC widget to the application restorer:
-  restorer.add(toc, '@jupyterlab/toc:plugin');
+  restorer.add(toc, '@fk-jupyterlab/toc:plugin');
 
   // Create a notebook generator:
   const notebookGenerator = createNotebookGenerator(
@@ -140,7 +140,7 @@ async function activateTOC(
  * @private
  */
 const extension: JupyterFrontEndPlugin<ITableOfContentsRegistry> = {
-  id: '@jupyterlab/toc:plugin',
+  id: '@fk-jupyterlab/toc:plugin',
   autoStart: true,
   provides: ITableOfContentsRegistry,
   requires: [

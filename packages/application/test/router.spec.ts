@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Router } from '@jupyterlab/application';
+import { Router } from '@fk-jupyterlab/application';
 
 import { CommandRegistry } from '@lumino/commands';
 
 import { Token } from '@lumino/coreutils';
 
-import { signalToPromise } from '@jupyterlab/testutils';
+import { signalToPromise } from '@fk-jupyterlab/testutils';
 
 const base = '/';
 

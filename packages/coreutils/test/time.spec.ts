@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Time } from '@jupyterlab/coreutils';
+import { Time } from '@fk-jupyterlab/coreutils';
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('Time', () => {
     describe('.formatHuman()', () => {
       it('should convert a time to a human readable string', () => {

@@ -7,11 +7,11 @@ import { Widget } from '@lumino/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 class LogEditor extends CodeMirrorEditor {
   methods: string[] = [];

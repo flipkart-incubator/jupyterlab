@@ -22,7 +22,7 @@ import { DisposableDelegate, IDisposable } from '@lumino/disposable';
 
 import { ISignal, Signal } from '@lumino/signaling';
 
-import { IDataConnector } from '@jupyterlab/statedb';
+import { IDataConnector } from '@fk-jupyterlab/statedb';
 
 import { ISettingRegistry } from './tokens';
 

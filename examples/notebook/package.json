@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/example-notebook",
+  "name": "@fk-jupyterlab/example-notebook",
   "version": "3.0.7",
   "private": true,
   "scripts": {
@@ -8,16 +8,16 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@jupyterlab/codemirror": "^3.0.5",
-    "@jupyterlab/completer": "^3.0.5",
-    "@jupyterlab/docmanager": "^3.0.7",
-    "@jupyterlab/docregistry": "^3.0.7",
-    "@jupyterlab/documentsearch": "^3.0.7",
-    "@jupyterlab/mathjax2": "^3.0.5",
-    "@jupyterlab/notebook": "^3.0.7",
-    "@jupyterlab/rendermime": "^3.0.6",
-    "@jupyterlab/services": "^6.0.5",
-    "@jupyterlab/theme-light-extension": "^3.0.7",
+    "@fk-jupyterlab/codemirror": "^3.0.5",
+    "@fk-jupyterlab/completer": "^3.0.5",
+    "@fk-jupyterlab/docmanager": "^3.0.7",
+    "@fk-jupyterlab/docregistry": "^3.0.7",
+    "@fk-jupyterlab/documentsearch": "^3.0.7",
+    "@fk-jupyterlab/mathjax2": "^3.0.5",
+    "@fk-jupyterlab/notebook": "^3.0.7",
+    "@fk-jupyterlab/rendermime": "^3.0.6",
+    "@fk-jupyterlab/services": "^6.0.5",
+    "@fk-jupyterlab/theme-light-extension": "^3.0.7",
     "@lumino/commands": "^1.12.0",
     "@lumino/widgets": "^1.16.1",
     "es6-promise": "~4.2.8"

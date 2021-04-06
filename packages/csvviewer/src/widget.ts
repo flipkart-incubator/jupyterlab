@@ -1,14 +1,14 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
 import {
   ABCWidgetFactory,
   DocumentRegistry,
   IDocumentWidget,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 
@@ -30,7 +30,7 @@ import { PanelLayout, Widget } from '@lumino/widgets';
 import { CSVDelimiter } from './toolbar';
 
 import { DSVModel } from './model';
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to a CSV viewer.

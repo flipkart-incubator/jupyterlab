@@ -10,7 +10,7 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -20,17 +20,17 @@ import {
   sessionContextDialogs,
   showDialog,
   WidgetTracker
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { ConsolePanel, IConsoleTracker } from '@jupyterlab/console';
+import { ConsolePanel, IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
 import {
   IEditMenu,
@@ -39,15 +39,15 @@ import {
   IKernelMenu,
   IMainMenu,
   IRunMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { consoleIcon } from '@jupyterlab/ui-components';
+import { consoleIcon } from '@fk-jupyterlab/ui-components';
 
 import { find } from '@lumino/algorithm';
 
@@ -104,7 +104,7 @@ namespace CommandIDs {
  * The console widget tracker provider.
  */
 const tracker: JupyterFrontEndPlugin<IConsoleTracker> = {
-  id: '@jupyterlab/console-extension:tracker',
+  id: '@fk-jupyterlab/console-extension:tracker',
   provides: IConsoleTracker,
   requires: [
     ConsolePanel.IContentFactory,
@@ -130,7 +130,7 @@ const tracker: JupyterFrontEndPlugin<IConsoleTracker> = {
  * The console widget content factory.
  */
 const factory: JupyterFrontEndPlugin<ConsolePanel.IContentFactory> = {
-  id: '@jupyterlab/console-extension:factory',
+  id: '@fk-jupyterlab/console-extension:factory',
   provides: ConsolePanel.IContentFactory,
   requires: [IEditorServices],
   autoStart: true,
@@ -279,7 +279,7 @@ async function activateConsole(
 
     const interactionMode: string = (
       await settingRegistry.get(
-        '@jupyterlab/console-extension:tracker',
+        '@fk-jupyterlab/console-extension:tracker',
         'interactionMode'
       )
     ).composite as string;
@@ -300,7 +300,7 @@ async function activateConsole(
     return panel;
   }
 
-  const pluginId = '@jupyterlab/console-extension:tracker';
+  const pluginId = '@fk-jupyterlab/console-extension:tracker';
   let interactionMode: string;
   async function updateSettings() {
     interactionMode = (await settingRegistry.get(pluginId, 'interactionMode'))

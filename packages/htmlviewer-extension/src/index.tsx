@@ -11,21 +11,21 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette, WidgetTracker } from '@jupyterlab/apputils';
+import { ICommandPalette, WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   HTMLViewer,
   HTMLViewerFactory,
   IHTMLViewerTracker
-} from '@jupyterlab/htmlviewer';
+} from '@fk-jupyterlab/htmlviewer';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { html5Icon } from '@jupyterlab/ui-components';
+import { html5Icon } from '@fk-jupyterlab/ui-components';
 
 /**
  * Command IDs used by the plugin.
@@ -39,7 +39,7 @@ namespace CommandIDs {
  */
 const htmlPlugin: JupyterFrontEndPlugin<IHTMLViewerTracker> = {
   activate: activateHTMLViewer,
-  id: '@jupyterlab/htmlviewer-extension:plugin',
+  id: '@fk-jupyterlab/htmlviewer-extension:plugin',
   provides: IHTMLViewerTracker,
   requires: [ITranslator],
   optional: [ICommandPalette, ILayoutRestorer],

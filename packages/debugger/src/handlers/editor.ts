@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
-import { IObservableString } from '@jupyterlab/observables';
+import { IObservableString } from '@fk-jupyterlab/observables';
 
 import { IDisposable } from '@lumino/disposable';
 

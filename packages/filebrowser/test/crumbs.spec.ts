@@ -3,17 +3,17 @@
 
 import expect from 'expect';
 
-import { DocumentManager, IDocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager, IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry, TextModelFactory } from '@jupyterlab/docregistry';
+import { DocumentRegistry, TextModelFactory } from '@fk-jupyterlab/docregistry';
 
 import { BreadCrumbs, FileBrowserModel } from '../src';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { framePromise, signalToPromise } from '@jupyterlab/testutils';
+import { framePromise, signalToPromise } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 import { Message, MessageLoop } from '@lumino/messaging';
 

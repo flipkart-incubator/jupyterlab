@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISessionContext } from '@jupyterlab/apputils';
+import { ISessionContext } from '@fk-jupyterlab/apputils';
 
 import {
   Cell,
@@ -14,17 +14,17 @@ import {
   IRawCellModel,
   RawCell,
   RawCellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { IEditorMimeTypeService, CodeEditor } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService, CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IObservableList, ObservableList } from '@jupyterlab/observables';
+import { IObservableList, ObservableList } from '@fk-jupyterlab/observables';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { each } from '@lumino/algorithm';
 

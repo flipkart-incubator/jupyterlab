@@ -3,20 +3,20 @@
 
 import { toArray } from '@lumino/algorithm';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
 import {
   CellModel,
   RawCellModel,
   MarkdownCellModel,
   CodeCellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { OutputAreaModel } from '@jupyterlab/outputarea';
+import { OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
-import { NBTestUtils } from '@jupyterlab/testutils';
+import { NBTestUtils } from '@fk-jupyterlab/testutils';
 import { JSONObject } from '@lumino/coreutils';
 
 class TestModel extends CellModel {

@@ -3,19 +3,19 @@
 
 import { ArrayExt, toArray } from '@lumino/algorithm';
 
-import { CodeCellModel } from '@jupyterlab/cells';
+import { CodeCellModel } from '@fk-jupyterlab/cells';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
 import { NotebookModel } from '../src';
 
-import { ModelDB } from '@jupyterlab/observables';
+import { ModelDB } from '@fk-jupyterlab/observables';
 
-import { acceptDialog } from '@jupyterlab/testutils';
+import { acceptDialog } from '@fk-jupyterlab/testutils';
 
 import * as utils from './utils';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookModel', () => {
     describe('#constructor()', () => {
       it('should create a notebook model', () => {

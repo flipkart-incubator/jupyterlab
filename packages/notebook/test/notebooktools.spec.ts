@@ -7,11 +7,11 @@ import { TabPanel, Widget } from '@lumino/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { CodeMirrorEditorFactory } from '@jupyterlab/codemirror';
+import { CodeMirrorEditorFactory } from '@fk-jupyterlab/codemirror';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
-import { ObservableJSON } from '@jupyterlab/observables';
+import { ObservableJSON } from '@fk-jupyterlab/observables';
 
 import {
   INotebookModel,
@@ -21,8 +21,8 @@ import {
   NotebookTracker
 } from '../src';
 
-import { initNotebookContext, sleep } from '@jupyterlab/testutils';
-import { JupyterServer } from '@jupyterlab/testutils/lib/start_jupyter_server';
+import { initNotebookContext, sleep } from '@fk-jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils/lib/start_jupyter_server';
 import * as utils from './utils';
 
 class LogTool extends NotebookTools.Tool {
@@ -106,7 +106,7 @@ afterAll(async () => {
   await server.shutdown();
 });
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('notebooktools', () => {
     let notebookTools: NotebookTools;
     let tabpanel: TabPanel;

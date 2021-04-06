@@ -9,7 +9,7 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -18,19 +18,19 @@ import {
   MainAreaWidget,
   showDialog,
   WidgetTracker
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IInspector } from '@jupyterlab/inspector';
+import { IInspector } from '@fk-jupyterlab/inspector';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { jupyterIcon, jupyterlabWordmarkIcon } from '@jupyterlab/ui-components';
+import { jupyterIcon, jupyterlabWordmarkIcon } from '@fk-jupyterlab/ui-components';
 
 import { Menu } from '@lumino/widgets';
 
@@ -70,7 +70,7 @@ const HELP_CLASS = 'jp-Help';
  */
 const plugin: JupyterFrontEndPlugin<void> = {
   activate,
-  id: '@jupyterlab/help-extension:plugin',
+  id: '@fk-jupyterlab/help-extension:plugin',
   requires: [IMainMenu, ITranslator],
   optional: [ICommandPalette, ILayoutRestorer, IInspector],
   autoStart: true

@@ -172,7 +172,7 @@ related to installing Python libraries.
 Many Jupyter extensions require having working ``npm`` and ``jlpm`` (alias for ``yarn``) commands,
 which is required for downloading useful Jupyter extensions or other JavaScript dependencies. If ``npm`` cannot connect to its own repositories, you might see an error like::
 
-    ValueError: "@jupyterlab/toc" is not a valid npm package
+    ValueError: "@fk-jupyterlab/toc" is not a valid npm package
 
 You can set the proxy or registry used for npm with the following commands.
 

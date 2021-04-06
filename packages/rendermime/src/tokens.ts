@@ -5,19 +5,19 @@
 
 import { Token, ReadonlyPartialJSONObject } from '@lumino/coreutils';
 
-import { ISanitizer } from '@jupyterlab/apputils';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { MimeModel } from './mimemodel';
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /* tslint:disable */
 /**
  * The rendermime token.
  */
 export const IRenderMimeRegistry = new Token<IRenderMimeRegistry>(
-  '@jupyterlab/rendermime:IRenderMimeRegistry'
+  '@fk-jupyterlab/rendermime:IRenderMimeRegistry'
 );
 
 export interface IRenderMimeRegistry {
@@ -186,7 +186,7 @@ export namespace IRenderMimeRegistry {
  * The latex typesetter token.
  */
 export const ILatexTypesetter = new Token<IRenderMime.ILatexTypesetter>(
-  '@jupyterlab/rendermime:ILatexTypesetter'
+  '@fk-jupyterlab/rendermime:ILatexTypesetter'
 );
 
 export interface ILatexTypesetter extends IRenderMime.ILatexTypesetter {}

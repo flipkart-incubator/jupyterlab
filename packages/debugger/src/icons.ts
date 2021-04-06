@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { LabIcon } from '@jupyterlab/ui-components';
+import { LabIcon } from '@fk-jupyterlab/ui-components';
 
 import closeAllSvgStr from '../style/icons/close-all.svg';
 import stepIntoSvgStr from '../style/icons/step-into.svg';
@@ -13,7 +13,7 @@ import viewBreakpointSvgStr from '../style/icons/view-breakpoint.svg';
 export {
   runIcon as continueIcon,
   stopIcon as terminateIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 export const closeAllIcon = new LabIcon({
   name: 'debugger:close-all',

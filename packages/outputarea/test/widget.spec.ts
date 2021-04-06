@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { SessionContext } from '@jupyterlab/apputils';
+import { SessionContext } from '@fk-jupyterlab/apputils';
 
-import { KernelManager } from '@jupyterlab/services';
+import { KernelManager } from '@fk-jupyterlab/services';
 
 import { Message } from '@lumino/messaging';
 
@@ -13,7 +13,7 @@ import {
   IOutputAreaModel,
   OutputAreaModel,
   OutputArea
-} from '@jupyterlab/outputarea';
+} from '@fk-jupyterlab/outputarea';
 
 import {
   createSessionContext,
@@ -21,7 +21,7 @@ import {
   NBTestUtils,
   JupyterServer,
   flakyIt as it
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 /**
  * The default rendermime instance to use for testing.

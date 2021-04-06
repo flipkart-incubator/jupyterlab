@@ -9,9 +9,9 @@ import {
   ObservableValue,
   ObservableUndoableList,
   ObservableJSON
-} from '@jupyterlab/observables';
+} from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableValue', () => {
     describe('#constructor', () => {
       it('should accept no arguments', () => {

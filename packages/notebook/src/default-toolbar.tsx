@@ -16,14 +16,14 @@ import {
   ISessionContextDialogs,
   ISessionContext,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
-import { DocumentRegistry } from '@jupyterlab/docregistry';
-import * as nbformat from '@jupyterlab/nbformat';
+} from '@fk-jupyterlab/apputils';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 import {
   addIcon,
   copyIcon,
@@ -33,7 +33,7 @@ import {
   pasteIcon,
   runIcon,
   saveIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { NotebookActions } from './actions';
 import { NotebookPanel } from './panel';

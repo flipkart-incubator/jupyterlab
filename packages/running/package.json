@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/running",
+  "name": "@fk-jupyterlab/running",
   "version": "3.0.5",
   "description": "JupyterLab - Running Sessions Panel",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
@@ -37,9 +37,9 @@
     "watch": "tsc -b --watch"
   },
   "dependencies": {
-    "@jupyterlab/apputils": "^3.0.5",
-    "@jupyterlab/translation": "^3.0.5",
-    "@jupyterlab/ui-components": "^3.0.4",
+    "@fk-jupyterlab/apputils": "^3.0.5",
+    "@fk-jupyterlab/translation": "^3.0.5",
+    "@fk-jupyterlab/ui-components": "^3.0.4",
     "@lumino/coreutils": "^1.5.3",
     "@lumino/disposable": "^1.4.3",
     "@lumino/signaling": "^1.4.3",

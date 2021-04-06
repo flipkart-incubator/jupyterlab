@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IObservableJSON } from '@jupyterlab/observables';
+import { IObservableJSON } from '@fk-jupyterlab/observables';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
-import { checkIcon, undoIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/translation';
+import { checkIcon, undoIcon } from '@fk-jupyterlab/ui-components';
 
 import {
   JSONExt,

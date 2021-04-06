@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import { Widget } from '@lumino/widgets';
 
@@ -13,11 +13,11 @@ import {
   ABCWidgetFactory,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { dismissDialog } from '@jupyterlab/testutils';
+import { dismissDialog } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 class WidgetFactory extends ABCWidgetFactory<IDocumentWidget> {
   protected createNewWidget(
@@ -58,7 +58,7 @@ class WidgetFactoryWithSharedState extends ABCWidgetFactory<CloneTestWidget> {
   }
 }
 
-describe('@jupyterlab/docmanager', () => {
+describe('@fk-jupyterlab/docmanager', () => {
   let manager: DocumentManager;
   let services: ServiceManager.IManager;
   let context: DocumentRegistry.Context;

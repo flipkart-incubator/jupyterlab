@@ -5,11 +5,11 @@
  * @module json-extension
  */
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { Printing } from '@jupyterlab/apputils';
+import { Printing } from '@fk-jupyterlab/apputils';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { Message } from '@lumino/messaging';
 
@@ -98,7 +98,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 
 const extensions: IRenderMime.IExtension | IRenderMime.IExtension[] = [
   {
-    id: '@jupyterlab/json-extension:factory',
+    id: '@fk-jupyterlab/json-extension:factory',
     rendererFactory,
     rank: 0,
     dataType: 'json',

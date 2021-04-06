@@ -10,7 +10,7 @@ import {
   ILabStatus,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   showDialog,
@@ -18,9 +18,9 @@ import {
   Dialog,
   ICommandPalette,
   ISessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs, Time } from '@jupyterlab/coreutils';
+import { IChangedArgs, Time } from '@fk-jupyterlab/coreutils';
 
 import {
   renameDialog,
@@ -28,19 +28,19 @@ import {
   IDocumentManager,
   PathStatus,
   SavingStatus
-} from '@jupyterlab/docmanager';
+} from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { Contents, Kernel } from '@jupyterlab/services';
+import { Contents, Kernel } from '@fk-jupyterlab/services';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStatusBar } from '@jupyterlab/statusbar';
+import { IStatusBar } from '@fk-jupyterlab/statusbar';
 
-import { ITranslator, TranslationBundle } from '@jupyterlab/translation';
+import { ITranslator, TranslationBundle } from '@fk-jupyterlab/translation';
 
 import { each, map, some, toArray } from '@lumino/algorithm';
 
@@ -85,7 +85,7 @@ namespace CommandIDs {
   export const showInFileBrowser = 'docmanager:show-in-file-browser';
 }
 
-const pluginId = '@jupyterlab/docmanager-extension:plugin';
+const pluginId = '@fk-jupyterlab/docmanager-extension:plugin';
 
 /**
  * The default document manager provider.
@@ -269,7 +269,7 @@ Available file types:
  * A plugin for adding a saving status item to the status bar.
  */
 export const savingStatusPlugin: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/docmanager-extension:saving-status',
+  id: '@fk-jupyterlab/docmanager-extension:saving-status',
   autoStart: true,
   requires: [IDocumentManager, ILabShell, ITranslator],
   optional: [IStatusBar],
@@ -305,7 +305,7 @@ export const savingStatusPlugin: JupyterFrontEndPlugin<void> = {
  * A plugin providing a file path widget to the status bar.
  */
 export const pathStatusPlugin: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/docmanager-extension:path-status',
+  id: '@fk-jupyterlab/docmanager-extension:path-status',
   autoStart: true,
   requires: [IDocumentManager, ILabShell],
   optional: [IStatusBar],

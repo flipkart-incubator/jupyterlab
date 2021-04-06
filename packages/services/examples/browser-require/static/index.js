@@ -1,4 +1,4 @@
-require(['jquery', '@jupyterlab/services'], function($, services) {
+require(['jquery', '@fk-jupyterlab/services'], function($, services) {
   /* eslint-disable no-console */
   console.log('Starting example');
   const kernelManager = new services.KernelManager();

@@ -2,7 +2,7 @@
 // Distributed under the terms of the Modified BSD License.
 
 import * as Mock from '../src/mock';
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 import { toArray } from '@lumino/algorithm';
 
 describe('mock', () => {

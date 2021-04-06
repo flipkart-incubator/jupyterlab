@@ -4,8 +4,8 @@
 
 // We dynamically set the webpack public path based on the page config
 // settings from the JupyterLab app. We copy some of the pageconfig parsing
-// logic in @jupyterlab/coreutils below, since this must run before any other
-// files are loaded (including @jupyterlab/coreutils).
+// logic in @fk-jupyterlab/coreutils below, since this must run before any other
+// files are loaded (including @fk-jupyterlab/coreutils).
 
 /**
  * Get global configuration data for the Jupyter application.

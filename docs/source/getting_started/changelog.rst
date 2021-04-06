@@ -39,7 +39,7 @@ v3.0.9
 
 v3.0.8
 ^^^^^^
-* ``@jupyterlab/rendermime``: upgraded `marked` dep past vulnerability.   (`#9809 <https://github.com/jupyterlab/jupyterlab/pull/9809>`__)
+* ``@fk-jupyterlab/rendermime``: upgraded `marked` dep past vulnerability.   (`#9809 <https://github.com/jupyterlab/jupyterlab/pull/9809>`__)
 * Fix Services Tests.  (`#9806 <https://github.com/jupyterlab/jupyterlab/pull/9806>`__)
 * Enable jupyter labextension build/watch to work for custom jupyterlab distributions.  (`#9697 <https://github.com/jupyterlab/jupyterlab/pull/9697>`__)
 * Add hash to webpack requests to enable caching.  (`#9776 <https://github.com/jupyterlab/jupyterlab/pull/9776>`__)
@@ -403,7 +403,7 @@ Other
 * Update encoding version in vega sample. (`#8766 <https://github.com/jupyterlab/jupyterlab/pull/8766>`__)
 * Upgrade codemirror (`#8739 <https://github.com/jupyterlab/jupyterlab/pull/8739>`__)
 * Rename the logconsole:nboutput plugin id (`#8729 <https://github.com/jupyterlab/jupyterlab/pull/8729>`__)
-* Rename the celltags plugin id to @jupyterlab/celltags (`#8728 <https://github.com/jupyterlab/jupyterlab/pull/8728>`__)
+* Rename the celltags plugin id to @fk-jupyterlab/celltags (`#8728 <https://github.com/jupyterlab/jupyterlab/pull/8728>`__)
 * Uncaught typeerror when switching kernels (`#8727 <https://github.com/jupyterlab/jupyterlab/pull/8727>`__)
 * Change inspector detail_level to 1 (`#8725 <https://github.com/jupyterlab/jupyterlab/pull/8725>`__)
 * Change main menu ranks to allow for application menu to l of file (`#8719 <https://github.com/jupyterlab/jupyterlab/pull/8719>`__)
@@ -970,7 +970,7 @@ We have integrated the `JupyterLab Status Bar package <https://github.com/jupyte
 JupyterHub Integration
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* We now include the JupyterHub extension in core JupyterLab, so you no longer need to install ``@jupyterlab/hub-extension``. (`#6451 <https://github.com/jupyterlab/jupyterlab/pull/6451>`__, `#6428 <https://github.com/jupyterlab/jupyterlab/issues/6428>`__)
+* We now include the JupyterHub extension in core JupyterLab, so you no longer need to install ``@fk-jupyterlab/hub-extension``. (`#6451 <https://github.com/jupyterlab/jupyterlab/pull/6451>`__, `#6428 <https://github.com/jupyterlab/jupyterlab/issues/6428>`__)
 * JupyterLab now has a File > Logout menu entry when running with JupyterHub (`#6087 <https://github.com/jupyterlab/jupyterlab/pull/6087>`__, `#5966 <https://github.com/jupyterlab/jupyterlab/issues/5966>`__)
 
 
@@ -1089,7 +1089,7 @@ Extension Development Changes
 * Adds the ability for extensions to register new CodeMirror modes (`#5829 <https://github.com/jupyterlab/jupyterlab/pull/5829>`__)
 * We have removed the ``JUPYTERLAB_xxx_LOADER`` Webpack loaders, instead you should use the loader directly in the URL as Webpack supports it (`#5709 <https://github.com/jupyterlab/jupyterlab/pull/5709>`__, `#4406 <https://github.com/jupyterlab/jupyterlab/issues/4406>`__)
 * Adds the ability to handle fragments for document widgets (`#5630 <https://github.com/jupyterlab/jupyterlab/pull/5630>`__, `#5599 <https://github.com/jupyterlab/jupyterlab/issues/5599>`__)
-* We have added a  ``@jupyterlab/ui-components`` package that contains reusable React components to be used internally and in extensions. Feel free to use this to create extension UIs with consistent styles (`#5538 <https://github.com/jupyterlab/jupyterlab/pull/5538>`__)
+* We have added a  ``@fk-jupyterlab/ui-components`` package that contains reusable React components to be used internally and in extensions. Feel free to use this to create extension UIs with consistent styles (`#5538 <https://github.com/jupyterlab/jupyterlab/pull/5538>`__)
 * The ``showErrorMessage`` function now lets you customize the buttons it uses (`#5513 <https://github.com/jupyterlab/jupyterlab/pull/5513>`__)
 * We now provide helpers for using React components within JupyterLab. If you were previously using ``ReactElementWidget`` you should switch to using ``ReactWidget``. (`#5479 <https://github.com/jupyterlab/jupyterlab/pull/5479>`__, `#5766 <https://github.com/jupyterlab/jupyterlab/issues/5766>`__, `#6595 <https://github.com/jupyterlab/jupyterlab/pull/6595>`__, `#6595 <https://github.com/jupyterlab/jupyterlab/pull/6595>`__)
 * The share link command has been moved to its own extension so that it can be overridden (`#5460 <https://github.com/jupyterlab/jupyterlab/pull/5460>`__, `#5388 <https://github.com/jupyterlab/jupyterlab/issues/5388>`__)
@@ -1526,7 +1526,7 @@ Changes for developers
    widget is the markdown viewer.
    (`#4692 <https://github.com/jupyterlab/jupyterlab/pull/4692>`__)
 -  Add new workspace REST endpoints to ``jupyterlab_server`` and make
-   them available in ``@jupyterlab/services``.
+   them available in ``@fk-jupyterlab/services``.
    (`#4841 <https://github.com/jupyterlab/jupyterlab/pull/4841>`__)
 -  Documents created with a mimerenderer extension can now be accessed
    using an ``IInstanceTracker`` which tracks them. Include the token
@@ -1577,7 +1577,7 @@ Changes for developers
    key, and a new ``IUpdateDisplayDataMsg`` type was added for update
    display messages.
    (`#4697 <https://github.com/jupyterlab/jupyterlab/pull/4697>`__)
--  The ``uuid`` function from ``@jupyterlab/coreutils`` is removed.
+-  The ``uuid`` function from ``@fk-jupyterlab/coreutils`` is removed.
    Instead import ``UUID`` from ``@phosphor/coreutils`` and use
    ``UUID.uuid4()`` .
    (`#4604 <https://github.com/jupyterlab/jupyterlab/pull/4604>`__)
@@ -1732,7 +1732,7 @@ contains many enhancements, bugfixes, and refinements, including:
    directory.
    (`#4264 <https://github.com/jupyterlab/jupyterlab/issues/4264>`__).
 -  Handle asynchronous comm messages in the services library more
-   correctly (Note: this means ``@jupyterlab/services`` is now at
+   correctly (Note: this means ``@fk-jupyterlab/services`` is now at
    version 2.0!)
    (`[#4115](https://github.com/jupyterlab/jupyterlab/issues/4115) <https://github.com/jupyterlab/jupyterlab/pull/4115>`__).
 -  Display the kernel banner in the console when a kernel is restarted
@@ -1964,7 +1964,7 @@ May 18, 2017
    package names. https://github.com/jupyterlab/jupyterlab/pull/2177
 -  New ``jupyter labhub`` command to launch JupyterLab on JupyterHub:
    https://github.com/jupyterlab/jupyterlab/pull/2222
--  Removed the ``utils`` from ``@jupyterlab/services`` in favor of
+-  Removed the ``utils`` from ``@fk-jupyterlab/services`` in favor of
    ``PageConfig`` and ``ServerConnection``.
    https://github.com/jupyterlab/jupyterlab/pull/2173
    https://github.com/jupyterlab/jupyterlab/pull/2185

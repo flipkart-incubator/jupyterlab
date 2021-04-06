@@ -45,8 +45,8 @@ packages.forEach(function (packagePath) {
     return;
   }
 
-  // Only include packages in the @jupyterlab namespace.
-  if (!name.startsWith('@jupyterlab')) {
+  // Only include packages in the @fk-jupyterlab namespace.
+  if (!name.startsWith('@fk-jupyterlab')) {
     return;
   }
 
@@ -57,7 +57,7 @@ packages.forEach(function (packagePath) {
   }
 
   // Don't include the metapackage.
-  if (name === '@jupyterlab/metapackage') {
+  if (name === '@fk-jupyterlab/metapackage') {
     return;
   }
 
@@ -67,13 +67,13 @@ packages.forEach(function (packagePath) {
     'packages/' + path.basename(packagePath)
   );
 
-  // Remove the '@jupyterlab' part of the name.
+  // Remove the '@fk-jupyterlab' part of the name.
   text.push(`"${shortName}" [URL="${urlLink}"];\n`);
 
   const deps = data.dependencies ?? [];
   for (let dep in deps) {
     // Only include JupyterLab dependencies
-    if (dep.startsWith('@jupyterlab')) {
+    if (dep.startsWith('@fk-jupyterlab')) {
       text.push(`"${shortName}" -> "${dep.split('/')[1]}";\n`);
     }
   }

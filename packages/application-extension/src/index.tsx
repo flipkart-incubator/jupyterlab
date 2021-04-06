@@ -20,7 +20,7 @@ import {
   LabShell,
   LayoutRestorer,
   Router
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -28,22 +28,22 @@ import {
   IWindowResolver,
   showDialog,
   showErrorMessage
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { URLExt, PageConfig } from '@jupyterlab/coreutils';
+import { URLExt, PageConfig } from '@fk-jupyterlab/coreutils';
 
 import {
   IPropertyInspectorProvider,
   SideBarPropertyInspectorProvider
-} from '@jupyterlab/property-inspector';
+} from '@fk-jupyterlab/property-inspector';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStateDB } from '@jupyterlab/statedb';
+import { IStateDB } from '@fk-jupyterlab/statedb';
 
-import { ITranslator, TranslationBundle } from '@jupyterlab/translation';
+import { ITranslator, TranslationBundle } from '@fk-jupyterlab/translation';
 
-import { buildIcon, jupyterIcon } from '@jupyterlab/ui-components';
+import { buildIcon, jupyterIcon } from '@fk-jupyterlab/ui-components';
 
 import { each, iter, toArray } from '@lumino/algorithm';
 
@@ -97,7 +97,7 @@ namespace CommandIDs {
  * The main extension.
  */
 const main: JupyterFrontEndPlugin<ITreePathUpdater> = {
-  id: '@jupyterlab/application-extension:main',
+  id: '@fk-jupyterlab/application-extension:main',
   requires: [IRouter, IWindowResolver, ITranslator],
   optional: [ICommandPalette, IConnectionLost],
   provides: ITreePathUpdater,
@@ -284,7 +284,7 @@ const main: JupyterFrontEndPlugin<ITreePathUpdater> = {
  * The default layout restorer provider.
  */
 const layout: JupyterFrontEndPlugin<ILayoutRestorer> = {
-  id: '@jupyterlab/application-extension:layout',
+  id: '@fk-jupyterlab/application-extension:layout',
   requires: [IStateDB, ILabShell],
   activate: (
     app: JupyterFrontEnd,
@@ -316,7 +316,7 @@ const layout: JupyterFrontEndPlugin<ILayoutRestorer> = {
  * The default URL router provider.
  */
 const router: JupyterFrontEndPlugin<IRouter> = {
-  id: '@jupyterlab/application-extension:router',
+  id: '@fk-jupyterlab/application-extension:router',
   requires: [JupyterFrontEnd.IPaths],
   activate: (app: JupyterFrontEnd, paths: JupyterFrontEnd.IPaths) => {
     const { commands } = app;
@@ -343,7 +343,7 @@ const router: JupyterFrontEndPlugin<IRouter> = {
  * The default tree route resolver plugin.
  */
 const tree: JupyterFrontEndPlugin<JupyterFrontEnd.ITreeResolver> = {
-  id: '@jupyterlab/application-extension:tree-resolver',
+  id: '@fk-jupyterlab/application-extension:tree-resolver',
   autoStart: true,
   requires: [IRouter],
   provides: JupyterFrontEnd.ITreeResolver,
@@ -407,7 +407,7 @@ const tree: JupyterFrontEndPlugin<JupyterFrontEnd.ITreeResolver> = {
  * The default URL not found extension.
  */
 const notfound: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/application-extension:notfound',
+  id: '@fk-jupyterlab/application-extension:notfound',
   requires: [JupyterFrontEnd.IPaths, IRouter, ITranslator],
   activate: (
     _: JupyterFrontEnd,
@@ -441,7 +441,7 @@ const notfound: JupyterFrontEndPlugin<void> = {
  * Change the favicon changing based on the busy status;
  */
 const busy: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/application-extension:faviconbusy',
+  id: '@fk-jupyterlab/application-extension:faviconbusy',
   requires: [ILabStatus],
   activate: async (_: JupyterFrontEnd, status: ILabStatus) => {
     status.busySignal.connect((_, isBusy) => {
@@ -471,7 +471,7 @@ const busy: JupyterFrontEndPlugin<void> = {
   autoStart: true
 };
 
-const SIDEBAR_ID = '@jupyterlab/application-extension:sidebar';
+const SIDEBAR_ID = '@fk-jupyterlab/application-extension:sidebar';
 
 /**
  * Keep user settings for where to show the side panels.
@@ -849,7 +849,7 @@ function addCommands(
  * The default JupyterLab application shell.
  */
 const shell: JupyterFrontEndPlugin<ILabShell> = {
-  id: '@jupyterlab/application-extension:shell',
+  id: '@fk-jupyterlab/application-extension:shell',
   activate: (app: JupyterFrontEnd) => {
     if (!(app.shell instanceof LabShell)) {
       throw new Error(`${shell.id} did not find a LabShell instance.`);
@@ -864,7 +864,7 @@ const shell: JupyterFrontEndPlugin<ILabShell> = {
  * The default JupyterLab application status provider.
  */
 const status: JupyterFrontEndPlugin<ILabStatus> = {
-  id: '@jupyterlab/application-extension:status',
+  id: '@fk-jupyterlab/application-extension:status',
   activate: (app: JupyterFrontEnd) => {
     if (!(app instanceof JupyterLab)) {
       throw new Error(`${status.id} must be activated in JupyterLab.`);
@@ -884,7 +884,7 @@ const status: JupyterFrontEndPlugin<ILabStatus> = {
  * loaded or deferred within JupyterLab.
  */
 const info: JupyterFrontEndPlugin<JupyterLab.IInfo> = {
-  id: '@jupyterlab/application-extension:info',
+  id: '@fk-jupyterlab/application-extension:info',
   activate: (app: JupyterFrontEnd) => {
     if (!(app instanceof JupyterLab)) {
       throw new Error(`${info.id} must be activated in JupyterLab.`);
@@ -899,7 +899,7 @@ const info: JupyterFrontEndPlugin<JupyterLab.IInfo> = {
  * The default JupyterLab paths dictionary provider.
  */
 const paths: JupyterFrontEndPlugin<JupyterFrontEnd.IPaths> = {
-  id: '@jupyterlab/apputils-extension:paths',
+  id: '@fk-jupyterlab/apputils-extension:paths',
   activate: (app: JupyterFrontEnd): JupyterFrontEnd.IPaths => {
     if (!(app instanceof JupyterLab)) {
       throw new Error(`${paths.id} must be activated in JupyterLab.`);
@@ -914,7 +914,7 @@ const paths: JupyterFrontEndPlugin<JupyterFrontEnd.IPaths> = {
  * The default property inspector provider.
  */
 const propertyInspector: JupyterFrontEndPlugin<IPropertyInspectorProvider> = {
-  id: '@jupyterlab/application-extension:property-inspector',
+  id: '@fk-jupyterlab/application-extension:property-inspector',
   autoStart: true,
   requires: [ILabShell, ITranslator],
   optional: [ILayoutRestorer],
@@ -943,7 +943,7 @@ const propertyInspector: JupyterFrontEndPlugin<IPropertyInspectorProvider> = {
 };
 
 const JupyterLogo: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/application-extension:logo',
+  id: '@fk-jupyterlab/application-extension:logo',
   autoStart: true,
   requires: [ILabShell],
   activate: (app: JupyterFrontEnd, shell: ILabShell) => {

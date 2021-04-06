@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IOutputAreaModel, OutputAreaModel } from '@jupyterlab/outputarea';
+import { IOutputAreaModel, OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
 import {
   IRenderMimeRegistry,
   IOutputModel,
   OutputModel
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import { ISignal, Signal } from '@lumino/signaling';
 

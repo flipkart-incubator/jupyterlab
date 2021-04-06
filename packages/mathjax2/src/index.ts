@@ -7,7 +7,7 @@
  * @module mathjax2
  */
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 

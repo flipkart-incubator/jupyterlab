@@ -4,9 +4,9 @@ import { ISearchProvider, ISearchMatch } from '../index';
 import { CodeMirrorSearchProvider } from './codemirrorsearchprovider';
 import { GenericSearchProvider } from './genericsearchprovider';
 
-import { Cell, MarkdownCell, CodeCell } from '@jupyterlab/cells';
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
-import { NotebookPanel } from '@jupyterlab/notebook';
+import { Cell, MarkdownCell, CodeCell } from '@fk-jupyterlab/cells';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
+import { NotebookPanel } from '@fk-jupyterlab/notebook';
 
 import { ArrayExt } from '@lumino/algorithm';
 import { Signal, ISignal } from '@lumino/signaling';

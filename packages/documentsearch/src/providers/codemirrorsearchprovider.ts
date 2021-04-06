@@ -32,10 +32,10 @@
 
 import { ISearchProvider, ISearchMatch } from '../interfaces';
 
-import { MainAreaWidget } from '@jupyterlab/apputils';
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
-import { CodeEditor } from '@jupyterlab/codeeditor';
-import { FileEditor } from '@jupyterlab/fileeditor';
+import { MainAreaWidget } from '@fk-jupyterlab/apputils';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
+import { FileEditor } from '@fk-jupyterlab/fileeditor';
 
 import * as CodeMirror from 'codemirror';
 

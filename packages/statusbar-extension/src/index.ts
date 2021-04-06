@@ -9,34 +9,34 @@ import {
   ILabShell,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ISessionContext,
   ICommandPalette,
   ISessionContextDialogs,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { Cell, CodeCell } from '@jupyterlab/cells';
+import { Cell, CodeCell } from '@fk-jupyterlab/cells';
 
 import {
   CodeConsole,
   ConsolePanel,
   IConsoleTracker
-} from '@jupyterlab/console';
+} from '@fk-jupyterlab/console';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { FileEditor, IEditorTracker } from '@jupyterlab/fileeditor';
+import { FileEditor, IEditorTracker } from '@fk-jupyterlab/fileeditor';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
 import {
   INotebookTracker,
   Notebook,
   NotebookPanel
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
 import {
   IStatusBar,
@@ -44,19 +44,19 @@ import {
   LineCol,
   RunningSessions,
   StatusBar
-} from '@jupyterlab/statusbar';
+} from '@fk-jupyterlab/statusbar';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { Switch } from '@jupyterlab/ui-components';
+import { Switch } from '@fk-jupyterlab/ui-components';
 
 import { CommandRegistry } from '@lumino/commands';
 
 import { Title, Widget } from '@lumino/widgets';
 
-export const STATUSBAR_PLUGIN_ID = '@jupyterlab/statusbar-extension:plugin';
+export const STATUSBAR_PLUGIN_ID = '@fk-jupyterlab/statusbar-extension:plugin';
 
 /**
  * Initialization data for the statusbar extension.
@@ -139,7 +139,7 @@ const statusBar: JupyterFrontEndPlugin<IStatusBar> = {
  * A plugin that provides a kernel status item to the status bar.
  */
 export const kernelStatus: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/statusbar-extension:kernel-status',
+  id: '@fk-jupyterlab/statusbar-extension:kernel-status',
   autoStart: true,
   requires: [
     IStatusBar,
@@ -205,7 +205,7 @@ export const kernelStatus: JupyterFrontEndPlugin<void> = {
     });
 
     statusBar.registerStatusItem(
-      '@jupyterlab/statusbar-extension:kernel-status',
+      '@fk-jupyterlab/statusbar-extension:kernel-status',
       {
         item,
         align: 'left',
@@ -226,7 +226,7 @@ export const kernelStatus: JupyterFrontEndPlugin<void> = {
  * A plugin providing a line/column status item to the application.
  */
 export const lineColItem: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/statusbar-extension:line-col-status',
+  id: '@fk-jupyterlab/statusbar-extension:line-col-status',
   autoStart: true,
   requires: [
     IStatusBar,
@@ -294,7 +294,7 @@ export const lineColItem: JupyterFrontEndPlugin<void> = {
 
     // Add the status item to the status bar.
     statusBar.registerStatusItem(
-      '@jupyterlab/statusbar-extension:line-col-status',
+      '@fk-jupyterlab/statusbar-extension:line-col-status',
       {
         item,
         align: 'right',
@@ -318,7 +318,7 @@ export const lineColItem: JupyterFrontEndPlugin<void> = {
  * to the status bar.
  */
 export const runningSessionsItem: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/statusbar-extension:running-sessions-status',
+  id: '@fk-jupyterlab/statusbar-extension:running-sessions-status',
   autoStart: true,
   requires: [IStatusBar, ITranslator],
   activate: (
@@ -333,7 +333,7 @@ export const runningSessionsItem: JupyterFrontEndPlugin<void> = {
     });
 
     statusBar.registerStatusItem(
-      '@jupyterlab/statusbar-extension:running-sessions-status',
+      '@fk-jupyterlab/statusbar-extension:running-sessions-status',
       {
         item,
         align: 'left',
@@ -347,7 +347,7 @@ export const runningSessionsItem: JupyterFrontEndPlugin<void> = {
  * The simple interface mode switch in the status bar.
  */
 const modeSwitch: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/statusbar-extension:mode-switch',
+  id: '@fk-jupyterlab/statusbar-extension:mode-switch',
   requires: [ILabShell, ITranslator, IStatusBar],
   activate: (
     app: JupyterFrontEnd,
@@ -387,7 +387,7 @@ const modeSwitch: JupyterFrontEndPlugin<void> = {
     modeSwitch.label = trans.__('Simple');
 
     statusBar.registerStatusItem(
-      '@jupyterlab/statusbar-extension:mode-switch',
+      '@fk-jupyterlab/statusbar-extension:mode-switch',
       {
         item: modeSwitch,
         align: 'left',

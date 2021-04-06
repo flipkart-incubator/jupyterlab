@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Mode } from '@jupyterlab/codemirror';
+import { Mode } from '@fk-jupyterlab/codemirror';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import { PartialJSONValue } from '@lumino/coreutils';
 
@@ -11,15 +11,15 @@ import { ISignal, Signal } from '@lumino/signaling';
 
 import { Widget } from '@lumino/widgets';
 
-import { MainAreaWidget } from '@jupyterlab/apputils';
+import { MainAreaWidget } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IChangedArgs, PathExt } from '@jupyterlab/coreutils';
+import { IChangedArgs, PathExt } from '@fk-jupyterlab/coreutils';
 
-import { IModelDB } from '@jupyterlab/observables';
+import { IModelDB } from '@fk-jupyterlab/observables';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { DocumentRegistry, IDocumentWidget } from './index';
 

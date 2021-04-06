@@ -6,11 +6,11 @@ import {
   ISettingRegistry,
   SettingRegistry,
   Settings
-} from '@jupyterlab/settingregistry';
+} from '@fk-jupyterlab/settingregistry';
 
-import { StateDB } from '@jupyterlab/statedb';
+import { StateDB } from '@fk-jupyterlab/statedb';
 
-import { signalToPromise } from '@jupyterlab/testutils';
+import { signalToPromise } from '@fk-jupyterlab/testutils';
 
 import { JSONObject } from '@lumino/coreutils';
 
@@ -38,7 +38,7 @@ class TestConnector extends StateDB {
   }
 }
 
-describe('@jupyterlab/settingregistry', () => {
+describe('@fk-jupyterlab/settingregistry', () => {
   describe('DefaultSchemaValidator', () => {
     describe('#constructor()', () => {
       it('should create a new schema validator', () => {

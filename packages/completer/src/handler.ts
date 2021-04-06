@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { Text } from '@jupyterlab/coreutils';
+import { Text } from '@fk-jupyterlab/coreutils';
 
-import { LabIcon } from '@jupyterlab/ui-components';
+import { LabIcon } from '@fk-jupyterlab/ui-components';
 
-import { IDataConnector } from '@jupyterlab/statedb';
+import { IDataConnector } from '@fk-jupyterlab/statedb';
 
 import { ReadonlyJSONObject, JSONObject, JSONArray } from '@lumino/coreutils';
 

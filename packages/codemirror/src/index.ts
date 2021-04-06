@@ -5,7 +5,7 @@
  * @module codemirror
  */
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
 import { CodeMirrorEditorFactory } from './factory';
 

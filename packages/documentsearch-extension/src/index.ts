@@ -9,9 +9,9 @@ import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin,
   ILabShell
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette } from '@jupyterlab/apputils';
+import { ICommandPalette } from '@fk-jupyterlab/apputils';
 
 import {
   ISearchProviderRegistry,
@@ -19,16 +19,16 @@ import {
   SearchProviderRegistry,
   CodeMirrorSearchProvider,
   NotebookSearchProvider
-} from '@jupyterlab/documentsearch';
+} from '@fk-jupyterlab/documentsearch';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
-import { ITranslator } from '@jupyterlab/translation';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
+import { ITranslator } from '@fk-jupyterlab/translation';
 import { Widget } from '@lumino/widgets';
 
 const SEARCHABLE_CLASS = 'jp-mod-searchable';
 
 const labShellWidgetListener: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/documentsearch:labShellWidgetListener',
+  id: '@fk-jupyterlab/documentsearch:labShellWidgetListener',
   requires: [ILabShell, ISearchProviderRegistry],
   autoStart: true,
   activate: (
@@ -75,7 +75,7 @@ const labShellWidgetListener: JupyterFrontEndPlugin<void> = {
  * Initialization data for the document-search extension.
  */
 const extension: JupyterFrontEndPlugin<ISearchProviderRegistry> = {
-  id: '@jupyterlab/documentsearch:plugin',
+  id: '@fk-jupyterlab/documentsearch:plugin',
   provides: ISearchProviderRegistry,
   requires: [ITranslator],
   optional: [ICommandPalette, IMainMenu],

@@ -5,7 +5,7 @@ import { Message, MessageLoop } from '@lumino/messaging';
 
 import { Widget } from '@lumino/widgets';
 
-import { SessionContext } from '@jupyterlab/apputils';
+import { SessionContext } from '@fk-jupyterlab/apputils';
 
 import { CodeConsole } from '../src';
 
@@ -14,9 +14,9 @@ import {
   CodeCellModel,
   RawCellModel,
   RawCell
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { createSessionContext, NBTestUtils } from '@jupyterlab/testutils';
+import { createSessionContext, NBTestUtils } from '@fk-jupyterlab/testutils';
 
 import {
   createConsoleFactory,

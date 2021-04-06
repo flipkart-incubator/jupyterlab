@@ -30,17 +30,17 @@ import {
   ICodeCellModel,
   RawCell,
   IRawCellModel
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
-import { IEditorMimeTypeService, CodeEditor } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService, CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IObservableMap, IObservableList } from '@jupyterlab/observables';
+import { IObservableMap, IObservableList } from '@fk-jupyterlab/observables';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { INotebookModel } from './model';
 

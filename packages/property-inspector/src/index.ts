@@ -5,15 +5,15 @@
  * @module property-inspector
  */
 
-import { ILabShell } from '@jupyterlab/application';
+import { ILabShell } from '@fk-jupyterlab/application';
 
-import { ReactWidget } from '@jupyterlab/apputils';
+import { ReactWidget } from '@fk-jupyterlab/apputils';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { Signal, ISignal } from '@lumino/signaling';
 

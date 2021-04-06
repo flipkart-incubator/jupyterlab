@@ -3,23 +3,23 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { DataConnector } from '@jupyterlab/statedb';
+import { DataConnector } from '@fk-jupyterlab/statedb';
 
-import { InspectionHandler, InspectorPanel } from '@jupyterlab/inspector';
+import { InspectionHandler, InspectorPanel } from '@fk-jupyterlab/inspector';
 
 import {
   IRenderMimeRegistry,
   RenderMimeRegistry,
   standardRendererFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { ISchemaValidator } from '@jupyterlab/settingregistry';
+import { ISchemaValidator } from '@fk-jupyterlab/settingregistry';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { ReadonlyJSONObject } from '@lumino/coreutils';
 

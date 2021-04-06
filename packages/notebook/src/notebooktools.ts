@@ -14,25 +14,25 @@ import { h, VirtualDOM, VirtualNode } from '@lumino/virtualdom';
 
 import { PanelLayout, Widget } from '@lumino/widgets';
 
-import { Collapse, Styling } from '@jupyterlab/apputils';
+import { Collapse, Styling } from '@fk-jupyterlab/apputils';
 
-import { Cell, ICellModel } from '@jupyterlab/cells';
+import { Cell, ICellModel } from '@fk-jupyterlab/cells';
 
 import {
   CodeEditor,
   CodeEditorWrapper,
   JSONEditor
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IObservableMap, ObservableJSON } from '@jupyterlab/observables';
+import { IObservableMap, ObservableJSON } from '@fk-jupyterlab/observables';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { NotebookPanel } from './panel';
 import { INotebookModel } from './model';

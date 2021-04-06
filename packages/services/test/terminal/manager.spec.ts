@@ -10,7 +10,7 @@ import {
   TerminalAPI
 } from '../../src';
 
-import { testEmission, JupyterServer } from '@jupyterlab/testutils';
+import { testEmission, JupyterServer } from '@fk-jupyterlab/testutils';
 
 const server = new JupyterServer();
 

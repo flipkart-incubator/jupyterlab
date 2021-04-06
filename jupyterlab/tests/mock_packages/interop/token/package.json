@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/mock-token",
+  "name": "@fk-jupyterlab/mock-token",
   "version": "3.0.0",
   "private": true,
   "dependencies": {

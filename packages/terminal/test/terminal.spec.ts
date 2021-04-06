@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Terminal as TerminalNS, TerminalManager } from '@jupyterlab/services';
+import { Terminal as TerminalNS, TerminalManager } from '@fk-jupyterlab/services';
 
 import { Message, MessageLoop } from '@lumino/messaging';
 
@@ -13,7 +13,7 @@ import {
   framePromise,
   testEmission,
   JupyterServer
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 const server = new JupyterServer();
 

@@ -7,15 +7,15 @@ import { Widget } from '@lumino/widgets';
 
 import { ISignal, Signal } from '@lumino/signaling';
 
-import { ILabShell } from '@jupyterlab/application';
+import { ILabShell } from '@fk-jupyterlab/application';
 
-import { IRunningSessions, IRunningSessionManagers } from '@jupyterlab/running';
+import { IRunningSessions, IRunningSessionManagers } from '@fk-jupyterlab/running';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { fileIcon, LabIcon } from '@jupyterlab/ui-components';
+import { fileIcon, LabIcon } from '@fk-jupyterlab/ui-components';
 
-import { DocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 
 /**
  * A class used to consolidate the signals used to rerender the open tabs section.

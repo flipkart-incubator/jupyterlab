@@ -5,7 +5,7 @@ import {
   CodeEditorWrapper,
   IEditorMimeTypeService,
   IEditorServices
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
 import { Signal } from '@lumino/signaling';
 

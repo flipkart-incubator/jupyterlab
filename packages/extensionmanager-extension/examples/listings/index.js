@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 // eslint-disable-next-line
 __webpack_public_path__ = PageConfig.getOption('fullStaticUrl') + '/';
 
@@ -10,37 +10,37 @@ __webpack_public_path__ = PageConfig.getOption('fullStaticUrl') + '/';
 require('./build/imports.css');
 
 window.addEventListener('load', async function () {
-  var JupyterLab = require('@jupyterlab/application').JupyterLab;
+  var JupyterLab = require('@fk-jupyterlab/application').JupyterLab;
 
   var mods = [
-    require('@jupyterlab/application-extension'),
-    require('@jupyterlab/apputils-extension'),
-    require('@jupyterlab/codemirror-extension'),
-    require('@jupyterlab/completer-extension'),
-    require('@jupyterlab/console-extension'),
-    require('@jupyterlab/csvviewer-extension'),
-    require('@jupyterlab/docmanager-extension'),
-    require('@jupyterlab/extensionmanager-extension'),
-    require('@jupyterlab/fileeditor-extension'),
-    require('@jupyterlab/filebrowser-extension'),
-    require('@jupyterlab/help-extension'),
-    require('@jupyterlab/imageviewer-extension'),
-    require('@jupyterlab/inspector-extension'),
-    require('@jupyterlab/launcher-extension'),
-    require('@jupyterlab/mainmenu-extension'),
-    require('@jupyterlab/markdownviewer-extension'),
-    require('@jupyterlab/mathjax2-extension'),
-    require('@jupyterlab/notebook-extension'),
-    require('@jupyterlab/rendermime-extension'),
-    require('@jupyterlab/running-extension'),
-    require('@jupyterlab/settingeditor-extension'),
-    require('@jupyterlab/shortcuts-extension'),
-    require('@jupyterlab/statusbar-extension'),
-    require('@jupyterlab/terminal-extension'),
-    require('@jupyterlab/theme-dark-extension'),
-    require('@jupyterlab/theme-light-extension'),
-    require('@jupyterlab/tooltip-extension'),
-    require('@jupyterlab/ui-components-extension')
+    require('@fk-jupyterlab/application-extension'),
+    require('@fk-jupyterlab/apputils-extension'),
+    require('@fk-jupyterlab/codemirror-extension'),
+    require('@fk-jupyterlab/completer-extension'),
+    require('@fk-jupyterlab/console-extension'),
+    require('@fk-jupyterlab/csvviewer-extension'),
+    require('@fk-jupyterlab/docmanager-extension'),
+    require('@fk-jupyterlab/extensionmanager-extension'),
+    require('@fk-jupyterlab/fileeditor-extension'),
+    require('@fk-jupyterlab/filebrowser-extension'),
+    require('@fk-jupyterlab/help-extension'),
+    require('@fk-jupyterlab/imageviewer-extension'),
+    require('@fk-jupyterlab/inspector-extension'),
+    require('@fk-jupyterlab/launcher-extension'),
+    require('@fk-jupyterlab/mainmenu-extension'),
+    require('@fk-jupyterlab/markdownviewer-extension'),
+    require('@fk-jupyterlab/mathjax2-extension'),
+    require('@fk-jupyterlab/notebook-extension'),
+    require('@fk-jupyterlab/rendermime-extension'),
+    require('@fk-jupyterlab/running-extension'),
+    require('@fk-jupyterlab/settingeditor-extension'),
+    require('@fk-jupyterlab/shortcuts-extension'),
+    require('@fk-jupyterlab/statusbar-extension'),
+    require('@fk-jupyterlab/terminal-extension'),
+    require('@fk-jupyterlab/theme-dark-extension'),
+    require('@fk-jupyterlab/theme-light-extension'),
+    require('@fk-jupyterlab/tooltip-extension'),
+    require('@fk-jupyterlab/ui-components-extension')
   ];
   var lab = new JupyterLab();
   lab.registerPluginModules(mods);

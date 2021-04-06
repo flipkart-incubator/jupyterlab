@@ -6,22 +6,22 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   ISplashScreen,
   IThemeManager,
   ThemeManager
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 import { Menu } from '@lumino/widgets';
 
@@ -41,7 +41,7 @@ namespace CommandIDs {
  * The default theme manager provider.
  */
 export const themesPlugin: JupyterFrontEndPlugin<IThemeManager> = {
-  id: '@jupyterlab/apputils-extension:themes',
+  id: '@fk-jupyterlab/apputils-extension:themes',
   requires: [ISettingRegistry, JupyterFrontEnd.IPaths, ITranslator],
   optional: [ISplashScreen],
   activate: (
@@ -146,7 +146,7 @@ export const themesPlugin: JupyterFrontEndPlugin<IThemeManager> = {
  * and main menu to become available.
  */
 export const themesPaletteMenuPlugin: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/apputils-extension:themes-palette-menu',
+  id: '@fk-jupyterlab/apputils-extension:themes-palette-menu',
   requires: [IThemeManager, ITranslator],
   optional: [ICommandPalette, IMainMenu],
   activate: (

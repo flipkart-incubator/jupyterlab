@@ -1,4 +1,4 @@
-# @jupyterlab/hub-extension
+# @fk-jupyterlab/hub-extension
 
 [JupyterLab](https://github.com/jupyterlab/jupyterlab) integration for
 [JupyterHub](https://github.com/jupyterhub/jupyterhub).

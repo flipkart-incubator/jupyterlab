@@ -1,8 +1,8 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterLab } from '@jupyterlab/application';
-import { PageConfig } from '@jupyterlab/coreutils';
+import { JupyterLab } from '@fk-jupyterlab/application';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 // Promise.allSettled polyfill, until our supported browsers implement it
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled

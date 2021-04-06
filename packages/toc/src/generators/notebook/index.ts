@@ -1,16 +1,16 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISanitizer } from '@jupyterlab/apputils';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
 import {
   CodeCell,
   CodeCellModel,
   MarkdownCell,
   Cell,
   ICellModel
-} from '@jupyterlab/cells';
-import { INotebookTracker, NotebookPanel } from '@jupyterlab/notebook';
-import { nullTranslator } from '@jupyterlab/translation';
+} from '@fk-jupyterlab/cells';
+import { INotebookTracker, NotebookPanel } from '@fk-jupyterlab/notebook';
+import { nullTranslator } from '@fk-jupyterlab/translation';
 import { TableOfContentsRegistry as Registry } from '../../registry';
 import { TableOfContents } from '../../toc';
 import { isMarkdown } from '../../utils/is_markdown';
@@ -25,7 +25,7 @@ import { appendHeading } from './append_heading';
 import { appendMarkdownHeading } from './append_markdown_heading';
 import { render } from './render';
 import { toolbar } from './toolbar_generator';
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * Returns a ToC generator for notebooks.

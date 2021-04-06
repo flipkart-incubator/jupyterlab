@@ -3,17 +3,17 @@
 
 import { toArray } from '@lumino/algorithm';
 
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
-import { IRunningSessions, IRunningSessionManagers } from '@jupyterlab/running';
+import { IRunningSessions, IRunningSessionManagers } from '@fk-jupyterlab/running';
 
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { consoleIcon, fileIcon, notebookIcon } from '@jupyterlab/ui-components';
+import { consoleIcon, fileIcon, notebookIcon } from '@fk-jupyterlab/ui-components';
 
 /**
  * Add the running kernel manager (notebooks & consoles) to the running panel.

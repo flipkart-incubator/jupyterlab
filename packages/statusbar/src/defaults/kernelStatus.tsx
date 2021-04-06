@@ -3,17 +3,17 @@
 
 import React from 'react';
 
-import { ISessionContext, VDomRenderer, VDomModel } from '@jupyterlab/apputils';
+import { ISessionContext, VDomRenderer, VDomModel } from '@fk-jupyterlab/apputils';
 
-import { Text } from '@jupyterlab/coreutils';
+import { Text } from '@fk-jupyterlab/coreutils';
 
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { interactiveItem, TextItem } from '..';
 

@@ -3,9 +3,9 @@
 
 import { toArray } from '@lumino/algorithm';
 
-import { ObservableList } from '@jupyterlab/observables';
+import { ObservableList } from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableList', () => {
     describe('#constructor()', () => {
       it('should accept no arguments', () => {

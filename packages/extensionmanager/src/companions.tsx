@@ -1,12 +1,12 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
 import * as React from 'react';
 
-import { KernelSpec } from '@jupyterlab/services';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { KernelSpec } from '@fk-jupyterlab/services';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * An object representing a companion installation info.

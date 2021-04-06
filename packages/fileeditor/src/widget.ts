@@ -6,16 +6,16 @@ import {
   CodeEditorWrapper,
   IEditorServices,
   IEditorMimeTypeService
-} from '@jupyterlab/codeeditor';
+} from '@fk-jupyterlab/codeeditor';
 
 import {
   ABCWidgetFactory,
   DocumentRegistry,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { textEditorIcon } from '@jupyterlab/ui-components';
+import { textEditorIcon } from '@fk-jupyterlab/ui-components';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 

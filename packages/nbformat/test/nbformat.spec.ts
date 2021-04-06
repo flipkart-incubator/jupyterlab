@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
 const VALIDATE = nbformat.validateMimeValue;
 
-describe('@jupyterlab/nbformat', () => {
+describe('@fk-jupyterlab/nbformat', () => {
   describe('validateMimeValue', () => {
     it('should return true for a valid json object', () => {
       expect(VALIDATE('application/json', { foo: 1 })).toBe(true);

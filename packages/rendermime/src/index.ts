@@ -7,7 +7,7 @@
  * @module rendermime
  */
 
-export * from '@jupyterlab/rendermime-interfaces';
+export * from '@fk-jupyterlab/rendermime-interfaces';
 export * from './attachmentmodel';
 export * from './factories';
 export * from './latex';

@@ -3,19 +3,19 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { AttachmentsResolver } from '@jupyterlab/attachments';
+import { AttachmentsResolver } from '@fk-jupyterlab/attachments';
 
-import { ISessionContext } from '@jupyterlab/apputils';
+import { ISessionContext } from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs, ActivityMonitor, URLExt } from '@jupyterlab/coreutils';
+import { IChangedArgs, ActivityMonitor, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { DirListing } from '@jupyterlab/filebrowser';
+import { DirListing } from '@fk-jupyterlab/filebrowser';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IObservableMap, IObservableJSON } from '@jupyterlab/observables';
+import { IObservableMap, IObservableJSON } from '@fk-jupyterlab/observables';
 
 import {
   OutputArea,
@@ -24,16 +24,16 @@ import {
   OutputPrompt,
   IStdin,
   Stdin
-} from '@jupyterlab/outputarea';
+} from '@fk-jupyterlab/outputarea';
 
 import {
   IRenderMime,
   MimeModel,
   IRenderMimeRegistry,
   imageRendererFactory
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { KernelMessage, Kernel } from '@jupyterlab/services';
+import { KernelMessage, Kernel } from '@fk-jupyterlab/services';
 
 import {
   JSONValue,

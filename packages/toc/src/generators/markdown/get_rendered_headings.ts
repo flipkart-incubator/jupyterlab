@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISanitizer } from '@jupyterlab/apputils';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
 import { INumberingDictionary } from '../../utils/numbering_dictionary';
 import { INumberedHeading } from '../../utils/headings';
 import { generateNumbering } from '../../utils/generate_numbering';

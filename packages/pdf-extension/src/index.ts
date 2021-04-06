@@ -5,7 +5,7 @@
  * @module pdf-extension
  */
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 
@@ -136,7 +136,7 @@ export const rendererFactory: IRenderMime.IRendererFactory = {
 
 const extensions: IRenderMime.IExtension | IRenderMime.IExtension[] = [
   {
-    id: '@jupyterlab/pdf-extension:factory',
+    id: '@fk-jupyterlab/pdf-extension:factory',
     rendererFactory,
     dataType: 'string',
     documentWidgetFactoryOptions: {

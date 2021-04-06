@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { DocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { FileEditor } from '@jupyterlab/fileeditor';
+import { FileEditor } from '@fk-jupyterlab/fileeditor';
 
 import { IDisposable } from '@lumino/disposable';
 

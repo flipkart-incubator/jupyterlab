@@ -1,19 +1,19 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IWidgetTracker, WidgetTracker } from '@jupyterlab/apputils';
+import { IWidgetTracker, WidgetTracker } from '@fk-jupyterlab/apputils';
 
 import {
   MimeDocumentFactory,
   DocumentRegistry,
   MimeDocument
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { LabIcon } from '@jupyterlab/ui-components';
+import { LabIcon } from '@fk-jupyterlab/ui-components';
 
 import { Token } from '@lumino/coreutils';
 
@@ -22,7 +22,7 @@ import { AttachedProperty } from '@lumino/properties';
 import { JupyterFrontEnd, JupyterFrontEndPlugin } from './index';
 
 import { ILayoutRestorer } from './layoutrestorer';
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * A class that tracks mime documents.
@@ -33,7 +33,7 @@ export interface IMimeDocumentTracker extends IWidgetTracker<MimeDocument> {}
  * The mime document tracker token.
  */
 export const IMimeDocumentTracker = new Token<IMimeDocumentTracker>(
-  '@jupyterlab/application:IMimeDocumentTracker'
+  '@fk-jupyterlab/application:IMimeDocumentTracker'
 );
 
 /**
@@ -65,7 +65,7 @@ export function createRendermimePlugins(
   // Also add a meta-plugin handling state restoration
   // and exposing the mime document widget tracker.
   plugins.push({
-    id: '@jupyterlab/application:mimedocument',
+    id: '@fk-jupyterlab/application:mimedocument',
     optional: [ILayoutRestorer],
     provides: IMimeDocumentTracker,
     autoStart: true,

@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IThemeManager } from '@jupyterlab/apputils';
+import { IThemeManager } from '@fk-jupyterlab/apputils';
 
 import { CommandRegistry } from '@lumino/commands';
 

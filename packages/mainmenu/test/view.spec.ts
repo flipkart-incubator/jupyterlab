@@ -5,9 +5,9 @@ import { CommandRegistry } from '@lumino/commands';
 
 import { Widget } from '@lumino/widgets';
 
-import { WidgetTracker } from '@jupyterlab/apputils';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { ViewMenu, IViewMenu } from '@jupyterlab/mainmenu';
+import { ViewMenu, IViewMenu } from '@fk-jupyterlab/mainmenu';
 
 import { delegateExecute, delegateToggled } from './util';
 
@@ -17,7 +17,7 @@ class Wodget extends Widget {
   numbered: boolean = false;
 }
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('ViewMenu', () => {
     let commands: CommandRegistry;
     let menu: ViewMenu;

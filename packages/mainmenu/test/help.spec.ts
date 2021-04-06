@@ -3,9 +3,9 @@
 
 import { CommandRegistry } from '@lumino/commands';
 
-import { HelpMenu } from '@jupyterlab/mainmenu';
+import { HelpMenu } from '@fk-jupyterlab/mainmenu';
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('HelpMenu', () => {
     let commands: CommandRegistry;
     let menu: HelpMenu;

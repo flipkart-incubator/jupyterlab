@@ -1,12 +1,12 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { LoggerRegistry } from '@jupyterlab/logconsole';
+import { LoggerRegistry } from '@fk-jupyterlab/logconsole';
 
 import {
   RenderMimeRegistry,
   IRenderMimeRegistry
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import { Signal, ISignal } from '@lumino/signaling';
 

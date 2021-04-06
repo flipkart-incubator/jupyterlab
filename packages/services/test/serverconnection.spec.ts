@@ -1,12 +1,12 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 import { ServerConnection } from '../src';
 
 import { getRequestHandler } from './utils';
-import { JupyterServer } from '@jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils';
 
 const server = new JupyterServer();
 

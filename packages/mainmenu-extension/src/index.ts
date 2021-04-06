@@ -16,11 +16,11 @@ import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin,
   IRouter
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette, showDialog, Dialog } from '@jupyterlab/apputils';
+import { ICommandPalette, showDialog, Dialog } from '@fk-jupyterlab/apputils';
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 
 import {
   IMainMenu,
@@ -34,11 +34,11 @@ import {
   SettingsMenu,
   ViewMenu,
   TabsMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
-import { ServerConnection } from '@jupyterlab/services';
+import { ServerConnection } from '@fk-jupyterlab/services';
 
-import { ITranslator, TranslationBundle } from '@jupyterlab/translation';
+import { ITranslator, TranslationBundle } from '@fk-jupyterlab/translation';
 
 /**
  * A namespace for command IDs of semantic extension points.
@@ -124,7 +124,7 @@ export namespace CommandIDs {
  * A service providing an interface to the main menu.
  */
 const plugin: JupyterFrontEndPlugin<IMainMenu> = {
-  id: '@jupyterlab/mainmenu-extension:plugin',
+  id: '@fk-jupyterlab/mainmenu-extension:plugin',
   requires: [IRouter, ITranslator],
   optional: [ICommandPalette, ILabShell],
   provides: IMainMenu,

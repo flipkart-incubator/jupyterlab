@@ -1,8 +1,8 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
-import { FileEditor, IEditorTracker } from '@jupyterlab/fileeditor';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
+import { FileEditor, IEditorTracker } from '@fk-jupyterlab/fileeditor';
 import { TableOfContentsRegistry as Registry } from '../../registry';
 import { IHeading } from '../../utils/headings';
 import { render } from './render';

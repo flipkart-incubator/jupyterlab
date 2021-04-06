@@ -101,19 +101,19 @@ are objects with boolean values. The following sequence of checks are performed
 against the patterns in ``disabledExtensions`` and ``deferredExtensions``.
 
 -  If an identical string match occurs between a config value and a
-   package name (e.g., ``"@jupyterlab/apputils-extension"``), then the
+   package name (e.g., ``"@fk-jupyterlab/apputils-extension"``), then the
    entire package is disabled (or deferred).
 -  If the string value is compiled as a regular expression and tests
    positive against a package name (e.g.,
-   ``"@jupyterlab/apputils*$"``), then the
+   ``"@fk-jupyterlab/apputils*$"``), then the
    entire package is disabled (or deferred).
 -  If an identical string match occurs between a config value and an
    individual plugin ID within a package (e.g.,
-   ``"@jupyterlab/apputils-extension:settings``),
+   ``"@fk-jupyterlab/apputils-extension:settings``),
    then that specific plugin is disabled (or deferred).
 -  If the string value is compiled as a regular expression and tests
    positive against an individual plugin ID within a package (e.g.,
-   ``"@jupyterlab/apputils-extension:set.*$"``),
+   ``"@fk-jupyterlab/apputils-extension:set.*$"``),
    then that specific plugin is disabled (or deferred).
 
 An example ``<jupyter_config_path>/labconfig/pageconfig.json`` could look as follows:
@@ -122,11 +122,11 @@ An example ``<jupyter_config_path>/labconfig/pageconfig.json`` could look as fol
 
    {
       "disabledExtensions": {
-            "@jupyterlab/notebook-extension": true,
-            "@jupyterlab/apputils-extension:settings": true
+            "@fk-jupyterlab/notebook-extension": true,
+            "@fk-jupyterlab/apputils-extension:settings": true
       },
       "deferredExtensions": {
-             "@jupyterlab/apputils-extension:set.*$": true
+             "@fk-jupyterlab/apputils-extension:set.*$": true
       },
       "terminalsAvailable": false
    }
@@ -209,7 +209,7 @@ An example of a ``page_config.json`` file is:
 
     {
         "disabledExtensions": [
-            "@jupyterlab/toc"
+            "@fk-jupyterlab/toc"
         ],
         "terminalsAvailable": false
     }
@@ -228,7 +228,7 @@ directory (by default this is the ``share/jupyter/lab/settings`` folder).
 .. code:: json
 
   {
-    "@jupyterlab/apputils-extension:themes": {
+    "@fk-jupyterlab/apputils-extension:themes": {
       "theme": "JupyterLab Dark"
     }
   }
@@ -249,10 +249,10 @@ that have been explicitly uninstalled. An example of a
 
     {
         "uninstalled_core_extensions": [
-            "@jupyterlab/markdownwidget-extension"
+            "@fk-jupyterlab/markdownwidget-extension"
         ],
         "local_extensions": {
-            "@jupyterlab/python-tests": "/path/to/my/extension"
+            "@fk-jupyterlab/python-tests": "/path/to/my/extension"
         }
     }
 

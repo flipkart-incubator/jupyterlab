@@ -42,7 +42,7 @@ export class KernelSpecManager
         backoff: true,
         max: 300 * 1000
       },
-      name: `@jupyterlab/services:KernelSpecManager#specs`,
+      name: `@fk-jupyterlab/services:KernelSpecManager#specs`,
       standby: options.standby ?? 'when-hidden'
     });
     void this.ready.then(() => {

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { RestorablePool } from '@jupyterlab/statedb';
+import { RestorablePool } from '@fk-jupyterlab/statedb';
 
-import { signalToPromise } from '@jupyterlab/testutils';
+import { signalToPromise } from '@fk-jupyterlab/testutils';
 
 import { IObservableDisposable } from '@lumino/disposable';
 
@@ -37,7 +37,7 @@ class ObservableDisposable implements IObservableDisposable {
   private _isDisposed = false;
 }
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('RestorablePool', () => {
     let pool: RestorablePool<ObservableDisposable>;
 

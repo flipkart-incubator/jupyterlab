@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import {
   Context,
   DocumentRegistry,
   TextModelFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import { SaveHandler } from '../src';
 
@@ -18,9 +18,9 @@ import {
   signalToPromise,
   testEmission,
   waitForDialog
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 describe('docregistry/savehandler', () => {
   let manager: ServiceManager.IManager;

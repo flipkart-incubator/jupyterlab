@@ -103,7 +103,7 @@ const exclude =
 module.exports = {
   entryPoints,
   exclude,
-  name: '@jupyterlab',
+  name: '@fk-jupyterlab',
   out: 'docs/api',
   // json: 'docs/api.json',
   readme: 'README.md',

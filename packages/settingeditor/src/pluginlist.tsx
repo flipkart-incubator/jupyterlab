@@ -3,11 +3,11 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { classes, LabIcon, settingsIcon } from '@jupyterlab/ui-components';
+import { classes, LabIcon, settingsIcon } from '@fk-jupyterlab/ui-components';
 
 import { Message } from '@lumino/messaging';
 

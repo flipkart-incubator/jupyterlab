@@ -36,7 +36,7 @@ export class SessionManager extends BaseManager implements Session.IManager {
         backoff: true,
         max: 300 * 1000
       },
-      name: `@jupyterlab/services:SessionManager#models`,
+      name: `@fk-jupyterlab/services:SessionManager#models`,
       standby: options.standby ?? 'when-hidden'
     });
 

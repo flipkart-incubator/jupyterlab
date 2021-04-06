@@ -9,15 +9,15 @@ import { PanelLayout } from '@lumino/widgets';
 
 import { Widget } from '@lumino/widgets';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { HoverBox } from '@jupyterlab/apputils';
+import { HoverBox } from '@fk-jupyterlab/apputils';
 
 import {
   IRenderMime,
   IRenderMimeRegistry,
   MimeModel
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 /**
  * The class name added to each tooltip.

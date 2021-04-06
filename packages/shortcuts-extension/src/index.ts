@@ -8,11 +8,11 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ISettingRegistry, SettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry, SettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 import { CommandRegistry } from '@lumino/commands';
 
@@ -54,7 +54,7 @@ import { DisposableSet, IDisposable } from '@lumino/disposable';
  * required, using the `'body'` selector is more appropriate.
  */
 const shortcuts: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/shortcuts-extension:shortcuts',
+  id: '@fk-jupyterlab/shortcuts-extension:shortcuts',
   requires: [ISettingRegistry, ITranslator],
   activate: async (
     app: JupyterFrontEnd,

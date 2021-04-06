@@ -7,9 +7,9 @@ import { PanelLayout } from '@lumino/widgets';
 
 import { Widget } from '@lumino/widgets';
 
-import { CodeEditor, CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditor, CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditorFactory } from '@jupyterlab/codemirror';
+import { CodeMirrorEditorFactory } from '@fk-jupyterlab/codemirror';
 
 import { ICellModel } from './model';
 

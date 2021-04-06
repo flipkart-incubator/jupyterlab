@@ -69,12 +69,12 @@ def _create_static_dir():
 def _create_schemas_dir():
     """Create a temporary directory for schemas."""
     root_dir = tempfile.mkdtemp(prefix='mock_schemas')
-    extension_dir = osp.join(root_dir, '@jupyterlab', 'apputils-extension')
+    extension_dir = osp.join(root_dir, '@fk-jupyterlab', 'apputils-extension')
     os.makedirs(extension_dir)
 
     # Get schema content.
     schema_package = jupyterlab_server.__name__
-    schema_path = 'tests/schemas/@jupyterlab/apputils-extension/themes.json'
+    schema_path = 'tests/schemas/@fk-jupyterlab/apputils-extension/themes.json'
     themes = pkg_resources.resource_string(schema_package, schema_path)
 
     with open(osp.join(extension_dir, 'themes.json'), 'w') as fid:
@@ -369,12 +369,12 @@ class KarmaTestApp(ProcessTestApp):
         if not self.karma_coverage_dir:
             with open(pjoin(cwd, 'package.json')) as fid:
                 data = json.load(fid)
-            name = data['name'].replace('@jupyterlab/test-', '')
+            name = data['name'].replace('@fk-jupyterlab/test-', '')
             folder = osp.realpath(pjoin(HERE, '..', '..', 'packages', name))
             if not osp.exists(folder):
                 raise ValueError(
                     'No source package directory found for "%s", use the pattern '
-                    '"@jupyterlab/test-<package_dir_name>"' % name
+                    '"@fk-jupyterlab/test-<package_dir_name>"' % name
                 )
             self.karma_coverage_dir = folder
 

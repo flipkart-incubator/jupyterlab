@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/tooltip",
+  "name": "@fk-jupyterlab/tooltip",
   "version": "3.0.6",
   "description": "JupyterLab - Tooltip Widget",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
@@ -37,10 +37,10 @@
     "watch": "tsc -b --watch"
   },
   "dependencies": {
-    "@jupyterlab/apputils": "^3.0.5",
-    "@jupyterlab/codeeditor": "^3.0.5",
-    "@jupyterlab/rendermime": "^3.0.6",
-    "@jupyterlab/services": "^6.0.5",
+    "@fk-jupyterlab/apputils": "^3.0.5",
+    "@fk-jupyterlab/codeeditor": "^3.0.5",
+    "@fk-jupyterlab/rendermime": "^3.0.6",
+    "@fk-jupyterlab/services": "^6.0.5",
     "@lumino/coreutils": "^1.5.3",
     "@lumino/messaging": "^1.4.3",
     "@lumino/widgets": "^1.16.1"

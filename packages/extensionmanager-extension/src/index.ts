@@ -10,15 +10,15 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
-import { Dialog, showDialog, ICommandPalette } from '@jupyterlab/apputils';
-import { ExtensionView } from '@jupyterlab/extensionmanager';
-import { IMainMenu } from '@jupyterlab/mainmenu';
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import { ITranslator, TranslationBundle } from '@jupyterlab/translation';
-import { extensionIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/application';
+import { Dialog, showDialog, ICommandPalette } from '@fk-jupyterlab/apputils';
+import { ExtensionView } from '@fk-jupyterlab/extensionmanager';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
+import { ITranslator, TranslationBundle } from '@fk-jupyterlab/translation';
+import { extensionIcon } from '@fk-jupyterlab/ui-components';
 
-const PLUGIN_ID = '@jupyterlab/extensionmanager-extension:plugin';
+const PLUGIN_ID = '@fk-jupyterlab/extensionmanager-extension:plugin';
 
 /**
  * IDs of the commands added by this extension.

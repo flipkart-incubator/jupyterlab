@@ -11,11 +11,11 @@ import {
   showDialog,
   ToolbarButtonComponent,
   UseSignal
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { closeIcon, LabIcon, refreshIcon } from '@jupyterlab/ui-components';
+import { closeIcon, LabIcon, refreshIcon } from '@fk-jupyterlab/ui-components';
 
 import { Token } from '@lumino/coreutils';
 
@@ -85,7 +85,7 @@ const SHUTDOWN_ALL_BUTTON_CLASS = 'jp-RunningSessions-shutdownAll';
  * The running sessions token.
  */
 export const IRunningSessionManagers = new Token<IRunningSessionManagers>(
-  '@jupyterlab/running:IRunningSessionManagers'
+  '@fk-jupyterlab/running:IRunningSessionManagers'
 );
 /* tslint:enable */
 

@@ -20,7 +20,7 @@ can be used to polyfill browsers that do not support the `fetch` API.
 - [python](https://www.anaconda.com/distribution/)
 
 ```bash
-npm install --save @jupyterlab/services
+npm install --save @fk-jupyterlab/services
 conda install notebook  # notebook 4.3+ required
 ```
 

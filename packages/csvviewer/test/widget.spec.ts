@@ -3,7 +3,7 @@
 
 import { UUID } from '@lumino/coreutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 import { CSVViewer, GridSearchService } from '../src';
 
@@ -11,7 +11,7 @@ import {
   Context,
   DocumentRegistry,
   TextModelFactory
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 import { JSONModel, DataGrid, CellRenderer } from '@lumino/datagrid';
 
 function createContext(): Context<DocumentRegistry.IModel> {

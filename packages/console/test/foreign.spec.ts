@@ -3,19 +3,19 @@
 
 import { UUID } from '@lumino/coreutils';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 import { Signal } from '@lumino/signaling';
 
 import { Panel } from '@lumino/widgets';
 
-import { CodeCellModel, CodeCell } from '@jupyterlab/cells';
+import { CodeCellModel, CodeCell } from '@fk-jupyterlab/cells';
 
-import { defaultRenderMime, NBTestUtils } from '@jupyterlab/testutils';
+import { defaultRenderMime, NBTestUtils } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
-import { ISessionContext } from '@jupyterlab/apputils';
+import { ISessionContext } from '@fk-jupyterlab/apputils';
 
 import { ForeignHandler } from '../src';
 
@@ -94,7 +94,7 @@ const relevantTypes = [
   return acc;
 }, new Set<string>());
 
-describe('@jupyterlab/console', () => {
+describe('@fk-jupyterlab/console', () => {
   describe('ForeignHandler', () => {
     let foreign: ISessionContext;
     let handler: TestHandler;

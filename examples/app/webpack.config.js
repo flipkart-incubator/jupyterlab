@@ -2,7 +2,7 @@
 // Distributed under the terms of the Modified BSD License.
 const data = require('./package.json');
 const webpack = require('webpack');
-const Build = require('@jupyterlab/builder').Build;
+const Build = require('@fk-jupyterlab/builder').Build;
 
 // Generate webpack config to copy extension assets to the build directory,
 // such as setting schema files, theme assets, etc.

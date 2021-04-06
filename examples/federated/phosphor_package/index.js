@@ -2,16 +2,16 @@
 // Distributed under the terms of the Modified BSD License.
 
 import { Widget } from '@phosphor/widgets';
-import { MainAreaWidget } from '@jupyterlab/apputils';
+import { MainAreaWidget } from '@fk-jupyterlab/apputils';
 
 const plugins = [
   {
-    id: '@jupyterlab/example-federated-phosphor',
+    id: '@fk-jupyterlab/example-federated-phosphor',
     autoStart: true,
     activate: function (app) {
       const mywidget = new Widget();
       mywidget.node.textContent = 'Phosphor extension';
-      mywidget.id = '@jupyterlab/example-federated-phosphor';
+      mywidget.id = '@fk-jupyterlab/example-federated-phosphor';
       mywidget.title.label = 'Phosphor extension';
       const appwidget = new MainAreaWidget({ content: mywidget });
       app.restored.then(() => {

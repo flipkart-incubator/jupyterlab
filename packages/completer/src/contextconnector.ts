@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { DataConnector } from '@jupyterlab/statedb';
+import { DataConnector } from '@fk-jupyterlab/statedb';
 
 import { CompletionHandler } from './handler';
 

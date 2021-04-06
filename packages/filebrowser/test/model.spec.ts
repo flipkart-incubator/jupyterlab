@@ -3,24 +3,24 @@
 
 import expect from 'expect';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { DocumentManager, IDocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager, IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry, TextModelFactory } from '@jupyterlab/docregistry';
+import { DocumentRegistry, TextModelFactory } from '@fk-jupyterlab/docregistry';
 
-import { Contents, ServiceManager } from '@jupyterlab/services';
+import { Contents, ServiceManager } from '@fk-jupyterlab/services';
 
-import { StateDB } from '@jupyterlab/statedb';
+import { StateDB } from '@fk-jupyterlab/statedb';
 
 import {
   acceptDialog,
   dismissDialog,
   signalToPromises,
   sleep
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 import { toArray } from '@lumino/algorithm';
 

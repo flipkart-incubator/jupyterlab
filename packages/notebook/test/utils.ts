@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
 import {
   INotebookModel,
@@ -11,7 +11,7 @@ import {
   NotebookModelFactory
 } from '../src';
 
-import { NBTestUtils, Mock } from '@jupyterlab/testutils';
+import { NBTestUtils, Mock } from '@fk-jupyterlab/testutils';
 import { UUID } from '@lumino/coreutils';
 
 /**

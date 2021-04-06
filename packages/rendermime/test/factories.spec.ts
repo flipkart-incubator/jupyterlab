@@ -7,7 +7,7 @@ import { JSONObject, JSONValue } from '@lumino/coreutils';
 
 import { Widget } from '@lumino/widgets';
 
-import { defaultSanitizer } from '@jupyterlab/apputils';
+import { defaultSanitizer } from '@fk-jupyterlab/apputils';
 
 import {
   latexRendererFactory,

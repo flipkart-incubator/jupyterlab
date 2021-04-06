@@ -7,7 +7,7 @@ import { JSONObject } from '@lumino/coreutils';
 
 import { ConfigSection, ConfigWithDefaults } from '../../src';
 
-import { expectFailure, JupyterServer } from '@jupyterlab/testutils';
+import { expectFailure, JupyterServer } from '@fk-jupyterlab/testutils';
 
 import { handleRequest, makeSettings, getRequestHandler } from '../utils';
 

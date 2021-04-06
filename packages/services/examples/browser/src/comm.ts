@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { KernelManager } from '@jupyterlab/services';
+import { KernelManager } from '@fk-jupyterlab/services';
 import { PromiseDelegate } from '@lumino/coreutils';
 
 import { log } from './log';

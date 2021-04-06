@@ -6,9 +6,9 @@ import {
   LoggerOutputAreaModel,
   ILogPayload,
   LogLevel
-} from '@jupyterlab/logconsole';
+} from '@fk-jupyterlab/logconsole';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { Signal, ISignal } from '@lumino/signaling';
 

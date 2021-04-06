@@ -3,7 +3,7 @@
 
 import { ServerConnection } from '../serverconnection';
 import { Session } from '.';
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 import { validateModel, updateLegacySessionModel } from './validate';
 
 type DeepPartial<T> = {

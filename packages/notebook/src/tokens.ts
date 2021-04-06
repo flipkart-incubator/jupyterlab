@@ -1,8 +1,8 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IWidgetTracker } from '@jupyterlab/apputils';
-import { Cell } from '@jupyterlab/cells';
+import { IWidgetTracker } from '@fk-jupyterlab/apputils';
+import { Cell } from '@fk-jupyterlab/cells';
 import { Token } from '@lumino/coreutils';
 import { ISignal } from '@lumino/signaling';
 import { Widget } from '@lumino/widgets';
@@ -15,7 +15,7 @@ import { NotebookWidgetFactory } from './widgetfactory';
  * The notebook widget factory token.
  */
 export const INotebookWidgetFactory = new Token<NotebookWidgetFactory.IFactory>(
-  '@jupyterlab/notebook:INotebookWidgetFactory'
+  '@fk-jupyterlab/notebook:INotebookWidgetFactory'
 );
 /* tslint:enable */
 
@@ -24,7 +24,7 @@ export const INotebookWidgetFactory = new Token<NotebookWidgetFactory.IFactory>(
  * The notebook tools token.
  */
 export const INotebookTools = new Token<INotebookTools>(
-  '@jupyterlab/notebook:INotebookTools'
+  '@fk-jupyterlab/notebook:INotebookTools'
 );
 /* tslint:enable */
 
@@ -75,7 +75,7 @@ export namespace INotebookTools {
  * The notebook tracker token.
  */
 export const INotebookTracker = new Token<INotebookTracker>(
-  '@jupyterlab/notebook:INotebookTracker'
+  '@fk-jupyterlab/notebook:INotebookTracker'
 );
 /* tslint:enable */
 

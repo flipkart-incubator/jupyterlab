@@ -4,7 +4,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { LabIcon } from '@jupyterlab/ui-components';
+import { LabIcon } from '@fk-jupyterlab/ui-components';
 
 const fooSvgstr = fs.readFileSync(path.join(__dirname, 'foo.svg'), {
   encoding: 'utf8'
@@ -15,7 +15,7 @@ const fooIcon = new LabIcon({
   svgstr: fooSvgstr
 });
 
-describe('@jupyterlab/ui-components', () => {
+describe('@fk-jupyterlab/ui-components', () => {
   describe('svg import', () => {
     it('should hold a string with the raw contents of an svg', () => {
       expect(

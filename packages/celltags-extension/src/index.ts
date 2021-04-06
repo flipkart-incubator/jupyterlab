@@ -8,19 +8,19 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { INotebookTools, INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTools, INotebookTracker } from '@fk-jupyterlab/notebook';
 
-import { TagTool } from '@jupyterlab/celltags';
+import { TagTool } from '@fk-jupyterlab/celltags';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * Initialization data for the celltags extension.
  */
 const celltags: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/celltags',
+  id: '@fk-jupyterlab/celltags',
   autoStart: true,
   requires: [INotebookTools, INotebookTracker, ITranslator],
   activate: (

@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/example-federated",
+  "name": "@fk-jupyterlab/example-federated",
   "version": "2.1.2",
   "private": true,
   "scripts": {

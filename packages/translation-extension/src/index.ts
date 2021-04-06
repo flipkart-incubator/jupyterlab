@@ -10,19 +10,19 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { Dialog, showDialog } from '@jupyterlab/apputils';
+import { Dialog, showDialog } from '@fk-jupyterlab/apputils';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
 import {
   ITranslator,
   TranslationManager,
   requestTranslationsAPI
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { Menu } from '@lumino/widgets';
 
@@ -37,10 +37,10 @@ export namespace CommandIDs {
 /**
  * Translation plugins
  */
-const PLUGIN_ID = '@jupyterlab/translation-extension:plugin';
+const PLUGIN_ID = '@fk-jupyterlab/translation-extension:plugin';
 
 const translator: JupyterFrontEndPlugin<ITranslator> = {
-  id: '@jupyterlab/translation:translator',
+  id: '@fk-jupyterlab/translation:translator',
   autoStart: true,
   requires: [JupyterFrontEnd.IPaths, ISettingRegistry],
   provides: ITranslator,

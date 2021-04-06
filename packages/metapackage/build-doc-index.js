@@ -1,5 +1,5 @@
 const fs = require('fs-extra');
-const utils = require('@jupyterlab/buildutils');
+const utils = require('@fk-jupyterlab/buildutils');
 
 let index = `<!DOCTYPE html>
 <!--

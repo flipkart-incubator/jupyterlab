@@ -186,7 +186,7 @@ Source Extensions
 
 A source extension is a JavaScript (npm) package that exports one or more plugins. All JupyterLab extensions are developed as source extensions (for example, prebuilt extensions are built from source extensions).
 
-A source extension has metadata in the ``jupyterlab`` field of its ``package.json`` file. The `JSON schema <https://github.com/jupyterlab/jupyterlab/blob/master/builder/metadata_schema.json>`__ for the metadata is distributed in the ``@jupyterlab/builder`` package.
+A source extension has metadata in the ``jupyterlab`` field of its ``package.json`` file. The `JSON schema <https://github.com/jupyterlab/jupyterlab/blob/master/builder/metadata_schema.json>`__ for the metadata is distributed in the ``@fk-jupyterlab/builder`` package.
 
 If you would like publish your source extension to npm and want users to be able to install your source extension, we recommend including the npm keyword ``jupyterlab-extension`` in ``package.json``. This enables JupyterLab's extension manager to find your extension and display it for users in its graphical interface::
 
@@ -251,7 +251,7 @@ default setting values and user overrides. A plugin's settings are specified wit
 
 The setting system relies on plugin ids following the convention ``<source_package_name>:<plugin_name>``. The settings schema file for the plugin ``plugin_name`` is ``<schemaDir>/<plugin_name>.json``.
 
-For example, the JupyterLab ``filebrowser-extension`` package exports the ``@jupyterlab/filebrowser-extension:browser`` plugin. In the ``package.json`` for ``@jupyterlab/filebrowser-extension``, we have::
+For example, the JupyterLab ``filebrowser-extension`` package exports the ``@fk-jupyterlab/filebrowser-extension:browser`` plugin. In the ``package.json`` for ``@fk-jupyterlab/filebrowser-extension``, we have::
 
         "jupyterlab": {
           "schemaDir": "schema",
@@ -272,13 +272,13 @@ A system administrator or user can override default values provided in a plugin'
 Disabling other extensions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``jupyterlab.disabledExtensions`` field gives a list of extensions or plugins to disable when this extension is installed, with the same semantics as the ``disabledExtensions`` field of :ref:`page_config.json <page_configjson>`. This is useful if your extension overrides built-in extensions. For example, if an extension replaces the ``@jupyterlab/filebrowser-extension:share-file`` plugin to :ref:`override the "Copy Shareable Link" <copy_shareable_link>` functionality in the file browser, it can automatically disable the ``@jupyterlab/filebrowser-extension:share-file`` plugin with::
+The ``jupyterlab.disabledExtensions`` field gives a list of extensions or plugins to disable when this extension is installed, with the same semantics as the ``disabledExtensions`` field of :ref:`page_config.json <page_configjson>`. This is useful if your extension overrides built-in extensions. For example, if an extension replaces the ``@fk-jupyterlab/filebrowser-extension:share-file`` plugin to :ref:`override the "Copy Shareable Link" <copy_shareable_link>` functionality in the file browser, it can automatically disable the ``@fk-jupyterlab/filebrowser-extension:share-file`` plugin with::
 
         "jupyterlab": {
-          "disabledExtensions": ["@jupyterlab/filebrowser-extension:share-file"]
+          "disabledExtensions": ["@fk-jupyterlab/filebrowser-extension:share-file"]
         }
 
-To disable all plugins in an extension, give the extension package name, e.g., ``"@jupyterlab/filebrowser-extension"`` in the above example.
+To disable all plugins in an extension, give the extension package name, e.g., ``"@fk-jupyterlab/filebrowser-extension"`` in the above example.
 
 .. _deduplication:
 
@@ -675,7 +675,7 @@ Testing your extension
 ^^^^^^^^^^^^^^^^^^^^^^
 
 There are a number of helper functions in ``testutils`` in this repo (which
-is a public ``npm`` package called ``@jupyterlab/testutils``) that can be used when
+is a public ``npm`` package called ``@fk-jupyterlab/testutils``) that can be used when
 writing tests for an extension.  See ``tests/test-application`` for an example
 of the infrastructure needed to run tests.  There is a ``karma`` config file
 that points to the parent directory's ``karma`` config, and a test runner,
@@ -700,7 +700,7 @@ all node modules except the jupyterlab ones:
    module.exports = {
      preset: 'ts-jest/presets/js-with-babel',
      moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-     transformIgnorePatterns: ['/node_modules/(?!(@jupyterlab/.*)/)'],
+     transformIgnorePatterns: ['/node_modules/(?!(@fk-jupyterlab/.*)/)'],
      globals: {
        'ts-jest': {
          tsConfig: 'tsconfig.json'

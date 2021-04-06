@@ -7,11 +7,11 @@ import { IDisposable } from '@lumino/disposable';
 
 import { ISignal, Signal } from '@lumino/signaling';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { IObservableList, ObservableList } from '@jupyterlab/observables';
+import { IObservableList, ObservableList } from '@fk-jupyterlab/observables';
 
-import { IOutputModel, OutputModel } from '@jupyterlab/rendermime';
+import { IOutputModel, OutputModel } from '@fk-jupyterlab/rendermime';
 import { JSONExt } from '@lumino/coreutils';
 
 /**

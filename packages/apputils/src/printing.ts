@@ -3,7 +3,7 @@
 
 import { Widget } from '@lumino/widgets';
 
-import { ServerConnection } from '@jupyterlab/services';
+import { ServerConnection } from '@fk-jupyterlab/services';
 
 /**
  * Any object is "printable" if it implements the `IPrintable` interface.

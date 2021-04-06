@@ -5,30 +5,30 @@ import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin,
   IRouter
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { showDialog, Dialog, IWindowResolver } from '@jupyterlab/apputils';
+import { showDialog, Dialog, IWindowResolver } from '@fk-jupyterlab/apputils';
 
 import {
   DocumentRegistry,
   ABCWidgetFactory,
   IDocumentWidget,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { FileBrowser, IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { FileBrowser, IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
 import {
   ContentsManager,
   Workspace,
   WorkspaceManager
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
-import { IStateDB } from '@jupyterlab/statedb';
+import { IStateDB } from '@fk-jupyterlab/statedb';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { Widget } from '@lumino/widgets';
 
@@ -47,7 +47,7 @@ const ICON_NAME = 'jp-JupyterIcon';
  * The workspace MIME renderer and save plugin.
  */
 export const workspacesPlugin: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/apputils-extension:workspaces',
+  id: '@fk-jupyterlab/apputils-extension:workspaces',
   autoStart: true,
   requires: [
     IMainMenu,

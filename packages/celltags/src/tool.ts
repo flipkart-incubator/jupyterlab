@@ -1,13 +1,13 @@
 import { reduce } from '@lumino/algorithm';
 import { PanelLayout } from '@lumino/widgets';
-import { NotebookTools, INotebookTracker } from '@jupyterlab/notebook';
-import { Cell } from '@jupyterlab/cells';
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { NotebookTools, INotebookTracker } from '@fk-jupyterlab/notebook';
+import { Cell } from '@fk-jupyterlab/cells';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 import { TagWidget } from './widget';
 import { AddWidget } from './addwidget';
 

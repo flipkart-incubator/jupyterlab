@@ -1,3 +1,3 @@
-# @jupyterlab/htmlviewer-extension
+# @fk-jupyterlab/htmlviewer-extension
 
-An extension for JupyterLab which provides an entry point for the [@jupyterlab/htmlviewer](../htmlviewer) package.
+An extension for JupyterLab which provides an entry point for the [@fk-jupyterlab/htmlviewer](../htmlviewer) package.

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IObservableString } from '@jupyterlab/observables';
+import { IObservableString } from '@fk-jupyterlab/observables';
 
 describe('CodeEditor.Model', () => {
   let model: CodeEditor.Model;

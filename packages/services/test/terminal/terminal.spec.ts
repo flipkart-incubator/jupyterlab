@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 import { Terminal, TerminalManager } from '../../src';
 
-import { testEmission, JupyterServer } from '@jupyterlab/testutils';
+import { testEmission, JupyterServer } from '@fk-jupyterlab/testutils';
 
 import { handleRequest } from '../utils';
 

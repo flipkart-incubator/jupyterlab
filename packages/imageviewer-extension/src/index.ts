@@ -9,19 +9,19 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { ICommandPalette, WidgetTracker } from '@jupyterlab/apputils';
+import { ICommandPalette, WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { IDocumentWidget, DocumentRegistry } from '@jupyterlab/docregistry';
+import { IDocumentWidget, DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
 import {
   ImageViewer,
   ImageViewerFactory,
   IImageTracker
-} from '@jupyterlab/imageviewer';
+} from '@fk-jupyterlab/imageviewer';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The command IDs used by the image widget plugin.
@@ -74,7 +74,7 @@ const TEXT_FILE_REGEX = new RegExp(`[.](${TEXT_FILE_TYPES.join('|')})$`);
  */
 const plugin: JupyterFrontEndPlugin<IImageTracker> = {
   activate,
-  id: '@jupyterlab/imageviewer-extension:plugin',
+  id: '@fk-jupyterlab/imageviewer-extension:plugin',
   provides: IImageTracker,
   requires: [ITranslator],
   optional: [ICommandPalette, ILayoutRestorer],

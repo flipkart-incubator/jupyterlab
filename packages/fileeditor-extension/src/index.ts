@@ -9,38 +9,38 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   WidgetTracker,
   ISessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { CodeEditor, IEditorServices } from '@jupyterlab/codeeditor';
+import { CodeEditor, IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
 import {
   FileEditor,
   FileEditorFactory,
   IEditorTracker,
   TabSpaceStatus
-} from '@jupyterlab/fileeditor';
+} from '@fk-jupyterlab/fileeditor';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStatusBar } from '@jupyterlab/statusbar';
+import { IStatusBar } from '@fk-jupyterlab/statusbar';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 import { JSONObject } from '@lumino/coreutils';
 
@@ -55,7 +55,7 @@ export { Commands } from './commands';
  */
 const plugin: JupyterFrontEndPlugin<IEditorTracker> = {
   activate,
-  id: '@jupyterlab/fileeditor-extension:plugin',
+  id: '@fk-jupyterlab/fileeditor-extension:plugin',
   requires: [
     IEditorServices,
     IFileBrowserFactory,
@@ -79,7 +79,7 @@ const plugin: JupyterFrontEndPlugin<IEditorTracker> = {
  * switch tabs vs spaces and tab widths for text editors.
  */
 export const tabSpaceStatus: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/fileeditor-extension:tab-space-status',
+  id: '@fk-jupyterlab/fileeditor-extension:tab-space-status',
   autoStart: true,
   requires: [IEditorTracker, ISettingRegistry, ITranslator],
   optional: [IStatusBar],
@@ -125,7 +125,7 @@ export const tabSpaceStatus: JupyterFrontEndPlugin<void> = {
       };
     };
     void Promise.all([
-      settingRegistry.load('@jupyterlab/fileeditor-extension:plugin'),
+      settingRegistry.load('@fk-jupyterlab/fileeditor-extension:plugin'),
       app.restored
     ]).then(([settings]) => {
       updateSettings(settings);
@@ -134,7 +134,7 @@ export const tabSpaceStatus: JupyterFrontEndPlugin<void> = {
 
     // Add the status item.
     statusBar.registerStatusItem(
-      '@jupyterlab/fileeditor-extension:tab-space-status',
+      '@fk-jupyterlab/fileeditor-extension:tab-space-status',
       {
         item,
         align: 'right',

@@ -14,7 +14,7 @@ Upgrading library versions manually
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To update the extensions so it is compatible with the 3.0 release, update the compatibility
-range of the ``@jupyterlab`` dependencies in the ``package.json``. The diff should be similar to:
+range of the ``@fk-jupyterlab`` dependencies in the ``package.json``. The diff should be similar to:
 
 .. code:: diff
 
@@ -22,8 +22,8 @@ range of the ``@jupyterlab`` dependencies in the ``package.json``. The diff shou
    ^^^ a/package.json
    +++ b/package.json
       "dependencies": {
-   -    "@jupyterlab/application": "^2.0.0",
-   +    "@jupyterlab/application": "^3.0.0",
+   -    "@fk-jupyterlab/application": "^2.0.0",
+   +    "@fk-jupyterlab/application": "^3.0.0",
 
 Upgrading library versions using the upgrade script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -80,13 +80,13 @@ The upgrade script also updates the dependencies in ``package.json`` to the ``^3
       ]
       },
       "dependencies": {
-   -    "@jupyterlab/application": "^2.0.0",
-   -    "@jupyterlab/apputils": "^2.0.0",
-   -    "@jupyterlab/observables": "^3.0.0",
-   +    "@jupyterlab/builder": "^3.0.0",
-   +    "@jupyterlab/application": "^3.0.0",
-   +    "@jupyterlab/apputils": "^3.0.0",
-   +    "@jupyterlab/observables": "^3.0.0",
+   -    "@fk-jupyterlab/application": "^2.0.0",
+   -    "@fk-jupyterlab/apputils": "^2.0.0",
+   -    "@fk-jupyterlab/observables": "^3.0.0",
+   +    "@fk-jupyterlab/builder": "^3.0.0",
+   +    "@fk-jupyterlab/application": "^3.0.0",
+   +    "@fk-jupyterlab/apputils": "^3.0.0",
+   +    "@fk-jupyterlab/observables": "^3.0.0",
       "@lumino/algorithm": "^1.2.3",
       "@lumino/commands": "^1.10.1",
       "@lumino/disposable": "^1.3.5",
@@ -104,11 +104,11 @@ The upgrade script also updates the dependencies in ``package.json`` to the ``^3
 
 On the diff above, we see that additional development scripts are also added, as they are used by the new extension system workflow.
 
-The diff also shows the new ``@jupyterlab/builder`` as a ``devDependency``.
-``@jupyterlab/builder`` is a package required to build the extension as a federated extension.
+The diff also shows the new ``@fk-jupyterlab/builder`` as a ``devDependency``.
+``@fk-jupyterlab/builder`` is a package required to build the extension as a federated extension.
 It hides away internal dependencies such as ``webpack``, and produces the assets that can then be distributed as part of a Python package.
 
-Extension developers do not need to interact with ``@jupyterlab/builder`` directly, but instead can use the
+Extension developers do not need to interact with ``@fk-jupyterlab/builder`` directly, but instead can use the
 ``jupyter labextension build`` command. This command is run automatically as part of the ``build`` script
 (``jlpm run build``).
 
@@ -138,10 +138,10 @@ Here are some helpful tips for migrating an extension from JupyterLab 1.x to
 JupyterLab 2.x. We will look at two examples of extensions that cover most of
 the APIs that extension authors might be using:
 
-- ``@jupyterlab/debugger`` migration pull request:
+- ``@fk-jupyterlab/debugger`` migration pull request:
   https://github.com/jupyterlab/debugger/pull/337/files
 
-- ``@jupyterlab/shortcutui`` migration pull request:
+- ``@fk-jupyterlab/shortcutui`` migration pull request:
   https://github.com/jupyterlab/jupyterlab-shortcutui/pull/53/files
 
 Upgrading library versions
@@ -229,11 +229,11 @@ the new ``@lumino`` namespaced packages:
   - ``p-`` DOM events such as ``p-dragenter`` should be updated to ``lm-``,
     e.g. ``lm-dragenter``
 
-Updating former ``@jupyterlab/coreutils`` imports
+Updating former ``@fk-jupyterlab/coreutils`` imports
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-
 
 JupyterLab 2.0 introduces several new packages with classes and tokens that
-have been moved out of ``@jupyterlab/coreutils`` into their own packages. These
+have been moved out of ``@fk-jupyterlab/coreutils`` into their own packages. These
 exports have been moved.
 
 .. tip::
@@ -243,25 +243,25 @@ exports have been moved.
 ============================  =================================
  Export                        Package
 ============================  =================================
- ``DataConnector``             ``@jupyterlab/statedb``
+ ``DataConnector``             ``@fk-jupyterlab/statedb``
  ``Debouncer``                 ``@lumino/polling``
- ``DefaultSchemaValidator``    ``@jupyterlab/settingregistry``
- ``IDataConnector``            ``@jupyterlab/statedb``
- ``IObjectPool``               ``@jupyterlab/statedb``
+ ``DefaultSchemaValidator``    ``@fk-jupyterlab/settingregistry``
+ ``IDataConnector``            ``@fk-jupyterlab/statedb``
+ ``IObjectPool``               ``@fk-jupyterlab/statedb``
  ``IPoll``                     ``@lumino/polling``
  ``IRateLimiter``              ``@lumino/polling``
- ``IRestorable``               ``@jupyterlab/statedb``
- ``IRestorer``                 ``@jupyterlab/statedb``
- ``ISchemaValidator``          ``@jupyterlab/settingregistry``
- ``ISettingRegistry``          ``@jupyterlab/settingregistry``
- ``IStateDB``                  ``@jupyterlab/statedb``
- ``nbformat``                  ``@jupyterlab/nbformat``
+ ``IRestorable``               ``@fk-jupyterlab/statedb``
+ ``IRestorer``                 ``@fk-jupyterlab/statedb``
+ ``ISchemaValidator``          ``@fk-jupyterlab/settingregistry``
+ ``ISettingRegistry``          ``@fk-jupyterlab/settingregistry``
+ ``IStateDB``                  ``@fk-jupyterlab/statedb``
+ ``nbformat``                  ``@fk-jupyterlab/nbformat``
  ``Poll``                      ``@lumino/polling``
  ``RateLimiter``               ``@lumino/polling``
- ``RestorablePool``            ``@jupyterlab/statedb``
- ``SettingRegistry``           ``@jupyterlab/settingregistry``
- ``Settings``                  ``@jupyterlab/settingregistry``
- ``StateDB``                   ``@jupyterlab/statedb``
+ ``RestorablePool``            ``@fk-jupyterlab/statedb``
+ ``SettingRegistry``           ``@fk-jupyterlab/settingregistry``
+ ``Settings``                  ``@fk-jupyterlab/settingregistry``
+ ``StateDB``                   ``@fk-jupyterlab/statedb``
  ``Throttler``                 ``@lumino/polling``
 ============================  =================================
 
@@ -270,7 +270,7 @@ Using ``Session`` and ``SessionContext`` to manage kernel sessions
 .. note::
 
   For full API documentation and examples of how to use
-  ``@jupyterlab/services``,
+  ``@fk-jupyterlab/services``,
   `consult the repository <https://github.com/jupyterlab/jupyterlab/tree/master/packages/services#readme>`__.
 
 ``ConsolePanel`` and ``NotebookPanel`` now expose a
@@ -281,7 +281,7 @@ Any widget that matches the ``interface IDocumentWidget`` has a
 ``context: DocumentRegistry.IContext`` attribute with a
 ``sessionContext: ISessionContext`` attribute.
 
-For example, consider how the ``@jupyterlab/debugger`` extension's
+For example, consider how the ``@fk-jupyterlab/debugger`` extension's
 ``DebuggerService`` updated its ``isAvailable()`` method.
 
 .. figure:: images/extension_migration_session.png
@@ -305,7 +305,7 @@ Using the new icon system and ``LabIcon``
 .. note::
 
   For full API documentation and examples of how to use
-  the new icon support based on ``LabIcon`` from ``@jupyterlab/ui-components``,
+  the new icon support based on ``LabIcon`` from ``@fk-jupyterlab/ui-components``,
   `consult the repository <https://github.com/jupyterlab/jupyterlab/tree/master/packages/ui-components#readme>`__.
 
 

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-import { ServerConnection } from '@jupyterlab/services';
+import { ServerConnection } from '@fk-jupyterlab/services';
 
 /**
  * Call the API extension

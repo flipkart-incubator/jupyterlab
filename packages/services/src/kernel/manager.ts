@@ -37,7 +37,7 @@ export class KernelManager extends BaseManager implements Kernel.IManager {
         backoff: true,
         max: 300 * 1000
       },
-      name: `@jupyterlab/services:KernelManager#models`,
+      name: `@fk-jupyterlab/services:KernelManager#models`,
       standby: options.standby ?? 'when-hidden'
     });
 

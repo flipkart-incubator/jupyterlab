@@ -2,7 +2,7 @@
 // Distributed under the terms of the Modified BSD License.
 
 import * as React from 'react';
-import { ISanitizer } from '@jupyterlab/apputils';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
 import { sanitizerOptions } from '../../utils/sanitizer_options';
 import { INotebookHeading } from '../../utils/headings';
 

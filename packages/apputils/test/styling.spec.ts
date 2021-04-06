@@ -5,9 +5,9 @@ import { VirtualDOM, h } from '@lumino/virtualdom';
 
 import { simulate } from 'simulate-event';
 
-import { Styling } from '@jupyterlab/apputils';
+import { Styling } from '@fk-jupyterlab/apputils';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('Styling', () => {
     describe('.styleNode()', () => {
       it('should style descendant nodes for select, input and button', () => {

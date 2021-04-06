@@ -288,10 +288,10 @@ Testing Utilities
 """""""""""""""""
 
 There are some helper functions in ``testutils`` (which is a public npm
-package called ``@jupyterlab/testutils``) that are used by many of the
+package called ``@fk-jupyterlab/testutils``) that are used by many of the
 tests.
 
-For tests that rely on ``@jupyterlab/services`` (starting kernels,
+For tests that rely on ``@fk-jupyterlab/services`` (starting kernels,
 interacting with files, etc.), there are two options. If a simple
 interaction is needed, the ``Mock`` namespace exposed by ``testutils``
 has a number of mock implmentations (see ``testutils/src/mock.ts``). If

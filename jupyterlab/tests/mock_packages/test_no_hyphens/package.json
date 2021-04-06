@@ -8,10 +8,10 @@
     "clean": "rimraf ./test_no_hyphens/labextension"
   },
   "dependencies": {
-    "@jupyterlab/launcher": "^3.0.2"
+    "@fk-jupyterlab/launcher": "^3.0.2"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^3.0.1",
+    "@fk-jupyterlab/builder": "^3.0.1",
     "rimraf": "^3.0.2"
   },
   "files": [

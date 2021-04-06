@@ -1,14 +1,14 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Cell } from '@jupyterlab/cells';
+import { Cell } from '@fk-jupyterlab/cells';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
 import { INotebookModel, NotebookPanel, NotebookTracker } from '../src';
 
-import { initNotebookContext } from '@jupyterlab/testutils';
-import { JupyterServer } from '@jupyterlab/testutils/lib/start_jupyter_server';
+import { initNotebookContext } from '@fk-jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils/lib/start_jupyter_server';
 
 import * as utils from './utils';
 
@@ -34,7 +34,7 @@ class TestTracker extends NotebookTracker {
   }
 }
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookTracker', () => {
     let context: Context<INotebookModel>;
 

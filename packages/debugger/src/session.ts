@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { KernelMessage, Session } from '@jupyterlab/services';
+import { KernelMessage, Session } from '@fk-jupyterlab/services';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 

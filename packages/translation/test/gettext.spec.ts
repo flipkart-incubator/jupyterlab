@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Gettext } from '@jupyterlab/translation';
+import { Gettext } from '@fk-jupyterlab/translation';
 
 let JSON_TEST_DATA = {
   '': {
@@ -27,7 +27,7 @@ let JSON_TEST_DATA_VARIATION = {
   Welcome: ['Bienvenido pirobo']
 };
 
-describe('@jupyterlab/translation', () => {
+describe('@fk-jupyterlab/translation', () => {
   const trans = new Gettext({ domain: 'jupyterlab', locale: 'es' });
   trans.loadJSON(JSON_TEST_DATA, 'jupyterlab');
   trans.loadJSON(JSON_TEST_DATA_VARIATION, 'jupyterlab');

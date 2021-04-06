@@ -1,8 +1,8 @@
 import { simulate } from 'simulate-event';
 
-import { ServiceManager, Session } from '@jupyterlab/services';
+import { ServiceManager, Session } from '@fk-jupyterlab/services';
 
-import { SessionContext } from '@jupyterlab/apputils';
+import { SessionContext } from '@fk-jupyterlab/apputils';
 
 import { PromiseDelegate, UUID } from '@lumino/coreutils';
 
@@ -11,9 +11,9 @@ import {
   TextModelFactory,
   DocumentRegistry,
   Context
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { INotebookModel, NotebookModelFactory } from '@jupyterlab/notebook';
+import { INotebookModel, NotebookModelFactory } from '@fk-jupyterlab/notebook';
 
 /**
  * Test a single emission from a signal.

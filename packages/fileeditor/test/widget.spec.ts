@@ -9,29 +9,29 @@ import { simulate } from 'simulate-event';
 
 import { UUID } from '@lumino/coreutils';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
 import {
   CodeMirrorEditorFactory,
   CodeMirrorMimeTypeService
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
 import {
   Context,
   DocumentRegistry,
   TextModelFactory,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import {
   FileEditor,
   FileEditorCodeWrapper,
   FileEditorFactory
-} from '@jupyterlab/fileeditor';
+} from '@fk-jupyterlab/fileeditor';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 class LogFileEditor extends FileEditor {
   events: string[] = [];

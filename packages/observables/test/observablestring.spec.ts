@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ObservableString } from '@jupyterlab/observables';
+import { ObservableString } from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableString', () => {
     describe('#constructor()', () => {
       it('should accept no arguments', () => {

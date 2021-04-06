@@ -221,9 +221,9 @@ to the command palette interface and the `JupyterFrontEnd` instance.
     import {
       JupyterFrontEnd,
       JupyterFrontEndPlugin
-    } from '@jupyterlab/application';
+    } from '@fk-jupyterlab/application';
 
-    import { ICommandPalette } from '@jupyterlab/apputils';
+    import { ICommandPalette } from '@fk-jupyterlab/apputils';
 
 Locate the ``extension`` object of type ``JupyterFrontEndPlugin``. Change the
 definition so that it reads like so:
@@ -257,8 +257,8 @@ repository root folder to install the dependencies and save them to your
 
 .. code:: bash
 
-    jlpm add @jupyterlab/apputils
-    jlpm add @jupyterlab/application
+    jlpm add @fk-jupyterlab/apputils
+    jlpm add @fk-jupyterlab/application
 
 Finally, run the following to rebuild your extension.
 
@@ -299,7 +299,7 @@ Now return to your editor. Modify the imports at the top of the file to add a fe
 
 .. code:: typescript
 
-    import { ICommandPalette, MainAreaWidget } from '@jupyterlab/apputils';
+    import { ICommandPalette, MainAreaWidget } from '@fk-jupyterlab/apputils';
 
     import { Widget } from '@lumino/widgets';
 
@@ -770,13 +770,13 @@ entire list of import statements looks like the following:
       ILayoutRestorer,
       JupyterFrontEnd,
       JupyterFrontEndPlugin
-    } from '@jupyterlab/application';
+    } from '@fk-jupyterlab/application';
 
     import {
       ICommandPalette,
       MainAreaWidget,
       WidgetTracker
-    } from '@jupyterlab/apputils';
+    } from '@fk-jupyterlab/apputils';
 
     import { Message } from '@lumino/messaging';
 
@@ -951,8 +951,8 @@ You may want to also publish your extension as a JavaScript package to the
    other extensions. For example, our extension above uses the ``ICommandPalette``
    and ``ILayoutRestorer`` services provided by core extensions in
    JupyterLab. We were able to tell JupyterLab we required these services by
-   importing their tokens from the ``@jupyterlab/apputils`` and
-   ``@jupyterlab/application`` npm packages and listing them in our plugin
+   importing their tokens from the ``@fk-jupyterlab/apputils`` and
+   ``@fk-jupyterlab/application`` npm packages and listing them in our plugin
    definition. If you want to provide a service to the JupyterLab system
    for other extensions to use, you will need to publish your JavaScript
    package to npm so other extensions can depend on it and import and require

@@ -8,7 +8,7 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   CompleterModel,
@@ -17,15 +17,15 @@ import {
   CompletionHandler,
   ContextConnector,
   ICompletionManager
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { IEditorTracker } from '@jupyterlab/fileeditor';
+import { IEditorTracker } from '@fk-jupyterlab/fileeditor';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
 import { find, toArray } from '@lumino/algorithm';
 
@@ -56,7 +56,7 @@ namespace CommandIDs {
  * A plugin providing code completion for editors.
  */
 const manager: JupyterFrontEndPlugin<ICompletionManager> = {
-  id: '@jupyterlab/completer-extension:manager',
+  id: '@fk-jupyterlab/completer-extension:manager',
   autoStart: true,
   provides: ICompletionManager,
   activate: (app: JupyterFrontEnd): ICompletionManager => {
@@ -134,7 +134,7 @@ const manager: JupyterFrontEndPlugin<ICompletionManager> = {
  * An extension that registers consoles for code completion.
  */
 const consoles: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/completer-extension:consoles',
+  id: '@fk-jupyterlab/completer-extension:consoles',
   requires: [ICompletionManager, IConsoleTracker],
   autoStart: true,
   activate: (
@@ -200,7 +200,7 @@ const consoles: JupyterFrontEndPlugin<void> = {
  * An extension that registers notebooks for code completion.
  */
 const notebooks: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/completer-extension:notebooks',
+  id: '@fk-jupyterlab/completer-extension:notebooks',
   requires: [ICompletionManager, INotebookTracker],
   autoStart: true,
   activate: (
@@ -264,7 +264,7 @@ const notebooks: JupyterFrontEndPlugin<void> = {
  * An extension that registers file editors for completion.
  */
 const files: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/completer-extension:files',
+  id: '@fk-jupyterlab/completer-extension:files',
   requires: [ICompletionManager, IEditorTracker],
   autoStart: true,
   activate: (

@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ILabShell, LayoutRestorer } from '@jupyterlab/application';
+import { ILabShell, LayoutRestorer } from '@fk-jupyterlab/application';
 
-import { WidgetTracker } from '@jupyterlab/apputils';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { StateDB } from '@jupyterlab/statedb';
+import { StateDB } from '@fk-jupyterlab/statedb';
 
 import { CommandRegistry } from '@lumino/commands';
 

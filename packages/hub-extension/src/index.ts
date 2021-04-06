@@ -7,21 +7,21 @@
  * @module hub-extension
  */
 
-import { Dialog, ICommandPalette, showDialog } from '@jupyterlab/apputils';
+import { Dialog, ICommandPalette, showDialog } from '@fk-jupyterlab/apputils';
 
 import {
   ConnectionLost,
   IConnectionLost,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { ServerConnection, ServiceManager } from '@jupyterlab/services';
-import { ITranslator } from '@jupyterlab/translation';
+import { ServerConnection, ServiceManager } from '@fk-jupyterlab/services';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The command IDs used by the plugin.
@@ -126,7 +126,7 @@ const hubExtension: JupyterFrontEndPlugin<void> = {
  * Otherwise, it shows an error dialog.
  */
 const connectionlost: JupyterFrontEndPlugin<IConnectionLost> = {
-  id: '@jupyterlab/apputils-extension:connectionlost',
+  id: '@fk-jupyterlab/apputils-extension:connectionlost',
   requires: [JupyterFrontEnd.IPaths, ITranslator],
   activate: (
     app: JupyterFrontEnd,

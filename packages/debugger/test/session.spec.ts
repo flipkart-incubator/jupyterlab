@@ -5,13 +5,13 @@ import { init } from './utils';
 
 init();
 
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
 import {
   createSession,
   signalToPromises,
   JupyterServer
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import { find } from '@lumino/algorithm';
 

@@ -2,11 +2,11 @@
 // Distributed under the terms of the Modified BSD License.
 //
 
-import { VDomRenderer, VDomModel, WidgetTracker } from '@jupyterlab/apputils';
+import { VDomRenderer, VDomModel, WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
-import { GroupItem, ProgressBar, TextItem } from '@jupyterlab/statusbar';
+import { GroupItem, ProgressBar, TextItem } from '@fk-jupyterlab/statusbar';
 
 import { ArrayExt } from '@lumino/algorithm';
 
@@ -17,7 +17,7 @@ import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * Half-spacing between items in the overall status item.

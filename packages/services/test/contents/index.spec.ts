@@ -3,7 +3,7 @@
 
 import { Contents, ContentsManager, Drive, ServerConnection } from '../../src';
 
-import { expectFailure, JupyterServer } from '@jupyterlab/testutils';
+import { expectFailure, JupyterServer } from '@fk-jupyterlab/testutils';
 
 import { DEFAULT_FILE, makeSettings, handleRequest } from '../utils';
 

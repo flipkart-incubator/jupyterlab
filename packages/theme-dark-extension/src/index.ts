@@ -8,17 +8,17 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { IThemeManager } from '@jupyterlab/apputils';
+import { IThemeManager } from '@fk-jupyterlab/apputils';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * A plugin for the Jupyter Dark Theme.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/theme-dark-extension:plugin',
+  id: '@fk-jupyterlab/theme-dark-extension:plugin',
   requires: [IThemeManager, ITranslator],
   activate: (
     app: JupyterFrontEnd,
@@ -26,7 +26,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     translator: ITranslator
   ) => {
     const trans = translator.load('jupyterlab');
-    const style = '@jupyterlab/theme-dark-extension/index.css';
+    const style = '@fk-jupyterlab/theme-dark-extension/index.css';
     manager.register({
       name: 'JupyterLab Dark',
       displayName: trans.__('JupyterLab Dark'),

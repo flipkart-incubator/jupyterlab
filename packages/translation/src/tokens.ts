@@ -3,7 +3,7 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { DataConnector, IDataConnector } from '@jupyterlab/statedb';
+import { DataConnector, IDataConnector } from '@fk-jupyterlab/statedb';
 
 import { Token } from '@lumino/coreutils';
 
@@ -18,7 +18,7 @@ export interface ITranslatorConnector
   extends IDataConnector<Language, Language, { language: string }> {}
 
 export const ITranslatorConnector = new Token<ITranslatorConnector>(
-  '@jupyterlab/translation:ITranslatorConnector'
+  '@fk-jupyterlab/translation:ITranslatorConnector'
 );
 
 export class TranslatorConnector
@@ -78,5 +78,5 @@ export interface ITranslator {
 }
 
 export const ITranslator = new Token<ITranslator>(
-  '@jupyterlab/translation:ITranslator'
+  '@fk-jupyterlab/translation:ITranslator'
 );

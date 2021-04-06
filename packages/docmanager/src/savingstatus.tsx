@@ -3,15 +3,15 @@
 
 import React from 'react';
 
-import { VDomModel, VDomRenderer } from '@jupyterlab/apputils';
+import { VDomModel, VDomRenderer } from '@fk-jupyterlab/apputils';
 
 import { IDocumentManager } from './tokens';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { TextItem } from '@jupyterlab/statusbar';
+import { TextItem } from '@fk-jupyterlab/statusbar';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { Widget } from '@lumino/widgets';
 

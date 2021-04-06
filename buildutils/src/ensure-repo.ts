@@ -24,19 +24,19 @@ type Dict<T> = { [key: string]: T };
 
 // Data to ignore.
 const MISSING: Dict<string[]> = {
-  '@jupyterlab/coreutils': ['path'],
-  '@jupyterlab/buildutils': ['path', 'webpack'],
-  '@jupyterlab/builder': ['path'],
-  '@jupyterlab/testutils': ['fs', 'path'],
-  '@jupyterlab/vega5-extension': ['vega-embed']
+  '@fk-jupyterlab/coreutils': ['path'],
+  '@fk-jupyterlab/buildutils': ['path', 'webpack'],
+  '@fk-jupyterlab/builder': ['path'],
+  '@fk-jupyterlab/testutils': ['fs', 'path'],
+  '@fk-jupyterlab/vega5-extension': ['vega-embed']
 };
 
 const UNUSED: Dict<string[]> = {
   // url is a polyfill for sanitize-html
-  '@jupyterlab/apputils': ['@types/react', 'buffer', 'url'],
-  '@jupyterlab/application': ['@fortawesome/fontawesome-free'],
-  '@jupyterlab/apputils-extension': ['es6-promise'],
-  '@jupyterlab/builder': [
+  '@fk-jupyterlab/apputils': ['@types/react', 'buffer', 'url'],
+  '@fk-jupyterlab/application': ['@fortawesome/fontawesome-free'],
+  '@fk-jupyterlab/apputils-extension': ['es6-promise'],
+  '@fk-jupyterlab/builder': [
     '@lumino/algorithm',
     '@lumino/application',
     '@lumino/commands',
@@ -67,10 +67,10 @@ const UNUSED: Dict<string[]> = {
     'webpack-cli',
     'worker-loader'
   ],
-  '@jupyterlab/coreutils': ['path-browserify'],
-  '@jupyterlab/services': ['node-fetch', 'ws'],
-  '@jupyterlab/rendermime': ['@jupyterlab/mathjax2'],
-  '@jupyterlab/testutils': [
+  '@fk-jupyterlab/coreutils': ['path-browserify'],
+  '@fk-jupyterlab/services': ['node-fetch', 'ws'],
+  '@fk-jupyterlab/rendermime': ['@fk-jupyterlab/mathjax2'],
+  '@fk-jupyterlab/testutils': [
     'node-fetch',
     'identity-obj-proxy',
     'jest-raw-loader',
@@ -78,18 +78,18 @@ const UNUSED: Dict<string[]> = {
     'jest-junit',
     'jest-summary-reporter'
   ],
-  '@jupyterlab/test-csvviewer': ['csv-spectrum'],
-  '@jupyterlab/vega5-extension': ['vega', 'vega-lite'],
-  '@jupyterlab/ui-components': ['@blueprintjs/icons']
+  '@fk-jupyterlab/test-csvviewer': ['csv-spectrum'],
+  '@fk-jupyterlab/vega5-extension': ['vega', 'vega-lite'],
+  '@fk-jupyterlab/ui-components': ['@blueprintjs/icons']
 };
 
 // Packages that are allowed to have differing versions
 const DIFFERENT_VERSIONS: Array<string> = ['vega-lite', 'vega', 'vega-embed'];
 
 const SKIP_CSS: Dict<string[]> = {
-  '@jupyterlab/application': ['@jupyterlab/rendermime'],
-  '@jupyterlab/application-extension': ['@jupyterlab/apputils'],
-  '@jupyterlab/builder': [
+  '@fk-jupyterlab/application': ['@fk-jupyterlab/rendermime'],
+  '@fk-jupyterlab/application-extension': ['@fk-jupyterlab/apputils'],
+  '@fk-jupyterlab/builder': [
     '@lumino/algorithm',
     '@lumino/application',
     '@lumino/commands',
@@ -103,119 +103,119 @@ const SKIP_CSS: Dict<string[]> = {
     '@lumino/virtualdom',
     '@lumino/widgets'
   ],
-  '@jupyterlab/codemirror-extension': ['codemirror'],
-  '@jupyterlab/completer': ['@jupyterlab/codeeditor'],
-  '@jupyterlab/debugger': ['codemirror'],
-  '@jupyterlab/docmanager': ['@jupyterlab/statusbar'], // Statusbar styles should not be used by status reporters
-  '@jupyterlab/docregistry': [
-    '@jupyterlab/codeeditor', // Only used for model
-    '@jupyterlab/codemirror', // Only used for Mode.findByFileName
-    '@jupyterlab/rendermime' // Only used for model
+  '@fk-jupyterlab/codemirror-extension': ['codemirror'],
+  '@fk-jupyterlab/completer': ['@fk-jupyterlab/codeeditor'],
+  '@fk-jupyterlab/debugger': ['codemirror'],
+  '@fk-jupyterlab/docmanager': ['@fk-jupyterlab/statusbar'], // Statusbar styles should not be used by status reporters
+  '@fk-jupyterlab/docregistry': [
+    '@fk-jupyterlab/codeeditor', // Only used for model
+    '@fk-jupyterlab/codemirror', // Only used for Mode.findByFileName
+    '@fk-jupyterlab/rendermime' // Only used for model
   ],
-  '@jupyterlab/documentsearch': [
-    '@jupyterlab/cells',
-    '@jupyterlab/codeeditor',
-    '@jupyterlab/codemirror',
-    '@jupyterlab/fileeditor',
-    '@jupyterlab/notebook',
+  '@fk-jupyterlab/documentsearch': [
+    '@fk-jupyterlab/cells',
+    '@fk-jupyterlab/codeeditor',
+    '@fk-jupyterlab/codemirror',
+    '@fk-jupyterlab/fileeditor',
+    '@fk-jupyterlab/notebook',
     'codemirror'
   ],
-  '@jupyterlab/filebrowser': ['@jupyterlab/statusbar'],
-  '@jupyterlab/fileeditor': ['@jupyterlab/statusbar'],
-  '@jupyterlab/help-extension': ['@jupyterlab/application'],
-  '@jupyterlab/metapackage': [
-    '@jupyterlab/ui-components',
-    '@jupyterlab/apputils',
-    '@jupyterlab/codeeditor',
-    '@jupyterlab/statusbar',
-    '@jupyterlab/codemirror',
-    '@jupyterlab/rendermime-interfaces',
-    '@jupyterlab/rendermime',
-    '@jupyterlab/docregistry',
-    '@jupyterlab/application',
-    '@jupyterlab/property-inspector',
-    '@jupyterlab/application-extension',
-    '@jupyterlab/docmanager',
-    '@jupyterlab/filebrowser',
-    '@jupyterlab/mainmenu',
-    '@jupyterlab/apputils-extension',
-    '@jupyterlab/attachments',
-    '@jupyterlab/outputarea',
-    '@jupyterlab/cells',
-    '@jupyterlab/notebook',
-    '@jupyterlab/celltags',
-    '@jupyterlab/celltags-extension',
-    '@jupyterlab/fileeditor',
-    '@jupyterlab/codemirror-extension',
-    '@jupyterlab/completer',
-    '@jupyterlab/console',
-    '@jupyterlab/completer-extension',
-    '@jupyterlab/launcher',
-    '@jupyterlab/console-extension',
-    '@jupyterlab/csvviewer',
-    '@jupyterlab/documentsearch',
-    '@jupyterlab/csvviewer-extension',
-    '@jupyterlab/debugger',
-    '@jupyterlab/debugger-extension',
-    '@jupyterlab/docmanager-extension',
-    '@jupyterlab/documentsearch-extension',
-    '@jupyterlab/extensionmanager',
-    '@jupyterlab/extensionmanager-extension',
-    '@jupyterlab/filebrowser-extension',
-    '@jupyterlab/fileeditor-extension',
-    '@jupyterlab/inspector',
-    '@jupyterlab/help-extension',
-    '@jupyterlab/htmlviewer',
-    '@jupyterlab/htmlviewer-extension',
-    '@jupyterlab/hub-extension',
-    '@jupyterlab/imageviewer',
-    '@jupyterlab/imageviewer-extension',
-    '@jupyterlab/inspector-extension',
-    '@jupyterlab/javascript-extension',
-    '@jupyterlab/json-extension',
-    '@jupyterlab/launcher-extension',
-    '@jupyterlab/logconsole',
-    '@jupyterlab/logconsole-extension',
-    '@jupyterlab/mainmenu-extension',
-    '@jupyterlab/markdownviewer',
-    '@jupyterlab/markdownviewer-extension',
-    '@jupyterlab/mathjax2',
-    '@jupyterlab/mathjax2-extension',
-    '@jupyterlab/nbconvert-css',
-    '@jupyterlab/notebook-extension',
-    '@jupyterlab/pdf-extension',
-    '@jupyterlab/rendermime-extension',
-    '@jupyterlab/running',
-    '@jupyterlab/running-extension',
-    '@jupyterlab/settingeditor',
-    '@jupyterlab/settingeditor-extension',
-    '@jupyterlab/statusbar-extension',
-    '@jupyterlab/terminal',
-    '@jupyterlab/terminal-extension',
-    '@jupyterlab/theme-dark-extension',
-    '@jupyterlab/theme-light-extension',
-    '@jupyterlab/toc',
-    '@jupyterlab/toc-extension',
-    '@jupyterlab/tooltip',
-    '@jupyterlab/tooltip-extension',
-    '@jupyterlab/translation-extension',
-    '@jupyterlab/ui-components-extension',
-    '@jupyterlab/vdom',
-    '@jupyterlab/vdom-extension',
-    '@jupyterlab/vega5-extension'
+  '@fk-jupyterlab/filebrowser': ['@fk-jupyterlab/statusbar'],
+  '@fk-jupyterlab/fileeditor': ['@fk-jupyterlab/statusbar'],
+  '@fk-jupyterlab/help-extension': ['@fk-jupyterlab/application'],
+  '@fk-jupyterlab/metapackage': [
+    '@fk-jupyterlab/ui-components',
+    '@fk-jupyterlab/apputils',
+    '@fk-jupyterlab/codeeditor',
+    '@fk-jupyterlab/statusbar',
+    '@fk-jupyterlab/codemirror',
+    '@fk-jupyterlab/rendermime-interfaces',
+    '@fk-jupyterlab/rendermime',
+    '@fk-jupyterlab/docregistry',
+    '@fk-jupyterlab/application',
+    '@fk-jupyterlab/property-inspector',
+    '@fk-jupyterlab/application-extension',
+    '@fk-jupyterlab/docmanager',
+    '@fk-jupyterlab/filebrowser',
+    '@fk-jupyterlab/mainmenu',
+    '@fk-jupyterlab/apputils-extension',
+    '@fk-jupyterlab/attachments',
+    '@fk-jupyterlab/outputarea',
+    '@fk-jupyterlab/cells',
+    '@fk-jupyterlab/notebook',
+    '@fk-jupyterlab/celltags',
+    '@fk-jupyterlab/celltags-extension',
+    '@fk-jupyterlab/fileeditor',
+    '@fk-jupyterlab/codemirror-extension',
+    '@fk-jupyterlab/completer',
+    '@fk-jupyterlab/console',
+    '@fk-jupyterlab/completer-extension',
+    '@fk-jupyterlab/launcher',
+    '@fk-jupyterlab/console-extension',
+    '@fk-jupyterlab/csvviewer',
+    '@fk-jupyterlab/documentsearch',
+    '@fk-jupyterlab/csvviewer-extension',
+    '@fk-jupyterlab/debugger',
+    '@fk-jupyterlab/debugger-extension',
+    '@fk-jupyterlab/docmanager-extension',
+    '@fk-jupyterlab/documentsearch-extension',
+    '@fk-jupyterlab/extensionmanager',
+    '@fk-jupyterlab/extensionmanager-extension',
+    '@fk-jupyterlab/filebrowser-extension',
+    '@fk-jupyterlab/fileeditor-extension',
+    '@fk-jupyterlab/inspector',
+    '@fk-jupyterlab/help-extension',
+    '@fk-jupyterlab/htmlviewer',
+    '@fk-jupyterlab/htmlviewer-extension',
+    '@fk-jupyterlab/hub-extension',
+    '@fk-jupyterlab/imageviewer',
+    '@fk-jupyterlab/imageviewer-extension',
+    '@fk-jupyterlab/inspector-extension',
+    '@fk-jupyterlab/javascript-extension',
+    '@fk-jupyterlab/json-extension',
+    '@fk-jupyterlab/launcher-extension',
+    '@fk-jupyterlab/logconsole',
+    '@fk-jupyterlab/logconsole-extension',
+    '@fk-jupyterlab/mainmenu-extension',
+    '@fk-jupyterlab/markdownviewer',
+    '@fk-jupyterlab/markdownviewer-extension',
+    '@fk-jupyterlab/mathjax2',
+    '@fk-jupyterlab/mathjax2-extension',
+    '@fk-jupyterlab/nbconvert-css',
+    '@fk-jupyterlab/notebook-extension',
+    '@fk-jupyterlab/pdf-extension',
+    '@fk-jupyterlab/rendermime-extension',
+    '@fk-jupyterlab/running',
+    '@fk-jupyterlab/running-extension',
+    '@fk-jupyterlab/settingeditor',
+    '@fk-jupyterlab/settingeditor-extension',
+    '@fk-jupyterlab/statusbar-extension',
+    '@fk-jupyterlab/terminal',
+    '@fk-jupyterlab/terminal-extension',
+    '@fk-jupyterlab/theme-dark-extension',
+    '@fk-jupyterlab/theme-light-extension',
+    '@fk-jupyterlab/toc',
+    '@fk-jupyterlab/toc-extension',
+    '@fk-jupyterlab/tooltip',
+    '@fk-jupyterlab/tooltip-extension',
+    '@fk-jupyterlab/translation-extension',
+    '@fk-jupyterlab/ui-components-extension',
+    '@fk-jupyterlab/vdom',
+    '@fk-jupyterlab/vdom-extension',
+    '@fk-jupyterlab/vega5-extension'
   ],
-  '@jupyterlab/rendermime-interfaces': ['@lumino/widgets'],
-  '@jupyterlab/shortcuts-extension': ['@jupyterlab/application'],
-  '@jupyterlab/testutils': [
-    '@jupyterlab/apputils',
-    '@jupyterlab/codeeditor',
-    '@jupyterlab/codemirror',
-    '@jupyterlab/rendermime',
-    '@jupyterlab/docregistry',
-    '@jupyterlab/cells',
-    '@jupyterlab/notebook'
+  '@fk-jupyterlab/rendermime-interfaces': ['@lumino/widgets'],
+  '@fk-jupyterlab/shortcuts-extension': ['@fk-jupyterlab/application'],
+  '@fk-jupyterlab/testutils': [
+    '@fk-jupyterlab/apputils',
+    '@fk-jupyterlab/codeeditor',
+    '@fk-jupyterlab/codemirror',
+    '@fk-jupyterlab/rendermime',
+    '@fk-jupyterlab/docregistry',
+    '@fk-jupyterlab/cells',
+    '@fk-jupyterlab/notebook'
   ],
-  '@jupyterlab/ui-extension': ['@blueprintjs/icons']
+  '@fk-jupyterlab/ui-extension': ['@blueprintjs/icons']
 };
 
 const pkgData: Dict<any> = {};
@@ -526,7 +526,7 @@ export async function ensureIntegrity(): Promise<boolean> {
   // Update the metapackage.
   let pkgMessages = ensureMetaPackage();
   if (pkgMessages.length > 0) {
-    const pkgName = '@jupyterlab/metapackage';
+    const pkgName = '@fk-jupyterlab/metapackage';
     if (!messages[pkgName]) {
       messages[pkgName] = [];
     }
@@ -536,12 +536,12 @@ export async function ensureIntegrity(): Promise<boolean> {
   // Validate each package.
   for (const name in locals) {
     // application-top is handled elsewhere
-    if (name === '@jupyterlab/application-top') {
+    if (name === '@fk-jupyterlab/application-top') {
       continue;
     }
     const unused = UNUSED[name] || [];
     // Allow jest-junit to be unused in the test suite.
-    if (name.indexOf('@jupyterlab/test-') === 0) {
+    if (name.indexOf('@fk-jupyterlab/test-') === 0) {
       unused.push('jest-junit');
     }
 
@@ -557,7 +557,7 @@ export async function ensureIntegrity(): Promise<boolean> {
       differentVersions: DIFFERENT_VERSIONS
     };
 
-    if (name === '@jupyterlab/metapackage') {
+    if (name === '@fk-jupyterlab/metapackage') {
       options.noUnused = false;
     }
 
@@ -568,9 +568,9 @@ export async function ensureIntegrity(): Promise<boolean> {
   }
 
   // ensure the icon svg imports
-  pkgMessages = await ensureUiComponents(pkgPaths['@jupyterlab/ui-components']);
+  pkgMessages = await ensureUiComponents(pkgPaths['@fk-jupyterlab/ui-components']);
   if (pkgMessages.length > 0) {
-    const pkgName = '@jupyterlab/ui-components';
+    const pkgName = '@fk-jupyterlab/ui-components';
     if (!messages[pkgName]) {
       messages[pkgName] = [];
     }

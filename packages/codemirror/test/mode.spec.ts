@@ -4,7 +4,7 @@
 
 import CodeMirror from 'codemirror';
 
-import { Mode } from '@jupyterlab/codemirror';
+import { Mode } from '@fk-jupyterlab/codemirror';
 
 function fakeMode(name: string) {
   return {

@@ -10,17 +10,17 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import { IDocumentManager } from '@jupyterlab/docmanager';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
 
 import {
   ILatexTypesetter,
   IRenderMimeRegistry,
   RenderMimeRegistry,
   standardRendererFactories
-} from '@jupyterlab/rendermime';
-import { ITranslator } from '@jupyterlab/translation';
+} from '@fk-jupyterlab/rendermime';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 namespace CommandIDs {
   export const handleLink = 'rendermime:handle-local-link';
@@ -30,7 +30,7 @@ namespace CommandIDs {
  * A plugin providing a rendermime registry.
  */
 const plugin: JupyterFrontEndPlugin<IRenderMimeRegistry> = {
-  id: '@jupyterlab/rendermime-extension:plugin',
+  id: '@fk-jupyterlab/rendermime-extension:plugin',
   requires: [ITranslator],
   optional: [IDocumentManager, ILatexTypesetter],
   provides: IRenderMimeRegistry,

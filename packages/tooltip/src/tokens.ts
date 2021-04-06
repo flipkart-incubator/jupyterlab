@@ -1,22 +1,22 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 import { Token } from '@lumino/coreutils';
 
 import { Widget } from '@lumino/widgets';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 /* tslint:disable */
 /**
  * The tooltip manager token.
  */
 export const ITooltipManager = new Token<ITooltipManager>(
-  '@jupyterlab/tooltip:ITooltipManager'
+  '@fk-jupyterlab/tooltip:ITooltipManager'
 );
 /* tslint:enable */
 

@@ -1,16 +1,16 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 (window as any).__webpack_public_path__ = URLExt.join(
   PageConfig.getBaseUrl(),
   'example/'
 );
 
-import '@jupyterlab/application/style/index.css';
-import '@jupyterlab/codemirror/style/index.css';
-import '@jupyterlab/filebrowser/style/index.css';
-import '@jupyterlab/theme-light-extension/style/index.css';
+import '@fk-jupyterlab/application/style/index.css';
+import '@fk-jupyterlab/codemirror/style/index.css';
+import '@fk-jupyterlab/filebrowser/style/index.css';
+import '@fk-jupyterlab/theme-light-extension/style/index.css';
 import '../index.css';
 
 import { each } from '@lumino/algorithm';
@@ -19,30 +19,30 @@ import { CommandRegistry } from '@lumino/commands';
 
 import { DockPanel, Menu, SplitPanel, Widget } from '@lumino/widgets';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { Dialog, ToolbarButton, showDialog } from '@jupyterlab/apputils';
+import { Dialog, ToolbarButton, showDialog } from '@fk-jupyterlab/apputils';
 
 import {
   CodeMirrorEditorFactory,
   CodeMirrorMimeTypeService
-} from '@jupyterlab/codemirror';
+} from '@fk-jupyterlab/codemirror';
 
-import { DocumentManager } from '@jupyterlab/docmanager';
+import { DocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { DocumentRegistry } from '@jupyterlab/docregistry';
+import { DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { FileBrowser, FilterFileBrowserModel } from '@jupyterlab/filebrowser';
+import { FileBrowser, FilterFileBrowserModel } from '@fk-jupyterlab/filebrowser';
 
-import { FileEditorFactory } from '@jupyterlab/fileeditor';
+import { FileEditorFactory } from '@fk-jupyterlab/fileeditor';
 
 import {
   ITranslator,
   nullTranslator,
   TranslationManager
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
-import { addIcon } from '@jupyterlab/ui-components';
+import { addIcon } from '@fk-jupyterlab/ui-components';
 
 const LANG = 'en';
 

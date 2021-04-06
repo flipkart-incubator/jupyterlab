@@ -8,7 +8,7 @@
  * @module example-services-outputarea
  */
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 (window as any).__webpack_public_path__ = URLExt.join(
   PageConfig.getBaseUrl(),
   'example/'
@@ -18,14 +18,14 @@ import { PageConfig, URLExt } from '@jupyterlab/coreutils';
 // fonts.
 import '../style/index.css';
 
-import { OutputArea, OutputAreaModel } from '@jupyterlab/outputarea';
+import { OutputArea, OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
 import {
   RenderMimeRegistry,
   standardRendererFactories as initialFactories
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
-import { KernelManager } from '@jupyterlab/services';
+import { KernelManager } from '@fk-jupyterlab/services';
 
 async function main() {
   const code = [

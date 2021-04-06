@@ -3,17 +3,17 @@
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStateDB } from '@jupyterlab/statedb';
+import { IStateDB } from '@fk-jupyterlab/statedb';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { jupyterIcon } from '@jupyterlab/ui-components';
+import { jupyterIcon } from '@fk-jupyterlab/ui-components';
 
 import { CommandRegistry } from '@lumino/commands';
 

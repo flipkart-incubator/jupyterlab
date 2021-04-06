@@ -13,7 +13,7 @@ import {
   expectFailure,
   JupyterServer,
   flakyIt as it
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import {
   makeSettings,

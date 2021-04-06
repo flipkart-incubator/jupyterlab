@@ -6,7 +6,7 @@ import {
   SessionAPI,
   KernelManager,
   SessionManager
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import { log } from './log';
 

@@ -6,13 +6,13 @@ import {
   Toolbar,
   ToolbarButton,
   ReactWidget
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IDocumentManager } from '@jupyterlab/docmanager';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { Contents, ServerConnection } from '@jupyterlab/services';
+import { Contents, ServerConnection } from '@fk-jupyterlab/services';
 
-import { newFolderIcon, refreshIcon } from '@jupyterlab/ui-components';
+import { newFolderIcon, refreshIcon } from '@fk-jupyterlab/ui-components';
 
 import { IIterator } from '@lumino/algorithm';
 
@@ -31,7 +31,7 @@ import {
   nullTranslator,
   TranslationBundle,
   ITranslator
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to file browsers.

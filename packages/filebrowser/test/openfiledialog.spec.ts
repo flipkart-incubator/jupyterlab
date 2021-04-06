@@ -4,24 +4,24 @@
 import expect from 'expect';
 
 import { toArray } from '@lumino/algorithm';
-import { DocumentManager, IDocumentManager } from '@jupyterlab/docmanager';
-import { DocumentRegistry, TextModelFactory } from '@jupyterlab/docregistry';
+import { DocumentManager, IDocumentManager } from '@fk-jupyterlab/docmanager';
+import { DocumentRegistry, TextModelFactory } from '@fk-jupyterlab/docregistry';
 import { FileDialog, FilterFileBrowserModel, FileBrowserModel } from '../src';
 
-import { ServiceManager, Contents } from '@jupyterlab/services';
+import { ServiceManager, Contents } from '@fk-jupyterlab/services';
 import {
   acceptDialog,
   dismissDialog,
   waitForDialog,
   sleep,
   framePromise
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 import { simulate } from 'simulate-event';
 
-describe('@jupyterlab/filebrowser', () => {
+describe('@fk-jupyterlab/filebrowser', () => {
   let manager: IDocumentManager;
   let serviceManager: ServiceManager.IManager;
   let registry: DocumentRegistry;

@@ -1,8 +1,8 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
-import { ISearchProvider, ISearchMatch } from '@jupyterlab/documentsearch';
-import { CSVViewer } from '@jupyterlab/csvviewer';
-import { DocumentWidget } from '@jupyterlab/docregistry';
+import { ISearchProvider, ISearchMatch } from '@fk-jupyterlab/documentsearch';
+import { CSVViewer } from '@fk-jupyterlab/csvviewer';
+import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 import { Signal, ISignal } from '@lumino/signaling';
 import { Widget } from '@lumino/widgets';
 

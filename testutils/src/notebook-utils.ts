@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { editorServices } from '@jupyterlab/codemirror';
+import { editorServices } from '@fk-jupyterlab/codemirror';
 
-import { CodeEditorWrapper } from '@jupyterlab/codeeditor';
+import { CodeEditorWrapper } from '@fk-jupyterlab/codeeditor';
 
-import { Clipboard } from '@jupyterlab/apputils';
+import { Clipboard } from '@fk-jupyterlab/apputils';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
 import {
   INotebookModel,
@@ -17,11 +17,11 @@ import {
   Notebook,
   NotebookModel,
   StaticNotebook
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { Cell, CodeCellModel } from '@jupyterlab/cells';
+import { Cell, CodeCellModel } from '@fk-jupyterlab/cells';
 
 import { defaultRenderMime as localRendermime } from './rendermime';
 

@@ -5,13 +5,13 @@ import { init } from './utils';
 
 init();
 
-import { Session, KernelSpecManager, KernelSpec } from '@jupyterlab/services';
+import { Session, KernelSpecManager, KernelSpec } from '@fk-jupyterlab/services';
 
 import {
   createSession,
   signalToPromise,
   JupyterServer
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import { UUID, JSONExt } from '@lumino/coreutils';
 

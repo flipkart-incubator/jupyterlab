@@ -1,21 +1,21 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { showErrorMessage, Printing } from '@jupyterlab/apputils';
+import { showErrorMessage, Printing } from '@fk-jupyterlab/apputils';
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
 import {
   IRenderMime,
   IRenderMimeRegistry,
   MimeModel
-} from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/rendermime';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { PromiseDelegate, JSONExt, PartialJSONObject } from '@lumino/coreutils';
 

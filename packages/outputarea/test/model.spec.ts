@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { OutputModel } from '@jupyterlab/rendermime';
+import { OutputModel } from '@fk-jupyterlab/rendermime';
 
-import { OutputAreaModel } from '@jupyterlab/outputarea';
+import { OutputAreaModel } from '@fk-jupyterlab/outputarea';
 
-import { NBTestUtils } from '@jupyterlab/testutils';
+import { NBTestUtils } from '@fk-jupyterlab/testutils';
 
 describe('outputarea/model', () => {
   let model: OutputAreaModel;

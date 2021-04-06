@@ -5,9 +5,9 @@ import { Signal } from '@lumino/signaling';
 
 import { Widget } from '@lumino/widgets';
 
-import { StatusBar } from '@jupyterlab/statusbar';
+import { StatusBar } from '@fk-jupyterlab/statusbar';
 
-describe('@jupyterlab/statusbar', () => {
+describe('@fk-jupyterlab/statusbar', () => {
   describe('StatusBar', () => {
     let statusBar: StatusBar;
 

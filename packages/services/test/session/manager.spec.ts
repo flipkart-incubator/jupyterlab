@@ -17,7 +17,7 @@ import {
   testEmission,
   JupyterServer,
   flakyIt as it
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 /**
  * Start a new session on with a default name.

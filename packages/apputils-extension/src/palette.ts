@@ -11,19 +11,19 @@ import { DisposableDelegate, IDisposable } from '@lumino/disposable';
 
 import { CommandPalette } from '@lumino/widgets';
 
-import { ILayoutRestorer, JupyterFrontEnd } from '@jupyterlab/application';
+import { ILayoutRestorer, JupyterFrontEnd } from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   IPaletteItem,
   ModalCommandPalette
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { ITranslator, nullTranslator } from '@jupyterlab/translation';
+import { ITranslator, nullTranslator } from '@fk-jupyterlab/translation';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { CommandPaletteSvg, paletteIcon } from '@jupyterlab/ui-components';
+import { CommandPaletteSvg, paletteIcon } from '@fk-jupyterlab/ui-components';
 
 /**
  * The command IDs used by the apputils extension.
@@ -32,7 +32,7 @@ namespace CommandIDs {
   export const activate = 'apputils:activate-command-palette';
 }
 
-const PALETTE_PLUGIN_ID = '@jupyterlab/apputils-extension:palette';
+const PALETTE_PLUGIN_ID = '@fk-jupyterlab/apputils-extension:palette';
 
 /**
  * A thin wrapper around the `CommandPalette` class to conform with the

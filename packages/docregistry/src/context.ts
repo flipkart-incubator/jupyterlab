@@ -5,7 +5,7 @@ import {
   Contents,
   ServiceManager,
   ServerConnection
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import { PromiseDelegate, PartialJSONValue } from '@lumino/coreutils';
 
@@ -22,21 +22,21 @@ import {
   ISessionContext,
   showErrorMessage,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
-import { IModelDB, ModelDB } from '@jupyterlab/observables';
+import { IModelDB, ModelDB } from '@fk-jupyterlab/observables';
 
-import { RenderMimeRegistry } from '@jupyterlab/rendermime';
+import { RenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { DocumentRegistry } from './registry';
 

@@ -1,8 +1,8 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { WidgetTracker } from '@jupyterlab/apputils';
-import { Cell } from '@jupyterlab/cells';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
+import { Cell } from '@fk-jupyterlab/cells';
 
 import { ISignal, Signal } from '@lumino/signaling';
 

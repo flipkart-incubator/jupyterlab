@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/template",
+  "name": "@fk-jupyterlab/template",
   "version": "3.0.3",
   "description": "JupyterLab - Package Template",
   "homepage": "https://github.com/jupyterlab/jupyterlab",
@@ -37,7 +37,7 @@
     "watch": "tsc -b --watch"
   },
   "devDependencies": {
-    "@jupyterlab/testutils": "^3.0.7",
+    "@fk-jupyterlab/testutils": "^3.0.7",
     "@types/jest": "^26.0.10",
     "jest": "^26.4.2",
     "rimraf": "~3.0.0",

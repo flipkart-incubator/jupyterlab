@@ -9,13 +9,13 @@ import * as React from 'react';
 
 import * as ReactDOM from 'react-dom';
 
-import { ISessionContext, IWidgetTracker } from '@jupyterlab/apputils';
+import { ISessionContext, IWidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { DocumentRegistry, MimeDocument } from '@jupyterlab/docregistry';
+import { DocumentRegistry, MimeDocument } from '@fk-jupyterlab/docregistry';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { Kernel } from '@jupyterlab/services';
+import { Kernel } from '@fk-jupyterlab/services';
 
 import VDOM, { SerializedEvent } from '@nteract/transform-vdom';
 
@@ -39,7 +39,7 @@ export interface IVDOMTracker extends IWidgetTracker<MimeDocument> {}
  * The VDOM tracker token.
  */
 export const IVDOMTracker = new Token<IVDOMTracker>(
-  '@jupyterlab/vdom:IVDOMTracker'
+  '@fk-jupyterlab/vdom:IVDOMTracker'
 );
 
 /**

@@ -10,7 +10,7 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   CommandToolbarButton,
@@ -18,39 +18,39 @@ import {
   MainAreaWidget,
   WidgetTracker,
   ReactWidget
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
 import {
   ILoggerRegistry,
   LogConsolePanel,
   LoggerRegistry,
   LogLevel
-} from '@jupyterlab/logconsole';
+} from '@fk-jupyterlab/logconsole';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { INotebookTracker, NotebookPanel } from '@jupyterlab/notebook';
+import { INotebookTracker, NotebookPanel } from '@fk-jupyterlab/notebook';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStatusBar } from '@jupyterlab/statusbar';
+import { IStatusBar } from '@fk-jupyterlab/statusbar';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import {
   addIcon,
   clearIcon,
   HTMLSelect,
   listIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { UUID } from '@lumino/coreutils';
 
@@ -60,7 +60,7 @@ import * as React from 'react';
 
 import { LogConsoleStatus } from './status';
 
-const LOG_CONSOLE_PLUGIN_ID = '@jupyterlab/logconsole-extension:plugin';
+const LOG_CONSOLE_PLUGIN_ID = '@fk-jupyterlab/logconsole-extension:plugin';
 
 /**
  * The command IDs used by the plugin.
@@ -271,7 +271,7 @@ function activateLogConsole(
     });
   }
   if (statusBar) {
-    statusBar.registerStatusItem('@jupyterlab/logconsole-extension:status', {
+    statusBar.registerStatusItem('@fk-jupyterlab/logconsole-extension:status', {
       item: status,
       align: 'left',
       isActive: () => true,

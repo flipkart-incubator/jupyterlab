@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { nullTranslator } from '@jupyterlab/translation';
+import { nullTranslator } from '@fk-jupyterlab/translation';
 
-describe('@jupyterlab/translation', () => {
+describe('@fk-jupyterlab/translation', () => {
   const trans = nullTranslator.load('some-domain');
 
   describe('BasicTranslator', () => {

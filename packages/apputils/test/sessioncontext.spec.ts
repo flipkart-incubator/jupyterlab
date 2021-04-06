@@ -5,14 +5,14 @@ import {
   SessionManager,
   KernelManager,
   KernelSpecManager
-} from '@jupyterlab/services';
+} from '@fk-jupyterlab/services';
 
 import {
   SessionContext,
   Dialog,
   ISessionContext,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 import { UUID, PromiseDelegate } from '@lumino/coreutils';
 
@@ -22,9 +22,9 @@ import {
   testEmission,
   JupyterServer,
   flakyIt as it
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
-import { SessionAPI } from '@jupyterlab/services';
+import { SessionAPI } from '@fk-jupyterlab/services';
 
 const server = new JupyterServer();
 
@@ -36,7 +36,7 @@ afterAll(async () => {
   await server.shutdown();
 });
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('SessionContext', () => {
     let kernelManager: KernelManager;
     let sessionManager: SessionManager;

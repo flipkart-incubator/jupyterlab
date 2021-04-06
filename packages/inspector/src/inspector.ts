@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Printing } from '@jupyterlab/apputils';
+import { Printing } from '@fk-jupyterlab/apputils';
 
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 
 import { Panel, PanelLayout, Widget } from '@lumino/widgets';
 

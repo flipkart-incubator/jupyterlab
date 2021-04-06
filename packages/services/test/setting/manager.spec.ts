@@ -4,7 +4,7 @@
 import { ServerConnection, SettingManager } from '../../src';
 
 import { init } from '../utils';
-import { JupyterServer } from '@jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils';
 
 // Initialize the fetch overrides.
 init();
@@ -54,7 +54,7 @@ describe('setting', () => {
 
     describe('#fetch()', () => {
       it('should fetch settings for an extension', async () => {
-        const id = '@jupyterlab/apputils-extension:themes';
+        const id = '@fk-jupyterlab/apputils-extension:themes';
 
         expect((await manager.fetch(id)).id).toBe(id);
       });
@@ -62,7 +62,7 @@ describe('setting', () => {
 
     describe('#save()', () => {
       it('should save a setting', async () => {
-        const id = '@jupyterlab/apputils-extension:themes';
+        const id = '@fk-jupyterlab/apputils-extension:themes';
         const theme = 'Foo Theme';
         const raw = `{"theme": "${theme}"}`;
 

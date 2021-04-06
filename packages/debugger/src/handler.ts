@@ -1,29 +1,29 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 
 import {
   ISessionContext,
   SessionContext,
   ToolbarButton
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { ConsolePanel } from '@jupyterlab/console';
+import { ConsolePanel } from '@fk-jupyterlab/console';
 
-import { IChangedArgs } from '@jupyterlab/coreutils';
+import { IChangedArgs } from '@fk-jupyterlab/coreutils';
 
-import { DocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { FileEditor } from '@jupyterlab/fileeditor';
+import { FileEditor } from '@fk-jupyterlab/fileeditor';
 
-import { NotebookPanel } from '@jupyterlab/notebook';
+import { NotebookPanel } from '@fk-jupyterlab/notebook';
 
-import { Kernel, Session } from '@jupyterlab/services';
+import { Kernel, Session } from '@fk-jupyterlab/services';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { bugIcon, Switch } from '@jupyterlab/ui-components';
+import { bugIcon, Switch } from '@fk-jupyterlab/ui-components';
 
 import { Debugger } from './debugger';
 

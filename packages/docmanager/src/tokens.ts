@@ -9,16 +9,16 @@ import { ISignal } from '@lumino/signaling';
 
 import { Widget } from '@lumino/widgets';
 
-import { DocumentRegistry, IDocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentRegistry, IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { Contents, Kernel, ServiceManager } from '@jupyterlab/services';
+import { Contents, Kernel, ServiceManager } from '@fk-jupyterlab/services';
 
 /* tslint:disable */
 /**
  * The document registry token.
  */
 export const IDocumentManager = new Token<IDocumentManager>(
-  '@jupyterlab/docmanager:IDocumentManager'
+  '@fk-jupyterlab/docmanager:IDocumentManager'
 );
 /* tslint:enable */
 

@@ -95,7 +95,7 @@ widget extensions. The context contains the model as one of its
 properties so that we can pass a single object around.
 
 They are used to provide an abstracted interface to the session and
-Contents API from ``@jupyterlab/services`` for the given model. They can
+Contents API from ``@fk-jupyterlab/services`` for the given model. They can
 be shared between widgets.
 
 The reason for a separate context and model is so that it is easy to

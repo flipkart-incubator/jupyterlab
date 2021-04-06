@@ -5,11 +5,11 @@ import React, { useState, useEffect } from 'react';
 
 import { StringExt } from '@lumino/algorithm';
 
-import { InputGroup } from '@jupyterlab/ui-components';
+import { InputGroup } from '@fk-jupyterlab/ui-components';
 
-import { ReactWidget } from '@jupyterlab/apputils';
+import { ReactWidget } from '@fk-jupyterlab/apputils';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
 import { DirListing } from './listing';
 

@@ -4,22 +4,22 @@
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
-import { ILoggerRegistry, LogLevel } from '@jupyterlab/logconsole';
+import { ILoggerRegistry, LogLevel } from '@fk-jupyterlab/logconsole';
 
-import { INotebookTracker, NotebookPanel } from '@jupyterlab/notebook';
+import { INotebookTracker, NotebookPanel } from '@fk-jupyterlab/notebook';
 
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 /**
  * The Log Console extension.
  */
 export const logNotebookOutput: JupyterFrontEndPlugin<void> = {
   activate: activateNBOutput,
-  id: '@jupyterlab/notebook-extension:log-output',
+  id: '@fk-jupyterlab/notebook-extension:log-output',
   requires: [INotebookTracker],
   optional: [ILoggerRegistry],
   autoStart: true

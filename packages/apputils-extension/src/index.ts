@@ -12,7 +12,7 @@ import {
   IRouter,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -23,13 +23,13 @@ import {
   WindowResolver,
   Printing,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { URLExt, PageConfig } from '@jupyterlab/coreutils';
+import { URLExt, PageConfig } from '@fk-jupyterlab/coreutils';
 
-import { IStateDB, StateDB } from '@jupyterlab/statedb';
+import { IStateDB, StateDB } from '@fk-jupyterlab/statedb';
 
-import { jupyterFaviconIcon } from '@jupyterlab/ui-components';
+import { jupyterFaviconIcon } from '@fk-jupyterlab/ui-components';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 
@@ -41,12 +41,12 @@ import { Palette } from './palette';
 
 import { settingsPlugin } from './settingsplugin';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
 import { themesPlugin, themesPaletteMenuPlugin } from './themesplugins';
 
 import { workspacesPlugin } from './workspacesplugin';
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The interval in milliseconds before recover options appear during splash.
@@ -72,7 +72,7 @@ namespace CommandIDs {
  * The default command palette extension.
  */
 const palette: JupyterFrontEndPlugin<ICommandPalette> = {
-  id: '@jupyterlab/apputils-extension:palette',
+  id: '@fk-jupyterlab/apputils-extension:palette',
   autoStart: true,
   requires: [ITranslator],
   provides: ICommandPalette,
@@ -96,7 +96,7 @@ const palette: JupyterFrontEndPlugin<ICommandPalette> = {
  * in the application load cycle.
  */
 const paletteRestorer: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/apputils-extension:palette-restorer',
+  id: '@fk-jupyterlab/apputils-extension:palette-restorer',
   autoStart: true,
   requires: [ILayoutRestorer, ITranslator],
   activate: (
@@ -112,7 +112,7 @@ const paletteRestorer: JupyterFrontEndPlugin<void> = {
  * The default window name resolver provider.
  */
 const resolver: JupyterFrontEndPlugin<IWindowResolver> = {
-  id: '@jupyterlab/apputils-extension:resolver',
+  id: '@fk-jupyterlab/apputils-extension:resolver',
   autoStart: true,
   provides: IWindowResolver,
   requires: [JupyterFrontEnd.IPaths, IRouter],
@@ -161,7 +161,7 @@ const resolver: JupyterFrontEndPlugin<IWindowResolver> = {
  * The default splash screen provider.
  */
 const splash: JupyterFrontEndPlugin<ISplashScreen> = {
-  id: '@jupyterlab/apputils-extension:splash',
+  id: '@fk-jupyterlab/apputils-extension:splash',
   autoStart: true,
   requires: [ITranslator],
   provides: ISplashScreen,
@@ -273,7 +273,7 @@ Would you like to clear the workspace or keep waiting?`),
 };
 
 const print: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/apputils-extension:print',
+  id: '@fk-jupyterlab/apputils-extension:print',
   autoStart: true,
   requires: [ITranslator],
   activate: (app: JupyterFrontEnd, translator: ITranslator) => {
@@ -304,7 +304,7 @@ const print: JupyterFrontEndPlugin<void> = {
  * auto-saving. Otherwise, it will return a simple in-memory state database.
  */
 const state: JupyterFrontEndPlugin<IStateDB> = {
-  id: '@jupyterlab/apputils-extension:state',
+  id: '@fk-jupyterlab/apputils-extension:state',
   autoStart: true,
   provides: IStateDB,
   requires: [JupyterFrontEnd.IPaths, IRouter, ITranslator],
@@ -482,7 +482,7 @@ const state: JupyterFrontEndPlugin<IStateDB> = {
  * The default session context dialogs extension.
  */
 const sessionDialogs: JupyterFrontEndPlugin<ISessionContextDialogs> = {
-  id: '@jupyterlab/apputils-extension:sessionDialogs',
+  id: '@fk-jupyterlab/apputils-extension:sessionDialogs',
   provides: ISessionContextDialogs,
   autoStart: true,
   activate: () => {
@@ -494,7 +494,7 @@ const sessionDialogs: JupyterFrontEndPlugin<ISessionContextDialogs> = {
  * Utility commands
  */
 const utilityCommands: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/apputils-extension:utilityCommands',
+  id: '@fk-jupyterlab/apputils-extension:utilityCommands',
   requires: [ITranslator],
   autoStart: true,
   activate: (app: JupyterFrontEnd, translator: ITranslator) => {

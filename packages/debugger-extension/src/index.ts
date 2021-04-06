@@ -10,20 +10,20 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   IThemeManager,
   MainAreaWidget,
   WidgetTracker
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { ConsolePanel, IConsoleTracker } from '@jupyterlab/console';
+import { ConsolePanel, IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { PageConfig, PathExt } from '@jupyterlab/coreutils';
+import { PageConfig, PathExt } from '@fk-jupyterlab/coreutils';
 
 import {
   Debugger,
@@ -31,24 +31,24 @@ import {
   IDebuggerConfig,
   IDebuggerSources,
   IDebuggerSidebar
-} from '@jupyterlab/debugger';
+} from '@fk-jupyterlab/debugger';
 
-import { DocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { FileEditor, IEditorTracker } from '@jupyterlab/fileeditor';
+import { FileEditor, IEditorTracker } from '@fk-jupyterlab/fileeditor';
 
-import { INotebookTracker, NotebookPanel } from '@jupyterlab/notebook';
+import { INotebookTracker, NotebookPanel } from '@fk-jupyterlab/notebook';
 
-import { Session } from '@jupyterlab/services';
+import { Session } from '@fk-jupyterlab/services';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import { ITranslator } from '@jupyterlab/translation';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * A plugin that provides visual debugging support for consoles.
  */
 const consoles: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/debugger-extension:consoles',
+  id: '@fk-jupyterlab/debugger-extension:consoles',
   autoStart: true,
   requires: [IDebugger, IConsoleTracker],
   optional: [ILabShell],
@@ -96,7 +96,7 @@ const consoles: JupyterFrontEndPlugin<void> = {
  * A plugin that provides visual debugging support for file editors.
  */
 const files: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/debugger-extension:files',
+  id: '@fk-jupyterlab/debugger-extension:files',
   autoStart: true,
   requires: [IDebugger, IEditorTracker],
   optional: [ILabShell],
@@ -168,7 +168,7 @@ const files: JupyterFrontEndPlugin<void> = {
  * A plugin that provides visual debugging support for notebooks.
  */
 const notebooks: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/debugger-extension:notebooks',
+  id: '@fk-jupyterlab/debugger-extension:notebooks',
   autoStart: true,
   requires: [IDebugger, INotebookTracker],
   optional: [ILabShell],
@@ -215,7 +215,7 @@ const notebooks: JupyterFrontEndPlugin<void> = {
  * A plugin that provides a debugger service.
  */
 const service: JupyterFrontEndPlugin<IDebugger> = {
-  id: '@jupyterlab/debugger-extension:service',
+  id: '@fk-jupyterlab/debugger-extension:service',
   autoStart: true,
   provides: IDebugger,
   requires: [IDebuggerConfig],
@@ -236,7 +236,7 @@ const service: JupyterFrontEndPlugin<IDebugger> = {
  * A plugin that provides a configuration with hash method.
  */
 const configuration: JupyterFrontEndPlugin<IDebugger.IConfig> = {
-  id: '@jupyterlab/debugger-extension:config',
+  id: '@fk-jupyterlab/debugger-extension:config',
   provides: IDebuggerConfig,
   autoStart: true,
   activate: () => new Debugger.Config()
@@ -246,7 +246,7 @@ const configuration: JupyterFrontEndPlugin<IDebugger.IConfig> = {
  * A plugin that provides source/editor functionality for debugging.
  */
 const sources: JupyterFrontEndPlugin<IDebugger.ISources> = {
-  id: '@jupyterlab/debugger-extension:sources',
+  id: '@fk-jupyterlab/debugger-extension:sources',
   autoStart: true,
   provides: IDebuggerSources,
   requires: [IDebuggerConfig, IEditorServices],
@@ -273,7 +273,7 @@ const sources: JupyterFrontEndPlugin<IDebugger.ISources> = {
  * A plugin to open detailed views for variables.
  */
 const variables: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/debugger-extension:variables',
+  id: '@fk-jupyterlab/debugger-extension:variables',
   autoStart: true,
   requires: [IDebugger, ITranslator],
   optional: [IThemeManager],
@@ -339,7 +339,7 @@ const variables: JupyterFrontEndPlugin<void> = {
  * Debugger sidebar provider plugin.
  */
 const sidebar: JupyterFrontEndPlugin<IDebugger.ISidebar> = {
-  id: '@jupyterlab/debugger-extension:sidebar',
+  id: '@fk-jupyterlab/debugger-extension:sidebar',
   provides: IDebuggerSidebar,
   requires: [IDebugger, IEditorServices, ITranslator],
   optional: [IThemeManager, ISettingRegistry],
@@ -396,7 +396,7 @@ const sidebar: JupyterFrontEndPlugin<IDebugger.ISidebar> = {
  * The main debugger UI plugin.
  */
 const main: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/debugger-extension:main',
+  id: '@fk-jupyterlab/debugger-extension:main',
   requires: [IDebugger, IEditorServices, ITranslator, IDebuggerSidebar],
   optional: [ILabShell, ILayoutRestorer, ICommandPalette, IDebuggerSources],
   autoStart: true,

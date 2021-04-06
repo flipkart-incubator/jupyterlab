@@ -7,8 +7,8 @@ import React from 'react';
 
 import { clearIcon } from '../src';
 
-import '@jupyterlab/application/style/index.css';
-import '@jupyterlab/theme-light-extension/style/index.css';
+import '@fk-jupyterlab/application/style/index.css';
+import '@fk-jupyterlab/theme-light-extension/style/index.css';
 
 export default {
   // component: LabIcon,

@@ -4,7 +4,7 @@
 const fetch = require('node-fetch');
 
 import { JupyterServer } from '../src';
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
 describe('JupyterServer', () => {
   it('should start the server', async () => {

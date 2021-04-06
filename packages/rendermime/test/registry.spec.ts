@@ -5,17 +5,17 @@ import json2html from 'json-to-html';
 
 import { UUID, JSONObject } from '@lumino/coreutils';
 
-import { Contents, Drive, ServiceManager, Session } from '@jupyterlab/services';
+import { Contents, Drive, ServiceManager, Session } from '@fk-jupyterlab/services';
 
 import { toArray } from '@lumino/algorithm';
 
-import { PageConfig } from '@jupyterlab/coreutils';
+import { PageConfig } from '@fk-jupyterlab/coreutils';
 
 import { Widget } from '@lumino/widgets';
 
-import { SessionContext } from '@jupyterlab/apputils';
+import { SessionContext } from '@fk-jupyterlab/apputils';
 
-import { MathJaxTypesetter } from '@jupyterlab/mathjax2';
+import { MathJaxTypesetter } from '@fk-jupyterlab/mathjax2';
 
 import {
   MimeModel,
@@ -26,7 +26,7 @@ import {
   standardRendererFactories
 } from '../src';
 
-import * as Mock from '@jupyterlab/testutils/lib/mock';
+import * as Mock from '@fk-jupyterlab/testutils/lib/mock';
 
 class JSONRenderer extends RenderedHTML {
   mimeType = 'text/html';

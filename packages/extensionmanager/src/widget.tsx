@@ -1,20 +1,20 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 import {
   VDomRenderer,
   ToolbarButtonComponent,
   Dialog,
   showDialog
-} from '@jupyterlab/apputils';
-import { ServiceManager } from '@jupyterlab/services';
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+} from '@fk-jupyterlab/apputils';
+import { ServiceManager } from '@fk-jupyterlab/services';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 import {
   Button,
   caretDownIcon,
@@ -24,7 +24,7 @@ import {
   jupyterIcon,
   listingsInfoIcon,
   refreshIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { Message } from '@lumino/messaging';
 import * as React from 'react';

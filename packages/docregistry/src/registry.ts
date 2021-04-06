@@ -19,22 +19,22 @@ import { ISignal, Signal } from '@lumino/signaling';
 
 import { DockLayout, Widget } from '@lumino/widgets';
 
-import { ISessionContext, Toolbar } from '@jupyterlab/apputils';
+import { ISessionContext, Toolbar } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   IChangedArgs as IChangedArgsGeneric,
   PathExt
-} from '@jupyterlab/coreutils';
+} from '@fk-jupyterlab/coreutils';
 
-import { IModelDB } from '@jupyterlab/observables';
+import { IModelDB } from '@fk-jupyterlab/observables';
 
-import { IRenderMime } from '@jupyterlab/rendermime-interfaces';
+import { IRenderMime } from '@fk-jupyterlab/rendermime-interfaces';
 
-import { Contents, Kernel } from '@jupyterlab/services';
+import { Contents, Kernel } from '@fk-jupyterlab/services';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import {
   fileIcon,
@@ -49,7 +49,7 @@ import {
   rKernelIcon,
   spreadsheetIcon,
   yamlIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { TextModelFactory } from './default';
 

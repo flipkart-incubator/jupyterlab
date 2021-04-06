@@ -3,9 +3,9 @@
 
 import { Signal } from '@lumino/signaling';
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
-import { sleep } from '@jupyterlab/testutils';
+import { sleep } from '@fk-jupyterlab/testutils';
 
 class TestObject {
   one = new Signal<TestObject, number>(this);
@@ -13,7 +13,7 @@ class TestObject {
   two = new Signal<TestObject, string[]>(this);
 }
 
-describe('@jupyterlab/coreutils', () => {
+describe('@fk-jupyterlab/coreutils', () => {
   describe('ActivityMonitor()', () => {
     let testObj: TestObject;
     let signal: Signal<TestObject, number>;

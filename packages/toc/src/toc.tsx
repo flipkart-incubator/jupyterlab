@@ -3,14 +3,14 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { ActivityMonitor, PathExt } from '@jupyterlab/coreutils';
-import { IDocumentManager } from '@jupyterlab/docmanager';
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { ActivityMonitor, PathExt } from '@fk-jupyterlab/coreutils';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 import {
   nullTranslator,
   ITranslator,
   TranslationBundle
-} from '@jupyterlab/translation';
+} from '@fk-jupyterlab/translation';
 import { Message } from '@lumino/messaging';
 import { Widget } from '@lumino/widgets';
 import { IHeading } from './utils/headings';

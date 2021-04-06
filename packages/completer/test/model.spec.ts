@@ -5,13 +5,13 @@ import { toArray } from '@lumino/algorithm';
 
 import { JSONExt } from '@lumino/coreutils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   CompleterModel,
   Completer,
   CompletionHandler
-} from '@jupyterlab/completer';
+} from '@fk-jupyterlab/completer';
 
 function makeState(text: string): Completer.ITextState {
   return {

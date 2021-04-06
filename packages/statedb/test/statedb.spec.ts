@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { StateDB } from '@jupyterlab/statedb';
+import { StateDB } from '@fk-jupyterlab/statedb';
 
 import { PromiseDelegate, ReadonlyJSONObject } from '@lumino/coreutils';
 

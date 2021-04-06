@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ObservableMap } from '@jupyterlab/observables';
+import { ObservableMap } from '@fk-jupyterlab/observables';
 
-describe('@jupyterlab/observables', () => {
+describe('@fk-jupyterlab/observables', () => {
   describe('ObservableMap', () => {
     describe('#constructor()', () => {
       it('should accept no arguments', () => {

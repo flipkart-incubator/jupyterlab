@@ -9,7 +9,7 @@ import {
   TerminalManager,
   WorkspaceManager
 } from '../src';
-import { JupyterServer } from '@jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils';
 
 const server = new JupyterServer();
 

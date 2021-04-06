@@ -1,14 +1,14 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
 import { INotebookModel, NotebookPanel, Notebook } from '../src';
 
-import { Toolbar } from '@jupyterlab/apputils';
+import { Toolbar } from '@fk-jupyterlab/apputils';
 
-import { initNotebookContext } from '@jupyterlab/testutils';
-import { JupyterServer } from '@jupyterlab/testutils/lib/start_jupyter_server';
+import { initNotebookContext } from '@fk-jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils/lib/start_jupyter_server';
 
 import * as utils from './utils';
 
@@ -28,7 +28,7 @@ afterAll(async () => {
   await server.shutdown();
 });
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookPanel', () => {
     let context: Context<INotebookModel>;
 

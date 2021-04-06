@@ -3,9 +3,9 @@
 
 import React from 'react';
 
-import { VDomRenderer, VDomModel } from '@jupyterlab/apputils';
+import { VDomRenderer, VDomModel } from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
 import {
   interactiveItem,
@@ -13,9 +13,9 @@ import {
   Popup,
   showPopup,
   TextItem
-} from '@jupyterlab/statusbar';
+} from '@fk-jupyterlab/statusbar';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 import { Menu } from '@lumino/widgets';
 

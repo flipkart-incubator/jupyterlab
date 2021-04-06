@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IThemeManager, ToolbarButton } from '@jupyterlab/apputils';
+import { IThemeManager, ToolbarButton } from '@fk-jupyterlab/apputils';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { tableRowsIcon, treeViewIcon } from '@jupyterlab/ui-components';
+import { tableRowsIcon, treeViewIcon } from '@fk-jupyterlab/ui-components';
 
 import { CommandRegistry } from '@lumino/commands';
 

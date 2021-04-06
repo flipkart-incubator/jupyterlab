@@ -13,15 +13,15 @@ import { ISignal, Signal } from '@lumino/signaling';
 
 import { Widget } from '@lumino/widgets';
 
-import { Time } from '@jupyterlab/coreutils';
+import { Time } from '@fk-jupyterlab/coreutils';
 
-import { showDialog, Dialog } from '@jupyterlab/apputils';
+import { showDialog, Dialog } from '@fk-jupyterlab/apputils';
 
-import { DocumentRegistry, IDocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentRegistry, IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * The class name added to document widgets.

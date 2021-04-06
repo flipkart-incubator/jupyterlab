@@ -1,16 +1,16 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 
-import { VDomModel } from '@jupyterlab/apputils';
+import { VDomModel } from '@fk-jupyterlab/apputils';
 
 import {
   KernelSpec,
   ServerConnection,
   ServiceManager
-} from '@jupyterlab/services';
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+} from '@fk-jupyterlab/services';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
 import { Debouncer } from '@lumino/polling';
 
@@ -30,7 +30,7 @@ import { Searcher, ISearchResult, isJupyterOrg } from './npm';
 
 import { Lister, ListResult, IListEntry } from './listings';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * Information about an extension.

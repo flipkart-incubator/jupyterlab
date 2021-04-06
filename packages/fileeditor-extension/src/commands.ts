@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { JupyterFrontEnd } from '@jupyterlab/application';
+import { JupyterFrontEnd } from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
@@ -9,23 +9,23 @@ import {
   ISessionContextDialogs,
   sessionContextDialogs,
   Clipboard
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { CodeEditor } from '@jupyterlab/codeeditor';
+import { CodeEditor } from '@fk-jupyterlab/codeeditor';
 
-import { CodeMirrorEditor } from '@jupyterlab/codemirror';
+import { CodeMirrorEditor } from '@fk-jupyterlab/codemirror';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
-import { MarkdownCodeBlocks, PathExt } from '@jupyterlab/coreutils';
+import { MarkdownCodeBlocks, PathExt } from '@fk-jupyterlab/coreutils';
 
-import { IDocumentWidget } from '@jupyterlab/docregistry';
+import { IDocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
-import { FileEditor } from '@jupyterlab/fileeditor';
+import { FileEditor } from '@fk-jupyterlab/fileeditor';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
 import {
   IEditMenu,
@@ -33,9 +33,9 @@ import {
   IMainMenu,
   IRunMenu,
   IViewMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
 import {
   cutIcon,
@@ -45,14 +45,14 @@ import {
   redoIcon,
   textEditorIcon,
   undoIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { CommandRegistry } from '@lumino/commands';
 
 import { JSONObject, ReadonlyPartialJSONObject } from '@lumino/coreutils';
 
 import { Menu } from '@lumino/widgets';
-import { TranslationBundle } from '@jupyterlab/translation';
+import { TranslationBundle } from '@fk-jupyterlab/translation';
 
 /**
  * The command IDs used by the fileeditor plugin.

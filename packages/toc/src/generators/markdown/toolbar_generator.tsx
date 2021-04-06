@@ -3,8 +3,8 @@
 
 import * as React from 'react';
 import { OptionsManager } from './options_manager';
-import { numberingIcon } from '@jupyterlab/ui-components';
-import { TranslationBundle } from '@jupyterlab/translation';
+import { numberingIcon } from '@fk-jupyterlab/ui-components';
+import { TranslationBundle } from '@fk-jupyterlab/translation';
 
 /**
  * Interface describing toolbar properties.

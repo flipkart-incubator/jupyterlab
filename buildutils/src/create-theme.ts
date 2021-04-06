@@ -29,11 +29,11 @@ const questions: inquirer.Question[] = [
 const template = `
 import {
   JupyterFrontEnd, JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   IThemeManager
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
 
 /**
@@ -74,7 +74,7 @@ void inquirer.prompt(questions).then(answers => {
   // update the urls in urls.css
   const filePath = path.resolve('.', name, 'style', 'urls.css');
   let text = fs.readFileSync(filePath, 'utf8');
-  text = text.split('@jupyterlab/theme-light-extension').join(name);
+  text = text.split('@fk-jupyterlab/theme-light-extension').join(name);
   fs.writeFileSync(filePath, text, 'utf8');
 
   // remove lib, node_modules and static.

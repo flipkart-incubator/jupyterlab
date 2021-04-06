@@ -14,20 +14,20 @@ import {
   ToolbarButton,
   ToolbarButtonComponent,
   UseSignal
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { ActivityMonitor } from '@jupyterlab/coreutils';
+import { ActivityMonitor } from '@fk-jupyterlab/coreutils';
 
 import {
   ABCWidgetFactory,
   DocumentRegistry,
   DocumentWidget,
   IDocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { refreshIcon } from '@jupyterlab/ui-components';
+import { refreshIcon } from '@fk-jupyterlab/ui-components';
 
 import { Token } from '@lumino/coreutils';
 
@@ -44,7 +44,7 @@ export interface IHTMLViewerTracker extends IWidgetTracker<HTMLViewer> {}
  * The HTML viewer tracker token.
  */
 export const IHTMLViewerTracker = new Token<IHTMLViewerTracker>(
-  '@jupyterlab/htmlviewer:IHTMLViewerTracker'
+  '@fk-jupyterlab/htmlviewer:IHTMLViewerTracker'
 );
 /**
  * The timeout to wait for change activity to have ceased before rendering.

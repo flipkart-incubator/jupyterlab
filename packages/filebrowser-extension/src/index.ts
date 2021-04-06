@@ -12,7 +12,7 @@ import {
   IRouter,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Clipboard,
@@ -23,32 +23,32 @@ import {
   InputDialog,
   showErrorMessage,
   DOMUtils
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { PageConfig, PathExt, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, PathExt, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IDocumentManager } from '@jupyterlab/docmanager';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
 
 import {
   FilterFileBrowserModel,
   FileBrowser,
   FileUploadStatus,
   IFileBrowserFactory
-} from '@jupyterlab/filebrowser';
+} from '@fk-jupyterlab/filebrowser';
 
-import { Launcher } from '@jupyterlab/launcher';
+import { Launcher } from '@fk-jupyterlab/launcher';
 
-import { IMainMenu } from '@jupyterlab/mainmenu';
+import { IMainMenu } from '@fk-jupyterlab/mainmenu';
 
-import { Contents } from '@jupyterlab/services';
+import { Contents } from '@fk-jupyterlab/services';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStateDB } from '@jupyterlab/statedb';
+import { IStateDB } from '@fk-jupyterlab/statedb';
 
-import { IStatusBar } from '@jupyterlab/statusbar';
+import { IStatusBar } from '@fk-jupyterlab/statusbar';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 import {
   addIcon,
@@ -65,7 +65,7 @@ import {
   pasteIcon,
   stopIcon,
   textEditorIcon
-} from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/ui-components';
 
 import { IIterator, map, reduce, toArray, find } from '@lumino/algorithm';
 
@@ -141,7 +141,7 @@ namespace CommandIDs {
  */
 const browser: JupyterFrontEndPlugin<void> = {
   activate: activateBrowser,
-  id: '@jupyterlab/filebrowser-extension:browser',
+  id: '@fk-jupyterlab/filebrowser-extension:browser',
   requires: [
     IFileBrowserFactory,
     IDocumentManager,
@@ -159,7 +159,7 @@ const browser: JupyterFrontEndPlugin<void> = {
  */
 const factory: JupyterFrontEndPlugin<IFileBrowserFactory> = {
   activate: activateFactory,
-  id: '@jupyterlab/filebrowser-extension:factory',
+  id: '@fk-jupyterlab/filebrowser-extension:factory',
   provides: IFileBrowserFactory,
   requires: [IDocumentManager, ITranslator],
   optional: [IStateDB, IRouter, JupyterFrontEnd.ITreeResolver]
@@ -178,7 +178,7 @@ const factory: JupyterFrontEndPlugin<IFileBrowserFactory> = {
  */
 const shareFile: JupyterFrontEndPlugin<void> = {
   activate: activateShareFile,
-  id: '@jupyterlab/filebrowser-extension:share-file',
+  id: '@fk-jupyterlab/filebrowser-extension:share-file',
   requires: [IFileBrowserFactory, ITranslator],
   autoStart: true
 };
@@ -187,7 +187,7 @@ const shareFile: JupyterFrontEndPlugin<void> = {
  * A plugin providing file upload status.
  */
 export const fileUploadStatus: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/filebrowser-extension:file-upload-status',
+  id: '@fk-jupyterlab/filebrowser-extension:file-upload-status',
   autoStart: true,
   requires: [IFileBrowserFactory, ITranslator],
   optional: [IStatusBar],
@@ -207,7 +207,7 @@ export const fileUploadStatus: JupyterFrontEndPlugin<void> = {
     });
 
     statusBar.registerStatusItem(
-      '@jupyterlab/filebrowser-extension:file-upload-status',
+      '@fk-jupyterlab/filebrowser-extension:file-upload-status',
       {
         item,
         align: 'middle',
@@ -378,7 +378,7 @@ function activateBrowser(
     let useFuzzyFilter: boolean = true;
 
     void settingRegistry
-      .load('@jupyterlab/filebrowser-extension:browser')
+      .load('@fk-jupyterlab/filebrowser-extension:browser')
       .then(settings => {
         settings.changed.connect(settings => {
           navigateToCurrentDirectory = settings.get(
@@ -875,7 +875,7 @@ function addCommands(
       const value = !browser.navigateToCurrentDirectory;
       const key = 'navigateToCurrentDirectory';
       return settingRegistry
-        .set('@jupyterlab/filebrowser-extension:browser', key, value)
+        .set('@fk-jupyterlab/filebrowser-extension:browser', key, value)
         .catch((reason: Error) => {
           console.error(`Failed to set navigateToCurrentDirectory setting`);
         });

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { ISanitizer } from '@jupyterlab/apputils';
-import { INotebookTracker } from '@jupyterlab/notebook';
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { ISanitizer } from '@fk-jupyterlab/apputils';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 import { TableOfContentsRegistry as Registry } from '../../registry';
 import { TableOfContents } from '../../toc';
 import { TagsToolComponent } from './tagstool';

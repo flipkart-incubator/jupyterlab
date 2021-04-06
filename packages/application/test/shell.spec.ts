@@ -1,7 +1,7 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 import { toArray } from '@lumino/algorithm';
 
@@ -11,7 +11,7 @@ import { Widget, DockPanel } from '@lumino/widgets';
 
 import { simulate } from 'simulate-event';
 
-import { LabShell } from '@jupyterlab/application';
+import { LabShell } from '@fk-jupyterlab/application';
 
 class ContentWidget extends Widget {
   activated = false;

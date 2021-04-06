@@ -5,7 +5,7 @@
 |----------------------------------------------------------------------------*/
 'use strict';
 
-const services = require('@jupyterlab/services');
+const services = require('@fk-jupyterlab/services');
 
 // Start a new session.
 const options = {

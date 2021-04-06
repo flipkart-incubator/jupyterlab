@@ -5,9 +5,9 @@ import { CommandRegistry } from '@lumino/commands';
 
 import { Widget } from '@lumino/widgets';
 
-import { WidgetTracker } from '@jupyterlab/apputils';
+import { WidgetTracker } from '@fk-jupyterlab/apputils';
 
-import { RunMenu, IRunMenu } from '@jupyterlab/mainmenu';
+import { RunMenu, IRunMenu } from '@fk-jupyterlab/mainmenu';
 
 class Wodget extends Widget {
   state: string;
@@ -15,7 +15,7 @@ class Wodget extends Widget {
 
 import { delegateExecute } from './util';
 
-describe('@jupyterlab/mainmenu', () => {
+describe('@fk-jupyterlab/mainmenu', () => {
   describe('RunMenu', () => {
     let commands: CommandRegistry;
     let menu: RunMenu;

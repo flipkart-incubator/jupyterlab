@@ -114,7 +114,7 @@ These lines:
 - [ ] Test the release candidate in a clean environment
 - [ ] Make sure the CI builds pass
   - The build will fail if we publish a new package because by default it is
-    private. Use `npm access public @jupyterlab/<name>` to make it public.
+    private. Use `npm access public @fk-jupyterlab/<name>` to make it public.
   - The build will fail if we forget to include `style/` in the `files:`
     of a package (it will fail on the `jupyter lab build` command because
     webpack cannot find the referenced styles to import.

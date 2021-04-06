@@ -5,9 +5,9 @@ import { simulate } from 'simulate-event';
 
 import { Widget } from '@lumino/widgets';
 
-import { Context } from '@jupyterlab/docregistry';
+import { Context } from '@fk-jupyterlab/docregistry';
 
-import { CodeCell, MarkdownCell } from '@jupyterlab/cells';
+import { CodeCell, MarkdownCell } from '@fk-jupyterlab/cells';
 
 import {
   INotebookModel,
@@ -21,15 +21,15 @@ import {
   sleep,
   framePromise,
   acceptDialog
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
 import * as utils from './utils';
 import { PromiseDelegate } from '@lumino/coreutils';
-import { KernelMessage } from '@jupyterlab/services';
+import { KernelMessage } from '@fk-jupyterlab/services';
 
 const JUPYTER_CELL_MIME = 'application/vnd.jupyter.cells';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('ToolbarItems', () => {
     describe('noKernel', () => {
       let context: Context<INotebookModel>;

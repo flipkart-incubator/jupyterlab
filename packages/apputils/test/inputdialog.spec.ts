@@ -1,15 +1,15 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { InputDialog } from '@jupyterlab/apputils';
+import { InputDialog } from '@fk-jupyterlab/apputils';
 
 import {
   acceptDialog,
   dismissDialog,
   waitForDialog
-} from '@jupyterlab/testutils';
+} from '@fk-jupyterlab/testutils';
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('InputDialog', () => {
     describe('getBoolean()', () => {
       it('should accept at least the title argument', async () => {

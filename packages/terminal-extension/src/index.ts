@@ -12,24 +12,24 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 import {
   ICommandPalette,
   IThemeManager,
   MainAreaWidget,
   WidgetTracker
-} from '@jupyterlab/apputils';
-import { ILauncher } from '@jupyterlab/launcher';
-import { IFileMenu, IMainMenu } from '@jupyterlab/mainmenu';
-import { IRunningSessionManagers, IRunningSessions } from '@jupyterlab/running';
-import { Terminal } from '@jupyterlab/services';
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import { ITerminalTracker, ITerminal } from '@jupyterlab/terminal';
-import { ITranslator } from '@jupyterlab/translation';
-import { terminalIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/apputils';
+import { ILauncher } from '@fk-jupyterlab/launcher';
+import { IFileMenu, IMainMenu } from '@fk-jupyterlab/mainmenu';
+import { IRunningSessionManagers, IRunningSessions } from '@fk-jupyterlab/running';
+import { Terminal } from '@fk-jupyterlab/services';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
+import { ITerminalTracker, ITerminal } from '@fk-jupyterlab/terminal';
+import { ITranslator } from '@fk-jupyterlab/translation';
+import { terminalIcon } from '@fk-jupyterlab/ui-components';
 
 // Name-only import so as to not trigger inclusion in main bundle
-import * as WidgetModuleType from '@jupyterlab/terminal/lib/widget';
+import * as WidgetModuleType from '@fk-jupyterlab/terminal/lib/widget';
 
 /**
  * The command IDs used by the terminal plugin.
@@ -53,7 +53,7 @@ namespace CommandIDs {
  */
 const plugin: JupyterFrontEndPlugin<ITerminalTracker> = {
   activate,
-  id: '@jupyterlab/terminal-extension:plugin',
+  id: '@fk-jupyterlab/terminal-extension:plugin',
   provides: ITerminalTracker,
   requires: [ISettingRegistry, ITranslator],
   optional: [
@@ -478,7 +478,7 @@ namespace Private {
       return widgetReady;
     }
 
-    widgetReady = import('@jupyterlab/terminal/lib/widget');
+    widgetReady = import('@fk-jupyterlab/terminal/lib/widget');
 
     return widgetReady;
   }

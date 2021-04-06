@@ -12,22 +12,22 @@ import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin,
   ILabStatus
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 import {
   ICommandPalette,
   MainAreaWidget,
   WidgetTracker
-} from '@jupyterlab/apputils';
-import { IEditorServices } from '@jupyterlab/codeeditor';
-import { IStateDB } from '@jupyterlab/statedb';
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+} from '@fk-jupyterlab/apputils';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
+import { IStateDB } from '@fk-jupyterlab/statedb';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 import {
   ISettingEditorTracker,
   SettingEditor
-} from '@jupyterlab/settingeditor';
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
-import { ITranslator } from '@jupyterlab/translation';
-import { saveIcon, settingsIcon, undoIcon } from '@jupyterlab/ui-components';
+} from '@fk-jupyterlab/settingeditor';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
+import { ITranslator } from '@fk-jupyterlab/translation';
+import { saveIcon, settingsIcon, undoIcon } from '@fk-jupyterlab/ui-components';
 import { IDisposable } from '@lumino/disposable';
 
 /**
@@ -45,7 +45,7 @@ namespace CommandIDs {
  * The default setting editor extension.
  */
 const plugin: JupyterFrontEndPlugin<ISettingEditorTracker> = {
-  id: '@jupyterlab/settingeditor-extension:plugin',
+  id: '@fk-jupyterlab/settingeditor-extension:plugin',
   requires: [
     ILayoutRestorer,
     ISettingRegistry,

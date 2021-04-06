@@ -15,14 +15,14 @@ import {
   RawCellModel,
   RawCell,
   Cell
-} from '@jupyterlab/cells';
+} from '@fk-jupyterlab/cells';
 
 import { INotebookModel, NotebookModel } from '../src';
 
 import { Notebook, StaticNotebook } from '../src';
 
-import { framePromise, signalToPromise } from '@jupyterlab/testutils';
-import { JupyterServer } from '@jupyterlab/testutils/lib/start_jupyter_server';
+import { framePromise, signalToPromise } from '@fk-jupyterlab/testutils';
+import { JupyterServer } from '@fk-jupyterlab/testutils/lib/start_jupyter_server';
 
 import * as utils from './utils';
 

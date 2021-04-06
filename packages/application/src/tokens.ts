@@ -3,9 +3,9 @@
 
 import { CommandRegistry } from '@lumino/commands';
 
-import { ServerConnection, ServiceManager } from '@jupyterlab/services';
+import { ServerConnection, ServiceManager } from '@fk-jupyterlab/services';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 import { Token, ReadonlyPartialJSONObject } from '@lumino/coreutils';
 
@@ -18,7 +18,7 @@ import { ISignal } from '@lumino/signaling';
  * to the application server.
  */
 export const IConnectionLost = new Token<IConnectionLost>(
-  '@jupyterlab/apputils:IConnectionLost'
+  '@fk-jupyterlab/apputils:IConnectionLost'
 );
 
 /**
@@ -38,7 +38,7 @@ export type IConnectionLost = (
 /**
  * The URL Router token.
  */
-export const IRouter = new Token<IRouter>('@jupyterlab/application:IRouter');
+export const IRouter = new Token<IRouter>('@fk-jupyterlab/application:IRouter');
 
 /**
  * A static class that routes URLs within the application.

@@ -1,13 +1,13 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { CodeCellModel } from '@jupyterlab/cells';
+import { CodeCellModel } from '@fk-jupyterlab/cells';
 
 import { NotebookModel } from '../src';
 
 import { NotebookModelFactory } from '../src';
 
-describe('@jupyterlab/notebook', () => {
+describe('@fk-jupyterlab/notebook', () => {
   describe('NotebookModelFactory', () => {
     describe('#constructor', () => {
       it('should create a new notebook model factory', () => {

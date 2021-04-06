@@ -10,30 +10,30 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   ICommandPalette,
   MainAreaWidget,
   WidgetTracker
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { IConsoleTracker } from '@jupyterlab/console';
+import { IConsoleTracker } from '@fk-jupyterlab/console';
 
 import {
   IInspector,
   InspectionHandler,
   InspectorPanel,
   KernelConnector
-} from '@jupyterlab/inspector';
+} from '@fk-jupyterlab/inspector';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
-import { INotebookTracker } from '@jupyterlab/notebook';
+import { INotebookTracker } from '@fk-jupyterlab/notebook';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { inspectorIcon } from '@jupyterlab/ui-components';
+import { inspectorIcon } from '@fk-jupyterlab/ui-components';
 
 /**
  * The command IDs used by the inspector plugin.
@@ -46,7 +46,7 @@ namespace CommandIDs {
  * A service providing code introspection.
  */
 const inspector: JupyterFrontEndPlugin<IInspector> = {
-  id: '@jupyterlab/inspector-extension:inspector',
+  id: '@fk-jupyterlab/inspector-extension:inspector',
   requires: [ITranslator],
   optional: [ICommandPalette, ILauncher, ILayoutRestorer],
   provides: IInspector,
@@ -136,7 +136,7 @@ const inspector: JupyterFrontEndPlugin<IInspector> = {
  * An extension that registers consoles for inspection.
  */
 const consoles: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/inspector-extension:consoles',
+  id: '@fk-jupyterlab/inspector-extension:consoles',
   requires: [IInspector, IConsoleTracker, ILabShell],
   autoStart: true,
   activate: (
@@ -198,7 +198,7 @@ const consoles: JupyterFrontEndPlugin<void> = {
  * An extension that registers notebooks for inspection.
  */
 const notebooks: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/inspector-extension:notebooks',
+  id: '@fk-jupyterlab/inspector-extension:notebooks',
   requires: [IInspector, INotebookTracker, ILabShell],
   autoStart: true,
   activate: (

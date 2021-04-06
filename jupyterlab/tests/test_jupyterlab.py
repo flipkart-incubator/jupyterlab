@@ -228,22 +228,22 @@ class TestExtension(AppHandlerTest):
 
     @pytest.mark.slow
     def test_uninstall_core_extension(self):
-        assert uninstall_extension('@jupyterlab/console-extension') is True
+        assert uninstall_extension('@fk-jupyterlab/console-extension') is True
         app_dir = self.app_dir
         build()
         with open(pjoin(app_dir, 'staging', 'package.json')) as fid:
             data = json.load(fid)
         extensions = data['jupyterlab']['extensions']
-        assert '@jupyterlab/console-extension' not in extensions
-        assert not check_extension('@jupyterlab/console-extension')
+        assert '@fk-jupyterlab/console-extension' not in extensions
+        assert not check_extension('@fk-jupyterlab/console-extension')
 
-        assert install_extension('@jupyterlab/console-extension') is True
+        assert install_extension('@fk-jupyterlab/console-extension') is True
         build()
         with open(pjoin(app_dir, 'staging', 'package.json')) as fid:
             data = json.load(fid)
         extensions = data['jupyterlab']['extensions']
-        assert '@jupyterlab/console-extension' in extensions
-        assert check_extension('@jupyterlab/console-extension')
+        assert '@fk-jupyterlab/console-extension' in extensions
+        assert check_extension('@fk-jupyterlab/console-extension')
 
     def test_install_and_uninstall_pinned(self):
         """
@@ -482,14 +482,14 @@ class TestExtension(AppHandlerTest):
         )
 
         extensions = (
-            '@jupyterlab/application-extension',
-            '@jupyterlab/apputils-extension',
+            '@fk-jupyterlab/application-extension',
+            '@fk-jupyterlab/apputils-extension',
         )
         singletons = (
-            "@jupyterlab/application",
-            "@jupyterlab/apputils",
-            "@jupyterlab/coreutils",
-            "@jupyterlab/services",
+            "@fk-jupyterlab/application",
+            "@fk-jupyterlab/apputils",
+            "@fk-jupyterlab/coreutils",
+            "@fk-jupyterlab/services",
         )
         for name in extensions:
             semver = default_config.extensions[name]
@@ -511,13 +511,13 @@ class TestExtension(AppHandlerTest):
         with open(pkg) as fid:
             data = json.load(fid)
         assert sorted(data['jupyterlab']['extensions'].keys()) == [
-            '@jupyterlab/application-extension',
-            '@jupyterlab/apputils-extension',
-            '@jupyterlab/mock-extension',
+            '@fk-jupyterlab/application-extension',
+            '@fk-jupyterlab/apputils-extension',
+            '@fk-jupyterlab/mock-extension',
         ]
         assert data['jupyterlab']['mimeExtensions'] == {}
         for pkg in data['jupyterlab']['singletonPackages']:
-            if pkg.startswith('@jupyterlab/'):
+            if pkg.startswith('@fk-jupyterlab/'):
                 assert pkg in singletons
 
     def test_disable_extension(self):
@@ -529,11 +529,11 @@ class TestExtension(AppHandlerTest):
         assert name in info['disabled']
         assert not check_extension(name, app_options=options)
         assert check_extension(name, installed=True, app_options=options)
-        assert disable_extension('@jupyterlab/notebook-extension', app_options=options) is True
+        assert disable_extension('@fk-jupyterlab/notebook-extension', app_options=options) is True
         info = get_app_info(app_options=options)
-        assert '@jupyterlab/notebook-extension' in info['disabled']
-        assert not check_extension('@jupyterlab/notebook-extension', app_options=options)
-        assert check_extension('@jupyterlab/notebook-extension', installed=True, app_options=options)
+        assert '@fk-jupyterlab/notebook-extension' in info['disabled']
+        assert not check_extension('@fk-jupyterlab/notebook-extension', app_options=options)
+        assert check_extension('@fk-jupyterlab/notebook-extension', installed=True, app_options=options)
         assert name in info['disabled']
         assert not check_extension(name, app_options=options)
         assert check_extension(name, installed=True, app_options=options)
@@ -544,13 +544,13 @@ class TestExtension(AppHandlerTest):
         assert disable_extension(self.pkg_names['extension'], app_options=options) is True
         assert enable_extension(self.pkg_names['extension'], app_options=options) is True
         info = get_app_info(app_options=options)
-        assert '@jupyterlab/notebook-extension' not in info['disabled']
+        assert '@fk-jupyterlab/notebook-extension' not in info['disabled']
         name = self.pkg_names['extension']
         assert name not in info['disabled']
         assert check_extension(name, app_options=options)
-        assert disable_extension('@jupyterlab/notebook-extension', app_options=options) is True
+        assert disable_extension('@fk-jupyterlab/notebook-extension', app_options=options) is True
         assert check_extension(name, app_options=options)
-        assert not check_extension('@jupyterlab/notebook-extension', app_options=options)
+        assert not check_extension('@fk-jupyterlab/notebook-extension', app_options=options)
 
     @pytest.mark.slow
     def test_build_check(self):
@@ -627,10 +627,10 @@ class TestExtension(AppHandlerTest):
 
     def test_install_compatible(self):
         core_data = _get_default_core_data()
-        current_app_dep = core_data['dependencies']['@jupyterlab/application']
+        current_app_dep = core_data['dependencies']['@fk-jupyterlab/application']
         def _gen_dep(ver):
             return { "dependencies": {
-                '@jupyterlab/application': ver
+                '@fk-jupyterlab/application': ver
             }}
         def _mock_metadata(registry, name, logger):
             assert name == 'mockextension'

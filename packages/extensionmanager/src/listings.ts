@@ -3,9 +3,9 @@
 
 import { ISignal, Signal } from '@lumino/signaling';
 
-import { URLExt } from '@jupyterlab/coreutils';
+import { URLExt } from '@fk-jupyterlab/coreutils';
 
-import { ServerConnection } from '@jupyterlab/services';
+import { ServerConnection } from '@fk-jupyterlab/services';
 
 /** *
  * Information about a listed entry.
@@ -54,7 +54,7 @@ export class Lister {
    */
   constructor() {
     requestAPI<IListingApi>(
-      '@jupyterlab/extensionmanager-extension/listings.json'
+      '@fk-jupyterlab/extensionmanager-extension/listings.json'
     )
       .then(data => {
         this._listings = {

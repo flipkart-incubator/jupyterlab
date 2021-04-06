@@ -5,7 +5,7 @@ const IMiddleToken = require('./tokens').IMiddleToken;
 
 module.exports = [
   {
-    id: '@jupyterlab/example-federated-middle',
+    id: '@fk-jupyterlab/example-federated-middle',
     autoStart: true,
     provides: IMiddleToken,
     activate: function (app) {

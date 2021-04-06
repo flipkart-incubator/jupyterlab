@@ -1,16 +1,16 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { PathExt } from '@jupyterlab/coreutils';
+import { PathExt } from '@fk-jupyterlab/coreutils';
 
-import { Printing } from '@jupyterlab/apputils';
+import { Printing } from '@fk-jupyterlab/apputils';
 
 import {
   ABCWidgetFactory,
   DocumentRegistry,
   IDocumentWidget,
   DocumentWidget
-} from '@jupyterlab/docregistry';
+} from '@fk-jupyterlab/docregistry';
 
 import { PromiseDelegate } from '@lumino/coreutils';
 

@@ -1,11 +1,11 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { IEditorMimeTypeService } from '@jupyterlab/codeeditor';
+import { IEditorMimeTypeService } from '@fk-jupyterlab/codeeditor';
 
-import { ABCWidgetFactory, DocumentRegistry } from '@jupyterlab/docregistry';
+import { ABCWidgetFactory, DocumentRegistry } from '@fk-jupyterlab/docregistry';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
 import { ToolbarItems } from './default-toolbar';
 
@@ -18,9 +18,9 @@ import { StaticNotebook } from './widget';
 import {
   ISessionContextDialogs,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
 /**
  * A widget factory for notebook panels.

@@ -9,7 +9,7 @@ import {
   ILayoutRestorer,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   Dialog,
@@ -19,19 +19,19 @@ import {
   showDialog,
   WidgetTracker,
   sessionContextDialogs
-} from '@jupyterlab/apputils';
+} from '@fk-jupyterlab/apputils';
 
-import { CodeCell } from '@jupyterlab/cells';
+import { CodeCell } from '@fk-jupyterlab/cells';
 
-import { IEditorServices } from '@jupyterlab/codeeditor';
+import { IEditorServices } from '@fk-jupyterlab/codeeditor';
 
-import { PageConfig, URLExt } from '@jupyterlab/coreutils';
+import { PageConfig, URLExt } from '@fk-jupyterlab/coreutils';
 
-import { IDocumentManager } from '@jupyterlab/docmanager';
+import { IDocumentManager } from '@fk-jupyterlab/docmanager';
 
-import { IFileBrowserFactory } from '@jupyterlab/filebrowser';
+import { IFileBrowserFactory } from '@fk-jupyterlab/filebrowser';
 
-import { ILauncher } from '@jupyterlab/launcher';
+import { ILauncher } from '@fk-jupyterlab/launcher';
 
 import {
   IEditMenu,
@@ -41,9 +41,9 @@ import {
   IMainMenu,
   IRunMenu,
   IViewMenu
-} from '@jupyterlab/mainmenu';
+} from '@fk-jupyterlab/mainmenu';
 
-import * as nbformat from '@jupyterlab/nbformat';
+import * as nbformat from '@fk-jupyterlab/nbformat';
 
 import {
   NotebookTools,
@@ -58,23 +58,23 @@ import {
   StaticNotebook,
   CommandEditStatus,
   NotebookTrustStatus
-} from '@jupyterlab/notebook';
+} from '@fk-jupyterlab/notebook';
 
-import { IPropertyInspectorProvider } from '@jupyterlab/property-inspector';
+import { IPropertyInspectorProvider } from '@fk-jupyterlab/property-inspector';
 
-import { IRenderMimeRegistry } from '@jupyterlab/rendermime';
+import { IRenderMimeRegistry } from '@fk-jupyterlab/rendermime';
 
-import { ServiceManager } from '@jupyterlab/services';
+import { ServiceManager } from '@fk-jupyterlab/services';
 
-import { ISettingRegistry } from '@jupyterlab/settingregistry';
+import { ISettingRegistry } from '@fk-jupyterlab/settingregistry';
 
-import { IStateDB } from '@jupyterlab/statedb';
+import { IStateDB } from '@fk-jupyterlab/statedb';
 
-import { IStatusBar } from '@jupyterlab/statusbar';
+import { IStatusBar } from '@fk-jupyterlab/statusbar';
 
-import { nullTranslator, ITranslator } from '@jupyterlab/translation';
+import { nullTranslator, ITranslator } from '@fk-jupyterlab/translation';
 
-import { buildIcon, notebookIcon } from '@jupyterlab/ui-components';
+import { buildIcon, notebookIcon } from '@fk-jupyterlab/ui-components';
 
 import { ArrayExt } from '@lumino/algorithm';
 
@@ -255,7 +255,7 @@ const FORMAT_EXCLUDE = ['notebook', 'python', 'custom'];
  * The notebook widget tracker provider.
  */
 const trackerPlugin: JupyterFrontEndPlugin<INotebookTracker> = {
-  id: '@jupyterlab/notebook-extension:tracker',
+  id: '@fk-jupyterlab/notebook-extension:tracker',
   provides: INotebookTracker,
   requires: [INotebookWidgetFactory, IDocumentManager, ITranslator],
   optional: [
@@ -275,7 +275,7 @@ const trackerPlugin: JupyterFrontEndPlugin<INotebookTracker> = {
  * The notebook cell factory provider.
  */
 const factory: JupyterFrontEndPlugin<NotebookPanel.IContentFactory> = {
-  id: '@jupyterlab/notebook-extension:factory',
+  id: '@fk-jupyterlab/notebook-extension:factory',
   provides: NotebookPanel.IContentFactory,
   requires: [IEditorServices],
   autoStart: true,
@@ -291,7 +291,7 @@ const factory: JupyterFrontEndPlugin<NotebookPanel.IContentFactory> = {
 const tools: JupyterFrontEndPlugin<INotebookTools> = {
   activate: activateNotebookTools,
   provides: INotebookTools,
-  id: '@jupyterlab/notebook-extension:tools',
+  id: '@fk-jupyterlab/notebook-extension:tools',
   autoStart: true,
   requires: [INotebookTracker, IEditorServices, IStateDB, ITranslator],
   optional: [IPropertyInspectorProvider]
@@ -301,7 +301,7 @@ const tools: JupyterFrontEndPlugin<INotebookTools> = {
  * A plugin providing a CommandEdit status item.
  */
 export const commandEditItem: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/notebook-extension:mode-status',
+  id: '@fk-jupyterlab/notebook-extension:mode-status',
   autoStart: true,
   requires: [INotebookTracker, ITranslator],
   optional: [IStatusBar],
@@ -324,7 +324,7 @@ export const commandEditItem: JupyterFrontEndPlugin<void> = {
       item.model.notebook = current && current.content;
     });
 
-    statusBar.registerStatusItem('@jupyterlab/notebook-extension:mode-status', {
+    statusBar.registerStatusItem('@fk-jupyterlab/notebook-extension:mode-status', {
       item,
       align: 'right',
       rank: 4,
@@ -340,7 +340,7 @@ export const commandEditItem: JupyterFrontEndPlugin<void> = {
  * A plugin that adds a notebook trust status item to the status bar.
  */
 export const notebookTrustItem: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab/notebook-extension:trust-status',
+  id: '@fk-jupyterlab/notebook-extension:trust-status',
   autoStart: true,
   requires: [INotebookTracker, ITranslator],
   optional: [IStatusBar],
@@ -364,7 +364,7 @@ export const notebookTrustItem: JupyterFrontEndPlugin<void> = {
     });
 
     statusBar.registerStatusItem(
-      '@jupyterlab/notebook-extension:trust-status',
+      '@fk-jupyterlab/notebook-extension:trust-status',
       {
         item,
         align: 'right',
@@ -382,7 +382,7 @@ export const notebookTrustItem: JupyterFrontEndPlugin<void> = {
  * The notebook widget factory provider.
  */
 const widgetFactoryPlugin: JupyterFrontEndPlugin<NotebookWidgetFactory.IFactory> = {
-  id: '@jupyterlab/notebook-extension:widget-factory',
+  id: '@fk-jupyterlab/notebook-extension:widget-factory',
   provides: INotebookWidgetFactory,
   requires: [
     NotebookPanel.IContentFactory,

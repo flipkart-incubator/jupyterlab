@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { VDomModel, VDomRenderer } from '@jupyterlab/apputils';
+import { VDomModel, VDomRenderer } from '@fk-jupyterlab/apputils';
 
-import { framePromise } from '@jupyterlab/testutils';
+import { framePromise } from '@fk-jupyterlab/testutils';
 
 import { Widget } from '@lumino/widgets';
 
@@ -34,7 +34,7 @@ class TestWidgetNoModel extends VDomRenderer {
   }
 }
 
-describe('@jupyterlab/apputils', () => {
+describe('@fk-jupyterlab/apputils', () => {
   describe('VDomModel', () => {
     describe('#constructor()', () => {
       it('should create a VDomModel', () => {

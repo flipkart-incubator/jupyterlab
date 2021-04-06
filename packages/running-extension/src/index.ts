@@ -10,17 +10,17 @@ import {
   ILabShell,
   JupyterFrontEnd,
   JupyterFrontEndPlugin
-} from '@jupyterlab/application';
+} from '@fk-jupyterlab/application';
 
 import {
   IRunningSessionManagers,
   RunningSessionManagers,
   RunningSessions
-} from '@jupyterlab/running';
+} from '@fk-jupyterlab/running';
 
-import { ITranslator } from '@jupyterlab/translation';
+import { ITranslator } from '@fk-jupyterlab/translation';
 
-import { runningIcon } from '@jupyterlab/ui-components';
+import { runningIcon } from '@fk-jupyterlab/ui-components';
 
 import { addOpenTabsSessionManager } from './opentabs';
 
@@ -31,7 +31,7 @@ import { addKernelRunningSessionManager } from './kernels';
  */
 const plugin: JupyterFrontEndPlugin<IRunningSessionManagers> = {
   activate,
-  id: '@jupyterlab/running-extension:plugin',
+  id: '@fk-jupyterlab/running-extension:plugin',
   provides: IRunningSessionManagers,
   requires: [ITranslator],
   optional: [ILayoutRestorer, ILabShell],

@@ -1,9 +1,9 @@
 // Copyright (c) Jupyter Development Team.
 // Distributed under the terms of the Modified BSD License.
 
-import { DocumentRegistry, DocumentWidget } from '@jupyterlab/docregistry';
+import { DocumentRegistry, DocumentWidget } from '@fk-jupyterlab/docregistry';
 
-import { classes, DockPanelSvg, LabIcon } from '@jupyterlab/ui-components';
+import { classes, DockPanelSvg, LabIcon } from '@fk-jupyterlab/ui-components';
 
 import { ArrayExt, find, IIterator, iter, toArray } from '@lumino/algorithm';
 
@@ -62,7 +62,7 @@ const ACTIVITY_CLASS = 'jp-Activity';
  * The JupyterLab application shell token.
  */
 export const ILabShell = new Token<ILabShell>(
-  '@jupyterlab/application:ILabShell'
+  '@fk-jupyterlab/application:ILabShell'
 );
 
 /**
